@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<sqlMap namespace="Material"
+	xmlns="http://ibatis.apache.org/mapping"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <alias>
+    <typeAlias alias="MaterialInfo"  type="Glorysoft.BC.Entity.MaterialInfo"/>
+  </alias>
+  <resultMaps>
+    <resultMap id="MaterialInfoResult" class="MaterialInfo">
+		<result property = "EQPID" column="eqpid"/>
+		<result property = "UnitID" column="unitid"/>
+		<result property = "MaterialType" column="materialtype"/>
+		<result property = "MaterialID" column="materialid"/>
+		<result property = "MaterialState" column="materialstate"/>
+		<result property = "MaterialUseCount" column="materialusedcnt"/>
+		<result property = "MaterialPosition" column="materialposition"/>
+		<result property = "MaterialLotID" column="materiallotid"/>
+		<result property = "MaterialName" column="materialname"/>
+		<result property = "CreateDate" column="createdate"/>
+    </resultMap>
+  </resultMaps>
+  <statements>
+    <select id="ViewMaterialInfo" resultMap="MaterialInfoResult" parameterClass="MaterialInfo">
+      select * from wip_material
+      <dynamic prepend="where">
+        <isNotEmpty property="EQPID" prepend="and">
+			eqpid = #EQPID#
+		</isNotEmpty>
+        <isNotEmpty property="UnitID" prepend="and">
+			unitid = #UnitID#
+		</isNotEmpty>
+		<isNotEmpty property="MaterialID" prepend="and">
+			materialid = #MaterialID#
+		</isNotEmpty>
+		  <isNotEmpty property="MaterialLotID" prepend="and">
+			  materiallotid = #MaterialLotID#
+		  </isNotEmpty>
+	  </dynamic>
+    </select>
+
+	  <insert id="InsertMaterialHistory" parameterClass="MaterialInfo">
+		  INSERT INTO public.his_material(
+		  eqpid, createdate, unitid, materialtype, materialid, materialstate,
+		  materialusedcnt, materialposition, materiallotid,materialname)
+		  VALUES (#EQPID#,localtimestamp(0), #UnitID#, #MaterialType#, #MaterialID#, #MaterialState#,
+		  #MaterialUseCount#, #MaterialPosition#, #MaterialLotID#,#MaterialName#)
+	  </insert>
+
+
+	  <insert id="InsertMaterialInfo" parameterClass="MaterialInfo">
+		  INSERT INTO public.wip_material(
+		  eqpid, createdate, unitid, materialtype, materialid, materialstate,
+		  materialusedcnt, materialposition, materiallotid,materialname)
+		  VALUES (#EQPID#,localtimestamp(0), #UnitID#, #MaterialType#, #MaterialID#, #MaterialState#,
+		  #MaterialUseCount#, #MaterialPosition#, #MaterialLotID#,#MaterialName#)
+	  </insert>
+	  
+	  
+    <update id="UpdateMaterialInfo" parameterClass="MaterialInfo">
+		UPDATE wip_material 
+		<dynamic prepend="set">
+			<isNotEmpty property="MaterialState" prepend=",">
+				materialstate=#MaterialState#
+			</isNotEmpty>
+			<isNotEmpty property="MaterialUseCount" prepend=",">
+				materialusedcnt=#MaterialUseCount#
+			</isNotEmpty>
+		</dynamic>
+		<dynamic prepend="where">
+        <isNotEmpty property="EQPID" prepend="and">
+          eqpid=#EQPID#
+        </isNotEmpty>
+        <isNotEmpty property="UnitID" prepend="and">
+			unitid=#UnitID#
+		</isNotEmpty>
+        <isNotEmpty property="MaterialID" prepend="and">
+		  materialid=#MaterialID#
+		</isNotEmpty>
+		<isNotEmpty property="MaterialLotID" prepend="and">
+			materiallotid=#MaterialLotID#
+		</isNotEmpty>
+      </dynamic>
+    </update>
+	  <delete id="DeleteMaterialInfo" parameterClass="MaterialInfo">
+		  delete from wip_material where eqpid=#EQPID# and  unitid=#UnitID# and materiallotid=#MaterialLotID#
+	  </delete> 	 
+  </statements>
+</sqlMap>

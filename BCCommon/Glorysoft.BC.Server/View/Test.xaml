@@ -1,0 +1,102 @@
+﻿<Window x:Class="Glorysoft.BC.Server.View.Test"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Glorysoft.BC.Server.View"
+        mc:Ignorable="d"
+        Title="Test" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Button   Width="155" Height="50"   
+                        Background="Transparent"
+                        Command="{Binding EqpAlarmCommand}"
+                        Content="EqpAlarm"
+                        FontSize="16"/>
+        <Button   Grid.Row="1" Width="155" Height="50"   
+                        Background="Transparent"
+                        Command="{Binding EQPStatusChangeCommand}"
+                        Content="EQPStatusChange"
+                        FontSize="16"/>
+        <Button   Grid.Row="2" Width="155" Height="50"   
+                        Background="Transparent"
+                        Command="{Binding FetchOutJobCommand}"
+                        Content="FetchOutJob"
+                        FontSize="16"/>
+        <Button   Grid.Row="3" Width="155" Height="50"   
+                        Background="Transparent"
+                        Command="{Binding InUnitReportCommand}"
+                        Content="InUnitReport"
+                        FontSize="16"/>
+        <Button   Grid.Row="4" Width="155" Height="50"   
+                        Background="Transparent"
+                        Command="{Binding OutUnitReportCommand}"
+                        Content="OutUnitReport"
+                        FontSize="16"/>
+        <Button   Grid.Row="5" Width="155" Height="50"   
+                        Background="Transparent"
+                        Command="{Binding Port1CassetteStatusCommand}"
+                        Content="Port1CassetteStatus"
+                        FontSize="16"/>
+
+
+        <Button Grid.Column="1"  Width="155" Height="50"   
+                        Background="Transparent"
+                        Command="{Binding Port1EnableModeCommand}"
+                        Content="Port1EnableMode"
+                        FontSize="16"/>
+        <Button Grid.Column="1" Grid.Row="1" Width="155" Height="50"   
+                        Background="Transparent"
+                        Command="{Binding Port1StatusCommand}"
+                        Content="Port1Status"
+                        FontSize="16"/>
+        <Button Grid.Column="1" Grid.Row="2" Width="155" Height="50"   
+                        Background="Transparent"
+                        Command="{Binding Port1TransferModeCommand}"
+                        Content="Port1TransferMode"
+                        FontSize="16"/>
+        <Button Grid.Column="1" Grid.Row="3" Width="155" Height="50"   
+                        Background="Transparent"
+                        Command="{Binding PortTypeChangeCommand}"
+                        Content="PortTypeChange"
+                        FontSize="16"/>
+        <Button Grid.Column="1" Grid.Row="4" Width="155" Height="50"   
+                        Background="Transparent"
+                        Command="{Binding PortUseTypeCommand}"
+                        Content="PortUseType"
+                        FontSize="16"/>
+        <Button Grid.Column="1" Grid.Row="5" Width="155" Height="50"   
+                        Background="Transparent"
+                        Command="{Binding RecipeChangeCommand}"
+                        Content="RecipeChange"
+                        FontSize="16"/>
+
+
+
+        <Button Grid.Column="2"  Width="155" Height="50"   
+                        Background="Transparent"
+                        Command="{Binding RemoveJobCommand}"
+                        Content="RemoveJob"
+                        FontSize="16"/>
+        <Button Grid.Column="2" Grid.Row="1"  Width="155" Height="50"   
+                        Background="Transparent"
+                        Command="{Binding StoreJobCommand}"
+                        Content="StoreJob"
+                        FontSize="16"/>
+
+    </Grid>
+</Window>

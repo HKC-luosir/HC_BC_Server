@@ -1,0 +1,177 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<sqlMap namespace="EqpProfile"
+	xmlns="http://ibatis.apache.org/mapping"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <alias>
+	  <typeAlias alias="cfg_eqpprofile"  type="Glorysoft.BC.Entity.WebSocketEntity.cfg_eqpprofile"/>
+	  <typeAlias alias="cfg_eqpprofile_itemgroup"  type="Glorysoft.BC.Entity.WebSocketEntity.cfg_eqpprofile_itemgroup"/>
+	  <typeAlias alias="cfg_eqpprofile_item"  type="Glorysoft.BC.Entity.WebSocketEntity.cfg_eqpprofile_item"/>   
+  </alias>
+  <resultMaps>
+	  <resultMap id="cfg_eqpprofileResult" class="cfg_eqpprofile">
+		  <result property = "id" column="id"/>
+		  <result property = "profilename" column="profilename"/>
+		  <result property = "profileversion" column="profileversion"/>
+		  <result property = "isenable" column="isenable"/>
+		  <result property = "updatedate" column="updatedate"/>
+		  <result property = "eqpid" column="eqpid"/>
+	  </resultMap>
+	  <resultMap id="cfg_eqpprofile_itemgroupResult" class="cfg_eqpprofile_itemgroup">
+		  <result property = "id" column="id"/>
+		  <result property = "profileid" column="profileid"/>
+		  <result property = "grouptype" column="grouptype"/>
+		  <result property = "unitname" column="unitname"/>
+		  <result property = "itemgroupname" column="itemgroupname"/>
+		  <result property = "itemgrouporder" column="itemgrouporder"/>
+		  <result property = "updatedate" column="updatedate"/>
+	  </resultMap>
+	  <resultMap id="cfg_eqpprofile_itemResult" class="cfg_eqpprofile_item">
+		  <result property = "id" column="id"/>
+		  <result property = "itemgroupid" column="itemgroupid"/>
+		  <result property = "itemname" column="itemname"/>
+		  <result property = "itemoffset" column="itemoffset"/>
+		  <result property = "itempoints" column="itempoints"/>
+		  <result property = "itemtype" column="itemtype"/>
+		  <result property = "itemorder" column="itemorder"/>
+		  <result property = "updatedate" column="updatedate"/>
+		  <result property = "mesitemname" column="mesitemname"/>
+		  <result property = "operationproportion" column="operationproportion"/>
+		  <result property = "dataindex" column="dataindex"/>
+	  </resultMap>
+  </resultMaps>
+  <statements>
+	  <select id="Insertcfg_eqpprofile" parameterClass="cfg_eqpprofile">
+		  INSERT INTO public.cfg_eqpprofile(
+		  profilename, profileversion, isenable, updatedate, eqpid)
+		  VALUES (
+		  #profilename#, #profileversion#, #isenable#, localtimestamp(0), #eqpid#) RETURNING id;
+	  </select>
+	  <select id="Insertcfg_eqpprofile_itemgroup" parameterClass="cfg_eqpprofile_itemgroup">
+		  INSERT INTO public.cfg_eqpprofile_itemgroup(
+		  profileid, grouptype, unitname, itemgroupname, itemgrouporder, updatedate)
+		  VALUES (
+		  #profileid#, #grouptype#, #unitname#, #itemgroupname#, #itemgrouporder#, localtimestamp(0)) RETURNING id;
+	  </select>
+	  <select id="Insertcfg_eqpprofile_item" parameterClass="cfg_eqpprofile_item">
+		  INSERT INTO public.cfg_eqpprofile_item(
+		  itemgroupid, itemname, itemoffset, itempoints, itemtype, itemorder, updatedate, mesitemname, operationproportion, dataindex)
+		  VALUES (
+		  #itemgroupid#, #itemname#, #itemoffset#, #itempoints#, #itemtype#, #itemorder#, localtimestamp(0), #mesitemname#, #operationproportion#, #dataindex#) RETURNING id;
+	  </select>
+
+	  <select id="Viewcfg_eqpprofile" resultMap="cfg_eqpprofileResult" parameterClass="Hashtable">
+		  select * from cfg_eqpprofile
+		  <dynamic prepend="where">
+			  <isNotEmpty property="id" prepend="and">
+				  id = #id#
+			  </isNotEmpty>
+			  <isNotEmpty property="profilename" prepend="and">
+				  profilename like '%' || #profilename# || '%'
+			  </isNotEmpty>
+			  <isNotEmpty property="profileversion" prepend="and">
+				  profileversion = #profileversion#
+			  </isNotEmpty>
+			  <isNotEmpty property="eqpid" prepend="and">
+				  eqpid = #eqpid#
+			  </isNotEmpty>
+			  <isNotEmpty property="isenable" prepend="and">
+				  isenable = #isenable#
+			  </isNotEmpty>
+			  <isNotEmpty property="startupdatedate" prepend="and">updatedate <![CDATA[ >= ]]> #startupdatedate#::timestamp</isNotEmpty>
+			  <isNotEmpty property = "endupdatedate" prepend = "and" > updatedate <![CDATA[ <= ]]> #endupdatedate#::timestamp</isNotEmpty>
+		  </dynamic>
+		  order by updatedate desc
+	  </select>
+
+	  <select id="Viewcfg_eqpprofile_itemgroup" resultMap="cfg_eqpprofile_itemgroupResult" parameterClass="Hashtable">
+		  select * from cfg_eqpprofile_itemgroup
+		  <dynamic prepend="where">
+			  <isNotEmpty property="profileid" prepend="and">
+				  profileid = #profileid#
+			  </isNotEmpty>
+			  <isNotEmpty property="grouptype" prepend="and">
+				  grouptype = #grouptype#
+			  </isNotEmpty>
+			  <isNotEmpty property="unitname" prepend="and">
+				  unitname like '%' || #unitname# || '%'
+			  </isNotEmpty>
+			  <isNotEmpty property="itemgroupname" prepend="and">
+				  itemgroupname like '%' || #itemgroupname# || '%'
+			  </isNotEmpty>
+			  <isNotEmpty property="startupdatedate" prepend="and">updatedate <![CDATA[ >= ]]> #startupdatedate#::timestamp</isNotEmpty>
+			  <isNotEmpty property = "endupdatedate" prepend = "and" > updatedate <![CDATA[ <= ]]> #endupdatedate#::timestamp</isNotEmpty>
+		  </dynamic>
+		  order by unitname asc,grouptype asc,itemgroupname asc,itemgrouporder asc
+	  </select>
+
+	  <select id="Viewcfg_eqpprofile_item" resultMap="cfg_eqpprofile_itemResult" parameterClass="Hashtable">
+		  select * from cfg_eqpprofile_item
+		  <dynamic prepend="where">
+			  <isNotEmpty property="itemgroupid" prepend="and">
+				  itemgroupid = #itemgroupid#
+			  </isNotEmpty>
+			  <isNotEmpty property="itemname" prepend="and">
+				  itemname like '%' || #itemname# || '%'
+			  </isNotEmpty>
+			  <isNotEmpty property="mesitemname" prepend="and">
+				  mesitemname like '%' || #mesitemname# || '%'
+			  </isNotEmpty>
+			  <isNotEmpty property="startupdatedate" prepend="and">updatedate <![CDATA[ >= ]]> #startupdatedate#::timestamp</isNotEmpty>
+			  <isNotEmpty property = "endupdatedate" prepend = "and" > updatedate <![CDATA[ <= ]]> #endupdatedate#::timestamp</isNotEmpty>
+		  </dynamic>
+		  order by itemorder asc
+	  </select>
+
+	  <update id="Updatecfg_eqpprofile" patameterClass="cfg_eqpprofile">
+		  UPDATE cfg_eqpprofile
+		  SET profilename=#profilename#, profileversion=#profileversion#, isenable=#isenable#, updatedate=localtimestamp(0), eqpid=#eqpid#
+		  where id = #id#
+	  </update>
+
+	  <update id="Updatecfg_eqpprofile_itemgroup" patameterClass="cfg_eqpprofile_itemgroup">
+		  UPDATE cfg_eqpprofile_itemgroup
+		  SET profileid=#profileid#, grouptype=#grouptype#, unitname=#unitname#, itemgroupname=#itemgroupname#, itemgrouporder=#itemgrouporder#, updatedate=localtimestamp(0)
+		  where id = #id#
+	  </update>
+
+	  <update id="Updatecfg_eqpprofile_item" patameterClass="cfg_eqpprofile_item">
+		  UPDATE cfg_eqpprofile_item
+		  SET itemgroupid=#itemgroupid#, itemname=#itemname#, itemoffset=#itemoffset#, itempoints=#itempoints#, itemtype=#itemtype#, itemorder=#itemorder#, updatedate=localtimestamp(0), mesitemname=#mesitemname#, operationproportion=#operationproportion#, dataindex=#dataindex#
+		  where id = #id#
+	  </update>
+
+	  <delete id="Deletecfg_eqpprofile" patameterClass="Hashtable">
+		  delete from cfg_eqpprofile
+		  <dynamic prepend="where">
+			  <isNotEmpty property="id" prepend="and">
+				  id = #id#
+			  </isNotEmpty>
+		  </dynamic>
+	  </delete>
+
+	  <delete id="Deletecfg_eqpprofile_itemgroup" patameterClass="Hashtable">
+		  delete from cfg_eqpprofile_itemgroup
+		  <dynamic prepend="where">
+			  <isNotEmpty property="id" prepend="and">
+				  id = #id#
+			  </isNotEmpty>
+			  <isNotEmpty property="profileid" prepend="and">
+				  profileid = #profileid#
+			  </isNotEmpty>
+		  </dynamic>
+	  </delete>
+
+	  <delete id="Deletecfg_eqpprofile_item" patameterClass="Hashtable">
+		  delete from cfg_eqpprofile_item
+		  <dynamic prepend="where">
+			  <isNotEmpty property="id" prepend="and">
+				  id = #id#
+			  </isNotEmpty>
+			  <isNotEmpty property="itemgroupid" prepend="and">
+				  itemgroupid = #itemgroupid#
+			  </isNotEmpty>
+		  </dynamic>
+	  </delete>
+	  
+</statements>
+</sqlMap>

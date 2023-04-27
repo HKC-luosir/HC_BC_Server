@@ -1,0 +1,1794 @@
+2023-04-26 12:00:01,810 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:00:13,857 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:00:25,917 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:00:37,950 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:00:49,984 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:01:02,031 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:01:14,090 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:01:26,144 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:01:38,180 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:01:50,231 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:02:02,283 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:02:14,333 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:02:26,378 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:02:38,437 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:02:50,494 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:03:02,537 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:03:14,594 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:03:26,648 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:03:38,711 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:03:50,769 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:04:02,802 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:04:14,836 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:04:26,887 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:04:38,925 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:04:50,966 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:05:03,007 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:05:15,064 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:05:27,122 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:05:39,169 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:05:51,191 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:06:03,236 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:06:15,289 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:06:27,322 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:06:39,378 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:06:51,436 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:07:03,473 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:07:15,520 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:07:27,571 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:07:39,605 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:07:51,637 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:08:03,679 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:08:15,734 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:08:27,787 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:08:39,834 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:08:51,881 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:09:03,916 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:09:15,974 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:09:28,027 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:09:40,049 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:09:52,079 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:10:04,125 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:10:16,170 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:10:28,215 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:10:40,269 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:10:52,305 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:11:04,351 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:11:16,390 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:11:28,437 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:11:40,478 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:11:52,516 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:12:04,553 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:12:16,605 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:12:28,639 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:12:40,688 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:12:52,740 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:13:04,792 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:13:16,852 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:13:28,895 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:13:40,950 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:13:53,000 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:14:05,062 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:14:17,117 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:14:29,159 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:14:41,201 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:14:53,259 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:15:05,319 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:15:17,367 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:15:29,411 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:15:41,463 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:15:53,514 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:16:05,562 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:16:17,618 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:16:29,651 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:16:41,690 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:16:53,723 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:17:05,757 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:17:17,812 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:17:29,863 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:17:41,923 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:17:53,970 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:18:06,011 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:18:18,040 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:18:30,090 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:18:42,145 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:18:54,205 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:19:06,261 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:19:18,317 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:19:30,360 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:19:42,420 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:19:54,477 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:20:06,532 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:20:18,577 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:20:30,629 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:20:42,685 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:20:54,741 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:21:06,794 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:21:18,848 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:21:30,892 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:21:42,929 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:21:54,986 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:22:07,040 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:22:19,091 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:22:31,142 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:22:43,197 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:22:55,256 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:23:07,306 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:23:19,358 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:23:31,416 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:23:43,457 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:23:55,502 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:24:07,542 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:24:19,594 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:24:31,647 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:24:43,691 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:24:55,750 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:25:07,803 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:25:19,852 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:25:31,902 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:25:43,946 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:25:55,984 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:26:08,039 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:26:20,078 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:26:32,130 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:26:44,176 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:26:56,233 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:27:08,286 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:27:20,331 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:27:32,380 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:27:44,420 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:27:56,458 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:28:08,505 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:28:20,554 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:28:32,607 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:28:44,669 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:28:56,716 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:29:08,771 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:29:20,827 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:29:32,877 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:29:44,926 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:29:56,973 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:30:09,018 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:30:21,066 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:30:33,123 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:30:45,170 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:30:57,234 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:31:09,286 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:31:21,344 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:31:33,394 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:31:45,452 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:31:57,511 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:32:09,565 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:32:21,624 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:32:33,679 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:32:45,741 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:32:57,786 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:33:09,847 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:33:21,893 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:33:33,947 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:33:45,996 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:33:58,045 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:34:10,090 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:34:22,140 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:34:34,191 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:34:46,248 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:34:58,299 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:35:10,339 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:35:22,394 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:35:34,444 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:35:46,494 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:35:58,547 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:36:10,591 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:36:22,643 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:36:34,698 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:36:46,742 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:36:58,791 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:37:10,843 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:37:22,899 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:37:34,950 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:37:47,001 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:37:59,048 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:38:11,093 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:38:23,141 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:38:35,188 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:38:47,233 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:38:59,267 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:39:11,322 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:39:23,374 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:39:35,428 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:39:47,460 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:39:59,515 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:40:11,575 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:40:23,624 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:40:35,672 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:40:47,721 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:40:59,766 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:41:11,820 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:41:23,879 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:41:35,939 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:41:47,986 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:42:00,040 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:42:12,088 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:42:24,135 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:42:36,182 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:42:48,219 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:43:00,275 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:43:12,322 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:43:24,372 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:43:36,419 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:43:48,472 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:44:00,520 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:44:12,568 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:44:24,610 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:44:36,669 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:44:48,721 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:45:00,775 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:45:12,833 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:45:24,885 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:45:36,934 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:45:48,982 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:46:01,031 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:46:13,077 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:46:25,139 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:46:37,200 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:46:49,242 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:47:01,295 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:47:13,354 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:47:25,414 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:47:37,460 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:47:49,516 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:48:01,572 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:48:13,611 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:48:25,658 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:48:37,697 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:48:49,754 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:49:01,799 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:49:13,842 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:49:25,892 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:49:37,921 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:49:49,972 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:50:02,021 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:50:14,073 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:50:26,122 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:50:38,173 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:50:50,220 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:51:02,273 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:51:14,317 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:51:26,363 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:51:38,416 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:51:50,457 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:52:02,493 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:52:14,539 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:52:26,582 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:52:38,634 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:52:50,686 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:53:02,729 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:53:14,774 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:53:26,833 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:53:38,889 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:53:50,935 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:54:02,991 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:54:15,035 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:54:27,084 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:54:39,139 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:54:51,196 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:55:03,241 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:55:15,288 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:55:27,335 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:55:39,378 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:55:51,422 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:56:03,472 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:56:15,522 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:56:27,580 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:56:39,652 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:56:51,683 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:57:03,738 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:57:15,784 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:57:27,827 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:57:39,879 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:57:51,940 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:58:03,996 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:58:16,043 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:58:28,092 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:58:40,150 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:58:52,184 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:59:04,237 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:59:16,288 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:59:28,345 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:59:40,389 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-26 12:59:52,430 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29

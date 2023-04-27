@@ -1,0 +1,41 @@
+﻿<UserControl x:Class="Glorysoft.BC.Client.View.MainFormLIFT_MF0405"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity" 
+             xmlns:View="clr-namespace:Glorysoft.BC.Client.View" 
+             xmlns:vc="clr-namespace:Glorysoft.BC.Client.CommonClass"
+             mc:Ignorable="d" 
+             Width="1900"  Height="612">
+    <UserControl.Resources>
+        <vc:EQPStatus2Color x:Key="EQPStatus2Color" />
+        <vc:PLCConnect2String x:Key="PLCConnect2String" />
+    </UserControl.Resources>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Border Grid.Column="1" Background="Transparent" Margin="0,0,0,0" >
+            <Grid>
+                <Label Background="LightGray" BorderBrush="#5b5b5b" BorderThickness="2" Margin="30,0,30,45" HorizontalAlignment="Stretch" VerticalAlignment="Bottom" Height="39" />
+                <Label BorderBrush="#5b5b5b" BorderThickness="2" Background="#e6eded"  Width="160" Height="500" Margin="158,0,0,70" HorizontalAlignment="Left" VerticalAlignment="Bottom"/>
+                <Label Background="{StaticResource CSTStage}" BorderBrush="#5b5b5b" BorderThickness="0" Width="70" Height="20" Margin="346,510,0,85" HorizontalAlignment="Left" />
+                <Label Background="{StaticResource CSTStage}" BorderBrush="#5b5b5b" BorderThickness="0" Width="70" Height="20" Margin="346,301,0,291" HorizontalAlignment="Left" />
+                <Label Background="LightGray" BorderBrush="#5b5b5b" BorderThickness="2" Width="130" Height="30" Margin="316,317,0,256" HorizontalAlignment="Left" />
+                <Label Background="{StaticResource CSTStage}" BorderBrush="#5b5b5b" BorderThickness="0" Width="70" Margin="346,122,0,470" HorizontalAlignment="Left" Height="20" />
+                <Label Background="LightGray" BorderBrush="#5b5b5b" BorderThickness="2" Width="130" Height="30" Margin="316,137,0,436" HorizontalAlignment="Left" />
+                <Label Background="LightGray" BorderBrush="#5b5b5b" BorderThickness="2" Width="130" Height="30" Margin="30,322,0,260" HorizontalAlignment="Left"/>
+                <Label Background="LightGray" BorderBrush="#5b5b5b" BorderThickness="2" Width="130" Margin="30,142,0,440" HorizontalAlignment="Left" Height="30" />
+                <Label BorderBrush="#5b5b5b" Background="LightBlue" BorderThickness="2" Width="113" Margin="182,388,0,154" HorizontalAlignment="Left" Height="70"/>
+                <Label BorderBrush="Black" Background="Black" Width="4" Margin="226,42,0,224" HorizontalAlignment="Left" Height="346" />
+                <Label BorderBrush="Black" Background="Black" Width="4" Margin="247,42,0,224" HorizontalAlignment="Left" Height="346" />
+
+            </Grid>
+        </Border>
+    </Grid>
+
+</UserControl>

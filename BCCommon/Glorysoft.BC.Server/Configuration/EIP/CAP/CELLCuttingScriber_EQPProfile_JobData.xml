@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+  <ItemGroup Name="CELLCuttingScriber_JOBDATA">
+    <Item Name="PRODID" Offset="0" Points="10" Type="A" />
+    <Item Name="OperID" Offset="10" Points="5" Type="A" />
+    <Item Name="LotID" Offset="15" Points="15" Type="A" />
+    <Item Name="PPID1" Offset="30" Points="1" Type="I" />
+    <Item Name="PPID2" Offset="31" Points="1" Type="I" />
+    <Item Name="PPID3" Offset="32" Points="1" Type="I" />
+    <Item Name="PPID4" Offset="33" Points="1" Type="I" />
+    <Item Name="PPID5" Offset="34" Points="1" Type="I" />
+    <Item Name="PPID6" Offset="35" Points="1" Type="I" />
+    <Item Name="PPID7" Offset="36" Points="1" Type="I" />
+    <Item Name="PPID8" Offset="37" Points="1" Type="I" />
+    <Item Name="PPID9" Offset="38" Points="1" Type="I" />
+    <Item Name="PPID10" Offset="39" Points="1" Type="I" />
+    <Item Name="PPID11" Offset="40" Points="1" Type="I" />
+    <Item Name="PPID12" Offset="41" Points="1" Type="I" />
+    <Item Name="PPID13" Offset="42" Points="1" Type="I" />
+    <Item Name="PPID14" Offset="43" Points="1" Type="I" />
+    <Item Name="PPID15" Offset="44" Points="1" Type="I" />
+    <Item Name="PPID16" Offset="45" Points="1" Type="I" />
+    <Item Name="PPID17" Offset="46" Points="1" Type="I" />
+    <Item Name="PPID18" Offset="47" Points="1" Type="I" />
+    <Item Name="PPID19" Offset="48" Points="1" Type="I" />
+    <Item Name="PPID20" Offset="49" Points="1" Type="I" />
+    <Item Name="PPID21" Offset="50" Points="1" Type="I" />
+    <Item Name="PPID22" Offset="51" Points="1" Type="I" />
+    <Item Name="PPID23" Offset="52" Points="1" Type="I" />
+    <Item Name="PPID24" Offset="53" Points="1" Type="I" />
+    <Item Name="PPID25" Offset="54" Points="1" Type="I" />
+    <Item Name="PPID26" Offset="55" Points="1" Type="I" />
+    <Item Name="PPID27" Offset="56" Points="1" Type="I" />
+    <Item Name="PPID28" Offset="57" Points="1" Type="I" />
+    <Item Name="PPID29" Offset="58" Points="1" Type="I" />
+    <Item Name="PPID30" Offset="59" Points="1" Type="I" />
+    <Item Name="JobType" Offset="60" Points="1" Type="I" />
+    <Item Name="JobID" Offset="61" Points="20" Type="A" />
+    <Item Name="LotSequenceNumber" Offset="81" Points="1" Type="I" />
+    <Item Name="SlotSequenceNumber" Offset="82" Points="1" Type="I" />
+    <Item Name="PropertyCode" Offset="83" Points="1" Type="I" />
+    <Item Name="JobJudgeCode" Offset="84" Points="1" Type="A" />
+    <Item Name="JobGradeCode" Offset="85" Points="1" Type="A" />
+    <Item Name="SubstrateType" Offset="86" Points="1" Type="I" />
+    <Item Name="ProcessingFlag1" Offset="87" Points="1" Type="BIT" />
+    <Item Name="ProcessingFlag2" Offset="88" Points="1" Type="BIT" />
+    <Item Name="ProcessingFlag3" Offset="89" Points="1" Type="BIT" />
+    <Item Name="SkipFlag1" Offset="90" Points="1" Type="BIT" />
+    <Item Name="SkipFlag2" Offset="91" Points="1" Type="BIT" />
+    <Item Name="SkipFlag3" Offset="92" Points="1" Type="BIT" />
+    <Item Name="GlassThickness" Offset="93" Points="1" Type="I" />
+    <Item Name="JobAngle" Offset="94" Points="1" Type="I" />
+    <Item Name="JobFlip" Offset="95" Points="1" Type="I" />
+    <Item Name="MMGCode" Offset="96" Points="1" Type="BIT" />
+    <Item Name="PanelInchSizeX" Offset="97" Points="2" Type="I" />
+    <Item Name="PanelInchSizeY" Offset="99" Points="2" Type="I" />
+    <Item Name="AbnormalFlag1" Offset="101" Points="1" Type="BIT" />
+    <Item Name="AbnormalFlag2" Offset="102" Points="1" Type="BIT" />
+    <Item Name="AbnormalFlag3" Offset="103" Points="1" Type="BIT" />
+    <Item Name="AbnormalFlag4" Offset="104" Points="1" Type="BIT" />
+    <Item Name="AbnormalFlag5" Offset="105" Points="1" Type="BIT" />
+    <Item Name="AbnormalFlag6" Offset="106" Points="1" Type="BIT" />
+    <Item Name="AbnormalFlag7" Offset="107" Points="1" Type="BIT" />
+    <Item Name="AbnormalFlag8" Offset="108" Points="1" Type="BIT" />
+    <Item Name="WorkOrderID" Offset="109" Points="10" Type="A" />
+  </ItemGroup>
+</configuration>

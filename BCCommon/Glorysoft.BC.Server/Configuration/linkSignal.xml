@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+  <mappingItemList>
+    <mappingItem name="UpstreamLinkSignal">
+      <mappingValue Name="UpstreamInline"        		Offset="0"   Points="1"  Type="BIT" />
+      <mappingValue Name="UpstreamTrouble"        		Offset="1"   Points="1"  Type="BIT" />
+      <mappingValue Name="StretchComplete"        		Offset="2"   Points="1"  Type="BIT" />
+      <mappingValue Name="SlotNumber#1"        		Offset="3"   Points="1"  Type="BIT" />
+      <mappingValue Name="SlotNumber#2"        		Offset="4"   Points="1"  Type="BIT" />
+      <mappingValue Name="SlotNumber#3"        		Offset="5"   Points="1"  Type="BIT" />
+      <mappingValue Name="SlotNumber#4"        		Offset="6"   Points="1"  Type="BIT" />
+      <mappingValue Name="SlotNumber#5"        		Offset="7"   Points="1"  Type="BIT" />
+      <mappingValue Name="SlotNumber#6"        		Offset="8"   Points="1"  Type="BIT" />
+      <mappingValue Name="SendReady"        	  	Offset="9"   Points="1"  Type="BIT" />
+      <mappingValue Name="SlotPairFlag"        		Offset="10"   Points="1"  Type="BIT" />
+      <mappingValue Name="ArmSlotPairFlag"        		Offset="11"   Points="1"  Type="BIT" />
+      <mappingValue Name="JobTransferSignal#1"        		Offset="12"   Points="1"  Type="BIT" />
+      <mappingValue Name="JobTransferSignal#2"        		Offset="13"   Points="1"  Type="BIT" />
+      <mappingValue Name="SendAble"        		    Offset="14"   Points="1"  Type="BIT" />
+      <mappingValue Name="SendStart"        		  Offset="15"   Points="1"  Type="BIT" />
+      <mappingValue Name="SendComplete"        		Offset="16"   Points="1"  Type="BIT" />
+    </mappingItem>
+    <mappingItem name="DownstreamLinkSignal">
+      <mappingValue Name="DownstreamInline"        		Offset="0"   Points="1"  Type="BIT" />
+      <mappingValue Name="DownstreamTrouble"        		Offset="1"   Points="1"  Type="BIT" />
+      <mappingValue Name="StretchComplete"        		Offset="2"   Points="1"  Type="BIT" />
+      <mappingValue Name="SlotNumber#1"        		Offset="3"   Points="1"  Type="BIT" />
+      <mappingValue Name="SlotNumber#2"        		Offset="4"   Points="1"  Type="BIT" />
+      <mappingValue Name="SlotNumber#3"        		Offset="5"   Points="1"  Type="BIT" />
+      <mappingValue Name="SlotNumber#4"        		Offset="6"   Points="1"  Type="BIT" />
+      <mappingValue Name="SlotNumber#5"        		Offset="7"   Points="1"  Type="BIT" />
+      <mappingValue Name="SlotNumber#6"        		Offset="8"   Points="1"  Type="BIT" />
+      <mappingValue Name="ReceiveReady"        		Offset="9"   Points="1"  Type="BIT" />
+      <mappingValue Name="SlotPairFlag"        		Offset="10"   Points="1"  Type="BIT" />
+      <mappingValue Name="ArmSlotPairFlag"        		Offset="11"   Points="1"  Type="BIT" />
+      <mappingValue Name="JobTransferSignal#1"        		Offset="12"   Points="1"  Type="BIT" />
+      <mappingValue Name="JobTransferSignal#2"        		Offset="13"   Points="1"  Type="BIT" />
+      <mappingValue Name="ReceiveAble"        		Offset="14"   Points="1"  Type="BIT" />
+      <mappingValue Name="ReceiveStart"        		Offset="15"   Points="1"  Type="BIT" />
+      <mappingValue Name="ReceiveComplete"        		Offset="16"   Points="1"  Type="BIT" />
+    </mappingItem>
+  </mappingItemList>
+</configuration>

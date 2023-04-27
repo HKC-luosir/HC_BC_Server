@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+  <ItemGroup Name="Lighton1Test_CVDATAINT">
+    <Item Name="Parameter1ID" Offset="0" Points="1" Type="I" />
+    <Item Name="Value1" Offset="1" Points="1" Type="I" />
+  </ItemGroup>
+  <ItemGroup Name="Lighton1Test_CVDATAASCII">
+    <Item Name="Parameter1ID" Offset="0" Points="1" Type="I" />
+    <Item Name="Value1" Offset="1" Points="20" Type="A" />
+  </ItemGroup>
+  <ItemGroup Name="Lighton1Test_CVDATASI">
+    <Item Name="Parameter1ID" Offset="0" Points="1" Type="I" />
+    <Item Name="Value1" Offset="1" Points="2" Type="SI" />
+  </ItemGroup>
+  <ItemGroup Name="Lighton1Test_CVDATAFLOAT">
+    <Item Name="Parameter1ID" Offset="0" Points="1" Type="I" />
+    <Item Name="Value1" Offset="1" Points="2" Type="SF" />
+  </ItemGroup>
+  <ItemGroup Name="Lighton1Test_DVDATAINT">
+    <Item Name="Parameter1ID" Offset="0" Points="1" Type="I" />
+    <Item Name="Value1" Offset="1" Points="1" Type="I" />
+  </ItemGroup>
+  <ItemGroup Name="Lighton1Test_DVDATAASCII">
+    <Item Name="Parameter1ID" Offset="0" Points="1" Type="I" />
+    <Item Name="Value1" Offset="1" Points="20" Type="A" />
+  </ItemGroup>
+  <ItemGroup Name="Lighton1Test_DVDATASI">
+    <Item Name="Parameter1ID" Offset="0" Points="1" Type="I" />
+    <Item Name="Value1" Offset="1" Points="2" Type="SI" />
+  </ItemGroup>
+  <ItemGroup Name="Lighton1Test_DVDATAFLOAT">
+    <Item Name="Parameter1ID" Offset="0" Points="1" Type="I" />
+    <Item Name="Value1" Offset="1" Points="2" Type="SF" />
+  </ItemGroup>
+</configuration>

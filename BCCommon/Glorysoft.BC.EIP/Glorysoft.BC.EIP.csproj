@@ -1,0 +1,190 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{93707E3F-85F0-46C4-9E7A-056CFD7C20DE}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Glorysoft.BC.EIP</RootNamespace>
+    <AssemblyName>Glorysoft.BC.EIP</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EIPDriver, Version=2.1.0.17, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\CommonDll\EIPDriver.dll</HintPath>
+    </Reference>
+    <Reference Include="Glorysoft.Auto.Contract, Version=3.7.0.4, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\CommonDll\Glorysoft.Auto.Contract.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.13.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\CommonDll\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Common\AbstractEventHandler.cs" />
+    <Compile Include="Common\EIPConnections.cs" />
+    <Compile Include="Common\EQPAlives.cs" />
+    <Compile Include="Common\IPLCContext.cs" />
+    <Compile Include="Common\PLCContext.cs" />
+    <Compile Include="Common\PLCEventArgs.cs" />
+    <Compile Include="Common\PLCEventDispather.cs" />
+    <Compile Include="Common\XmlSerialization.cs" />
+    <Compile Include="Handlers\AbnormalCodeReportBlockHandler.cs" />
+    <Compile Include="Handlers\AlarmReportBlockHandler.cs" />
+    <Compile Include="Handlers\AutoRecipeChangeModeReportBlockHandler.cs" />
+    <Compile Include="Handlers\CheckLotBindingRequestBlockHandler.cs" />
+    <Compile Include="Handlers\EIPDisConnectHandler.cs" />
+    <Compile Include="Handlers\LinkSignalJobDataBlockHandler.cs" />
+    <Compile Include="Handlers\MachineAliveHandler.cs" />
+    <Compile Include="Handlers\OCIDRequestBlockHandler.cs" />
+    <Compile Include="Handlers\BoxWeightCheckRequestBlockHandler.cs" />
+    <Compile Include="Handlers\BufferJobMonitoringBlockHandler.cs" />
+    <Compile Include="Handlers\CassetteControlCommandReplyBlockHandler.cs" />
+    <Compile Include="Handlers\CassetteMapDownloadCommandReplyBlockHandler.cs" />
+    <Compile Include="Handlers\CassetteProcessEndReportBlockHandler.cs" />
+    <Compile Include="Handlers\CassetteProcessStartReportBlockHandler.cs" />
+    <Compile Include="Handlers\CVReportTimeChangeCommandReplyBlockHandler.cs" />
+    <Compile Include="Handlers\CSTMoveInReportBlockHandler.cs" />
+    <Compile Include="Handlers\CSTMoveOutReportBlockHandler.cs" />
+    <Compile Include="Handlers\CurrentRecipeNumberChangeReportBlockHandler.cs" />
+    <Compile Include="Handlers\CuttingRequestBlockHandler.cs" />
+    <Compile Include="Handlers\DateTimeRequestBlockHandler.cs" />
+    <Compile Include="Handlers\CVDataReportBlockHandler.cs" />
+    <Compile Include="Handlers\CellMaterialAssemblyReportBlockHandler.cs" />
+    <Compile Include="Handlers\CVMonitoringSlotBlockHandler.cs" />
+    <Compile Include="Handlers\MaterialValidationRequestBlockHandler.cs" />
+    <Compile Include="Handlers\PortBoxPortStatusReportBlockHandler.cs" />
+    <Compile Include="Handlers\PortControlCommandReplyBlockHandler.cs" />
+    <Compile Include="Handlers\PortBoxInfoRequestBlockHandler.cs" />
+    <Compile Include="Handlers\PortBoxGroupPortStatusReportBlockHandler.cs" />
+    <Compile Include="Handlers\PanelProcessEndRequestBlockHandler.cs" />
+    <Compile Include="Handlers\SpecialCodeRequestBlockHandler.cs" />
+    <Compile Include="Handlers\DefectCodeReportBlockHandler.cs" />
+    <Compile Include="Handlers\IonizerStatusReportBlockHandler.cs" />
+    <Compile Include="Handlers\JobAssemblyReport1BlockHandler.cs" />
+    <Compile Include="Handlers\JobJudgeResultReportBlockHandler.cs" />
+    <Compile Include="Handlers\LableInfoRequestReportBlockHandler.cs" />
+    <Compile Include="Handlers\LinkSignalHandler.cs" />
+    <Compile Include="Handlers\MachineModeChangeReportBlockHandler.cs" />
+    <Compile Include="Handlers\MaterialCountChangeReportBlockHandler.cs" />
+    <Compile Include="Handlers\MaterialLotInfoRequestBlockHandler.cs" />
+    <Compile Include="Handlers\OperatorLoginReportBlockHandler.cs" />
+    <Compile Include="Handlers\PalletInfoRequestBlockHandler.cs" />
+    <Compile Include="Handlers\PanelDataUpdateReportBlockHandler.cs" />
+    <Compile Include="Handlers\PanelJudgeDataDownloadRequestBlockHandler.cs" />
+    <Compile Include="Handlers\PortQTimeChangeReportBlockHandler.cs" />
+    <Compile Include="Handlers\PortQTimeTimeOutReportBlockHandler.cs" />
+    <Compile Include="Handlers\DVDataReportBlockHandler.cs" />
+    <Compile Include="Handlers\RecipeChangeReportBlockHandler.cs" />
+    <Compile Include="Handlers\RecipeParameterRequestCommandReplyBlockHandler.cs" />
+    <Compile Include="Handlers\RobotControlCommandReplyBlockHandler.cs" />
+    <Compile Include="Handlers\DVSamplingFlagCommandReplyBlockHandler.cs" />
+    <Compile Include="Handlers\SamplingDownloadCommandReplyBlockHandler.cs" />
+    <Compile Include="Handlers\CIMMessageClearCommandReplyBlockHandler.cs" />
+    <Compile Include="Handlers\CIMMessageSetCommandReplyBlockHandler.cs" />
+    <Compile Include="Handlers\CIMModeHandler.cs" />
+    <Compile Include="Handlers\CIMModeChangeCommandReplyBlockHandler.cs" />
+    <Compile Include="Handlers\MachineStatusChangeReportBlockHandler.cs" />
+    <Compile Include="Handlers\MaterialStatusChangeReportBlockHandler.cs" />
+    <Compile Include="Handlers\MachineModeChangeCommandReplyBlockHandler.cs" />
+    <Compile Include="Handlers\PortQTimeChangeCommandReplyBlockHandler.cs" />
+    <Compile Include="Handlers\PortCassetteTypeChangeCommandReplyBlockHandler.cs" />
+    <Compile Include="Handlers\PortCassetteTypeChangeReportBlockHandler.cs" />
+    <Compile Include="Handlers\PortGradeChangeCommandReplyBlockHandler.cs" />
+    <Compile Include="Handlers\PortGradeChangeReportBlockHandler.cs" />
+    <Compile Include="Handlers\PortPauseModeChangeCommandReplyBlockHandler.cs" />
+    <Compile Include="Handlers\PortPauseModeChangeReportBlockHandler.cs" />
+    <Compile Include="Handlers\PortTransferModeChangeCommandReplyBlockHandler.cs" />
+    <Compile Include="Handlers\PortTransferModeChangeReportBlockHandler.cs" />
+    <Compile Include="Handlers\PortEnableModeChangeCommandReplyBlockHandler.cs" />
+    <Compile Include="Handlers\PortEnableModeChangeReportBlockHandler.cs" />
+    <Compile Include="Handlers\PortModeChangeCommandReplyBlockHandler.cs" />
+    <Compile Include="Handlers\PortModeChangeReportBlockHandler.cs" />
+    <Compile Include="Handlers\PortTypeAutoChangeModeCommandReplyBlockHandler.cs" />
+    <Compile Include="Handlers\PortTypeAutoChangeModeReportBlockHandler.cs" />
+    <Compile Include="Handlers\PortTypeChangeCommandReplyBlockHandler.cs" />
+    <Compile Include="Handlers\PortTypeChangeReportBlockHandler.cs" />
+    <Compile Include="Handlers\PortStatusChangeReportHandler.cs" />
+    <Compile Include="Handlers\PositionStatusHandler.cs" />
+    <Compile Include="Handlers\RobotArmMonitoringBlockHandler.cs" />
+    <Compile Include="Handlers\RobotArmSubstrateLoadReportBlockHandler.cs" />
+    <Compile Include="Handlers\RobotArmSubstrateUnloadReportBlockHandler.cs" />
+    <Compile Include="Handlers\RobotCommandBufferMonitoringBlockHandler.cs" />
+    <Compile Include="Handlers\RobotCommandFetchOutReportBlockHandler.cs" />
+    <Compile Include="Handlers\RobotCommandMonitoringBlockHandler.cs" />
+    <Compile Include="Handlers\RobotCommandResultReportBlockHandler.cs" />
+    <Compile Include="Handlers\SamplingFlagReportBlockHandler.cs" />
+    <Compile Include="Handlers\SamplingRequestBlockHandler.cs" />
+    <Compile Include="Handlers\TransferBoxReportBlockHandler.cs" />
+    <Compile Include="Handlers\VCRReadCompleteReportBlockHandler.cs" />
+    <Compile Include="Handlers\VCRStatusReportBlockHandler.cs" />
+    <Compile Include="Handlers\ProcessEndReportBlockHandler.cs" />
+    <Compile Include="Handlers\ProcessStartReportBlockHandler.cs" />
+    <Compile Include="Handlers\JobDataRequestBlockHandler.cs" />
+    <Compile Include="Handlers\JobCountBlockHandler.cs" />
+    <Compile Include="Handlers\EIPConnectHandler.cs" />
+    <Compile Include="Handlers\JobManualMoveReportBlockHandler.cs" />
+    <Compile Include="Handlers\JobDataChangeReportBlockHandler.cs" />
+    <Compile Include="Handlers\ReceivedJobReportBlockHandler.cs" />
+    <Compile Include="Handlers\SentOutJobReportBlockHandler.cs" />
+    <Compile Include="Handlers\FetchedOutJobReportBlockHandler.cs" />
+    <Compile Include="Handlers\StoredJobReportBlockHandler.cs" />
+    <Compile Include="PLCCmdExecutor.cs" />
+    <Compile Include="PLCContexts.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Glorysoft.BC.Entity\Glorysoft.BC.Entity.csproj">
+      <Project>{c95ba850-8855-41c9-8ad6-afc464a9236f}</Project>
+      <Name>Glorysoft.BC.Entity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Glorysoft.BC.Logic.Contract\Glorysoft.BC.Logic.Contract.csproj">
+      <Project>{80f38fd2-0d2a-4422-9911-e93fd197e0a5}</Project>
+      <Name>Glorysoft.BC.Logic.Contract</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Glorysoft.BC.RV\Glorysoft.BC.RV.csproj">
+      <Project>{46a010aa-5af3-4899-9e5a-ffc7f9652496}</Project>
+      <Name>Glorysoft.BC.RV</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

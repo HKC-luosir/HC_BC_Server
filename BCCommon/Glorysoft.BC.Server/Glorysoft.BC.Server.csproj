@@ -1,0 +1,677 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6005C850-7D32-41E3-85C1-7E1AF4DDE96A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Glorysoft.BC.Server</RootNamespace>
+    <AssemblyName>Glorysoft.BC.Server</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Image\LCServer.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EIPDriver, Version=2.1.0.17, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\CommonDll\EIPDriver.dll</HintPath>
+    </Reference>
+    <Reference Include="Glorysoft.Auto.Contract">
+      <HintPath>..\..\CommonDll\Glorysoft.Auto.Contract.dll</HintPath>
+    </Reference>
+    <Reference Include="Glorysoft.Auto.Framework">
+      <HintPath>..\..\CommonDll\Glorysoft.Auto.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>..\..\CommonDll\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Hosting">
+      <HintPath>..\..\CommonDll\webapi\Microsoft.AspNetCore.Hosting.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Hosting.Abstractions">
+      <HintPath>..\..\CommonDll\webapi\Microsoft.AspNetCore.Hosting.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Hosting.Server.Abstractions">
+      <HintPath>..\..\CommonDll\webapi\Microsoft.AspNetCore.Hosting.Server.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Http">
+      <HintPath>..\..\CommonDll\webapi\Microsoft.AspNetCore.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Http.Abstractions">
+      <HintPath>..\..\CommonDll\webapi\Microsoft.AspNetCore.Http.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Http.Extensions">
+      <HintPath>..\..\CommonDll\webapi\Microsoft.AspNetCore.Http.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Http.Features">
+      <HintPath>..\..\CommonDll\webapi\Microsoft.AspNetCore.Http.Features.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Server.Kestrel">
+      <HintPath>..\..\CommonDll\webapi\Microsoft.AspNetCore.Server.Kestrel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Server.Kestrel.Https">
+      <HintPath>..\..\CommonDll\webapi\Microsoft.AspNetCore.Server.Kestrel.Https.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.WebUtilities">
+      <HintPath>..\..\CommonDll\webapi\Microsoft.AspNetCore.WebUtilities.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Net.Http.Headers">
+      <HintPath>..\..\CommonDll\webapi\Microsoft.Net.Http.Headers.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\CommonDll\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="PLCDriver, Version=4.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\CommonDll\PLCDriver.dll</HintPath>
+    </Reference>
+    <Reference Include="SECSwell">
+      <HintPath>..\..\CommonDll\SECSwell.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http">
+      <HintPath>..\..\CommonDll\System.Net.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Formatting">
+      <HintPath>..\..\CommonDll\webapi\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Sockets, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\CommonDll\webapi\System.Net.Sockets.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.1.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\CommonDll\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Cors">
+      <HintPath>..\..\CommonDll\webapi\System.Web.Cors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Http">
+      <HintPath>..\..\CommonDll\webapi\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.Cors">
+      <HintPath>..\..\CommonDll\webapi\System.Web.Http.Cors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.Owin">
+      <HintPath>..\..\CommonDll\webapi\System.Web.Http.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.SelfHost">
+      <HintPath>..\..\CommonDll\webapi\System.Web.Http.SelfHost.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc">
+      <HintPath>..\..\CommonDll\webapi\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="Utility.Tool.Config">
+      <HintPath>..\..\CommonDll\Utility.Tool.Config.dll</HintPath>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="Class1.cs" />
+    <Compile Include="Infrastructure\InforController.cs" />
+    <Compile Include="Infrastructure\XmlSerializeManager.cs" />
+    <Compile Include="UserControls\MultiSelectComboBox.xaml.cs">
+      <DependentUpon>MultiSelectComboBox.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewModel\ConfigViewModel.cs" />
+    <Compile Include="ViewModel\MainWindowViewModel.cs" />
+    <Compile Include="ViewModel\PopupWindowViewModel.cs" />
+    <Compile Include="ViewModel\TestViewModel.cs" />
+    <Compile Include="ViewModel\ValueConverter\ValueConverter.cs" />
+    <Compile Include="View\Config.xaml.cs">
+      <DependentUpon>Config.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Test.xaml.cs">
+      <DependentUpon>Test.xaml</DependentUpon>
+    </Compile>
+    <Page Include="ConfirmWin.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ConfirmWin.xaml.cs">
+      <DependentUpon>ConfirmWin.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="UserControls\MultiSelectComboBox.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Config.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Test.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configuration\providers.config">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configuration\SqlMap.config">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <None Include="eap.config">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Map\Alarm.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Map\Equipment.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Glorysoft.BC.Db.Contract\Glorysoft.BC.Db.Contract.csproj">
+      <Project>{07007414-f814-414c-a437-a49b47cde4b3}</Project>
+      <Name>Glorysoft.BC.Db.Contract</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Glorysoft.BC.EIP\Glorysoft.BC.EIP.csproj">
+      <Project>{93707e3f-85f0-46c4-9e7a-056cfd7c20de}</Project>
+      <Name>Glorysoft.BC.EIP</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Glorysoft.BC.Entity\Glorysoft.BC.Entity.csproj">
+      <Project>{c95ba850-8855-41c9-8ad6-afc464a9236f}</Project>
+      <Name>Glorysoft.BC.Entity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Glorysoft.BC.EQP.Contract\Glorysoft.BC.EQP.Contract.csproj">
+      <Project>{0ef3879d-32ab-49bb-9f77-c8023a2a683d}</Project>
+      <Name>Glorysoft.BC.EQP.Contract</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Glorysoft.BC.EQP.Service\Glorysoft.BC.EQP.Service.csproj">
+      <Project>{fc27b9b7-8dd6-46ae-af2e-874a9e6d5f82}</Project>
+      <Name>Glorysoft.BC.EQP.Service</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Glorysoft.BC.Logic.Contract\Glorysoft.BC.Logic.Contract.csproj">
+      <Project>{80f38fd2-0d2a-4422-9911-e93fd197e0a5}</Project>
+      <Name>Glorysoft.BC.Logic.Contract</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Glorysoft.BC.RV\Glorysoft.BC.RV.csproj">
+      <Project>{46a010aa-5af3-4899-9e5a-ffc7f9652496}</Project>
+      <Name>Glorysoft.BC.RV</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Glorysoft.BC.SECS.Contract\Glorysoft.BC.SECS.Contract.csproj">
+      <Project>{f9d1e152-246f-42cc-8154-2a3e1ae1d396}</Project>
+      <Name>Glorysoft.BC.SECS.Contract</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GlorySoft.BC.WebAPI\GlorySoft.BC.WebAPI.csproj">
+      <Project>{7CBA68EB-9A8C-40D8-AE97-9B834A8703B8}</Project>
+      <Name>GlorySoft.BC.WebAPI</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GlorySoft.BC.WebSocket\GlorySoft.BC.WebSocket.csproj">
+      <Project>{FBD2E2E2-CB8F-46C3-8A6A-83DD6B0B34A4}</Project>
+      <Name>GlorySoft.BC.WebSocket</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Map\Port.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Map\Material.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\LCServer.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Map\Recipe.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Map\Robot.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\background.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Configuration\RVMappingConfig.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Map\DVData.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Map\Config.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Map\User.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Configuration\SystemConfig.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Map\GlassInfo.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Configuration\rule_eq.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configuration\rule_mes.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Map\Test.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Configuration\RVConnection.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Configuration\EIPConnection.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Map\Pallet.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Map\ProcessEnd.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Configuration\RVMessageList.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configuration\EIP\CAP\Afterbevelingcleaner_AddressMap_Host.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configuration\EIP\CAP\Afterbevelingcleaner_EQPProfile_JobData.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configuration\EIP\CAP\Afterbevelingcleaner_Workflow_Host.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configuration\EIP\CAP\AfterCellCutBeveling_AddressMap_Host.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configuration\EIP\CAP\AfterCellCutBeveling_EQPProfile_JobData.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configuration\EIP\CAP\AfterCellCutBeveling_Workflow_Host.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configuration\EIP\CAP\AfterPolarizerAttachAutoClave_AddressMap_Host.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configuration\EIP\CAP\AfterPolarizerAttachAutoClave_EQPProfile_JobData.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configuration\EIP\CAP\AfterPolarizerAttachAutoClave_Workflow_Host.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configuration\EIP\CAP\BeforePolarizerCleaner_AddressMap_Host.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configuration\EIP\CAP\BeforePolarizerCleaner_EQPProfile_JobData.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configuration\EIP\CAP\BeforePolarizerCleaner_Workflow_Host.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configuration\EIP\CAP\BeforeScriberUnpack_AddressMap_Host.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configuration\EIP\CAP\BeforeScriberUnpack_EQPProfile_JobData.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configuration\EIP\CAP\BeforeScriberUnpack_Workflow_Host.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configuration\EIP\CAP\CELLCuttingScriber_AddressMap_Host.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configuration\EIP\CAP\CELLCuttingScriber_EQPProfile_JobData.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configuration\EIP\CAP\CELLCuttingScriber_Workflow_Host.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configuration\EIP\CAP\LD_ULD2layer4P%28Indexer%29_AddressMap_Host.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configuration\EIP\CAP\LD_ULD2layer4P%28Indexer%29_EQPProfile_JobData.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configuration\EIP\CAP\LD_ULD2layer4P%28Indexer%29_Workflow_Host.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configuration\EIP\CAP\Lighton1Test_AddressMap_Host.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configuration\EIP\CAP\Lighton1Test_EQPProfile_JobData.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configuration\EIP\CAP\Lighton1Test_Workflow_Host.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configuration\EIP\CAP\Lighton2Test_AddressMap_Host.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configuration\EIP\CAP\Lighton2Test_EQPProfile_JobData.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configuration\EIP\CAP\Lighton2Test_Workflow_Host.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configuration\EIP\CAP\PolarizerAttachMachine_AddressMap_Host.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configuration\EIP\CAP\PolarizerAttachMachine_EQPProfile_JobData.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configuration\EIP\CAP\PolarizerAttachMachine_Workflow_Host.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configuration\EIP\CAP\Afterbevelingcleaner_EQPProfile_ProcessData.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configuration\EIP\CAP\Afterbevelingcleaner_EQPProfile_Recipe.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configuration\EIP\CAP\AfterCellCutBeveling_EQPProfile_ProcessData.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configuration\EIP\CAP\AfterCellCutBeveling_EQPProfile_Recipe.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configuration\EIP\CAP\AfterPolarizerAttachAutoClave_EQPProfile_ProcessData.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configuration\EIP\CAP\AfterPolarizerAttachAutoClave_EQPProfile_Recipe.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configuration\EIP\CAP\BeforePolarizerCleaner_EQPProfile_ProcessData.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configuration\EIP\CAP\BeforePolarizerCleaner_EQPProfile_Recipe.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configuration\EIP\CAP\BeforeScriberUnpack_EQPProfile_ProcessData.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configuration\EIP\CAP\BeforeScriberUnpack_EQPProfile_Recipe.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configuration\EIP\CAP\CELLCuttingScriber_EQPProfile_ProcessData.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configuration\EIP\CAP\CELLCuttingScriber_EQPProfile_Recipe.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configuration\EIP\CAP\LD_ULD2layer4P%28Indexer%29_EQPProfile_ProcessData.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configuration\EIP\CAP\LD_ULD2layer4P%28Indexer%29_EQPProfile_Recipe.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configuration\EIP\CAP\Lighton1Test_EQPProfile_ProcessData.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configuration\EIP\CAP\Lighton1Test_EQPProfile_Recipe.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configuration\EIP\CAP\Lighton2Test_EQPProfile_ProcessData.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configuration\EIP\CAP\Lighton2Test_EQPProfile_Recipe.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configuration\EIP\CAP\PolarizerAttachMachine_EQPProfile_ProcessData.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configuration\EIP\CAP\PolarizerAttachMachine_EQPProfile_Recipe.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configuration\linkSignal.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Map\EqpProfile.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Configuration\SECS\SECSLibrary.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Configuration\EIP\ASY\ASY1_AddressMap_EQP.xml" />
+    <Resource Include="Configuration\EIP\ASY\ASY1_AddressMap_Host.xml" />
+    <Resource Include="Configuration\EIP\ASY\ASY1_Workflow_EQP.xml" />
+    <Resource Include="Configuration\EIP\ASY\ASY1_Workflow_Host.xml" />
+    <Resource Include="Configuration\EIP\ASY\COMB_AddressMap_EQP.xml" />
+    <Resource Include="Configuration\EIP\ASY\COMB_AddressMap_Host.xml" />
+    <Resource Include="Configuration\EIP\ASY\COMB_Workflow_EQP.xml" />
+    <Resource Include="Configuration\EIP\ASY\COMB_Workflow_Host.xml" />
+    <Resource Include="Configuration\EIP\ASY\PCA1_AddressMap_EQP.xml" />
+    <Resource Include="Configuration\EIP\ASY\PCA1_AddressMap_Host.xml" />
+    <Resource Include="Configuration\EIP\ASY\PCA1_Workflow_EQP.xml" />
+    <Resource Include="Configuration\EIP\ASY\PCA1_Workflow_Host.xml" />
+    <Resource Include="Configuration\EIP\ASY\PCB1_AddressMap_EQP.xml" />
+    <Resource Include="Configuration\EIP\ASY\PCB1_AddressMap_Host.xml" />
+    <Resource Include="Configuration\EIP\ASY\PCB1_Workflow_EQP.xml" />
+    <Resource Include="Configuration\EIP\ASY\PCB1_Workflow_Host.xml" />
+    <Resource Include="Configuration\EIP\ASY\SDG1_AddressMap_EQP.xml" />
+    <Resource Include="Configuration\EIP\ASY\SDG1_AddressMap_Host.xml" />
+    <Resource Include="Configuration\EIP\ASY\SDG1_Workflow_EQP.xml" />
+    <Resource Include="Configuration\EIP\ASY\SDG1_Workflow_Host.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Configuration\EIP\BLU\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>xcopy ..\..\Configuration .\Configuration\  /e/y
+xcopy ..\..\Map .\Map\  /e/y
+copy ..\..\eap.config .\eap.config  /y</PreBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup>
+    <PostBuildEvent>md PluginsDLL
+md ConnectionDLL
+
+copy ..\..\..\..\CommonDll\IBatisNet.Common.dll  .\IBatisNet.Common.dll /y
+copy ..\..\..\..\CommonDll\IBatisNet.DataAccess.dll  .\IBatisNet.DataAccess.dll /y
+copy ..\..\..\..\CommonDll\IBatisNet.DataMapper.dll  .\IBatisNet.DataMapper.dll /y
+copy ..\..\..\..\CommonDll\Mono.Security.dll  .\Mono.Security.dll /y
+copy ..\..\..\..\CommonDll\Npgsql.dll  .\Npgsql.dll /y
+
+copy ..\..\..\..\CommonDll\Autofac.dll  .\Autofac.dll /y
+copy ..\..\..\..\CommonDll\Castle.Core.dll .\Castle.Core.dll /y
+copy ..\..\..\..\CommonDll\GalaSoft.MvvmLight.Extras.WPF4.dll  .\GalaSoft.MvvmLight.Extras.WPF4.dll /y
+copy ..\..\..\..\CommonDll\GalaSoft.MvvmLight.WPF4.dll  .\GalaSoft.MvvmLight.WPF4.dll /y
+copy ..\..\..\..\CommonDll\Loom.CodeBuilder.dll  .\Loom.CodeBuilder.dll /y
+copy ..\..\..\..\CommonDll\Loom.JoinPoints.dll  .\Loom.JoinPoints.dll /y
+copy ..\..\..\..\CommonDll\Microsoft.Practices.ServiceLocation.dll  .\Microsoft.Practices.ServiceLocation.dll /y
+
+copy ..\..\..\..\CommonDll\Glorysoft.Connection.Melsec.dll  .\ConnectionDLL\Glorysoft.Connection.Melsec.dll /y
+copy ..\..\..\..\CommonDll\Glorysoft.Connection.DB.dll  .\ConnectionDLL\Glorysoft.Connection.DB.dll /y
+copy ..\..\..\..\CommonDll\Glorysoft.Connection.SEMI.dll  .\ConnectionDLL\Glorysoft.Connection.SEMI.dll /y
+
+copy ..\..\..\Glorysoft.BC.EQP.Service\bin\Debug\Glorysoft.BC.EQP.Service.dll .\PluginsDLL\Glorysoft.BC.EQP.Service.dll /y
+copy ..\..\..\Glorysoft.BC.EQP.Contract\bin\Debug\Glorysoft.BC.EQP.Contract.dll .\Glorysoft.BC.EQP.Contract.dll /y
+copy ..\..\..\Glorysoft.BC.Db.Service\bin\Debug\Glorysoft.BC.Db.Service.dll .\PluginsDLL\Glorysoft.BC.Db.Service.dll /y
+copy ..\..\..\Glorysoft.BC.Logic.Service\bin\Debug\Glorysoft.BC.Logic.Service.dll .\PluginsDLL\Glorysoft.BC.Logic.Service.dll /y
+copy ..\..\..\Glorysoft.BC.SECS.Service\bin\Debug\Glorysoft.BC.SECS.Service.dll .\PluginsDLL\Glorysoft.BC.SECS.Service.dll /y
+
+copy ..\..\..\Glorysoft.BC.EQP.Service\bin\Debug\Glorysoft.BC.EQP.Service.pdb .\PluginsDLL\Glorysoft.BC.EQP.Service.pdb /y
+copy ..\..\..\Glorysoft.BC.EQP.Contract\bin\Debug\Glorysoft.BC.EQP.Contract.pdb .\Glorysoft.BC.EQP.Contract.pdb /y
+copy ..\..\..\Glorysoft.BC.Db.Service\bin\Debug\Glorysoft.BC.Db.Service.pdb .\PluginsDLL\Glorysoft.BC.Db.Service.pdb /y
+copy ..\..\..\Glorysoft.BC.Logic.Service\bin\Debug\Glorysoft.BC.Logic.Service.pdb .\PluginsDLL\Glorysoft.BC.Logic.Service.pdb /y
+copy ..\..\..\Glorysoft.BC.SECS.Service\bin\Debug\Glorysoft.BC.SECS.Service.pdb .\PluginsDLL\Glorysoft.BC.SECS.Service.pdb /y
+
+
+copy ..\..\..\..\CommonDll\ActSupportMsgLib.dll .\ActSupportMsgLib.dll /y
+copy ..\..\..\..\CommonDll\ActUtlTypeLib.dll .\ActUtlTypeLib.dll /y
+copy ..\..\..\..\CommonDll\ServiceStack.Common.dll .\ServiceStack.Common.dll /y
+copy ..\..\..\..\CommonDll\ServiceStack.Interfaces.dll .\ServiceStack.Interfaces.dll /y
+copy ..\..\..\..\CommonDll\ServiceStack.Redis.dll .\ServiceStack.Redis.dll /y
+copy ..\..\..\..\CommonDll\ServiceStack.Text.dll .\ServiceStack.Text.dll /y
+copy ..\..\..\..\CommonDll\System.Buffers.dll .\System.Buffers.dll /y
+copy ..\..\..\..\CommonDll\System.Memory.dll .\System.Memory.dll /y
+copy ..\..\..\..\CommonDll\System.Runtime.CompilerServices.Unsafe.dll .\System.Runtime.CompilerServices.Unsafe.dll /y
+copy ..\..\..\..\CommonDll\TIBCO.Rendezvous.dll .\TIBCO.Rendezvous.dll /y
+copy ..\..\..\..\CommonDll\TIBCO.Rendezvous.netmodule .\TIBCO.Rendezvous.netmodule /y
+copy ..\..\..\..\CommonDll\tibrv.dll .\tibrv.dll /y</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

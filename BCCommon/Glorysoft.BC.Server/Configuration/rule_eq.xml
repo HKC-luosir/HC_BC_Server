@@ -1,0 +1,513 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+
+  <mappingItemList>
+    <!--value[eqp]   mappingValue[bc]-->
+	  <mappingItem name="MaterialTypeOperationProportion">
+		  <mappingValue value="1" mappingValue="1" />
+		  <mappingValue value="2" mappingValue="1" />
+		  <mappingValue value="3" mappingValue="1" />
+		  <mappingValue value="4" mappingValue="1" />
+		  <mappingValue value="5" mappingValue="1" />
+		  <mappingValue value="6" mappingValue="1" />
+		  <mappingValue value="7" mappingValue="1" />
+		  <mappingValue value="8" mappingValue="1" />
+		  <mappingValue value="9" mappingValue="1" />
+		  <mappingValue value="10" mappingValue="1" />
+		  <mappingValue value="11" mappingValue="1" />
+		  <mappingValue value="12" mappingValue="1" />
+		  <mappingValue value="13" mappingValue="1" />
+		  <mappingValue value="14" mappingValue="1" />
+		  <mappingValue value="15" mappingValue="1" />
+		  <mappingValue value="16" mappingValue="1" />
+		  <mappingValue value="17" mappingValue="1" />
+		  <mappingValue value="18" mappingValue="1" />
+		  <mappingValue value="19" mappingValue="1" />
+		  <mappingValue value="20" mappingValue="1" />
+		  <mappingValue value="21" mappingValue="1" />
+		  <mappingValue value="22" mappingValue="1" />
+		  <mappingValue value="23" mappingValue="1" />
+		  <mappingValue value="24" mappingValue="1" />
+		  <mappingValue value="25" mappingValue="1" />
+	  </mappingItem>
+	  <mappingItem name="VCRStatus">
+		  <mappingValue value="1" mappingValue="ON" />
+		  <mappingValue value="2" mappingValue="OFF" />
+	  </mappingItem>  
+	  <mappingItem name="PortControlCommandReturnCode">
+		  <mappingValue value="1" mappingValue="Command OK" />
+		  <mappingValue value="2" mappingValue="CSTID id Invalid(Include Dense Box ID)" />
+		  <mappingValue value="3" mappingValue="Cassette not exist" />
+		  <mappingValue value="4" mappingValue="Already received" />
+		  <mappingValue value="5" mappingValue="Other Error" />
+	  </mappingItem>
+	  <mappingItem name="PalletType">
+		  <mappingValue value="1" mappingValue="NotDone" />
+		  <mappingValue value="2" mappingValue="Completed" />
+	  </mappingItem>
+	  <mappingItem name="PalletStatus">
+		  <mappingValue value="1" mappingValue="LoadRequest" />
+		  <mappingValue value="2" mappingValue="UnloadRequest" />
+	  </mappingItem>
+	  <mappingItem name="MaterialStatus">
+		  <mappingValue value="1" mappingValue="Mount" />
+		  <mappingValue value="2" mappingValue="UnMount" />
+		  <mappingValue value="3" mappingValue="Prepared" />
+		  <mappingValue value="4" mappingValue="InUse" />
+	  </mappingItem>
+	  <mappingItem name="UnloadingCode">
+		  <mappingValue value="0" mappingValue="Not Use" />
+		  <mappingValue value="1" mappingValue="Normal Complete" />
+		  <mappingValue value="2" mappingValue="Wrong Material Type" />
+		  <mappingValue value="3" mappingValue="Not Reserved" />
+		  <mappingValue value="4" mappingValue="Material ID Mismatch" />
+	  </mappingItem>
+	  <mappingItem name="MaterialType">
+		  <mappingValue value="1" mappingValue="CARTRIDGE" />
+		  <mappingValue value="2" mappingValue="Mask" />
+		  <mappingValue value="3" mappingValue="Reticle(Array Photo Mask)" />
+		  <mappingValue value="4" mappingValue="PI" />
+		  <mappingValue value="5" mappingValue="PR" />
+		  <mappingValue value="6" mappingValue="LC" />
+		  <mappingValue value="7" mappingValue="SPACER" />
+		  <mappingValue value="8" mappingValue="SEAL" />
+		  <mappingValue value="9" mappingValue="MIX Spacer Seal" />
+		  <mappingValue value="10" mappingValue="POLB" />
+		  <mappingValue value="11" mappingValue="POLT" />
+		  <mappingValue value="12" mappingValue="ACF" />
+		  <mappingValue value="13" mappingValue="AGDOT" />
+		  <mappingValue value="14" mappingValue="COF" />
+		  <mappingValue value="15" mappingValue="TUFFY" />
+		  <mappingValue value="16" mappingValue="UV Glue" />
+		  <mappingValue value="17" mappingValue="PUNCH" />
+		  <mappingValue value="18" mappingValue="PCB" />
+		  <mappingValue value="19" mappingValue="ROLL" />
+		  <mappingValue value="20" mappingValue="KNIFE" />
+		  <mappingValue value="21" mappingValue="PP BOX" />
+		  <mappingValue value="22" mappingValue="FPC" />
+		  <mappingValue value="23" mappingValue="BACK LIGHT" />
+	  </mappingItem>
+    <mappingItem name="AutoRecipeChangeMode">
+      <mappingValue value="1" mappingValue="Enable" />
+      <mappingValue value="2" mappingValue="Disable" />
+    </mappingItem>
+    <mappingItem name="UnitCommandType">
+      <mappingValue value="1" mappingValue="PLC" />
+      <mappingValue value="2" mappingValue="EIP" />
+    </mappingItem>
+    <mappingItem name="AlarmStatus">
+      <mappingValue value="0" mappingValue="Clear" />
+      <mappingValue value="1" mappingValue="Set" />
+    </mappingItem>
+    <mappingItem name="AlarmType">
+      <mappingValue value="0" mappingValue="Warning" />
+      <mappingValue value="1" mappingValue="Error" />
+    </mappingItem>
+    <mappingItem name="PortStatus">
+		<mappingValue value="1" mappingValue="EMPTY" />
+		<mappingValue value="2" mappingValue="LOADREADY" />
+		<mappingValue value="3" mappingValue="INUSE" />
+		<mappingValue value="4" mappingValue="UNLOADREADY" />
+      <mappingValue value="5" mappingValue="BLOCKED" />
+    </mappingItem>
+    <mappingItem name="EQPStatus">
+      <mappingValue value="2" mappingValue="EX" />
+      <mappingValue value="3" mappingValue="JC" />
+      <mappingValue value="5" mappingValue="DOWN" />
+      <mappingValue value="6" mappingValue="CM" />
+      <mappingValue value="7" mappingValue="IDLE" />
+      <mappingValue value="8" mappingValue="RUN" />
+    </mappingItem>
+    <mappingItem name="PortType">
+      <mappingValue value="1" mappingValue="PL" />
+      <mappingValue value="2" mappingValue="PU" />
+      <mappingValue value="3" mappingValue="PB" />
+      <mappingValue value="4" mappingValue="BB" />
+      <mappingValue value="5" mappingValue="BL" />
+      <mappingValue value="6" mappingValue="BU" />
+      <mappingValue value="7" mappingValue="PP" />
+    </mappingItem>
+    <mappingItem name="PortTypeAutoChangeMode">
+      <mappingValue value="1" mappingValue="Enable Mode" />
+      <mappingValue value="2" mappingValue="Disable Mode" />
+    </mappingItem>
+    <mappingItem name="PortMode_Substrate_Type">
+      <mappingValue value="1" mappingValue="Glass" />
+      <mappingValue value="2" mappingValue="Panel" />
+      <mappingValue value="3" mappingValue="BLU" />
+    </mappingItem>
+    <mappingItem name="PortMode_Job_Type">
+      <mappingValue value="00" mappingValue="Not Specific" />
+      <mappingValue value="01" mappingValue="MP Job" />
+      <mappingValue value="02" mappingValue="Engineer Test" />
+    </mappingItem>
+    <mappingItem name="PortMode_Judge_Port_Use_Type">
+      <mappingValue value="00" mappingValue="Not Specific" />
+      <mappingValue value="01" mappingValue="OK" />
+      <mappingValue value="02" mappingValue="NG" />
+      <mappingValue value="03" mappingValue="Rework" />
+    </mappingItem>
+    <mappingItem name="PortEnableMode">
+      <mappingValue value="1" mappingValue="Enabled" />
+      <mappingValue value="2" mappingValue="Disabled" />
+    </mappingItem>
+    <mappingItem name="PortTransferMode">
+      <mappingValue value="1" mappingValue="MGV Mode" />
+      <mappingValue value="2" mappingValue="AGV Mode" />
+      <mappingValue value="3" mappingValue="Stocker Inline Mode" />
+    </mappingItem>
+    <mappingItem name="PortPauseMode">
+      <mappingValue value="1" mappingValue="Paused" />
+      <mappingValue value="2" mappingValue="Normal" />
+    </mappingItem>
+    <mappingItem name="PortCassetteType">
+      <mappingValue value="1" mappingValue="A_CST" />
+      <mappingValue value="2" mappingValue="S_CST" />
+      <mappingValue value="3" mappingValue="A_CST" />
+      <mappingValue value="4" mappingValue="S_CST" />
+      <mappingValue value="5" mappingValue="SS_CST" />
+      <mappingValue value="6" mappingValue="B1_CST" />
+      <mappingValue value="7" mappingValue="B2_CST" />
+      <mappingValue value="8" mappingValue="B3_CST" />
+      <mappingValue value="9" mappingValue="B4_CST" />
+      <mappingValue value="10" mappingValue="G2_CST" />
+      <mappingValue value="11" mappingValue="A2_BOX" />
+      <mappingValue value="12" mappingValue="B_BOX" />
+      <mappingValue value="13" mappingValue="D_CST" />
+      <mappingValue value="14" mappingValue="C_CST" />
+      <mappingValue value="15" mappingValue="A3_BOX_ACP" />
+      <mappingValue value="16" mappingValue="B1_BOX_ACP" />
+      <mappingValue value="17" mappingValue="PPBOX" />
+      <mappingValue value="18" mappingValue="M_BOX" />
+      <mappingValue value="19" mappingValue="Q_BOX" />
+      <mappingValue value="20" mappingValue="Q1_BOX_ACP" />
+    </mappingItem>
+	  <mappingItem name="PortCassetteTypeToPortCapacity">
+		  <mappingValue value="1" mappingValue="240" />
+		  <mappingValue value="2" mappingValue="240" />
+		  <mappingValue value="3" mappingValue="240" />
+		  <mappingValue value="4" mappingValue="240" />
+		  <mappingValue value="5" mappingValue="240" />
+		  <mappingValue value="6" mappingValue="240" />
+		  <mappingValue value="7" mappingValue="240" />
+		  <mappingValue value="8" mappingValue="240" />
+		  <mappingValue value="9" mappingValue="240" />
+		  <mappingValue value="10" mappingValue="240" />
+		  <mappingValue value="11" mappingValue="240" />
+		  <mappingValue value="12" mappingValue="240" />
+		  <mappingValue value="13" mappingValue="240" />
+		  <mappingValue value="14" mappingValue="240" />
+		  <mappingValue value="15" mappingValue="240" />
+		  <mappingValue value="16" mappingValue="240" />
+		  <mappingValue value="17" mappingValue="20" />
+		  <mappingValue value="18" mappingValue="240" />
+		  <mappingValue value="19" mappingValue="240" />
+		  <mappingValue value="20" mappingValue="240" />
+	  </mappingItem>
+    <mappingItem name="CSTStatus">
+      <mappingValue value="1" mappingValue="NoCassette" />
+      <mappingValue value="2" mappingValue="WaitingforCassetteData" />
+      <mappingValue value="3" mappingValue="WaitingforStartCommand" />
+      <mappingValue value="4" mappingValue="WaitingforProcessing" />
+      <mappingValue value="5" mappingValue="InProcessing" />
+      <mappingValue value="6" mappingValue="ProcessCompleted" />
+      <mappingValue value="7" mappingValue="ProcessPaused" />
+      <mappingValue value="8" mappingValue="CassetteProcessAbort" />
+    </mappingItem>
+
+    <mappingItem name="JobJudgeCode">
+      <mappingValue value="S" mappingValue="Scrap" />
+      <mappingValue value="R" mappingValue="Rework" />
+      <mappingValue value="T" mappingValue="(T)Repair" />
+      <mappingValue value="I" mappingValue="(I)Repair" />
+      <mappingValue value="J" mappingValue="Need Re-test" />
+      <mappingValue value="P" mappingValue="Go To REP" />
+      <mappingValue value="L" mappingValue="Go To LRP" />
+      <mappingValue value="Q" mappingValue="Question" />
+      <mappingValue value="A" mappingValue="(A)Good" />
+      <mappingValue value="B" mappingValue="(B)Good" />
+      <mappingValue value="G" mappingValue="(G)Good" />
+    </mappingItem>
+    <mappingItem name="JobGradeCode">
+      <mappingValue value="00" mappingValue="00" />
+      <mappingValue value="AP" mappingValue="AP" />
+      <mappingValue value="AM" mappingValue="AM" />
+      <mappingValue value="AO" mappingValue="AO" />
+      <mappingValue value="AS" mappingValue="AS" />
+      <mappingValue value="AT" mappingValue="AT" />
+      <mappingValue value="AL" mappingValue="AL" />
+      <mappingValue value="AX" mappingValue="AX" />
+      <mappingValue value="AY" mappingValue="AY" />
+      <mappingValue value="AZ" mappingValue="AZ" />
+      <mappingValue value="AI" mappingValue="AI" />
+      <mappingValue value="TX" mappingValue="TX" />
+      <mappingValue value="TY" mappingValue="TY" />
+      <mappingValue value="TZ" mappingValue="TZ" />
+      <mappingValue value="TU" mappingValue="TU" />
+      <mappingValue value="QS" mappingValue="QS" />
+      <mappingValue value="QT" mappingValue="QT" />
+      <mappingValue value="QQ" mappingValue="QQ" />
+      <mappingValue value="QL" mappingValue="QL" />
+      <mappingValue value="QV" mappingValue="QV" />
+      <mappingValue value="QW" mappingValue="QW" />
+      <mappingValue value="QU" mappingValue="QU" />
+      <mappingValue value="QP" mappingValue="QP" />
+      <mappingValue value="QR" mappingValue="QR" />
+      <mappingValue value="NW" mappingValue="NW" />
+      <mappingValue value="NU" mappingValue="NU" />
+      <mappingValue value="NR" mappingValue="NR" />
+      <mappingValue value="NP" mappingValue="NP" />
+      <mappingValue value="NV" mappingValue="NV" />
+      <mappingValue value="FL" mappingValue="FL" />
+      <mappingValue value="FO" mappingValue="FO" />
+      <mappingValue value="NI" mappingValue="NI" />
+      <mappingValue value="NS" mappingValue="NS" />
+      <mappingValue value="NT" mappingValue="NT" />
+      <mappingValue value="BR" mappingValue="BR" />
+      <mappingValue value="A0" mappingValue="A0" />
+      <mappingValue value="AC" mappingValue="AC" />
+      <mappingValue value="AX" mappingValue="AX" />
+      <mappingValue value="A1" mappingValue="A1" />
+      <mappingValue value="A2" mappingValue="A2" />
+      <mappingValue value="A5" mappingValue="A5" />
+      <mappingValue value="A6" mappingValue="A6" />
+      <mappingValue value="A7" mappingValue="A7" />
+      <mappingValue value="BC" mappingValue="BC" />
+      <mappingValue value="BT" mappingValue="BT" />
+      <mappingValue value="B5" mappingValue="B5" />
+      <mappingValue value="PT" mappingValue="PT" />
+      <mappingValue value="PC" mappingValue="PC" />
+      <mappingValue value="P5" mappingValue="P5" />
+      <mappingValue value="B7" mappingValue="B7" />
+      <mappingValue value="B8" mappingValue="B8" />
+      <mappingValue value="BM" mappingValue="BM" />
+      <mappingValue value="BS" mappingValue="BS" />
+      <mappingValue value="BL" mappingValue="BL" />
+      <mappingValue value="BD" mappingValue="BD" />
+      <mappingValue value="BA" mappingValue="BA" />
+      <mappingValue value="BF" mappingValue="BF" />
+      <mappingValue value="C1" mappingValue="C1" />
+      <mappingValue value="D1" mappingValue="D1" />
+      <mappingValue value="D2" mappingValue="D2" />
+      <mappingValue value="E1" mappingValue="E1" />
+      <mappingValue value="FA" mappingValue="FA" />
+      <mappingValue value="L1" mappingValue="L1" />
+      <mappingValue value="S0" mappingValue="S0" />
+      <mappingValue value="S1" mappingValue="S1" />
+      <mappingValue value="S2" mappingValue="S2" />
+      <mappingValue value="RD" mappingValue="RD" />
+      <mappingValue value="RL" mappingValue="RL" />
+      <mappingValue value="RB" mappingValue="RB" />
+      <mappingValue value="RJ" mappingValue="RJ" />
+      <mappingValue value="RC" mappingValue="RC" />
+      <mappingValue value="RW" mappingValue="RW" />
+      <mappingValue value="RO" mappingValue="RO" />
+    </mappingItem>
+
+    <mappingItem name="PortModeGlassType">
+      <mappingValue value="1" mappingValue="ARRAY" />
+      <mappingValue value="2" mappingValue="CELL" />
+      <mappingValue value="3" mappingValue="CF" />
+      <mappingValue value="4" mappingValue="MODULE" />
+      <mappingValue value="5" mappingValue="NotSpecific" />
+    </mappingItem>
+    <mappingItem name="PortModeProductionType">
+      <mappingValue value="00" mappingValue="NotSpecific" />
+      <mappingValue value="01" mappingValue="Production" />
+      <mappingValue value="02" mappingValue="Engineer" />
+      <mappingValue value="03" mappingValue="DummyGeneral" />
+      <mappingValue value="04" mappingValue="DummyITO" />
+      <mappingValue value="05" mappingValue="Dummy" />
+    </mappingItem>
+    <mappingItem name="PortModeJudge">
+      <mappingValue value="00" mappingValue="NotSpecific" />
+      <mappingValue value="01" mappingValue="OK" />
+      <mappingValue value="02" mappingValue="NG" />
+      <mappingValue value="03" mappingValue="Rework" />
+      <mappingValue value="04" mappingValue="Repair" />
+      <mappingValue value="05" mappingValue="G" />
+      <mappingValue value="06" mappingValue="Y" />
+      <mappingValue value="07" mappingValue="F" />
+      <mappingValue value="08" mappingValue="M" />
+    </mappingItem>
+
+    <mappingItem name="PortTypeCst">
+      <mappingValue value="1" mappingValue="Input" />
+      <mappingValue value="2" mappingValue="Output" />
+      <mappingValue value="3" mappingValue="InputOutput" />
+    </mappingItem>
+    <!--<mappingItem name="PortUseType">
+			<mappingValue value="01" mappingValue="GG" />
+			<mappingValue value="02" mappingValue="NG" />
+			<mappingValue value="03" mappingValue="RW" />
+			<mappingValue value="04" mappingValue="RP" />
+			<mappingValue value="05" mappingValue="G" />
+			<mappingValue value="06" mappingValue="Y" />
+			<mappingValue value="07" mappingValue="F" />
+			<mappingValue value="08" mappingValue="M" />
+		</mappingItem>-->
+    <mappingItem name="PortName">
+      <mappingValue value="Port1" mappingValue="C01" />
+      <mappingValue value="Port2" mappingValue="C02" />
+      <mappingValue value="Port3" mappingValue="C03" />
+      <mappingValue value="Port4" mappingValue="C04" />
+    </mappingItem>
+    <mappingItem name="PortNumber">
+      <mappingValue value="C01" mappingValue="Port1" />
+      <mappingValue value="C02" mappingValue="Port2" />
+      <mappingValue value="C03" mappingValue="Port3" />
+      <mappingValue value="C04" mappingValue="Port4" />
+    </mappingItem>
+    <mappingItem name="UnPortName">
+      <mappingValue value="Port1" mappingValue="C01" />
+      <mappingValue value="Port2" mappingValue="C02" />
+      <mappingValue value="Port3" mappingValue="C03" />
+      <mappingValue value="Port4" mappingValue="C04" />
+    </mappingItem>
+    <mappingItem name="UnPortNumber">
+      <mappingValue value="C01" mappingValue="Port1" />
+      <mappingValue value="C02" mappingValue="Port2" />
+      <mappingValue value="C03" mappingValue="Port3" />
+      <mappingValue value="C04" mappingValue="Port4" />
+    </mappingItem>
+    <mappingItem name="BothPortName">
+      <mappingValue value="Port1" mappingValue="C01" />
+      <mappingValue value="Port2" mappingValue="C02" />
+      <mappingValue value="Port3" mappingValue="C03" />
+      <mappingValue value="Port4" mappingValue="C04" />
+    </mappingItem>
+    <mappingItem name="BothPortNumber">
+      <mappingValue value="C01" mappingValue="Port1" />
+      <mappingValue value="C02" mappingValue="Port2" />
+      <mappingValue value="C03" mappingValue="Port3" />
+      <mappingValue value="C04" mappingValue="Port4" />
+    </mappingItem>
+    <mappingItem name="PPCINFO">
+      <mappingValue value="1" mappingValue="A" />
+      <mappingValue value="2" mappingValue="M" />
+      <mappingValue value="3" mappingValue="D" />
+      <mappingValue value="4" mappingValue="C" />
+    </mappingItem>
+    <mappingItem name="PortTransferMode">
+      <mappingValue value="0" mappingValue="None" />
+      <mappingValue value="1" mappingValue="MGV" />
+      <mappingValue value="2" mappingValue="AGV" />
+      <mappingValue value="3" mappingValue="StockerInline" />
+      <!-- 			<mappingValue value="4" mappingValue="MCT" />
+			<mappingValue value="5" mappingValue="PNP" /> -->
+    </mappingItem>
+    <mappingItem name="EquipmentStatus">
+      <!-- PM -->
+      <mappingValue value="1" mappingValue="PM" />
+      <!-- BM -->
+      <mappingValue value="2" mappingValue="DOWN" />
+      <!-- Pause -->
+      <mappingValue value="3" mappingValue="IDLE" />
+      <!-- Idle -->
+      <mappingValue value="4" mappingValue="RUN" />
+    </mappingItem>
+    <mappingItem name="UnitStatus">
+      <!-- PM -->
+      <mappingValue value="1" mappingValue="PM" />
+      <!-- BM -->
+      <mappingValue value="2" mappingValue="DOWN" />
+      <!-- Pause -->
+      <mappingValue value="3" mappingValue="IDLE" />
+      <!-- Idle -->
+      <mappingValue value="4" mappingValue="RUN" />
+    </mappingItem>
+    <mappingItem name="SUnitStatus">
+      <mappingValue value="0" mappingValue="No Unit" />
+      <!-- PM -->
+      <mappingValue value="1" mappingValue="PM" />
+      <!-- DOWN -->
+      <mappingValue value="2" mappingValue="DOWN" />
+      <!-- Idle -->
+      <mappingValue value="3" mappingValue="IDLE" />
+      <!-- Run -->
+      <mappingValue value="4" mappingValue="RUN" />
+
+    </mappingItem>
+    <mappingItem name="GlassType">
+      <mappingValue value="0" mappingValue="None" />
+      <mappingValue value="1" mappingValue="LTPS" />
+      <mappingValue value="2" mappingValue="Encap" />
+      <mappingValue value="3" mappingValue="OLED" />
+      <mappingValue value="4" mappingValue="HALF" />
+      <mappingValue value="5" mappingValue="TPE" />
+      <mappingValue value="6" mappingValue="TP" />
+      <mappingValue value="7" mappingValue="PET_PI" />
+      <mappingValue value="8" mappingValue="PET_PI_PET" />
+      <mappingValue value="9" mappingValue="Flexible" />
+      <mappingValue value="10" mappingValue="RegID" />
+      <mappingValue value="11" mappingValue="LTPS_PR" />
+      <mappingValue value="12" mappingValue="Glass" />
+      <mappingValue value="21" mappingValue="NormalDummy" />
+      <mappingValue value="22" mappingValue="BareDummy" />
+      <mappingValue value="23" mappingValue="ToolingDummy" />
+      <mappingValue value="24" mappingValue="OffsetDummy" />
+      <mappingValue value="25" mappingValue="PIDummy" />
+      <mappingValue value="26" mappingValue="KeyDummy" />
+      <mappingValue value="27" mappingValue="TFECVDDummy" />
+      <mappingValue value="28" mappingValue="TFEInkjetDummy" />
+      <mappingValue value="29" mappingValue="ManualDummy" />
+      <mappingValue value="30" mappingValue="ITODummy" />
+      <mappingValue value="31" mappingValue="IGZODummy" />
+      <mappingValue value="32" mappingValue="PET_PI_GlassDummy" />
+      <mappingValue value="33" mappingValue="PET_PI_PETDummy" />
+      <mappingValue value="34" mappingValue="FlexibleDummy" />
+      <mappingValue value="35" mappingValue="RegIDDummy" />
+      <mappingValue value="36" mappingValue="BareTNDummy" />
+      <mappingValue value="37" mappingValue="Bare_PI_CoatingDummy" />
+      <mappingValue value="38" mappingValue="BareFFSDummy" />
+      <mappingValue value="39" mappingValue="ITO_PI_CoatingDummy" />
+      <mappingValue value="51" mappingValue="CMMFrame" />
+      <mappingValue value="52" mappingValue="FMMFrame" />
+      <mappingValue value="53" mappingValue="CMMMask" />
+      <mappingValue value="54" mappingValue="FMMMask" />
+      <mappingValue value="55" mappingValue="TFE" />
+      <mappingValue value="56" mappingValue="UVMask" />
+    </mappingItem>
+    <mappingItem name="GlassJudge">
+      <mappingValue value="0" mappingValue="SkipOrNoJudge" />
+      <mappingValue value="1" mappingValue="Good" />
+      <mappingValue value="2" mappingValue="NotGood" />
+      <mappingValue value="3" mappingValue="Rework" />
+      <mappingValue value="4" mappingValue="Reprocess" />
+      <mappingValue value="5" mappingValue="Scrap" />
+      <mappingValue value="6" mappingValue="ReTest" />
+      <mappingValue value="7" mappingValue="Repair" />
+      <mappingValue value="8" mappingValue="CUT_Repair" />
+      <mappingValue value="9" mappingValue="CVD_Repair" />
+      <mappingValue value="10" mappingValue="NeedMac" />
+      <mappingValue value="11" mappingValue="NeedMic" />
+      <mappingValue value="12" mappingValue="MacMic" />
+      <mappingValue value="13" mappingValue="Fault" />
+      <mappingValue value="14" mappingValue="Virtual" />
+      <mappingValue value="15" mappingValue="Inspection" />
+      <mappingValue value="16" mappingValue="Wait_Hold" />
+    </mappingItem>
+
+
+    <mappingItem name="GlassGrade">
+      <mappingValue value="0" mappingValue="InspectSkiporNoJudgeorNoGrade" />
+      <mappingValue value="1" mappingValue="A" />
+      <mappingValue value="2" mappingValue="B" />
+      <mappingValue value="3" mappingValue="C" />
+      <mappingValue value="4" mappingValue="D" />
+      <mappingValue value="5" mappingValue="E" />
+      <mappingValue value="6" mappingValue="F" />
+    </mappingItem>
+
+    <mappingItem name="GlassSizeCode">
+      <mappingValue value="0" mappingValue="NotUse" />
+      <mappingValue value="1" mappingValue="1500*1850" />
+      <mappingValue value="2" mappingValue="1500*925" />
+      <mappingValue value="3" mappingValue="925*735" />
+      <mappingValue value="4" mappingValue="920*730" />
+    </mappingItem>
+
+
+  </mappingItemList>
+
+</configuration>

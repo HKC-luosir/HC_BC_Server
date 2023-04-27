@@ -1,0 +1,57 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <ImageBrush x:Key="A_MGV"
+                ImageSource="../Resource/Images/Layout/AGV-MGV.png"/>
+    <ImageBrush x:Key="Buffer"
+                ImageSource="../Resource/Images/Layout/Buffer.png"/>
+    <ImageBrush x:Key="CellCass"
+                ImageSource="../Resource/Images/Layout/CellCass.png"/>
+    <ImageBrush x:Key="Conveyor"
+                ImageSource="../Resource/Images/Layout/Conveyor.png"/>
+    <ImageBrush x:Key="ConveyorTVT"
+                ImageSource="../Resource/Images/Layout/ConveyorTVT.png"/>
+    <ImageBrush x:Key="DoubleRobot"
+                ImageSource="../Resource/Images/Layout/123qqq.jpg"/>
+    <ImageBrush x:Key="Elevator"
+                ImageSource="../Resource/Images/Layout/Elevator.png"/>
+    <ImageBrush x:Key="NormalCasse"
+                ImageSource="../Resource/Images/Layout/NormalCasse.png"/>
+    <ImageBrush x:Key="MGV"
+                ImageSource="../Resource/Images/Layout/MGV.png"/>
+    <ImageBrush x:Key="ProcessModule"
+                ImageSource="../Resource/Images/Layout/ProcessModule.png"/>
+    <ImageBrush x:Key="Scrap"
+                ImageSource="../Resource/Images/Layout/Scrap.png"/>
+    <ImageBrush x:Key="SingleRobot"
+                ImageSource="../Resource/Images/Layout/SingleRobot.png"/>
+    <ImageBrush x:Key="Stock"
+                ImageSource="../Resource/Images/Layout/Stock.png"/>
+    <ImageBrush x:Key="Tray"
+                ImageSource="../Resource/Images/Layout/Tray.png"/>
+    <ImageBrush x:Key="WireCass"
+                ImageSource="../Resource/Images/Layout/WireCass.png"/>
+    <ImageBrush x:Key="BCR"
+                ImageSource="../Resource/Images/Layout/BCR.png"/>
+    <ImageBrush x:Key="Stage"
+                ImageSource="../Resource/Images/Layout/Stage.png"/>
+    <ImageBrush x:Key="VCR"
+                ImageSource="../Resource/Images/Layout/VCR.png"/>
+    <ImageBrush
+        x:Key="SingleRobot1" ImageSource="../Resource/Images/Layout/SingleRobot1.png"/>
+    <ImageBrush
+        x:Key="CV1" ImageSource="../Resource/Images/Layout/CV1.png"/>
+    <ImageBrush
+        x:Key="CV2" ImageSource="../Resource/Images/Layout/CV2.png"/>
+    <ImageBrush
+        x:Key="Square" ImageSource="../Resource/Images/Layout/Square.png"/>
+    <ImageBrush
+        x:Key="Rectangle" ImageSource="../Resource/Images/Layout/Rectangle.png"/>
+    <ImageBrush
+        x:Key="Operator" ImageSource="../Resource/Images/Layout/Operator.png"/>
+    <ImageBrush
+        x:Key="LiftStage" ImageSource="../Resource/Images/Layout/LiftStage.png"/>
+    <ImageBrush
+        x:Key="CSTStage" ImageSource="../Resource/Images/Layout/CSTStage.png"/>
+    <ImageBrush
+        x:Key="Motor" ImageSource="../Resource/Images/Layout/Motor.png"/>
+</ResourceDictionary>

@@ -1,0 +1,543 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<sqlMap namespace="GlassInfo"
+	xmlns="http://ibatis.apache.org/mapping"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <alias>
+    <typeAlias alias="GlassInfo"  type="Glorysoft.BC.Entity.GlassInfo"/>
+
+  </alias>
+  <resultMaps>
+    <resultMap id="HisGlassInfoResult" class="GlassInfo">
+      <result property = "FunctionName" column="functionname"/>
+      <result property = "ProductID" column="productid"/>
+      <result property = "OperationID" column="operationid"/>
+      <result property = "LotID" column="lotid"/>
+      <result property = "PPID1" column="ppid1"/>
+      <result property = "PPID2" column="ppid2"/>
+      <result property = "PPID3" column="ppid3"/>
+      <result property = "PPID4" column="ppid4"/>
+      <result property = "PPID5" column="ppid5"/>
+      <result property = "PPID6" column="ppid6"/>
+      <result property = "PPID7" column="ppid7"/>
+      <result property = "PPID8" column="ppid8"/>
+      <result property = "PPID9" column="ppid9"/>
+      <result property = "PPID10" column="ppid10"/>
+      <result property = "GlassID" column="glassid"/>
+      <result property = "RGlassID" column="rglassid"/>
+      <result property = "CassetteSequenceNo" column="cassettesequenceno"/>
+      <result property = "SlotSequenceNo" column="slotsequenceno"/>
+      <result property = "SlotPosition" column="slotposition"/>
+      <result property = "CuttingSequenceNo" column="cuttingsequenceno"/>
+      <result property = "GlassJudgeCode" column="glassjudgecode"/>
+      <result property = "GlassGradeCode" column="glassgradecode"/>
+      <result property = "ProcessingFlag" column="processingflag"/>
+      <result property = "GlassSizeCode" column="glasssizecode"/>
+      <result property = "GlassThicknessCode" column="glassthicknesscode"/>
+      <result property = "GlassType" column="glasstype"/>
+      <result property = "LotCode" column="lotcode"/>
+      <result property = "ProcessingCount" column="processingcount"/>
+      <result property = "InspectionFlag" column="inspectionflag"/>
+      <result property = "SkipFlag" column="skipflag"/>
+      <result property = "InLineEQData" column="inlineeqdata"/>
+      <result property = "WorkOrder" column="workorder"/>
+      <result property = "ProcessFlowName" column="processflowname"/>
+      <result property = "ProcessFlowVersion" column="processflowversion"/>
+      <result property = "ProcessOperationVersion" column="processoperationversion"/>
+      <result property = "ProductSpecVersion" column="productspecversion"/>
+      <result property = "ProductionType" column="productiontype"/>
+      <result property = "HalfProductJudge" column="halfproductjudge"/>
+      <result property = "GlassMaker" column="glassmaker"/>
+      <result property = "ProductRecipe" column="productrecipe"/>
+      <result property = "ReworkType" column="reworktype"/>
+      <result property = "ReworkCount" column="reworkcount"/>
+      <result property = "SamplingFlag" column="samplingflag"/>
+      <result property = "ExposureRecipeName" column="exposurerecipename"/>
+      <result property = "Turndegree" column="turndegree"/>
+      <result property = "FlowModeValue" column="flowmodevalue"/>
+      <result property = "EVASkipFlag" column="evaskipflag"/>
+      <result property = "BeforeProcessMachine" column="beforeprocessmachine"/>
+      <result property = "ProductType" column="producttype"/>
+      <result property = "MaskSpecName" column="maskspecname"/>
+      <result property = "ProcessFlowRunState" column="processflowrunstate"/>
+      <result property = "Position" column="position"/>
+      <result property = "ProcessingInfo" column="processinginfo"/>
+      <result property = "VCRProductName" column="vcrproductname"/>
+      <result property = "NGInputComment" column="nginputcomment"/>
+      <result property = "PanelGrade" column="panelgrade"/>
+      <result property = "PanelJudge" column="paneljudge"/>
+      <result property = "UpdateDate" column="updatedate"/>
+      <result property = "ModePath" column="modepath"/>
+      <result property = "ModelPosition" column="modelposition"/>
+      <result property = "CurrentUnit" column="currentunit"/>
+      <result property = "CurrentSUnit" column="currentsunit"/>
+      <result property = "CurrentSSUnit" column="currentssunit"/>
+      <result property = "ProductAlarm" column="productalarm"/>
+      <result property = "SlotSatus" column="slotsatus"/>
+      <result property = "FetchDatetime" column="fetchdatetime"/>
+      <result property = "PortID" column="portid"/>
+      <result property = "CassetteID" column="cassetteid"/>
+      <result property = "BeginDate" column="begindate"/>
+      <result property = "EndDate" column="enddate"/>
+      <result property = "CreateDate" column="createdate"/>
+      <result property = "CurrentSlotNo" column="currentslotno"/>
+      <result property = "SlotFlag" column="slotflag"/>
+      <result property = "Thickness" column="thickness"/>
+      <result property = "ESFLAG" column="esflag"/>
+      <result property = "LastGlassFlag" column="lastglassflag"/>
+      <result property = "CVDFlag" column="cvdflag"/>
+      <result property = "RecvJobTime" column="recvjobtime"/>
+      <result property = "RecvUnitJobTime" column="recvunitjobtime"/>
+      <result property = "IsMesTrackIn" column="ismestrackin"/>
+      <result property = "BLID" column="blid"/>
+      <result property = "PanelCode" column="panelcode"/>
+      <result property = "ScriberModuleType" column="scribermoduletype"/>
+      <result property = "PPID11" column="ppid11"/>
+      <result property = "PPID12" column="ppid12"/>
+      <result property = "PPID13" column="ppid13"/>
+      <result property = "PPID14" column="ppid14"/>
+      <result property = "PPID15" column="ppid15"/>
+      <result property = "PPID16" column="ppid16"/>
+      <result property = "PPID17" column="ppid17"/>
+      <result property = "PPID18" column="ppid18"/>
+      <result property = "PPID19" column="ppid19"/>
+      <result property = "PPID20" column="ppid20"/>
+      <result property = "PPID21" column="ppid21"/>
+      <result property = "PPID22" column="ppid22"/>
+      <result property = "PPID23" column="ppid23"/>
+      <result property = "PPID24" column="ppid24"/>
+      <result property = "PPID25" column="ppid25"/>
+      <result property = "PPID26" column="ppid26"/>
+      <result property = "PPID27" column="ppid27"/>
+      <result property = "PPID28" column="ppid28"/>
+      <result property = "PPID29" column="ppid29"/>
+      <result property = "PPID30" column="ppid30"/>
+      <result property = "PropertyCode" column="propertycode"/>
+      <result property = "JobAngle" column="jobangle"/>
+      <result property = "JobFlip" column="jobflip"/>
+      <result property = "MMGCode" column="mmgcode"/>
+      <result property = "PanelInchSizeX" column="panelinchsizex"/>
+      <result property = "PanelInchSizeY" column="panelinchsizey"/>
+      <result property = "AbnormalCodes" column="abnormalcodes"/>
+      <result property = "DefectCodes" column="defectcodes"/>
+      <result property = "ID" column="id"/>
+    </resultMap>
+    <resultMap id="GlassInfoResult" class="GlassInfo">
+      <result property = "ProductID" column="productid"/>
+      <result property = "OperationID" column="operationid"/>
+      <result property = "LotID" column="lotid"/>
+      <result property = "PPID1" column="ppid1"/>
+      <result property = "PPID2" column="ppid2"/>
+      <result property = "PPID3" column="ppid3"/>
+      <result property = "PPID4" column="ppid4"/>
+      <result property = "PPID5" column="ppid5"/>
+      <result property = "PPID6" column="ppid6"/>
+      <result property = "PPID7" column="ppid7"/>
+      <result property = "PPID8" column="ppid8"/>
+      <result property = "PPID9" column="ppid9"/>
+      <result property = "PPID10" column="ppid10"/>
+      <result property = "GlassID" column="glassid"/>
+      <result property = "RGlassID" column="rglassid"/>
+      <result property = "CassetteSequenceNo" column="cassettesequenceno"/>
+      <result property = "SlotSequenceNo" column="slotsequenceno"/>
+      <result property = "SlotPosition" column="slotposition"/>
+      <result property = "CuttingSequenceNo" column="cuttingsequenceno"/>
+      <result property = "GlassJudgeCode" column="glassjudgecode"/>
+      <result property = "GlassGradeCode" column="glassgradecode"/>
+      <result property = "ProcessingFlag" column="processingflag"/>
+      <result property = "GlassSizeCode" column="glasssizecode"/>
+      <result property = "GlassThicknessCode" column="glassthicknesscode"/>
+      <result property = "GlassType" column="glasstype"/>
+      <result property = "LotCode" column="lotcode"/>
+      <result property = "ProcessingCount" column="processingcount"/>
+      <result property = "InspectionFlag" column="inspectionflag"/>
+      <result property = "SkipFlag" column="skipflag"/>
+      <result property = "InLineEQData" column="inlineeqdata"/>
+      <result property = "WorkOrder" column="workorder"/>
+      <result property = "ProcessFlowName" column="processflowname"/>
+      <result property = "ProcessFlowVersion" column="processflowversion"/>
+      <result property = "ProcessOperationVersion" column="processoperationversion"/>
+      <result property = "ProductSpecVersion" column="productspecversion"/>
+      <result property = "ProductionType" column="productiontype"/>
+      <result property = "HalfProductJudge" column="halfproductjudge"/>
+      <result property = "GlassMaker" column="glassmaker"/>
+      <result property = "ProductRecipe" column="productrecipe"/>
+      <result property = "ReworkType" column="reworktype"/>
+      <result property = "ReworkCount" column="reworkcount"/>
+      <result property = "SamplingFlag" column="samplingflag"/>
+      <result property = "ExposureRecipeName" column="exposurerecipename"/>
+      <result property = "Turndegree" column="turndegree"/>
+      <result property = "FlowModeValue" column="flowmodevalue"/>
+      <result property = "EVASkipFlag" column="evaskipflag"/>
+      <result property = "BeforeProcessMachine" column="beforeprocessmachine"/>
+      <result property = "ProductType" column="producttype"/>
+      <result property = "MaskSpecName" column="maskspecname"/>
+      <result property = "ProcessFlowRunState" column="processflowrunstate"/>
+      <result property = "Position" column="position"/>
+      <result property = "ProcessingInfo" column="processinginfo"/>
+      <result property = "VCRProductName" column="vcrproductname"/>
+      <result property = "NGInputComment" column="nginputcomment"/>
+      <result property = "PanelGrade" column="panelgrade"/>
+      <result property = "PanelJudge" column="paneljudge"/>
+      <result property = "UpdateDate" column="updatedate"/>
+      <result property = "ModePath" column="modepath"/>
+      <result property = "ModelPosition" column="modelposition"/>
+      <result property = "CurrentUnit" column="currentunit"/>
+      <result property = "CurrentSUnit" column="currentsunit"/>
+      <result property = "CurrentSSUnit" column="currentssunit"/>
+      <result property = "ProductAlarm" column="productalarm"/>
+      <result property = "SlotSatus" column="slotsatus"/>
+      <result property = "FetchDatetime" column="fetchdatetime"/>
+      <result property = "PortID" column="portid"/>
+      <result property = "CassetteID" column="cassetteid"/>
+      <result property = "BeginDate" column="begindate"/>
+      <result property = "EndDate" column="enddate"/>
+      <result property = "CreateDate" column="createdate"/>
+      <result property = "CurrentSlotNo" column="currentslotno"/>
+      <result property = "SlotFlag" column="slotflag"/>
+      <result property = "CRATENAME" column="cratename"/>
+      <result property = "Thickness" column="thickness"/>
+      <result property = "ESFLAG" column="esflag"/>
+      <result property = "LastGlassFlag" column="lastglassflag"/>
+      <result property = "InPortID" column="inportid"/>
+      <result property = "InCSTID" column="incstid"/>
+      <result property = "FSlotNO" column="fslotno"/>
+      <result property = "OutCSTID" column="outcstid"/>
+      <result property = "OutPortID" column="outportid"/>
+      <result property = "TSlotNO" column="tslotno"/>
+      <result property = "CVDFlag" column="cvdflag"/>
+      <result property = "RecvJobTime" column="recvjobtime"/>
+      <result property = "RecvUnitJobTime" column="recvunitjobtime"/>
+      <result property = "IsMesTrackIn" column="ismestrackin"/>
+      <result property = "BLID" column="blid"/>
+      <result property = "PanelCode" column="panelcode"/>
+      <result property = "ScriberModuleType" column="scribermoduletype"/>
+      <result property = "PPID11" column="ppid11"/>
+      <result property = "PPID12" column="ppid12"/>
+      <result property = "PPID13" column="ppid13"/>
+      <result property = "PPID14" column="ppid14"/>
+      <result property = "PPID15" column="ppid15"/>
+      <result property = "PPID16" column="ppid16"/>
+      <result property = "PPID17" column="ppid17"/>
+      <result property = "PPID18" column="ppid18"/>
+      <result property = "PPID19" column="ppid19"/>
+      <result property = "PPID20" column="ppid20"/>
+      <result property = "PPID21" column="ppid21"/>
+      <result property = "PPID22" column="ppid22"/>
+      <result property = "PPID23" column="ppid23"/>
+      <result property = "PPID24" column="ppid24"/>
+      <result property = "PPID25" column="ppid25"/>
+      <result property = "PPID26" column="ppid26"/>
+      <result property = "PPID27" column="ppid27"/>
+      <result property = "PPID28" column="ppid28"/>
+      <result property = "PPID29" column="ppid29"/>
+      <result property = "PPID30" column="ppid30"/>
+      <result property = "PropertyCode" column="propertycode"/>
+      <result property = "JobAngle" column="jobangle"/>
+      <result property = "JobFlip" column="jobflip"/>
+      <result property = "MMGCode" column="mmgcode"/>
+      <result property = "PanelInchSizeX" column="panelinchsizex"/>
+      <result property = "PanelInchSizeY" column="panelinchsizey"/>
+      <result property = "AbnormalCodes" column="abnormalcodes"/>
+      <result property = "DefectCodes" column="defectcodes"/>
+      <result property = "ID" column="id"/>
+    </resultMap>
+
+
+  </resultMaps>
+  <statements>
+    <insert id="InsertHisGlassInfo" parameterClass="GlassInfo">
+      INSERT INTO his_glassinfo(id,
+      functionname, productid, operationid, lotid, ppid1, ppid2, ppid3,
+      ppid4, ppid5, ppid6, ppid7, ppid8, ppid9, ppid10, glassid, cassettesequenceno,
+      slotsequenceno, slotposition, cuttingsequenceno, glassjudgecode,
+      glassgradecode, processingflag, glasssizecode, glassthicknesscode,
+      glasstype, lotcode, processingcount, inspectionflag, skipflag,
+      inlineeqdata, workorder, processflowname, processflowversion,
+      processoperationversion, productspecversion, productiontype,
+      halfproductjudge, glassmaker, productrecipe, reworktype, reworkcount,
+      samplingflag, exposurerecipename, turndegree, flowmodevalue,
+      evaskipflag, beforeprocessmachine, producttype, maskspecname,
+      processflowrunstate, "position", processinginfo, vcrproductname,
+      nginputcomment, panelgrade, paneljudge, updatedate, modepath,
+      modelposition,currentunit,currentsunit,currentssunit,productalarm,slotsatus,
+      portid,cassetteid,createdate,currentslotno,slotflag,begindate,enddate,thickness,esflag,lastglassflag,cvdflag,recvjobtime,recvunitjobtime,ismestrackin,panelcode,scribermoduletype,blid,ppid11,ppid12,ppid13
+      ,ppid14,ppid15,ppid16,ppid17,ppid18,ppid19,ppid20,ppid21,ppid22,ppid23,ppid24,ppid25,ppid26,ppid27,ppid28,ppid29,ppid30,propertycode,jobangle,jobflip,
+      mmgcode,panelinchsizex,panelinchsizey,abnormalcodes,defectcodes)
+      VALUES (#ID#,#FunctionName#, #ProductID#, #OperationID#, #LotID#, #PPID1#, #PPID2#, #PPID3#,
+      #PPID4#, #PPID5#, #PPID6#, #PPID7#, #PPID8#, #PPID9#, #PPID10#, #GlassID#, #CassetteSequenceNo#,
+      #SlotSequenceNo#, #SlotPosition#, #CuttingSequenceNo#, #GlassJudgeCode#,
+      #GlassGradeCode#, #ProcessingFlag#, #GlassSizeCode#, #GlassThicknessCode#,
+      #GlassType#, #LotCode#, #ProcessingCount#, #InspectionFlag#, #SkipFlag#,
+      #InLineEQData#, #WorkOrder#, #ProcessFlowName#, #ProcessFlowVersion#,
+      #ProcessOperationVersion#, #ProductSpecVersion#, #ProductionType#,
+      #HalfProductJudge#, #GlassMaker#, #ProductRecipe#, #ReworkType#, #ReworkCount#,
+      #SamplingFlag#, #ExposureRecipeName#, #Turndegree#, #FlowModeValue#,
+      #EVASkipFlag#, #BeforeProcessMachine#, #ProductType#, #MaskSpecName#,
+      #ProcessFlowRunState#, #Position#, #ProcessingInfo#, #VCRProductName#,
+      #NGInputComment#, #PanelGrade#, #PanelJudge#, localtimestamp(3), #ModePath#,
+      #ModelPosition#, #CurrentUnit#,#CurrentSUnit#,#CurrentSSUnit#, #ProductAlarm#,#SlotSatus#,
+      #PortID#,#CassetteID#,localtimestamp(3),#CurrentSlotNo#,#SlotFlag#,localtimestamp(0),
+      localtimestamp(0),#Thickness#,#ESFLAG#,#LastGlassFlag#,#CVDFlag#,#RecvJobTime#,#RecvUnitJobTime#,#IsMesTrackIn#,#PanelCode#,#ScriberModuleType#,#BLID#,
+      #PPID11#,#PPID12#,#PPID13#,#PPID14#,#PPID15#,#PPID16#,#PPID17#,#PPID18#,#PPID19#,#PPID20#
+      ,#PPID21#,#PPID22#,#PPID23#,#PPID24#,#PPID25#,#PPID26#,#PPID27#,#PPID28#,#PPID29#,#PPID30#,#PropertyCode#,#JobAngle#,#JobFlip#,
+      #MMGCode#,#PanelInchSizeX#,#PanelInchSizeY#,#AbnormalCodes#,#DefectCodes#);
+    </insert>
+
+
+    <select id="InsertGlassInfo" parameterClass="GlassInfo">
+      INSERT INTO wip_glassinfo(rglassid,
+      productid, operationid, lotid, ppid1, ppid2, ppid3,
+      ppid4, ppid5, ppid6, ppid7, ppid8, ppid9, ppid10, glassid, cassettesequenceno,
+      slotsequenceno, slotposition, cuttingsequenceno, glassjudgecode,
+      glassgradecode, processingflag, glasssizecode, glassthicknesscode,
+      glasstype, lotcode, processingcount, inspectionflag, skipflag,
+      inlineeqdata, workorder, processflowname, processflowversion,
+      processoperationversion, productspecversion, productiontype,
+      halfproductjudge, glassmaker, productrecipe, reworktype, reworkcount,
+      samplingflag, exposurerecipename, turndegree, flowmodevalue,
+      evaskipflag, beforeprocessmachine, producttype, maskspecname,
+      processflowrunstate, "position", processinginfo, vcrproductname,
+      nginputcomment, panelgrade, paneljudge, updatedate, modepath,
+      modelposition,currentunit,currentsunit,currentssunit,productalarm,slotsatus,
+      portid,cassetteid,createdate,currentslotno,slotflag,cratename,thickness,esflag,lastglassflag,cvdflag,recvjobtime,recvunitjobtime,ismestrackin,panelcode,scribermoduletype,blid,ppid11,ppid12,ppid13
+      ,ppid14,ppid15,ppid16,ppid17,ppid18,ppid19,ppid20,ppid21,ppid22,ppid23,ppid24,ppid25,ppid26,ppid27,ppid28,ppid29,ppid30,propertycode,jobangle,jobflip,
+      mmgcode,panelinchsizex,panelinchsizey,abnormalcodes,defectcodes)
+      VALUES (#RGlassID#,#ProductID#, #OperationID#, #LotID#, #PPID1#, #PPID2#, #PPID3#,
+      #PPID4#, #PPID5#, #PPID6#, #PPID7#, #PPID8#, #PPID9#, #PPID10#, #GlassID#, #CassetteSequenceNo#,
+      #SlotSequenceNo#, #SlotPosition#, #CuttingSequenceNo#, #GlassJudgeCode#,
+      #GlassGradeCode#, #ProcessingFlag#, #GlassSizeCode#, #GlassThicknessCode#,
+      #GlassType#, #LotCode#, #ProcessingCount#, #InspectionFlag#, #SkipFlag#,
+      #InLineEQData#, #WorkOrder#, #ProcessFlowName#, #ProcessFlowVersion#,
+      #ProcessOperationVersion#, #ProductSpecVersion#, #ProductionType#,
+      #HalfProductJudge#, #GlassMaker#, #ProductRecipe#, #ReworkType#, #ReworkCount#,
+      #SamplingFlag#, #ExposureRecipeName#, #Turndegree#, #FlowModeValue#,
+      #EVASkipFlag#, #BeforeProcessMachine#, #ProductType#, #MaskSpecName#,
+      #ProcessFlowRunState#, #Position#, #ProcessingInfo#, #VCRProductName#,
+      #NGInputComment#, #PanelGrade#, #PanelJudge#, localtimestamp(0), #ModePath#,
+      #ModelPosition#, #CurrentUnit#,#CurrentSUnit#,#CurrentSSUnit#, #ProductAlarm#,#SlotSatus#,
+      #PortID#,#CassetteID#,localtimestamp(0),#CurrentSlotNo#,#SlotFlag#,#CRATENAME#,#Thickness#,
+      #ESFLAG#,#LastGlassFlag#,#CVDFlag#,#RecvJobTime#,#RecvUnitJobTime#,#IsMesTrackIn#,#PanelCode#,#ScriberModuleType#,#BLID#,#PPID11#,#PPID12#,#PPID13#,#PPID14#,#PPID15#,#PPID16#,#PPID17#,#PPID18#,#PPID19#,#PPID20#
+      ,#PPID21#,#PPID22#,#PPID23#,#PPID24#,#PPID25#,#PPID26#,#PPID27#,#PPID28#,#PPID29#,#PPID30#,#PropertyCode#,#JobAngle#,#JobFlip#,
+      #MMGCode#,#PanelInchSizeX#,#PanelInchSizeY#,#AbnormalCodes#,#DefectCodes#) RETURNING id;
+    </select>
+    <select id="GetGlassInfoList" resultMap="GlassInfoResult" parameterClass="Hashtable">
+      select * from wip_glassinfo
+      <dynamic prepend="where">
+        <isNotEmpty property="GlassID" prepend="and">
+          glassid =#GlassID#
+        </isNotEmpty>
+        <isNotEmpty property="CassetteSequenceNo" prepend="and">
+          cassettesequenceno =#CassetteSequenceNo#
+        </isNotEmpty>
+        <isNotEmpty property="SlotSequenceNo" prepend="and">
+          slotsequenceno=#SlotSequenceNo#
+        </isNotEmpty>
+        <isNotEmpty property="PortID" prepend="and">
+          portid=#PortID#
+        </isNotEmpty>
+		  <isNotEmpty property="CassetteID" prepend="and">
+			  cassetteid=#CassetteID#
+		  </isNotEmpty>
+      </dynamic>
+      order by createdate desc
+    </select>
+    <select id="GetUnitIdGlassInfoList" resultMap="GlassInfoResult" parameterClass="Hashtable">
+      select * from wip_glassinfo
+      <dynamic prepend="where">
+        <isNotEmpty property="CurrentUnit" prepend="and">
+          currentunit =#CurrentUnit#
+        </isNotEmpty>
+      </dynamic>
+      order by createdate desc
+    </select>
+    <select id="GetGlassInfoListByCstID" resultMap="GlassInfoResult" parameterClass="Hashtable">
+      select * from wip_glassinfo
+      <dynamic prepend="where">
+        <isNotEmpty property="CassetteID" prepend="and">
+          cassetteid = #CassetteID#
+        </isNotEmpty>
+      </dynamic>
+      order by createdate desc
+    </select>
+    <select id="GetGlassInfoListByAlarm" resultMap="GlassInfoResult" parameterClass="Hashtable">
+      select * from wip_glassinfo
+      <dynamic prepend="where">
+        <isNotEmpty property="CurrentUnit" prepend="and">
+          currentunit =#CurrentUnit#
+        </isNotEmpty>
+        <isNotEmpty property="CurrentSUnit" prepend="and">
+          currentsunit =#CurrentSUnit#
+        </isNotEmpty>
+        <isNotEmpty property="ProductAlarm" prepend="and">
+          productalarm =#ProductAlarm#
+        </isNotEmpty>
+      </dynamic>
+      order by createdate desc
+    </select>
+
+    <update id="UpdateGlassInfo" patameterClass="GlassInfo">
+		UPDATE wip_glassinfo
+		SET glassid =#GlassID#, cassettesequenceno =#CassetteSequenceNo#, slotsequenceno=#SlotSequenceNo#, productid=#ProductID#, operationid=#OperationID#, lotid=#LotID#, ppid1=#PPID1#, ppid2=#PPID2#, ppid3=#PPID3#,
+		ppid4=#PPID4#, ppid5=#PPID5#, ppid6=#PPID6#, ppid7=#PPID7#, ppid8=#PPID8#, ppid9=#PPID9#, ppid10=#PPID10#,
+		rglassid=#RGlassID#,  slotposition=#SlotPosition#,modelposition=#ModelPosition#,position=#Position#,
+		glassjudgecode=#GlassJudgeCode#, glassgradecode=#GlassGradeCode#, processingflag=#ProcessingFlag#,
+		glasssizecode=#GlassSizeCode#, glassthicknesscode=#GlassThicknessCode#, glasstype=#GlassType#, lotcode=#LotCode#,
+		processingcount=#ProcessingCount#, inspectionflag=#InspectionFlag#, skipflag=#SkipFlag#, inlineeqdata=#InLineEQData#,
+		workorder=#WorkOrder#, processflowname=#ProcessFlowName#, processflowversion=#ProcessFlowVersion#, processoperationversion=#ProcessOperationVersion#,
+		productspecversion=#ProductSpecVersion#, productiontype=#ProductionType#, halfproductjudge=#HalfProductJudge#, glassmaker=#GlassMaker#,
+		productrecipe=#ProductRecipe#, reworktype=#ReworkType#, reworkcount=#ReworkCount#, samplingflag=#SamplingFlag#,
+		exposurerecipename=#ExposureRecipeName#, turndegree=#Turndegree#, flowmodevalue=#FlowModeValue#, evaskipflag=#EVASkipFlag#,
+		beforeprocessmachine=#BeforeProcessMachine#, producttype=#ProductType#, maskspecname=#MaskSpecName#, processflowrunstate=#ProcessFlowRunState#,
+		processinginfo=#ProcessingInfo#, vcrproductname=#VCRProductName#, nginputcomment=#NGInputComment#,
+		panelgrade=#PanelGrade#, paneljudge=#PanelJudge#, updatedate=localtimestamp(0), modepath=#ModePath#,
+		currentunit=#CurrentUnit#,currentsunit=#CurrentSUnit#,currentssunit=#CurrentSSUnit#, productalarm=#ProductAlarm#,
+		portid=#PortID#,cassetteid=#CassetteID#,
+		currentslotno=#CurrentSlotNo#, slotflag=#SlotFlag#, thickness=#Thickness#, esflag=#ESFLAG#, lastglassflag=#LastGlassFlag#,
+		inportid=#InPortID#,incstid=#InCSTID#,fslotno=#FSlotNO#,outcstid=#OutCSTID#,outportid=#OutPortID#,tslotno=#TSlotNO#,recvjobtime=#RecvJobTime#,recvunitjobtime=#RecvUnitJobTime#,ismestrackin=#IsMesTrackIn#,panelcode=#PanelCode#,scribermoduletype=#ScriberModuleType#,blid=#BLID#,
+		ppid11=#PPID11#,ppid12=#PPID12#,ppid13=#PPID13#,ppid14=#PPID14#,ppid15=#PPID15#,ppid16=#PPID16#,ppid17=#PPID17#,ppid18=#PPID18#,ppid19=#PPID19#,ppid20=#PPID20#,
+		ppid21=#PPID21#,ppid22=#PPID22#,ppid23=#PPID23#,ppid24=#PPID24#,ppid25=#PPID25#,ppid26=#PPID26#,ppid27=#PPID27#,ppid28=#PPID28#,ppid29=#PPID29#,ppid30=#PPID30#,
+		propertycode=#PropertyCode#,jobangle=#JobAngle#,jobflip=#JobFlip#,mmgcode=#MMGCode#,panelinchsizex=#PanelInchSizeX#,panelinchsizey=#PanelInchSizeY#,abnormalcodes=#AbnormalCodes#,defectcodes=#DefectCodes#,slotsatus=#SlotSatus#
+		where id=#ID#
+	</update>
+    <update id="UpdateHisGlassInfo" patameterClass="GlassInfo">
+		UPDATE his_glassinfo
+		SET glassid =#GlassID#, cassettesequenceno =#CassetteSequenceNo#, slotsequenceno=#SlotSequenceNo#, productid=#ProductID#, operationid=#OperationID#, lotid=#LotID#, ppid1=#PPID1#, ppid2=#PPID2#, ppid3=#PPID3#,
+		ppid4=#PPID4#, ppid5=#PPID5#, ppid6=#PPID6#, ppid7=#PPID7#, ppid8=#PPID8#, ppid9=#PPID9#, ppid10=#PPID10#,
+		rglassid=#RGlassID#,  slotposition=#SlotPosition#,modelposition=#ModelPosition#,position=#Position#,
+		glassjudgecode=#GlassJudgeCode#, glassgradecode=#GlassGradeCode#, processingflag=#ProcessingFlag#,
+		glasssizecode=#GlassSizeCode#, glassthicknesscode=#GlassThicknessCode#, glasstype=#GlassType#, lotcode=#LotCode#,
+		processingcount=#ProcessingCount#, inspectionflag=#InspectionFlag#, skipflag=#SkipFlag#, inlineeqdata=#InLineEQData#,
+		workorder=#WorkOrder#, processflowname=#ProcessFlowName#, processflowversion=#ProcessFlowVersion#, processoperationversion=#ProcessOperationVersion#,
+		productspecversion=#ProductSpecVersion#, productiontype=#ProductionType#, halfproductjudge=#HalfProductJudge#, glassmaker=#GlassMaker#,
+		productrecipe=#ProductRecipe#, reworktype=#ReworkType#, reworkcount=#ReworkCount#, samplingflag=#SamplingFlag#,
+		exposurerecipename=#ExposureRecipeName#, turndegree=#Turndegree#, flowmodevalue=#FlowModeValue#, evaskipflag=#EVASkipFlag#,
+		beforeprocessmachine=#BeforeProcessMachine#, producttype=#ProductType#, maskspecname=#MaskSpecName#, processflowrunstate=#ProcessFlowRunState#,
+		processinginfo=#ProcessingInfo#, vcrproductname=#VCRProductName#, nginputcomment=#NGInputComment#,
+		panelgrade=#PanelGrade#, paneljudge=#PanelJudge#, updatedate=localtimestamp(0), modepath=#ModePath#,
+		currentunit=#CurrentUnit#,currentsunit=#CurrentSUnit#,currentssunit=#CurrentSSUnit#, productalarm=#ProductAlarm#,
+		portid=#PortID#,cassetteid=#CassetteID#,
+		currentslotno=#CurrentSlotNo#, slotflag=#SlotFlag#, thickness=#Thickness#, esflag=#ESFLAG#, lastglassflag=#LastGlassFlag#,
+		inportid=#InPortID#,incstid=#InCSTID#,fslotno=#FSlotNO#,outcstid=#OutCSTID#,outportid=#OutPortID#,tslotno=#TSlotNO#,recvjobtime=#RecvJobTime#,recvunitjobtime=#RecvUnitJobTime#,ismestrackin=#IsMesTrackIn#,panelcode=#PanelCode#,scribermoduletype=#ScriberModuleType#,blid=#BLID#,
+		ppid11=#PPID11#,ppid12=#PPID12#,ppid13=#PPID13#,ppid14=#PPID14#,ppid15=#PPID15#,ppid16=#PPID16#,ppid17=#PPID17#,ppid18=#PPID18#,ppid19=#PPID19#,ppid20=#PPID20#,
+		ppid21=#PPID21#,ppid22=#PPID22#,ppid23=#PPID23#,ppid24=#PPID24#,ppid25=#PPID25#,ppid26=#PPID26#,ppid27=#PPID27#,ppid28=#PPID28#,ppid29=#PPID29#,ppid30=#PPID30#,
+		propertycode=#PropertyCode#,jobangle=#JobAngle#,jobflip=#JobFlip#,mmgcode=#MMGCode#,panelinchsizex=#PanelInchSizeX#,panelinchsizey=#PanelInchSizeY#,abnormalcodes=#AbnormalCodes#,defectcodes=#DefectCodes#,slotsatus=#SlotSatus#
+		where id=#ID#
+	</update>
+    <update id="UpdateGlassModelPosition" patameterClass="GlassInfo">
+      UPDATE wip_glassinfo
+      SET modelposition=#ModelPosition#
+      <dynamic prepend="where">
+        <isNotEmpty property="CassetteSequenceNo" prepend="and">
+          cassettesequenceno =#CassetteSequenceNo#
+        </isNotEmpty>
+        <isNotEmpty property="SlotSequenceNo" prepend="and">
+          slotsequenceno=#SlotSequenceNo#
+        </isNotEmpty>
+      </dynamic>
+    </update>
+    <update id="UpdateGlassCVDFlag" patameterClass="Hashtable">
+      UPDATE wip_glassinfo
+      SET cvdflag=#CVDFlag#
+      <dynamic prepend="where">
+        <isNotEmpty property="CassetteSequenceNo" prepend="and">
+          cassettesequenceno =#CassetteSequenceNo#
+        </isNotEmpty>
+        <isNotEmpty property="SlotSequenceNo" prepend="and">
+          slotsequenceno=#SlotSequenceNo#
+        </isNotEmpty>
+      </dynamic>
+    </update>
+    <update id="UpdateWIPSlotSatus" patameterClass="Hashtable">
+      UPDATE wip_glassinfo
+      SET slotsatus=#SlotSatus#
+      <dynamic prepend="where">
+        <isNotEmpty property="CassetteSequenceNo" prepend="and">
+          cassettesequenceno =#CassetteSequenceNo#
+        </isNotEmpty>
+        <isNotEmpty property="SlotSequenceNo" prepend="and">
+          slotsequenceno=#SlotSequenceNo#
+        </isNotEmpty>
+      </dynamic>
+    </update>
+    <update id="UpdateGlassSlotSatus" patameterClass="Hashtable">
+      UPDATE wip_glassinfo
+      SET slotsatus=#SlotSatus# where
+      cassettesequenceno =#CassetteSequenceNo#
+      and  slotsequenceno in (#SSNo1#,#SSNo2#,#SSNo3#,#SSNo4#,#SSNo5#,#SSNo6#,#SSNo7#,#SSNo8#,#SSNo9#,#SSNo10#,
+      #SSNo11#,#SSNo12#,#SSNo13#,#SSNo14#,#SSNo15#,#SSNo16#,#SSNo17#,#SSNo18#,#SSNo19#,#SSNo20#,
+      #SSNo21#,#SSNo22#,#SSNo23#,#SSNo24#,#SSNo25#,#SSNo26#)
+    </update>
+
+    <update id="UpdateGlassInfoBeginDate" patameterClass="GlassInfo">
+      UPDATE wip_glassinfo
+      SET begindate=#BeginDate#
+      <dynamic prepend="where">
+        <isNotEmpty property="CassetteSequenceNo" prepend="and">
+          cassettesequenceno =#CassetteSequenceNo#
+        </isNotEmpty>
+        <isNotEmpty property="SlotSequenceNo" prepend="and">
+          slotsequenceno=#SlotSequenceNo#
+        </isNotEmpty>
+      </dynamic>
+    </update>
+    <update id="UpdateGlassInfoEndDate" patameterClass="GlassInfo">
+      UPDATE wip_glassinfo
+      SET enddate=#EndDate#
+      <dynamic prepend="where">
+        <isNotEmpty property="CassetteSequenceNo" prepend="and">
+          cassettesequenceno =#CassetteSequenceNo#
+        </isNotEmpty>
+        <isNotEmpty property="SlotSequenceNo" prepend="and">
+          slotsequenceno=#SlotSequenceNo#
+        </isNotEmpty>
+      </dynamic>
+    </update>
+    <update id="UpdateGlassInfoFetchDatetime" patameterClass="GlassInfo">
+      UPDATE wip_glassinfo
+      SET  fetchdatetime=#FetchDatetime#
+      <dynamic prepend="where">
+        <isNotEmpty property="CassetteSequenceNo" prepend="and">
+          cassettesequenceno =#CassetteSequenceNo#
+        </isNotEmpty>
+        <isNotEmpty property="SlotSequenceNo" prepend="and">
+          slotsequenceno=#SlotSequenceNo#
+        </isNotEmpty>
+      </dynamic>
+    </update>
+
+    <delete id="DeleteGlassInfo"   parameterClass="string">
+      delete from wip_glassinfo where glassid=#value#
+    </delete>
+    <delete id="DeleteGlassInfoList"   parameterClass="Hashtable">
+      delete from wip_glassinfo
+      <dynamic prepend="where">
+        <isNotEmpty property="PortID" prepend="and">
+          portid =#PortID#
+        </isNotEmpty>
+        <isNotEmpty property="GlassID" prepend="and">
+          glassid =#GlassID#
+        </isNotEmpty>
+        <isNotEmpty property="CassetteSequenceNo" prepend="and">
+          cassettesequenceno =#CassetteSequenceNo#
+        </isNotEmpty>
+        <isNotEmpty property="SlotSequenceNo" prepend="and">
+          slotsequenceno=#SlotSequenceNo#
+        </isNotEmpty>
+        <isNotEmpty property="CassetteID" prepend="and">
+          cassetteid=#CassetteID#
+        </isNotEmpty>
+        <isNotEmpty property="ID" prepend="and">
+          id=#ID#
+        </isNotEmpty>
+		  <isNotEmpty property="SlotSatus" prepend="and">
+			  slotsatus=#SlotSatus#
+		  </isNotEmpty>
+      </dynamic>
+    </delete>
+
+    <delete id ="DeleteGlassInforByDateTime" parameterClass="string" >
+      delete from wip_glassinfo where   <![CDATA[ createdate < to_date(#value#,'YYYY-MM-DD')  ]]>
+    </delete>
+
+  </statements>
+</sqlMap>

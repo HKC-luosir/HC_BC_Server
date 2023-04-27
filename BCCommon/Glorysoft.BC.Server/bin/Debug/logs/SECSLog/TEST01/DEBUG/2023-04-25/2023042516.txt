@@ -1,0 +1,23 @@
+2023-04-25 16:11:54,521 Start to Open the TEST01 SECS Port
+2023-04-25 16:11:54,524 Start S9FxMonitor Thread.
+2023-04-25 16:11:54,526 S9FxMonitor Thread Status = True
+2023-04-25 16:11:54,526 HSMSPort::Initialize execute.
+2023-04-25 16:11:54,527 Start - Connector Thread.
+2023-04-25 16:11:54,529 - Connector Thread Status = True
+2023-04-25 16:11:54,530 Start TEST01#Parser Thread.
+2023-04-25 16:11:54,531 TEST01#Parser Thread Status = True
+2023-04-25 16:11:54,536 Start TEST01#Timer Thread.
+2023-04-25 16:11:54,538 Completely Open the TEST01 SECS Port
+2023-04-25 16:11:54,539 TEST01#Timer Thread Status = True
+2023-04-25 16:11:56,573 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29
+2023-04-25 16:12:22,010 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:7000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   在 Glorysoft.SECSwell.SECSConnector.OpenActiveConnection() 位置 D:\Work\Glory\GlorySoftSVN\BC_Product\BaseCode\SECSwell\CORE\SECSConnector.cs:行号 29

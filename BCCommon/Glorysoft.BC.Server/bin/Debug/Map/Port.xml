@@ -1,0 +1,443 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<sqlMap namespace="Port"
+	xmlns="http://ibatis.apache.org/mapping"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+  <alias>
+    <typeAlias alias="PortInfo"  type="Glorysoft.BC.Entity.PortInfo"/>
+    <typeAlias alias="Cassette"  type="Glorysoft.BC.Entity.Cassette"/>
+	<typeAlias alias="cfg_portgradegroup"  type="Glorysoft.BC.Entity.WebSocketEntity.cfg_portgradegroup"/>
+  </alias>
+  <resultMaps>
+    <resultMap id="PortInfoResult" class="PortInfo">
+      <result property = "EQPID" column="eqpid"/>
+      <result property = "UnitID" column="unitid"/>
+      <result property = "UnitName" column="unitname"/>
+      <result property = "PortNo" column="portno"/>
+      <result property = "PortID" column="portid"/>
+      <result property = "PortStatus" column="portstatus"/>
+      <result property = "PortType" column="porttype"/>
+      <result property = "TransferMode" column="transfermode"/>
+      <result property = "PortPauseMode" column="portpausemode"/>
+      <result property = "PortMode" column="portmode"/>
+      <result property = "PortUseType" column="portusetype"/>
+      <result property = "PortCSTType" column="portcsttype"/>
+      <result property = "PortOperationMode" column="portoperationmode"/>
+      <result property = "PortTypeAutoChangeMode" column="porttypeautochangemode"/>
+      <result property = "Capacity" column="capacity"/>
+      <result property = "PortQTime" column="portqtime"/>
+      <result property = "GlassType" column="glasstype"/>
+      <result property = "ProductionType" column="productiontype"/>
+      <result property = "PortGrade" column="portgrade"/>
+      <result property = "PortEnableMode" column="portenablemode"/>
+      <result property = "Userms" column="userms"/>
+      <result property = "UpdateDate" column="updatedate"/>
+      <result property = "CassetteSequenceNo" column="cassettesequenceno"/>
+      <result property = "CassetteID" column="cassetteid"/>
+      <result property = "IsInGetPut" column="isingetput"/>
+      <result property = "WaitingforProcessingTime" column="waitingforprocessingtime"/>
+      <result property = "UseType" column="usetype"/>
+    </resultMap>
+    <resultMap id="HisPortInfoResult" class="PortInfo">
+      <result property = "EQPID" column="eqpid"/>
+      <result property = "UnitID" column="unitid"/>
+      <result property = "UnitName" column="unitname"/>
+      <result property = "PortNo" column="portno"/>
+      <result property = "PortID" column="portid"/>
+      <result property = "PortStatus" column="portstatus"/>
+      <result property = "PortType" column="porttype"/>
+      <result property = "TransferMode" column="transfermode"/>
+      <result property = "PortPauseMode" column="portpausemode"/>
+      <result property = "PortMode" column="portmode"/>
+      <result property = "PortUseType" column="portusetype"/>
+      <result property = "PortCSTType" column="portcsttype"/>
+      <result property = "PortOperationMode" column="portoperationmode"/>
+      <result property = "PortTypeAutoChangeMode" column="porttypeautochangemode"/>
+      <result property = "Capacity" column="capacity"/>
+      <result property = "PortQTime" column="portqtime"/>
+      <result property = "GlassType" column="glasstype"/>
+      <result property = "ProductionType" column="productiontype"/>
+      <result property = "PortGrade" column="portgrade"/>
+      <result property = "PortEnableMode" column="portenablemode"/>
+      <result property = "Userms" column="userms"/>
+      <result property = "UpdateDate" column="updatedate"/>
+      <result property = "CassetteSequenceNo" column="cassettesequenceno"/>
+      <result property = "CassetteID" column="cassetteid"/>
+      <result property = "IsInGetPut" column="isingetput"/>
+      <result property = "FunctionName" column="functionname"/>
+      
+    </resultMap>
+    <resultMap id="CassetteResult" class="Cassette">
+      <result property = "EQPID" column="eqpid"/>
+      <result property = "UnitID" column="unitid"/>
+      <result property = "UnitName" column="unitname"/>
+      <result property = "PortNo" column="portno"/>
+      <result property = "PortID" column="portid"/>
+      <result property = "CassetteSequenceNo" column="cassettesequenceno"/>
+      <result property = "CassetteStatus" column="cassettestatus"/>
+      <result property = "PortType" column="porttype"/>
+      <result property = "PortStatus" column="portstatus"/>
+      <result property = "CassetteID" column="cassetteid"/>
+      <result property = "LotName" column="lotname"/>
+      <result property = "ProcessFlowName" column="processflowname"/>
+      <result property = "ProcessFlowVersion" column="processflowversion"/>
+      <result property = "ProcessOperationName" column="processoperationname"/>
+      <result property = "ProcessOperationVersion" column="processoperationversion"/>
+      <result property = "CarrierType" column="carriertype"/>
+      <result property = "PortUseType" column="portusetype"/>
+      <result property = "ProductSpecName" column="productspecname"/>
+      <result property = "ProductSpecVersion" column="productspecversion"/>
+      <result property = "ProductionType" column="productiontype"/>
+      <result property = "ProductQuantity" column="productquantity"/>
+      <result property = "SlotMap" column="slotmap"/>
+      <result property = "SlotSel" column="slotsel"/>
+      <result property = "MachineRecipeName" column="machinerecipename"/>
+      <result property = "WorkOrder" column="workorder"/>
+      <result property = "LotJudge" column="lotjudge"/>
+      <result property = "CassetteProcessEndTime" column="cassetteprocessendtime"/>
+      <result property = "CassetteProcessStartTime" column="cassetteprocessstarttime"/>
+      <result property = "UpdateDate" column="updatedate"/>
+      <result property = "QTimeFlag" column="qtimeflag"/>
+      <result property = "CassetteCode" column="cassettecode"/>
+      <result property = "CompeletedCassetteData" column="compeletedcassettedata"/>
+      <result property = "JobExistenceSlot" column="jobexistenceslot"/>
+      <result property = "HasCVD" column="hascvd"/>
+	  <result property = "ID" column="id"/>
+    </resultMap>
+    <resultMap id="HisCassetteResult" class="Cassette">
+		  <result property = "FunctionName" column="functionname"/>
+		  <result property = "EQPID" column="eqpid"/>
+      <result property = "UnitID" column="unitid"/>
+      <result property = "UnitName" column="unitname"/>
+      <result property = "PortNo" column="portno"/>
+      <result property = "PortID" column="portid"/>
+      <result property = "CassetteSequenceNo" column="cassettesequenceno"/>
+      <result property = "CassetteStatus" column="cassettestatus"/>
+      <result property = "PortType" column="porttype"/>
+      <result property = "PortStatus" column="portstatus"/>
+      <result property = "CassetteID" column="cassetteid"/>
+      <result property = "LotName" column="lotname"/>
+      <result property = "ProcessFlowName" column="processflowname"/>
+      <result property = "ProcessFlowVersion" column="processflowversion"/>
+      <result property = "ProcessOperationName" column="processoperationname"/>
+      <result property = "ProcessOperationVersion" column="processoperationversion"/>
+      <result property = "CarrierType" column="carriertype"/>
+      <result property = "PortUseType" column="portusetype"/>
+      <result property = "ProductSpecName" column="productspecname"/>
+      <result property = "ProductSpecVersion" column="productspecversion"/>
+      <result property = "ProductionType" column="productiontype"/>
+      <result property = "ProductQuantity" column="productquantity"/>
+      <result property = "SlotMap" column="slotmap"/>
+      <result property = "SlotSel" column="slotsel"/>
+      <result property = "MachineRecipeName" column="machinerecipename"/>
+      <result property = "WorkOrder" column="workorder"/>
+      <result property = "LotJudge" column="lotjudge"/>
+      <result property = "CassetteProcessEndTime" column="cassetteprocessendtime"/>
+      <result property = "CassetteProcessStartTime" column="cassetteprocessstarttime"/>
+      <result property = "UpdateDate" column="updatedate"/>
+      <result property = "QTimeFlag" column="qtimeflag"/>
+      <result property = "CassetteCode" column="cassettecode"/>
+      <result property = "CompeletedCassetteData" column="compeletedcassettedata"/>
+      <result property = "JobExistenceSlot" column="jobexistenceslot"/>
+	  <result property = "ID" column="id"/>
+    </resultMap>
+	  <resultMap id="cfg_portgradegroupResult" class="cfg_portgradegroup">
+		  <result property = "id" column="id"/>
+		  <result property = "eqpid" column="eqpid"/>
+		  <result property = "portgradegroup" column="portgradegroup"/>
+		  <result property = "portgrade" column="portgrade"/>
+		  <result property = "priority" column="priority"/>
+		  <result property = "enabled" column="enabled"/>
+	  </resultMap>
+  </resultMaps>
+
+  <statements>
+    <select id="ViewPortList" resultMap="PortInfoResult" parameterClass="HashTable">
+      select * from cfg_port
+      <dynamic prepend="where">
+        <isNotEmpty property="EQPID" prepend="and">
+          eqpid=#EQPID#
+        </isNotEmpty>
+        <isNotEmpty property="PortID" prepend="and">
+          portid=#PortID#
+        </isNotEmpty>
+        <isNotEmpty property="PortNo" prepend="and">
+          portno=#PortNo#
+        </isNotEmpty>
+
+      </dynamic>
+      order by portno 
+    </select>
+    <update id="UpdatePortInfo" parameterClass="PortInfo">
+		UPDATE cfg_port
+		SET  portstatus=#PortStatus#,portno=#PortNo#,unitname=#UnitName#,unitid=#UnitID#,
+		porttype=#PortType#, transfermode=#TransferMode#, portpausemode=#PortPauseMode#, portmode=#PortMode#, portusetype=#PortUseType#, portcsttype=#PortCSTType#,
+		portoperationmode=#PortOperationMode#, porttypeautochangemode=#PortTypeAutoChangeMode#, capacity=#Capacity#, portqtime=#PortQTime#,
+		glasstype=#GlassType#, productiontype=#ProductionType#, portgrade=#PortGrade#, portenablemode=#PortEnableMode#,
+		userms=#Userms#, updatedate=localtimestamp(0),isingetput=#IsInGetPut#,cassettesequenceno=#CassetteSequenceNo#,cassetteid=#CassetteID#
+		<dynamic prepend="where">
+			<isNotEmpty property="EQPID" prepend="and">
+				eqpid=#EQPID#
+			</isNotEmpty>
+			<isNotEmpty property="PortID" prepend="and">
+				portid=#PortID#
+			</isNotEmpty>
+      </dynamic>
+    </update>
+    <update id="UpdatePortWaitingforProcessingTime" parameterClass="HashTable">
+      UPDATE cfg_port
+      SET  waitingforprocessingtime=#WaitingforProcessingTime#
+      <dynamic prepend="where">
+        <isNotEmpty property="EQPID" prepend="and">
+          eqpid=#EQPID#
+        </isNotEmpty>
+        <isNotEmpty property="PortID" prepend="and">
+          portid=#PortID#
+        </isNotEmpty>
+        <isNotEmpty property="PortNo" prepend="and">
+          portno=#PortNo#
+        </isNotEmpty>
+      </dynamic>
+    </update>
+    <insert id="InsertHisPortInfoResult" parameterClass="PortInfo">
+		INSERT INTO his_port(
+		eqpid, unitid, unitname, portno, portid, portstatus, portmode,
+		portcsttype, portoperationmode, porttypeautochangemode, capacity,
+		portqtime, glasstype, portgrade, portenablemode, userms, updatedate,
+		isingetput, productiontype, cassettesequenceno, cassetteid, porttype,
+		transfermode, portpausemode, portusetype, functionname)
+		VALUES (#EQPID#, #UnitID#, #UnitName#, #PortNo#, #PortID#, #PortStatus#, #PortMode#,
+		#PortCSTType#, #PortOperationMode#, #PortTypeAutoChangeMode#, #Capacity#,
+		#PortQTime#, #GlassType#, #PortGrade#, #PortEnableMode#, #Userms#, localtimestamp(0),
+		#IsInGetPut#, #ProductionType#, #CassetteSequenceNo#, #CassetteID#, #PortType#,
+		#TransferMode#, #PortPauseMode#, #PortUseType#, #FunctionName#);
+	</insert>
+	  <insert id="InsertPortInfo" parameterClass="PortInfo">
+		  INSERT INTO cfg_port(
+		  eqpid, unitid, unitname, portno, portid, portstatus, portmode,
+		  portcsttype, portoperationmode, porttypeautochangemode, capacity,
+		  portqtime, glasstype, portgrade, portenablemode, userms, updatedate,
+		  isingetput, productiontype, cassettesequenceno, cassetteid, porttype,
+		  transfermode, portpausemode, portusetype)
+		  VALUES (#EQPID#, #UnitID#, #UnitName#, #PortNo#, #PortID#, #PortStatus#, #PortMode#,
+		  #PortCSTType#, #PortOperationMode#, #PortTypeAutoChangeMode#, #Capacity#,
+		  #PortQTime#, #GlassType#, #PortGrade#, #PortEnableMode#, #Userms#, localtimestamp(0),
+		  #IsInGetPut#, #ProductionType#, #CassetteSequenceNo#, #CassetteID#, #PortType#,
+		  #TransferMode#, #PortPauseMode#, #PortUseType#);
+	  </insert>
+	  <delete id="DeletePortInfo" parameterClass="PortInfo">
+		  delete from cfg_port 
+		  <dynamic prepend="where">
+			  <isNotEmpty property="EQPID" prepend="and">
+				  eqpid=#EQPID#
+			  </isNotEmpty>
+			  <isNotEmpty property="PortID" prepend="and">
+				  portid=#PortID#
+			  </isNotEmpty>
+		  </dynamic>
+	  </delete>
+    
+
+    <select id="InsertCassette" parameterClass="Cassette">
+		INSERT INTO wip_cassette(
+		eqpid, unitid, unitname, portno, portid, cassettesequenceno,
+		cassettestatus, porttype, portstatus, cassetteid, lotname, processflowname,
+		processflowversion, processoperationname, processoperationversion,
+		carriertype, portusetype, productspecname, productspecversion,
+		productiontype, productquantity, slotmap, slotsel, machinerecipename,
+		workorder, lotjudge,
+		updatedate, qtimeflag, cassettecode, compeletedcassettedata, jobexistenceslot)
+		VALUES (#EQPID#, #UnitID#, #UnitName#, #PortNo#, #PortID#, #CassetteSequenceNo#,
+		#CassetteStatus#, #PortType#, #PortStatus#, #CassetteID#, #LotName#, #ProcessFlowName#,
+		#ProcessFlowVersion#, #ProcessOperationName#, #ProcessOperationVersion#,
+		#CarrierType#, #PortUseType#, #ProductSpecName#, #ProductSpecVersion#,
+		#ProductionType#, #ProductQuantity#, #SlotMap#, #SlotSel#, #MachineRecipeName#,
+		#WorkOrder#, #LotJudge#,
+		localtimestamp(0), #QTimeFlag#, #CassetteCode#, #CompeletedCassetteData#, #JobExistenceSlot#) RETURNING id;
+	</select>
+    <delete id="DeleteCassetteList"   parameterClass="Hashtable">
+      delete from wip_cassette
+      <dynamic prepend="where">
+        <isNotEmpty property="PortID" prepend="and">
+          portid =#PortID#
+        </isNotEmpty>
+        <isNotEmpty property="CassetteSequenceNo" prepend="and">
+          cassettesequenceno =#CassetteSequenceNo#
+        </isNotEmpty>
+		  <isNotEmpty property="CassetteID" prepend="and">
+			  cassetteid =#CassetteID#
+		  </isNotEmpty>
+	  </dynamic>
+    </delete>
+
+    <delete id ="DeleteCassetteByDateTime" parameterClass="string" >
+      delete from wip_cassette where   <![CDATA[ updatedate < to_date(#value#,'YYYY-MM-DD')  ]]>
+    </delete>
+
+
+    <update id="UpdateCassette" patameterClass="Cassette">
+      UPDATE wip_cassette
+      SET portno=#PortNo#, portid=#PortID#, cassettesequenceno=#CassetteSequenceNo#,
+      cassettestatus=#CassetteStatus#, porttype=#PortType#, portstatus=#PortStatus#, cassetteid=#CassetteID#, lotname=#LotName#,
+      processflowname=#ProcessFlowName#, processflowversion=#ProcessFlowVersion#, processoperationname=#ProcessOperationName#,
+      processoperationversion=#ProcessOperationVersion#, carriertype=#CarrierType#, portusetype=#PortUseType#, productspecname=#ProductSpecName#,
+      productspecversion=#ProductSpecVersion#, productiontype=#ProductionType#, productquantity=#ProductQuantity#, slotmap=#SlotMap#,
+      slotsel=#SlotSel#, machinerecipename=#MachineRecipeName#, workorder=#WorkOrder#, lotjudge=#LotJudge#, 
+       updatedate=localtimestamp(0), qtimeflag=#QTimeFlag#, cassettecode=#CassetteCode#,
+      compeletedcassettedata=#CompeletedCassetteData#, jobexistenceslot=#JobExistenceSlot#
+      <dynamic prepend="where">
+        <isNotEmpty property="PortID" prepend="and">
+          portid =#PortID#
+        </isNotEmpty>
+        <isNotEmpty property="CassetteSequenceNo" prepend="and">
+          cassettesequenceno =#CassetteSequenceNo#
+        </isNotEmpty>
+		<isNotEmpty property="ID" prepend="and">
+		  id =#ID#
+		</isNotEmpty>
+      </dynamic>
+    </update>
+
+	  <update id="UpdateHisCassette" patameterClass="Cassette">
+		  UPDATE his_cassette
+		  SET portno=#PortNo#, portid=#PortID#, cassettesequenceno=#CassetteSequenceNo#,
+		  cassettestatus=#CassetteStatus#, porttype=#PortType#, portstatus=#PortStatus#, cassetteid=#CassetteID#, lotname=#LotName#,
+		  processflowname=#ProcessFlowName#, processflowversion=#ProcessFlowVersion#, processoperationname=#ProcessOperationName#,
+		  processoperationversion=#ProcessOperationVersion#, carriertype=#CarrierType#, portusetype=#PortUseType#, productspecname=#ProductSpecName#,
+		  productspecversion=#ProductSpecVersion#, productiontype=#ProductionType#, productquantity=#ProductQuantity#, slotmap=#SlotMap#,
+		  slotsel=#SlotSel#, machinerecipename=#MachineRecipeName#, workorder=#WorkOrder#, lotjudge=#LotJudge#,
+		  updatedate=localtimestamp(0), qtimeflag=#QTimeFlag#, cassettecode=#CassetteCode#,
+		  compeletedcassettedata=#CompeletedCassetteData#, jobexistenceslot=#JobExistenceSlot#
+		  <dynamic prepend="where">
+			  <isNotEmpty property="PortID" prepend="and">
+				  portid =#PortID#
+			  </isNotEmpty>
+			  <isNotEmpty property="CassetteSequenceNo" prepend="and">
+				  cassettesequenceno =#CassetteSequenceNo#
+			  </isNotEmpty>
+			  <isNotEmpty property="ID" prepend="and">
+				  id =#ID#
+			  </isNotEmpty>
+		  </dynamic>
+	  </update>
+
+    <update id="UpdateCassetteHasCVD" patameterClass="Cassette">
+      UPDATE wip_cassette
+      SET hascvd=#HasCVD#
+      <dynamic prepend="where">
+        <isNotEmpty property="PortID" prepend="and">
+          portid =#PortID#
+        </isNotEmpty>
+        <isNotEmpty property="CassetteSequenceNo" prepend="and">
+          cassettesequenceno =#CassetteSequenceNo#
+        </isNotEmpty>
+      </dynamic>
+    </update>
+    
+    
+    <update id="UpdateCassetteStartTime" patameterClass="Cassette">
+      UPDATE wip_cassette
+      SET cassetteprocessstarttime=#CassetteProcessStartTime#
+      <dynamic prepend="where">
+        <isNotEmpty property="PortID" prepend="and">
+          portid =#PortID#
+        </isNotEmpty>
+        <isNotEmpty property="CassetteSequenceNo" prepend="and">
+          cassettesequenceno =#CassetteSequenceNo#
+        </isNotEmpty>
+      </dynamic>
+    </update>
+    <update id="UpdateCassetteEndTime" patameterClass="Cassette">
+      UPDATE wip_cassette
+      SET cassetteprocessendtime=#CassetteProcessEndTime#
+      <dynamic prepend="where">
+        <isNotEmpty property="PortID" prepend="and">
+          portid =#PortID#
+        </isNotEmpty>
+        <isNotEmpty property="CassetteSequenceNo" prepend="and">
+          cassettesequenceno =#CassetteSequenceNo#
+        </isNotEmpty>
+      </dynamic>
+    </update>
+    <select id="GetCassetteList" resultMap="CassetteResult" parameterClass="Hashtable">
+      select * from wip_cassette
+      <dynamic prepend="where">
+        <isNotEmpty property="PortID" prepend="and">
+          portid =#PortID#
+        </isNotEmpty>
+        <isNotEmpty property="CassetteID" prepend="and">
+          cassetteid =#CassetteID#
+        </isNotEmpty>
+        <isNotEmpty property="CassetteSequenceNo" prepend="and">
+          cassettesequenceno =#CassetteSequenceNo#
+        </isNotEmpty>
+      </dynamic>
+      order by updatedate desc
+    </select>
+
+
+    <insert id="InsertHisCassette" parameterClass="Cassette">
+      INSERT INTO his_cassette(id,
+      functionname,eqpid, unitid, unitname, portno, portid, cassettesequenceno,
+      cassettestatus, porttype, portstatus, cassetteid, lotname, processflowname,
+      processflowversion, processoperationname, processoperationversion,
+      carriertype, portusetype, productspecname, productspecversion,
+      productiontype, productquantity, slotmap, slotsel, machinerecipename,
+      workorder, lotjudge,cassetteprocessendtime,cassetteprocessstarttime,
+      updatedate, qtimeflag, cassettecode, compeletedcassettedata, jobexistenceslot,hascvd)
+      VALUES (#ID#,#FunctionName#,#EQPID#, #UnitID#, #UnitName#, #PortNo#, #PortID#, #CassetteSequenceNo#,
+      #CassetteStatus#, #PortType#, #PortStatus#, #CassetteID#, #LotName#, #ProcessFlowName#,
+      #ProcessFlowVersion#, #ProcessOperationName#, #ProcessOperationVersion#,
+      #CarrierType#, #PortUseType#, #ProductSpecName#, #ProductSpecVersion#,
+      #ProductionType#, #ProductQuantity#, #SlotMap#, #SlotSel#, #MachineRecipeName#,
+      #WorkOrder#, #LotJudge#,localtimestamp(0),localtimestamp(0),
+      localtimestamp(0), #QTimeFlag#, #CassetteCode#, #CompeletedCassetteData#, #JobExistenceSlot#,#HasCVD#);
+    </insert>
+
+
+	  <insert id="Insertcfg_portgradegroup" parameterClass="cfg_portgradegroup">
+		  INSERT INTO public.cfg_portgradegroup(
+		  eqpid, portgradegroup, portgrade, priority, enabled)
+		  VALUES (
+		  #eqpid#, #portgradegroup#, #portgrade#, #priority#, #enabled#);
+	  </insert>
+
+	  <select id="Viewcfg_portgradegroup" resultMap="cfg_portgradegroupResult" parameterClass="Hashtable">
+		  select * from cfg_portgradegroup
+		  <dynamic prepend="where">
+			  <isNotEmpty property="eqpid" prepend="and">
+				  eqpid like '%' || #eqpid# || '%'
+			  </isNotEmpty>
+			  <isNotEmpty property="portgradegroup" prepend="and">
+				  portgradegroup like '%' || #portgradegroup# || '%'
+			  </isNotEmpty>
+			  <isNotEmpty property="portgrade" prepend="and">
+				  portgrade like '%' || #portgrade# || '%'
+			  </isNotEmpty>
+			  <isNotEmpty property="enabled" prepend="and">
+				  enabled = #enabled#
+			  </isNotEmpty>
+			  <isNotEmpty property="id" prepend="and">
+				  id = #id#
+			  </isNotEmpty>
+		  </dynamic>
+		  order by priority asc
+	  </select>
+
+	  <update id="Updatecfg_portgradegroup" patameterClass="cfg_portgradegroup">
+		  UPDATE cfg_portgradegroup
+		  SET eqpid=#eqpid#, portgradegroup=#portgradegroup#, portgrade=#portgrade#, priority=#priority#, enabled=#enabled#
+		  where id = #id#
+	  </update>
+
+	  <delete id="Deletecfg_portgradegroup" patameterClass="Hashtable">
+		  delete from cfg_portgradegroup
+		  <dynamic prepend="where">
+			  <isNotEmpty property="id" prepend="and">
+				  id = #id#
+			  </isNotEmpty>
+		  </dynamic>
+	  </delete>
+	  
+  </statements>
+</sqlMap>

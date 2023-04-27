@@ -1,0 +1,86 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "6005c850-7d32-41e3-85c1-7e1af4dde96a": {
+      "ProjectGuid": "6005c850-7d32-41e3-85c1-7e1af4dde96a",
+      "DisplayName": "Glorysoft.BC.Server",
+      "ColorIndex": 0
+    },
+    "46a010aa-5af3-4899-9e5a-ffc7f9652496": {
+      "ProjectGuid": "46a010aa-5af3-4899-9e5a-ffc7f9652496",
+      "DisplayName": "Glorysoft.BC.RV",
+      "ColorIndex": 1
+    },
+    "604de815-f4bc-4298-b143-0c63bd55a379": {
+      "ProjectGuid": "604de815-f4bc-4298-b143-0c63bd55a379",
+      "DisplayName": "Glorysoft.BC.Logic.Service",
+      "ColorIndex": 2
+    },
+    "c95ba850-8855-41c9-8ad6-afc464a9236f": {
+      "ProjectGuid": "c95ba850-8855-41c9-8ad6-afc464a9236f",
+      "DisplayName": "Glorysoft.BC.Entity",
+      "ColorIndex": 3
+    },
+    "1f9a006f-825e-4887-82f4-645152477e6e": {
+      "ProjectGuid": "1f9a006f-825e-4887-82f4-645152477e6e",
+      "DisplayName": "Glorysoft.BC.Db.Service",
+      "ColorIndex": 4
+    },
+    "93707e3f-85f0-46c4-9e7a-056cfd7c20de": {
+      "ProjectGuid": "93707e3f-85f0-46c4-9e7a-056cfd7c20de",
+      "DisplayName": "Glorysoft.BC.EIP",
+      "ColorIndex": 5
+    },
+    "fc27b9b7-8dd6-46ae-af2e-874a9e6d5f82": {
+      "ProjectGuid": "fc27b9b7-8dd6-46ae-af2e-874a9e6d5f82",
+      "DisplayName": "Glorysoft.BC.EQP.Service",
+      "ColorIndex": 6
+    },
+    "80f38fd2-0d2a-4422-9911-e93fd197e0a5": {
+      "ProjectGuid": "80f38fd2-0d2a-4422-9911-e93fd197e0a5",
+      "DisplayName": "Glorysoft.BC.Logic.Contract",
+      "ColorIndex": 7
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "杂项文件",
+      "ColorIndex": -1
+    },
+    "f9d1e152-246f-42cc-8154-2a3e1ae1d396": {
+      "ProjectGuid": "f9d1e152-246f-42cc-8154-2a3e1ae1d396",
+      "DisplayName": "Glorysoft.BC.SECS.Contract",
+      "ColorIndex": 8
+    },
+    "aaa957a3-ecf4-4bed-8a7c-b858909b9d90": {
+      "ProjectGuid": "aaa957a3-ecf4-4bed-8a7c-b858909b9d90",
+      "DisplayName": "Glorysoft.BC.SECS.Service",
+      "ColorIndex": 9
+    },
+    "7cba68eb-9a8c-40d8-ae97-9b834a8703b8": {
+      "ProjectGuid": "7cba68eb-9a8c-40d8-ae97-9b834a8703b8",
+      "DisplayName": "GlorySoft.BC.WebAPI",
+      "ColorIndex": 10
+    },
+    "07007414-f814-414c-a437-a49b47cde4b3": {
+      "ProjectGuid": "07007414-f814-414c-a437-a49b47cde4b3",
+      "DisplayName": "Glorysoft.BC.Db.Contract",
+      "ColorIndex": 11
+    },
+    "0942eb9c-8e79-42fe-a0a0-265712ed2bf2": {
+      "ProjectGuid": "0942eb9c-8e79-42fe-a0a0-265712ed2bf2",
+      "DisplayName": "Glorysoft.BC.GlassDispath",
+      "ColorIndex": 12
+    },
+    "0ef3879d-32ab-49bb-9f77-c8023a2a683d": {
+      "ProjectGuid": "0ef3879d-32ab-49bb-9f77-c8023a2a683d",
+      "DisplayName": "Glorysoft.BC.EQP.Contract",
+      "ColorIndex": 13
+    },
+    "fbd2e2e2-cb8f-46c3-8a6a-83dd6b0b34a4": {
+      "ProjectGuid": "fbd2e2e2-cb8f-46c3-8a6a-83dd6b0b34a4",
+      "DisplayName": "GlorySoft.BC.WebSocket",
+      "ColorIndex": 14
+    }
+  },
+  "NextColorIndex": 15
+}

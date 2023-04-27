@@ -1,0 +1,144 @@
+﻿<Window x:Class="Glorysoft.BC.Client.View.ControlStateSetting"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vc="clr-namespace:Glorysoft.BC.Client.CommonClass"
+        Title="Communition Setting"
+        WindowStyle="None"
+        BorderBrush="Black"
+        BorderThickness="1"
+        MouseMove="MainTitle_MouseMove"
+        AllowsTransparency="True"
+        Width="450"
+        Height="300"
+        ResizeMode="NoResize">
+    <Window.Resources>
+        <vc:HostControlState2String x:Key="HostControlState2String" />
+        <vc:AntiHostModel x:Key="AntiHostModel" />
+        <vc:PLCConnect2String x:Key="PLCConnect2String" />
+    </Window.Resources>
+    <Grid
+          Margin="0,0,0,0">
+        <Grid.Background>
+            <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
+                <GradientStop Offset="0" Color="#FFAED2F6" />
+                <GradientStop Offset="1" Color="#FFE7F1F2" />
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30" />
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Label
+            Grid.Row="0"
+                   Margin="0,0,0,0"
+                   HorizontalContentAlignment="Center"
+                   VerticalContentAlignment="Center"
+                   Background="#FF6FA7D6"
+                   BorderBrush="#FF56C3AF"
+                   BorderThickness="0"
+                   Content="Communication Setting"
+                   FontSize="16"
+                   FontWeight="Bold"
+                   Foreground="White" />
+        <Border 
+            Grid.Row="1"
+            Margin="0,0,0,0"
+            BorderThickness="0">
+            <Grid Margin="0,0,0,0">
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition Height="45"/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid Grid.Row="1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <RadioButton x:Name="rdRemote"
+                         Margin="0,0,0,0"
+                         HorizontalAlignment="Center"
+                         VerticalAlignment="Center"
+                         Content="Remote"
+                         FontSize="16"
+                         IsEnabled="{Binding LineInfo.HostConnect}"
+                         IsChecked="{Binding OnLineRemote}" />
+                    <RadioButton 
+                        x:Name="rdLocal"
+                        Grid.Column="1"
+                         Margin="0,0,0,0"
+                         HorizontalAlignment="Center"
+                         VerticalAlignment="Center"
+                         FontSize="16"
+                         IsEnabled="{Binding LineInfo.HostConnect}"
+                         Content="Local"
+                         IsChecked="{Binding OnLineLocal}" />
+                    <RadioButton
+                         x:Name="rdOffline"
+                         Grid.Column="2"
+                         Margin="0,0,0,0"
+                         HorizontalAlignment="Center"
+                         VerticalAlignment="Center"
+                         Content="OffLine"
+                         FontSize="16"
+                         IsChecked="{Binding OffLine}" />
+                    <RadioButton
+                         x:Name="rdLCControl"
+                         Grid.Column="3"
+                         Margin="0,0,0,0"
+                         HorizontalAlignment="Center"
+                         VerticalAlignment="Center"
+                         Content="LCControl"
+                         FontSize="16"
+                         IsChecked="{Binding LCControl}" />
+                </Grid>
+                <Grid Grid.Row="2">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Button  
+                        Grid.Column="1"
+                        MaxHeight="30"
+                        Margin="16,25"
+                        Background="Transparent"
+                        Command="{Binding SetControlStateCommand}"
+                        Content="Confirm"
+                        FontSize="16"/>
+                    <Button 
+                        Grid.Column="2"
+                        Margin="16,25"
+                        MaxHeight="30"
+                        Background="Transparent"
+                        Click="Host_Communication_Setting_Close_Btn_Click"
+                        Content="Close"
+                        FontSize="16"/>
+                </Grid>
+                <Grid Grid.Row="0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Label Grid.Column="0"
+                           Content="Current Host Mode"
+                           VerticalAlignment="Center"
+                           HorizontalAlignment="Center"    
+                           FontSize="16"
+                       />
+                    <TextBox Grid.Column="1" 
+                             VerticalContentAlignment="Center"
+                              HorizontalContentAlignment="Center"
+                             MaxHeight="35"
+                             Margin="10,20,10,20"
+                             FontSize="16"
+                             IsReadOnly="True"
+                             Text="{Binding OClient.ControlState}"/>
+                </Grid>
+
+            </Grid>
+        </Border>
+    </Grid>
+</Window>

@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+	<mappingItemList>
+		<mappingItem name="MaterialType">
+			<mappingValue value="18" mappingValue="PCB" />
+			<mappingValue value="24" mappingValue="BL" />
+		</mappingItem>
+		<mappingItem name="EQPStatus">
+			<mappingValue value="EX" mappingValue="EX" />
+			<mappingValue value="JC" mappingValue="JC" />
+			<mappingValue value="DOWN" mappingValue="UD" />
+			<mappingValue value="CM" mappingValue="CM" />
+			<mappingValue value="IDLE" mappingValue="ID" />
+			<mappingValue value="RUN" mappingValue="RUN" />
+		</mappingItem>
+		<mappingItem name="EQPStatusLevelThree">
+			<mappingValue value="EX_2100" mappingValue="ENG" />
+			<mappingValue value="EX_2200" mappingValue="ENR" />
+			<mappingValue value="JC_3100" mappingValue="JOC" />
+			<mappingValue value="DOWN_5100" mappingValue="EQD" />
+			<mappingValue value="DOWN_5200" mappingValue="UTD" />
+			<mappingValue value="DOWN_5300" mappingValue="PRD" />
+			<mappingValue value="DOWN_5400" mappingValue="CIM" />
+			<mappingValue value="DOWN_5500" mappingValue="UDA" />
+			<mappingValue value="CM_6100" mappingValue="CMT" />
+			<mappingValue value="IDLE_7100" mappingValue="WIP" />
+			<mappingValue value="IDLE_7200" mappingValue="STK" />
+			<mappingValue value="IDLE_7300" mappingValue="IDL" />
+			<mappingValue value="RUN_8100" mappingValue="RUN" />
+		</mappingItem>
+	<!--value[BC]   mappingValue[mes]-->
+    <mappingItem name="MachineMode">
+      <mappingValue value="1" mappingValue="Normal" />
+      <mappingValue value="2" mappingValue="Packing" />
+      <mappingValue value="3" mappingValue="Unpacking" />
+    </mappingItem>
+		<mappingItem name="PortType">
+			<mappingValue value="Loading" mappingValue="PL" />
+			<mappingValue value="Unloading" mappingValue="PU" />
+			<mappingValue value="Both" mappingValue="PB" />
+			<mappingValue value="LoaderInBuffer" mappingValue="BB" />
+			<mappingValue value="UnloaderInBuffer" mappingValue="BB" />
+			<mappingValue value="Buffer" mappingValue="BB" /> <!-- yhlee. 2017.07.20. Buffer에 대해 MES value 정의되지 않았음. 임의로 BB 적용. -->
+		</mappingItem>
+		<mappingItem name="PortTransferMode">
+			<mappingValue value="None" mappingValue="MANUAL" />
+			<mappingValue value="MGV" mappingValue="MANUAL" />
+			<mappingValue value="AGV" mappingValue="AUTO" />
+			<mappingValue value="StockerInline" mappingValue="AUTO" />
+		</mappingItem>
+		<mappingItem name="PPCINFO">
+			<mappingValue value="1" mappingValue="C" />
+			<mappingValue value="2" mappingValue="D" />
+			<mappingValue value="3" mappingValue="P" />
+			<!--<mappingValue value="4" mappingValue="C" />-->
+		</mappingItem>
+    <mappingItem name="AlarmStatus">
+      <mappingValue value="0" mappingValue="0" />
+      <mappingValue value="1" mappingValue="1" />
+    </mappingItem>
+    <mappingItem name="PORTSTATUS">
+      <mappingValue value="1" mappingValue="LOADREQ" />
+      <mappingValue value="2" mappingValue="LOADCOMP" />
+      <mappingValue value="3" mappingValue="UNLOADREQ" />
+      <mappingValue value="4" mappingValue="UNLOADCOMP" />
+      <mappingValue value="5" mappingValue="PORTDOWN" />
+    </mappingItem>
+    
+    <mappingItem name="PORTSTATENAME">
+      <mappingValue value="1" mappingValue="EMPTY" />
+      <mappingValue value="2" mappingValue="FULL" />
+      <mappingValue value="3" mappingValue="FULL" />
+      <mappingValue value="4" mappingValue="EMPTY" />
+    </mappingItem>
+    <mappingItem name="ModuleState">
+      <mappingValue value="1" mappingValue="IDLE" />
+      <mappingValue value="2" mappingValue="RUN" />
+      <mappingValue value="3" mappingValue="DOWN" />
+      <mappingValue value="4" mappingValue="PM" />
+    </mappingItem>
+		<mappingItem name="EquipmentStatus">	
+			<mappingValue value="IDLE" mappingValue="IDLE" />
+			<mappingValue value="RUN" mappingValue="RUN" />
+			<!-- <mappingValue value="Pause" mappingValue="PAUSE" /> -->
+			<mappingValue value="BM" mappingValue="DOWN" />
+			<mappingValue value="PM" mappingValue="PM" />
+			<mappingValue value="JC/MT" mappingValue="JC/MT" />
+			<mappingValue value="Test" mappingValue="Test" />
+			<mappingValue value="Maintenance" mappingValue="Maintenance" />
+			<mappingValue value="Etime" mappingValue="Etime" />
+		</mappingItem>
+		<mappingItem name="UnitStatus">
+			<mappingValue value="IDLE" mappingValue="IDLE" />
+			<mappingValue value="RUN" mappingValue="RUN" />
+			<!-- <mappingValue value="Pause" mappingValue="PAUSE" /> -->
+			<mappingValue value="BM" mappingValue="DOWN" />
+			<mappingValue value="PM" mappingValue="PM" />
+			<mappingValue value="JC/MT" mappingValue="JC/MT" />
+			<mappingValue value="Test" mappingValue="Test" />
+			<mappingValue value="Maintenance" mappingValue="Maintenance" />
+			<mappingValue value="Etime" mappingValue="Etime" />
+		</mappingItem>
+		<mappingItem name="SUnitStatus">
+			<mappingValue value="IDLE" mappingValue="IDLE" />
+			<mappingValue value="RUN" mappingValue="RUN" />
+			<!-- <mappingValue value="Pause" mappingValue="PAUSE" /> -->
+			<mappingValue value="BM" mappingValue="DOWN" />
+			<mappingValue value="PM" mappingValue="PM" />
+			<mappingValue value="JC/MT" mappingValue="JC/MT" />
+			<mappingValue value="Test" mappingValue="Test" />
+			<mappingValue value="Maintenance" mappingValue="Maintenance" />
+			<mappingValue value="Etime" mappingValue="Etime" />
+		</mappingItem>
+		<mappingItem name="SSUnitStatus">
+			<mappingValue value="IDLE" mappingValue="IDLE" />
+			<mappingValue value="RUN" mappingValue="RUN" />
+			<!-- <mappingValue value="Pause" mappingValue="PAUSE" /> -->
+			<mappingValue value="BM" mappingValue="DOWN" />
+			<mappingValue value="PM" mappingValue="PM" />
+			<mappingValue value="JC/MT" mappingValue="JC/MT" />
+			<mappingValue value="Test" mappingValue="Test" />
+			<mappingValue value="Maintenance" mappingValue="Maintenance" />
+			<mappingValue value="Etime" mappingValue="Etime" />
+		</mappingItem>
+		<mappingItem name="GlassType">
+			<mappingValue value="UVMask" mappingValue="U" />
+			<mappingValue value="BareTNDummy" mappingValue="N" />
+			<mappingValue value="LTPS_PR" mappingValue="L" />
+			<mappingValue value="LTPS" mappingValue="T" />
+			<mappingValue value="Bare_PI_CoatingDummy" mappingValue="P" />
+			<mappingValue value="BareFFSDummy" mappingValue="S" />
+			<mappingValue value="Encap" mappingValue="E" />
+			<mappingValue value="ITODummy" mappingValue="I" />
+			<mappingValue value="Glass" mappingValue="G" />
+			<mappingValue value="NormalDummy" mappingValue="D" />
+			<mappingValue value="ITO_PI_CoatingDummy" mappingValue="O" />
+			<mappingValue value="BareDummy" mappingValue="B" />
+			<mappingValue value="TFECVDDummy" mappingValue="C" />
+			<mappingValue value="TFEInkjetDummy" mappingValue="J" />
+			<mappingValue value="KeyDummy" mappingValue="K" />
+			<mappingValue value="ManualDummy" mappingValue="M" />
+			<mappingValue value="IGZODummy" mappingValue="Z" />
+			<mappingValue value="ToolingDummy" mappingValue="A" />
+		</mappingItem>
+		<mappingItem name="GlassJudge">
+			<mappingValue value="Good" mappingValue="G" />
+			<mappingValue value="NotGood" mappingValue="N" />
+			<mappingValue value="Rework" mappingValue="R" />
+			<mappingValue value="Repair" mappingValue="P" />
+			<mappingValue value="Scrap" mappingValue="S" />
+			<mappinfValue value="CVD_Repair" mappingValue="D" />
+		</mappingItem>
+		<mappingItem name="GlassGrade">
+			<mappingValue value="1" mappingValue="A" />
+			<mappingValue value="2" mappingValue="B" />
+		</mappingItem>
+		<mappingItem name="MaterialState">
+			<mappingValue value="Empty" mappingValue="UN-MOUNT" />
+			<mappingValue value="Unmount" mappingValue="UNMOUNTED" />
+			<mappingValue value="Mount" mappingValue="MOUNTED" />
+			<mappingValue value="Inuse" mappingValue="INUSE" />
+			<mappingValue value="Prepared" mappingValue="PREPARED" />
+			<mappingValue value="Done" mappingValue="DONE" />
+		</mappingItem>
+
+
+    <mappingItem name="ALCD">
+      <mappingValue value="1" mappingValue="LIGHT" />
+      <mappingValue value="2" mappingValue="SERIOUS" />
+    </mappingItem>
+    <mappingItem name="ALST">
+      <mappingValue value="1" mappingValue="Set" />
+      <mappingValue value="2" mappingValue="Clear" />
+    </mappingItem>
+    <mappingItem name="ALLV">
+      <mappingValue value="0" mappingValue="Light Alarm" />
+      <mappingValue value="1" mappingValue="Heavy Alarm" />
+    </mappingItem>
+		
+		<!--<mappingItem name="ReasonCodeType">
+			<mappingValue value="1" mappingValue="EQP" />
+			<mappingValue value="2" mappingValue="Operator" />
+		</mappingItem>-->	
+		
+		<mappingItem name="ProductThickness">
+			<mappingValue value="1" mappingValue="0.1" />
+			<mappingValue value="2" mappingValue="0.2" />
+			<mappingValue value="3" mappingValue="0.3" />
+			<mappingValue value="4" mappingValue="0.4" />
+			<mappingValue value="5" mappingValue="0.5" />
+			<mappingValue value="6" mappingValue="0.6" />
+			<mappingValue value="7" mappingValue="0.7" />
+			<mappingValue value="8" mappingValue="0.8" />
+			<mappingValue value="9" mappingValue="0.9" />
+			<mappingValue value="10" mappingValue="1.0" />
+		</mappingItem>
+
+    <mappingItem name="ESFLAGMESToBC">
+      <mappingValue value="1" mappingValue="Disable" />
+      <mappingValue value="2" mappingValue="Enable" />
+    </mappingItem>
+
+    <mappingItem name="ESFLAGBCToMES">
+      <mappingValue value="1" mappingValue="D" />
+      <mappingValue value="2" mappingValue="E" />
+    </mappingItem>
+  </mappingItemList>
+	<!-- <itemList> -->
+		
+		<!-- <item name="PORTTYPE" mappingName="PortType" /> -->
+		<!-- <item name="PORTACCESSMODE" mappingName="PortTransferMode" /> -->
+		<!-- <item name="PORTSTATENAME" mappingName="PortState" /> -->
+        <!-- <item name="MATERIALSTATE" mappingName="MaterialState" /> -->
+		<!-- <item name="COMMUNICATIONSTATE" mappingName="CommunicationState" /> -->
+		<!-- <item name="REASONCODETYPE" mappingName="ReasonCodeType" /> -->
+		<!-- <item name="UNITSTATENAME" mappingName="MesStatus" /> -->
+		<!-- <item name="SUBUNITSTATENAME" mappingName="MesStatus" /> -->
+		<!-- <item name="MACHINESTATENAME" mappingName="MesStatus" /> -->
+		<!-- <item name="SHOPNAME" mappingName="MesShopName"/> -->
+		<!-- <item name="PRODUCTTHICKNESS" mappingName="ProductThickness"/> -->
+		<!-- <item name="OPERATIONMODENAME" mappingName="OperationMode"/> -->
+		<!-- <item name="GLASSTYPE" mappingName="GlassType" /> -->
+		<!-- <item name="MASKTHICKNESS" mappingName="MaskThickness" /> -->
+		<!-- <item name="MATERIALTYPE" mappingName="MaterialType" /> -->
+		<!-- <item name="PANELJUDGE" mappingName="GlassJudge" /> -->
+		<!-- <item name="PRODUCTJUDGE" mappingName="GlassJudge" /> -->
+		<!-- <item name="GAMJUDGE" mappingName="GlassJudge" /> -->
+		<!-- <item name="AOIJUDGE" mappingName="GlassJudge" /> -->
+		<!-- <item name="MURJUDGE" mappingName="GlassJudge" /> -->
+		<!-- <item name="TPJUDGE" mappingName="GlassJudge" /> -->
+		<!-- <item name="MANJUDGE" mappingName="GlassJudge" /> -->
+		<!-- <item name="APPJUDGE" mappingName="GlassJudge" /> -->
+		<!-- <item name="MASKTYPE" mappingName="MaskType" /> -->
+		<!-- <item name="MASKJUDGE" mappingName="GlassJudge" /> -->
+		<!-- <item name="PARAMETERNAME" mappingName="ArrayPhotoSubUnitName" /> -->
+	<!-- </itemList> -->
+	
+</configuration>	

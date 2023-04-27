@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ArrayOfMenuItemInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <MenuItemInfo Name="HomeBack" Description="Home" Icon="pack://application:,,,/Resource/Images/Menu/Home.png"  ShortCutKey="" ShortCutModifiers="">
+  </MenuItemInfo>
+  <MenuItemInfo Name="Config" Description="Config"  Icon="pack://application:,,,/Resource/Images/Menu/Config.png"  ShortCutKey="" ShortCutModifiers="">
+    <MenuItemInfo Name="AlarmConfig" Description="Alarm"   ShortCutKey="F1" ShortCutModifiers="" />
+    <MenuItemInfo Name="UserConfig" Description="User"   ShortCutKey="F1" ShortCutModifiers="" />
+  </MenuItemInfo>
+  <MenuItemInfo Name="History" Description="History"  Icon="pack://application:,,,/Resource/Images/Menu/History.png"  ShortCutKey="" ShortCutModifiers="">
+    <MenuItemInfo Name="AlarmHistory" Description="Alarm"   ShortCutKey="F1" ShortCutModifiers=""/>
+    <MenuItemInfo Name="GlassHistory" Description="Glass"   ShortCutKey="F1" ShortCutModifiers=""/>
+    <MenuItemInfo Name="MaterialHistory" Description="Material"   ShortCutKey="F1" ShortCutModifiers=""/>
+    <MenuItemInfo Name="RecipeHistory" Description="Recipe"   ShortCutKey="F1" ShortCutModifiers=""/>
+  </MenuItemInfo>
+  <MenuItemInfo Name="Control" Description="Control"  Icon="pack://application:,,,/Resource/Images/Menu/Control.png"  ShortCutKey="" ShortCutModifiers="">
+    <MenuItemInfo Name="BCCommand" Description="Command"   ShortCutKey="F1" ShortCutModifiers="" />
+    <MenuItemInfo Name="OQA" Description="OQA Smapling"   ShortCutKey="F1" ShortCutModifiers="" />
+    <MenuItemInfo Name="PPID" Description="PPIDAndRecipeMap"   ShortCutKey="F1" ShortCutModifiers="" />
+  </MenuItemInfo>
+  <MenuItemInfo Name="Logout" Description="Logout" Icon="pack://application:,,,/Resource/Images/Menu/Logout.png"  ShortCutKey="" ShortCutModifiers="">
+  </MenuItemInfo>
+</ArrayOfMenuItemInfo>

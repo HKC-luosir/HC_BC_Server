@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+  <ItemGroup Name="AfterPolarizerAttachAutoClave_PARAMETERINT">
+    <Item Name="Parameter1ID" Offset="0" Points="1" Type="I" />
+    <Item Name="Value1" Offset="1" Points="1" Type="I" />
+  </ItemGroup>
+  <ItemGroup Name="AfterPolarizerAttachAutoClave_PARAMETERASCII">
+    <Item Name="Parameter1ID" Offset="0" Points="1" Type="I" />
+    <Item Name="Value1" Offset="1" Points="20" Type="A" />
+  </ItemGroup>
+  <ItemGroup Name="AfterPolarizerAttachAutoClave_PARAMETERSI">
+    <Item Name="Parameter1ID" Offset="0" Points="1" Type="I" />
+    <Item Name="Value1" Offset="1" Points="2" Type="SI" />
+  </ItemGroup>
+  <ItemGroup Name="AfterPolarizerAttachAutoClave_PARAMETERFLOAT">
+    <Item Name="Parameter1ID" Offset="0" Points="1" Type="I" />
+    <Item Name="Value1" Offset="1" Points="2" Type="SF" />
+  </ItemGroup>
+</configuration>

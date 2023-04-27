@@ -1,0 +1,445 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{20C1FB72-11EA-4168-8EC5-313002DA2C6D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Glorysoft.BC.Client</RootNamespace>
+    <AssemblyName>Glorysoft.BC.Client</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Resource\Images\Menu\LCClient.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="GalaSoft.MvvmLight.Extras.WPF4">
+      <HintPath>..\..\CommonDll\GalaSoft.MvvmLight.Extras.WPF4.dll</HintPath>
+    </Reference>
+    <Reference Include="GalaSoft.MvvmLight.WPF4">
+      <HintPath>..\..\CommonDll\GalaSoft.MvvmLight.WPF4.dll</HintPath>
+    </Reference>
+    <Reference Include="Glorysoft.Auto.Contract">
+      <HintPath>..\..\CommonDll\Glorysoft.Auto.Contract.dll</HintPath>
+    </Reference>
+    <Reference Include="Glorysoft.Auto.Framework">
+      <HintPath>..\..\CommonDll\Glorysoft.Auto.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="Glorysoft.Auto.WCF">
+      <HintPath>..\..\CommonDll\Glorysoft.Auto.WCF.dll</HintPath>
+    </Reference>
+    <Reference Include="GlorySoft.UI">
+      <HintPath>..\..\CommonDll\GlorySoft.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Expression.Interactions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Windows.Interactivity.WPF.2.0.20525\lib\net40\Microsoft.Expression.Interactions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.ServiceLocation">
+      <HintPath>..\..\CommonDll\Microsoft.Practices.ServiceLocation.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Interactivity, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Windows.Interactivity.WPF.2.0.20525\lib\net40\System.Windows.Interactivity.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="ClientInfo.cs" />
+    <Compile Include="ClientRequest.cs" />
+    <Compile Include="CommonClass\BindingPassword.cs" />
+    <Compile Include="CommonClass\ButtonBaseExtensions.cs" />
+    <Compile Include="CommonClass\Controller.cs" />
+    <Compile Include="CommonClass\PopupWindow.cs" />
+    <Compile Include="NotifyClient.cs" />
+    <Compile Include="CommonClass\ExcelService.cs" />
+    <Compile Include="CommonClass\ValueConverter.cs" />
+    <Compile Include="ViewModel\AlarmConfigVM.cs" />
+    <Compile Include="ViewModel\AlarmHistoryVM.cs" />
+    <Compile Include="ViewModel\BCCommandVM.cs" />
+    <Compile Include="ViewModel\ControlStateSettingVM.cs" />
+    <Compile Include="ViewModel\GlassHistoryForCutVM.cs" />
+    <Compile Include="ViewModel\MainFormOCPackingVM.cs" />
+    <Compile Include="ViewModel\MainFormLGVM.cs" />
+    <Compile Include="ViewModel\MainFormOLB_C7VM.cs" />
+    <Compile Include="ViewModel\MaterialHistoryVM.cs" />
+    <Compile Include="ViewModel\PPIDandRecipeIDMapVM.cs" />
+    <Compile Include="ViewModel\SamplingManageVM.cs" />
+    <Compile Include="ViewModel\LoginVM.cs" />
+    <Compile Include="ViewModel\MainFormOLB_C6VM.cs" />
+    <Compile Include="ViewModel\MainFormPOLVM.cs" />
+    <Compile Include="ViewModel\MainFormLIFT_MF0405VM.cs" />
+    <Compile Include="ViewModel\GlassHistoryVM.cs" />
+    <Compile Include="ViewModel\LotInformationVM.cs" />
+    <Compile Include="ViewModel\MainFormCutVM.cs" />
+    <Compile Include="ViewModel\MainWindowVM.cs" />
+    <Compile Include="ViewModel\RecipeVM.cs" />
+    <Compile Include="ViewModel\UserConfigVM.cs" />
+    <Compile Include="ViewModel\ViewModelManger.cs" />
+    <Compile Include="View\AlarmConfig.xaml.cs">
+      <DependentUpon>AlarmConfig.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\MainFormOCPacking.xaml.cs">
+      <DependentUpon>MainFormOCPacking.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\MainFormLG.xaml.cs">
+      <DependentUpon>MainFormLG.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\MainFormOLB_C7.xaml.cs">
+      <DependentUpon>MainFormOLB_C7.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\MaterialHistory.xaml.cs">
+      <DependentUpon>MaterialHistory.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\PPIDandRecipeIDMap.xaml.cs">
+      <DependentUpon>PPIDandRecipeIDMap.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\SamplingManage.xaml.cs">
+      <DependentUpon>SamplingManage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\BCCommand.xaml.cs">
+      <DependentUpon>BCCommand.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\GlassHistoryForCut.xaml.cs">
+      <DependentUpon>GlassHistoryForCut.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Login.xaml.cs">
+      <DependentUpon>Login.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\MainFormLIFT_MF0405.xaml.cs">
+      <DependentUpon>MainFormLIFT_MF0405.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\MainFormOLB_C6.xaml.cs">
+      <DependentUpon>MainFormOLB_C6.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\MainFormPOL.xaml.cs">
+      <DependentUpon>MainFormPOL.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\LotInformation.xaml.cs">
+      <DependentUpon>LotInformation.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\ControlStateSetting.xaml.cs">
+      <DependentUpon>ControlStateSetting.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\AlarmHistory.xaml.cs">
+      <DependentUpon>AlarmHistory.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\GlassHistory.xaml.cs">
+      <DependentUpon>GlassHistory.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\MainFormCut.xaml.cs">
+      <DependentUpon>MainFormCut.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Recipe.xaml.cs">
+      <DependentUpon>Recipe.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\UserConfig.xaml.cs">
+      <DependentUpon>UserConfig.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\WindowBase.cs" />
+    <Page Include="View\AlarmConfig.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\MainFormOCPacking.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\MainFormLG.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\MainFormOLB_C7.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\MaterialHistory.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\PPIDandRecipeIDMap.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\SamplingManage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\BCCommand.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\GlassHistoryForCut.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\Login.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\MainFormLIFT_MF0405.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\MainFormOLB_C6.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\MainFormPOL.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\LotInformation.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\ControlStateSetting.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\AlarmHistory.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\GlassHistory.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\MainFormCut.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CommonClass\Consts.cs" />
+    <Compile Include="View\MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="CommonClass\BaseBrush.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\Recipe.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\UserConfig.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="eap.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Configuration\MenuConfig.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resource\Images\logos.png" />
+    <Resource Include="Resource\Images\Menu\About24.ico" />
+    <Resource Include="Resource\Images\Menu\Close24.ico" />
+    <Resource Include="Resource\Images\Menu\Config.png" />
+    <Resource Include="Resource\Images\Menu\Control.png" />
+    <Resource Include="Resource\Images\Menu\Edit24.ico" />
+    <Resource Include="Resource\Images\Menu\Exit24.ico" />
+    <Resource Include="Resource\Images\Menu\Expand24.ico" />
+    <Resource Include="Resource\Images\Menu\Filter24.ico" />
+    <Resource Include="Resource\Images\Menu\Find24.ico" />
+    <Resource Include="Resource\Images\Menu\History.png" />
+    <Resource Include="Resource\Images\Menu\Home.png" />
+    <Resource Include="Resource\Images\Menu\Logout.png" />
+    <Resource Include="Resource\Images\Menu\menu_di.jpg" />
+    <Resource Include="Resource\Images\Menu\Open24.ico" />
+    <Resource Include="Resource\Images\Menu\Refresh24.ico" />
+    <Resource Include="Resource\Images\Menu\Save24.ico" />
+    <Resource Include="Resource\Images\Menu\SaveAs24.ico" />
+    <Resource Include="Resource\Images\menu_di.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Glorysoft.BC.Entity\Glorysoft.BC.Entity.csproj">
+      <Project>{c95ba850-8855-41c9-8ad6-afc464a9236f}</Project>
+      <Name>Glorysoft.BC.Entity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Glorysoft.BC.WCF.Contract\Glorysoft.BC.WCF.Contract.csproj">
+      <Project>{e1a3e315-da68-45c1-89e3-59632eced892}</Project>
+      <Name>Glorysoft.BC.WCF.Contract</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resource\Images\Layout\add.png" />
+    <Resource Include="Resource\Images\Layout\clear.png" />
+    <Resource Include="Resource\Images\Layout\del.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resource\Images\Layout\123qqq.jpg" />
+    <Resource Include="Resource\Images\Layout\AGV-MGV.png" />
+    <Resource Include="Resource\Images\Layout\alarmList.png" />
+    <Resource Include="Resource\Images\Layout\BCR.png" />
+    <Resource Include="Resource\Images\Layout\Buffer.png" />
+    <Resource Include="Resource\Images\Layout\button_send_1.png" />
+    <Resource Include="Resource\Images\Layout\button_send_2.png" />
+    <Resource Include="Resource\Images\Layout\CellCass.png" />
+    <Resource Include="Resource\Images\Layout\content_di.jpg" />
+    <Resource Include="Resource\Images\Layout\Conveyor.png" />
+    <Resource Include="Resource\Images\Layout\ConveyorTVT.png" />
+    <Resource Include="Resource\Images\Layout\DoubleRobot.png" />
+    <Resource Include="Resource\Images\Layout\Elevator.png" />
+    <Resource Include="Resource\Images\Layout\EQStatus2.png" />
+    <Resource Include="Resource\Images\Layout\form_di.png" />
+    <Resource Include="Resource\Images\Layout\Gr_logo.png" />
+    <Resource Include="Resource\Images\Layout\ico_5MMLC5C.png" />
+    <Resource Include="Resource\Images\Layout\ico_Close_1.png" />
+    <Resource Include="Resource\Images\Layout\ico_Close_2.png" />
+    <Resource Include="Resource\Images\Layout\ico_Connected.png" />
+    <Resource Include="Resource\Images\Layout\ico_dian.png" />
+    <Resource Include="Resource\Images\Layout\ico_large_1.png" />
+    <Resource Include="Resource\Images\Layout\ico_large_2.png" />
+    <Resource Include="Resource\Images\Layout\ico_minimize_1.png" />
+    <Resource Include="Resource\Images\Layout\ico_minimize_2.png" />
+    <Resource Include="Resource\Images\Layout\Input box.png" />
+    <Resource Include="Resource\Images\Layout\Login.jpg" />
+    <Resource Include="Resource\Images\Layout\MGV.png" />
+    <Resource Include="Resource\Images\Layout\modify.png" />
+    <Resource Include="Resource\Images\Layout\NormalCasse.png" />
+    <Resource Include="Resource\Images\Layout\ProcessModule.png" />
+    <Resource Include="Resource\Images\Layout\Scrap.png" />
+    <Resource Include="Resource\Images\Layout\SingleRobot.png" />
+    <Resource Include="Resource\Images\Layout\SingleRobot1.png" />
+    <Resource Include="Resource\Images\Layout\Stage.png" />
+    <Resource Include="Resource\Images\Layout\Stock.png" />
+    <Resource Include="Resource\Images\Layout\switch_di.png" />
+    <Resource Include="Resource\Images\Layout\switch_green.png" />
+    <Resource Include="Resource\Images\Layout\switch_red.png" />
+    <Resource Include="Resource\Images\Layout\Title.png" />
+    <Resource Include="Resource\Images\Layout\Tray.png" />
+    <Resource Include="Resource\Images\Layout\VCR.png" />
+    <Resource Include="Resource\Images\Layout\WireCass.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resource\Images\Layout\export.png" />
+    <Resource Include="Resource\Images\Layout\import.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resource\Images\Layout\Port.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resource\Images\Layout\CV1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resource\Images\Layout\CV2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resource\Images\Layout\Rectangle.png" />
+    <Resource Include="Resource\Images\Layout\Square.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resource\Images\Layout\Operator.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resource\Images\Layout\LiftStage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resource\Images\Layout\CSTStage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resource\Images\Layout\Motor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resource\Images\Menu\LCClient.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resource\Images\Menu\LCServer.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>xcopy $(ProjectDir)Configuration $(TargetDir)Configuration\  /e/y</PreBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<sqlMap namespace="Test"
+	xmlns="http://ibatis.apache.org/mapping"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <alias>    
+    <typeAlias alias="TestLog"  type="Glorysoft.BC.Entity.TestLog"/>    
+  </alias>
+  <resultMaps>
+    <resultMap id="TestLogResult" class="TestLog">
+      <result property="FunctionName" column="functionname"/>
+      <result property="Time" column="time"/>
+      <result property="BitBeginTime" column="bitbegintime"/>
+	  <result property="HandlerBeginTime" column="handlerbegintime"/>
+      <result property="EndTime" column="endtime"/>
+    </resultMap>
+  </resultMaps>
+  <statements>     
+    <insert id="InsertTestLog" parameterClass="TestLog">
+		INSERT INTO his_testlog(
+		functionname, "time", bitbegintime,handlerbegintime, endtime)
+		VALUES (#FunctionName#, #Time#, #BitBeginTime#,#HandlerBeginTime#, #EndTime#);
+	</insert>    
+  </statements>
+</sqlMap>

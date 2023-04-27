@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<sqlMap namespace="DVData"
+	xmlns="http://ibatis.apache.org/mapping"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<alias>
+		<typeAlias alias="DVData"  type="Glorysoft.BC.Entity.DVData"/>
+		<typeAlias alias="SVData"  type="Glorysoft.BC.Entity.SVData"/>
+	</alias>
+	<resultMaps>
+		<resultMap id="DVDataResult" class="DVData">
+			<result property="ID" column="id"/>			
+			<result property="EQPID" column="eqpid"/>
+			<result property="UNITID" column="unitid"/>			
+			<result property="CreateDate" column="createdate"/>
+			<result property = "Index" column="index"/>
+			<result property = "DVName" column="dvname"/>			
+			<result property = "OperationEnable" column="operationenable"/>
+			<result property = "OperationSymbol" column="operationsymbol"/>
+			<result property = "OperationProportion" column="operationproportion"/>
+			<result property = "ItemName" column="itemname"/>
+            <result property = "IsFloat" column="isfloat"/>
+		</resultMap>
+
+		<resultMap id="SVDataResult" class="SVData">
+			<result property="ID" column="id"/>
+			<result property = "EQPID" column="eqpid"/>
+			<result property = "CreateDate" column="createdate"/>
+			<result property = "UNITID" column="unitid"/>			
+			<result property = "SVName" column="svname"/>
+			<result property = "Index" column="index"/>
+			<result property = "OperationEnable" column="operationenable"/>
+			<result property = "OperationSymbol" column="operationsymbol"/>
+			<result property = "OperationProportion" column="operationproportion"/>
+			<result property = "ItemName" column="itemname"/>
+			<result property = "IsFloat" column="isfloat"/>
+		</resultMap>
+
+	</resultMaps>
+
+	<statements>
+
+		<select id="ViewDVDataList" resultMap="DVDataResult" parameterClass="Hashtable">
+			select * from cfg_dvdata
+			<dynamic prepend="where">
+				<isNotEmpty property="EQPID" prepend="and">
+					eqpid=#EQPID#
+				</isNotEmpty>
+				<isNotEmpty property="UNITID" prepend="and">
+					unitid=#UNITID#
+				</isNotEmpty>
+				<isNotEmpty property="ID" prepend="and">
+					id=#ID#
+				</isNotEmpty>
+			</dynamic> order by createdate
+		</select>
+		<insert id="InsertDVData" parameterClass="DVData">
+      INSERT INTO public.cfg_dvdata(
+      eqpid, unitid, createdate, index, dvname, operationenable, operationsymbol,
+      operationproportion, itemname,isfloat)
+      VALUES (#EQPID#, #UNITID#, localtimestamp(0), #Index#, #DVName#, #OperationEnable#, #OperationSymbol#,
+      #OperationProportion#, #ItemName#,#IsFloat#)
+    </insert>
+		<update id="UpdateDVData" parameterClass="DVData">
+      UPDATE public.cfg_dvdata
+      SET  index=#Index#, dvname=#DVName#, operationenable=#OperationEnable#,
+      operationsymbol=#OperationSymbol#, operationproportion=#OperationProportion#, itemname=#ItemName#, isfloat=#IsFloat#
+      <dynamic prepend="where">
+				<isNotEmpty property="EQPID" prepend="and">
+					eqpid=#EQPID#
+				</isNotEmpty>
+				<isNotEmpty property="UNITID" prepend="and">
+					unitid=#UNITID#
+				</isNotEmpty>
+				<isNotEmpty property="ID" prepend="and">
+					id=#ID#
+				</isNotEmpty>
+			</dynamic>
+		</update>
+		<delete id="DeleteDVData" parameterClass="Hashtable">
+			DELETE FROM cfg_dvdata
+			<dynamic prepend="where">
+				<isNotEmpty property="EQPID" prepend="and">
+					eqpid=#EQPID#
+				</isNotEmpty>
+				<isNotEmpty property="UNITID" prepend="and">
+					unitid=#UNITID#
+				</isNotEmpty>
+				<isNotEmpty property="ID" prepend="and">
+					id=#ID#
+				</isNotEmpty>
+			</dynamic>
+		</delete>
+
+
+
+
+		<select id="ViewSVDataList" resultMap="SVDataResult" parameterClass="Hashtable">
+			select * from cfg_svdata
+			<dynamic prepend="where">
+				<isNotEmpty property="EQPID" prepend="and">
+					eqpid=#EQPID#
+				</isNotEmpty>
+				<isNotEmpty property="UNITID" prepend="and">
+					unitid=#UNITID#
+				</isNotEmpty>
+				<isNotEmpty property="ID" prepend="and">
+					id=#ID#
+				</isNotEmpty>
+			</dynamic> order by createdate
+		</select>
+		<insert id="InsertSVData" parameterClass="SVData">
+			INSERT INTO public.cfg_svdata(
+			eqpid, createdate, unitid, svname, index, operationenable, operationsymbol,
+			operationproportion, itemname,isfloat)
+			VALUES (#EQPID#,localtimestamp(0), #UNITID#, #SVName#, #Index#, #OperationEnable#, #OperationSymbol#,
+			#OperationProportion#, #ItemName#,#IsFloat#);
+
+		</insert>
+		<update id="UpdateSVData" parameterClass="SVData">
+			UPDATE public.cfg_svdata
+			SET eqpid=#EQPID#, unitid=#UNITID#, svname=#SVName#, index=#Index#, operationenable=#OperationEnable#,
+			operationsymbol=#OperationSymbol#, operationproportion=#OperationProportion#, itemname=#ItemName#, isfloat=#IsFloat#
+			<dynamic prepend="where">
+				<isNotEmpty property="EQPID" prepend="and">
+					eqpid=#EQPID#
+				</isNotEmpty>
+				<isNotEmpty property="UNITID" prepend="and">
+					unitid=#UNITID#
+				</isNotEmpty>
+				<isNotEmpty property="ID" prepend="and">
+					id=#ID#
+				</isNotEmpty>
+			</dynamic>
+		</update>
+		<delete id="DeleteSVData" parameterClass="Hashtable">
+			DELETE FROM cfg_svdata
+			<dynamic prepend="where">
+				<isNotEmpty property="EQPID" prepend="and">
+					eqpid=#EQPID#
+				</isNotEmpty>
+				<isNotEmpty property="UNITID" prepend="and">
+					unitid=#UNITID#
+				</isNotEmpty>
+				<isNotEmpty property="ID" prepend="and">
+					id=#ID#
+				</isNotEmpty>
+			</dynamic>
+		</delete>
+	</statements>
+</sqlMap>

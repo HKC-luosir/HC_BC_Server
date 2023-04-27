@@ -1,0 +1,19 @@
+﻿<Application x:Class="Glorysoft.BC.Client.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             StartupUri="View/MainWindow.xaml"
+             xmlns:vm="clr-namespace:Glorysoft.BC.Client.ViewModel" 
+             xmlns:view="clr-namespace:Glorysoft.BC.Client.View" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="pack://application:,,,/GlorySoft.UI;component/Styles/Controls.xaml" />
+                <ResourceDictionary Source="CommonClass/BaseBrush.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+            <vm:ViewModelManger x:Key="DataSource"  d:IsDataSource="True"/>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

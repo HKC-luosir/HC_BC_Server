@@ -1,0 +1,150 @@
+﻿<UserControl x:Class="Glorysoft.BC.Client.View.MainFormCut"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity" 
+             xmlns:View="clr-namespace:Glorysoft.BC.Client.View" 
+             xmlns:vc="clr-namespace:Glorysoft.BC.Client.CommonClass"
+             mc:Ignorable="d" 
+             Width="1400"  Height="500">
+    <UserControl.Resources>
+        <vc:EQPStatus2Color x:Key="EQPStatus2Color" />
+        <vc:PLCConnect2String x:Key="PLCConnect2String" />
+    </UserControl.Resources>
+    <Grid>
+        <Border Background="Transparent" >
+            <Grid>
+                <Label  BorderBrush="#5b5b5b" BorderThickness="2" Background="#e6eded"  Width="70" Margin="337,287,0,0" HorizontalAlignment="Left" Height="156" VerticalAlignment="Top">
+                    <i:Interaction.Triggers>
+                        <i:EventTrigger EventName="MouseLeftButtonDown">
+                            <i:InvokeCommandAction Command="{Binding CfogLoaderCMD}" CommandParameter="{Binding GlobalInfo.CFOGLoder}"/>
+                        </i:EventTrigger>
+                    </i:Interaction.Triggers>
+                </Label>
+                <Label  BorderBrush="#5b5b5b" BorderThickness="2" Width="45" Height="20" Margin="343,298,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" >
+                </Label>
+                <Label  BorderBrush="#5b5b5b" BorderThickness="2" Width="45" Height="20" Margin="343,323,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" ></Label>
+                <Label BorderBrush="#5b5b5b" BorderThickness="2" Background="{Binding OClient.EQPList[Loader1].EQPStatus,Converter={StaticResource EQPStatus2Color}}"  Margin="266,294,0,206" HorizontalAlignment="Left" Width="72"/>
+                <Label BorderBrush="#5b5b5b" BorderThickness="2" Background="{Binding OClient.EQPList[QuarterCutter].EQPStatus,Converter={StaticResource EQPStatus2Color}}" Margin="266,165,0,0" HorizontalAlignment="Left" Width="227" Height="60" VerticalAlignment="Top" >
+                    <i:Interaction.Triggers>
+                        <i:EventTrigger EventName="MouseLeftButtonDown">
+                            <i:InvokeCommandAction Command="{Binding CfogCleanerCMD}"/>
+                        </i:EventTrigger>
+                    </i:Interaction.Triggers>
+                </Label>
+                <Label Background="{StaticResource Square}" Margin="280,167,0,0" HorizontalAlignment="Left" Width="55" Height="55" VerticalAlignment="Top"/>
+                <Label  BorderBrush="#5b5b5b" BorderThickness="2" Width="30" Height="30" Margin="348,180,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" />
+                <Label BorderBrush="#5b5b5b" BorderThickness="2" Background="{Binding OClient.EQPList[QuarterGrinder].EQPStatus,Converter={StaticResource EQPStatus2Color}}" Margin="491,165,0,0" HorizontalAlignment="Left" Width="59" Height="179" VerticalAlignment="Top">
+                    <Label Content="Half&#xA;Grinder" FontSize="10" Height="40" Width="47"/>
+                </Label>
+                <Label Background="{StaticResource SingleRobot1}" Margin="283,307,0,0" HorizontalAlignment="Left" Width="40" Height="30" VerticalAlignment="Top"/>
+                <Label BorderBrush="#5b5b5b" BorderThickness="2" Background="{Binding OClient.EQPList[PPBoxPacker].EQPStatus,Converter={StaticResource EQPStatus2Color}}" Margin="602,263,0,0" HorizontalAlignment="Left" Width="85" Height="112" VerticalAlignment="Top">
+                    <Label Content="PPBox Packer" Width="75" Height="30" FontSize="10"/>
+                </Label>
+                <Label  BorderBrush="#5b5b5b" BorderThickness="2" Margin="612,289,0,0" HorizontalAlignment="Left" Width="65" Height="35" VerticalAlignment="Top" />
+                <Label  BorderBrush="#5b5b5b" BorderThickness="2" Margin="612,329,0,0" HorizontalAlignment="Left" Width="65" Height="35" VerticalAlignment="Top" />
+
+                <Label  BorderBrush="#5b5b5b" BorderThickness="2" Width="45" Height="20" Margin="343,390,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" />
+                <Label  BorderBrush="#5b5b5b" BorderThickness="2" Width="45" Height="20" Margin="343,415,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" />
+                <Label BorderBrush="#5b5b5b" BorderThickness="2" Background="{Binding OClient.EQPList[Loader2].EQPStatus, Converter={StaticResource EQPStatus2Color}}"  Margin="266,386,0,0" HorizontalAlignment="Left" Width="72" Height="51" VerticalAlignment="Top"/>
+                <Label Background="{StaticResource SingleRobot1}" Margin="283,400,0,0" HorizontalAlignment="Left" Width="40" Height="30" VerticalAlignment="Top"/>
+
+                <Label BorderBrush="#5b5b5b" BorderThickness="2" Background="{Binding OClient.EQPList[LoaderCV].EQPStatus, Converter={StaticResource EQPStatus2Color}}" Margin="198,44,0,0" HorizontalAlignment="Left" Width="70" Height="397" VerticalAlignment="Top">
+                    <Label Content="Loader CV" Width="60" Height="30" FontSize="10"/>
+                </Label>
+                <Label BorderBrush="#5b5b5b" BorderThickness="2" Background="{Binding OClient.EQPList[HalfCutter].EQPStatus, Converter={StaticResource EQPStatus2Color}}" Margin="266,44,0,0" HorizontalAlignment="Left" Width="227" Height="60" VerticalAlignment="Top" >
+                    <i:Interaction.Triggers>
+                        <i:EventTrigger EventName="MouseLeftButtonDown">
+                            <i:InvokeCommandAction Command="{Binding CfogCleanerCMD}"/>
+                        </i:EventTrigger>
+                    </i:Interaction.Triggers>
+                </Label>
+                <Label Background="{StaticResource Rectangle}" Margin="273,34,0,0" HorizontalAlignment="Left" Width="90" Height="80" VerticalAlignment="Top"/>
+                <Label  BorderBrush="#5b5b5b" BorderThickness="2" Background="{Binding OClient.EQPList[PPBoxPacker].EQPStatus, Converter={StaticResource EQPStatus2Color}}" Margin="548,309,0,0" HorizontalAlignment="Left" Width="56" Height="35" VerticalAlignment="Top" />
+                <Label Background="{StaticResource SingleRobot1}" Margin="563,316,0,0" HorizontalAlignment="Left" Width="29" Height="20" VerticalAlignment="Top"/>
+                <Label BorderBrush="#5b5b5b" BorderThickness="2" Background="{Binding OClient.EQPList[HalfGrinder].EQPStatus, Converter={StaticResource EQPStatus2Color}}" Margin="491,49,0,0" HorizontalAlignment="Left" Width="60" Height="50" VerticalAlignment="Top">
+                    <Label Content="CV" Width="49" Height="30" FontSize="10"/>
+                </Label>
+                <Label BorderBrush="#5b5b5b" BorderThickness="2" Background="{Binding OClient.EQPList[HalfGrinder].EQPStatus, Converter={StaticResource EQPStatus2Color}}" Margin="549,21,0,0" HorizontalAlignment="Left" Width="231" Height="50" VerticalAlignment="Top" >
+                    <i:Interaction.Triggers>
+                        <i:EventTrigger EventName="MouseLeftButtonDown">
+                            <i:InvokeCommandAction Command="{Binding CfogCleanerCMD}"/>
+                        </i:EventTrigger>
+                    </i:Interaction.Triggers>
+                    <Label Content="Half Grinder1" Width="76" Height="30" FontSize="10"/>
+                </Label>
+                <Label BorderBrush="#5b5b5b" BorderThickness="2" Background="{Binding OClient.EQPList[HalfGrinder].EQPStatus, Converter={StaticResource EQPStatus2Color}}" Margin="549,74,0,0" HorizontalAlignment="Left" Width="231" Height="50" VerticalAlignment="Top" >
+                    <i:Interaction.Triggers>
+                        <i:EventTrigger EventName="MouseLeftButtonDown">
+                            <i:InvokeCommandAction Command="{Binding CfogCleanerCMD}"/>
+                        </i:EventTrigger>
+                    </i:Interaction.Triggers>
+                    <Label Content="Half Grinder2" Width="76" Height="30" FontSize="10"/>
+                </Label>
+                <Label BorderBrush="#5b5b5b" BorderThickness="2" Background="{Binding OClient.EQPList[UnloaderCV].EQPStatus, Converter={StaticResource EQPStatus2Color}}" Margin="879,21,0,0" HorizontalAlignment="Left" Width="70" Height="420" VerticalAlignment="Top">
+                    <Label Content="Unloader CV" Width="71" Height="30" FontSize="8"/>
+                </Label>
+                <Label BorderBrush="#5b5b5b" BorderThickness="2" Background="{Binding OClient.EQPList[UnloaderCV].EQPStatus, Converter={StaticResource EQPStatus2Color}}" Margin="778,28,0,0" HorizontalAlignment="Left" Width="103" Height="35" VerticalAlignment="Top">
+                    <Label Content="CV" Width="49" Height="30" FontSize="10"/>
+                </Label>
+                <Label BorderBrush="#5b5b5b" BorderThickness="2" Background="{Binding OClient.EQPList[UnloaderCV].EQPStatus, Converter={StaticResource EQPStatus2Color}}" Margin="778,80,0,0" HorizontalAlignment="Left" Width="103" Height="35" VerticalAlignment="Top">
+                    <Label Content="CV" Width="49" Height="30" FontSize="10"/>
+                </Label>
+                <Label BorderBrush="#5b5b5b" BorderThickness="2" Background="{Binding OClient.EQPList[UnloaderCV].EQPStatus, Converter={StaticResource EQPStatus2Color}}" Margin="785,113,0,0" HorizontalAlignment="Left" Width="40" Height="181" VerticalAlignment="Top">
+                    <Label Content="CV" Width="49" Height="30" FontSize="10"/>
+                </Label>
+                <Label BorderBrush="#5b5b5b" BorderThickness="2" Background="{Binding OClient.EQPList[UnloaderCV].EQPStatus, Converter={StaticResource EQPStatus2Color}}" Margin="785,292,0,0" HorizontalAlignment="Left" Width="96" Height="35" VerticalAlignment="Top">
+                    <Label Content="CV" Width="49" Height="30" FontSize="10"/>
+                </Label>
+                <Label BorderBrush="#5b5b5b" BorderThickness="2" Background="{Binding OClient.EQPList[STKUnloader1].EQPStatus, Converter={StaticResource EQPStatus2Color}}"  Margin="947,294,0,0" HorizontalAlignment="Left" Width="76" Height="49" VerticalAlignment="Top"/>
+                <Label Background="{StaticResource SingleRobot1}" Margin="963,400,0,0" HorizontalAlignment="Left" Width="40" Height="30" VerticalAlignment="Top"/>
+                <Label BorderBrush="#5b5b5b" BorderThickness="2" Background="{Binding OClient.EQPList[STKUnloader2].EQPStatus, Converter={StaticResource EQPStatus2Color}}"  Margin="949,388,0,0" HorizontalAlignment="Left" Width="76" Height="49" VerticalAlignment="Top"/>
+                <Label Background="{StaticResource SingleRobot1}" Margin="963,307,0,0" HorizontalAlignment="Left" Width="40" Height="30" VerticalAlignment="Top"/>
+                <Label  BorderBrush="#5b5b5b" BorderThickness="2" Background="#e6eded"  Width="70" Margin="1023,287,0,0" HorizontalAlignment="Left" Height="156" VerticalAlignment="Top">
+                    <i:Interaction.Triggers>
+                        <i:EventTrigger EventName="MouseLeftButtonDown">
+                            <i:InvokeCommandAction Command="{Binding CfogLoaderCMD}" CommandParameter="{Binding GlobalInfo.CFOGLoder}"/>
+                        </i:EventTrigger>
+                    </i:Interaction.Triggers>
+                </Label>
+                <Label  BorderBrush="#5b5b5b" BorderThickness="2" Width="45" Height="20" Margin="1028,298,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" />
+                <Label  BorderBrush="#5b5b5b" BorderThickness="2" Width="45" Height="20" Margin="1028,323,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" />
+                <Label  BorderBrush="#5b5b5b" BorderThickness="2" Width="45" Height="20" Margin="1030,390,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" />
+                <Label  BorderBrush="#5b5b5b" BorderThickness="2" Width="45" Height="20" Margin="1030,415,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" />
+                <Label BorderBrush="#5b5b5b" BorderThickness="2" Background="{Binding OClient.EQPList[UnpackGrinder].EQPStatus, Converter={StaticResource EQPStatus2Color}}" Margin="947,21,0,0" HorizontalAlignment="Left" Width="230" Height="38" VerticalAlignment="Top" >
+                    <i:Interaction.Triggers>
+                        <i:EventTrigger EventName="MouseLeftButtonDown">
+                            <i:InvokeCommandAction Command="{Binding CfogCleanerCMD}"/>
+                        </i:EventTrigger>
+                    </i:Interaction.Triggers>
+                    <Label Content="Unpack Gridner" Width="86" Height="30" FontSize="10"/>
+                </Label>
+                <Label BorderBrush="#5b5b5b" BorderThickness="2" Background="{Binding OClient.EQPList[UnpackGrinder].EQPStatus, Converter={StaticResource EQPStatus2Color}}" Margin="1175,21,0,0" HorizontalAlignment="Left" Width="40" Height="213" VerticalAlignment="Top"/>
+                <Label BorderBrush="#5b5b5b" BorderThickness="2" Background="{Binding OClient.EQPList[UnpackGrinder].EQPStatus, Converter={StaticResource EQPStatus2Color}}" Margin="947,196,0,0" HorizontalAlignment="Left" Width="230" Height="38" VerticalAlignment="Top" >
+                    <i:Interaction.Triggers>
+                        <i:EventTrigger EventName="MouseLeftButtonDown">
+                            <i:InvokeCommandAction Command="{Binding CfogCleanerCMD}"/>
+                        </i:EventTrigger>
+                    </i:Interaction.Triggers>
+                </Label>
+                <Label  BorderBrush="#5b5b5b" BorderThickness="2" Background="{Binding OClient.EQPList[TrayUnloader1].EQPStatus, Converter={StaticResource EQPStatus2Color}}" Margin="947,84,0,0" HorizontalAlignment="Left" Width="54" Height="35" VerticalAlignment="Top" />
+                <Label  BorderBrush="#5b5b5b" BorderThickness="2" Background="{Binding OClient.EQPList[TrayUnloader2].EQPStatus, Converter={StaticResource EQPStatus2Color}}" Margin="947,139,0,0" HorizontalAlignment="Left" Width="54" Height="35" VerticalAlignment="Top" />
+                <Label Background="{StaticResource SingleRobot1}" Margin="962,91,0,0" HorizontalAlignment="Left" Width="25" Height="20" VerticalAlignment="Top"/>
+                <Label Background="{StaticResource SingleRobot1}" Margin="963,146,0,0" HorizontalAlignment="Left" Width="25" Height="20" VerticalAlignment="Top"/>
+                <Label  BorderBrush="#5b5b5b" BorderThickness="2" Background="{Binding OClient.EQPList[TrayUnloader1].EQPStatus, Converter={StaticResource EQPStatus2Color}}" Margin="999,79,0,0" HorizontalAlignment="Left" Width="65" Height="45" VerticalAlignment="Top" >
+                    <Label Content="Tray1" FontSize="10"  Width="50" Height="30"/>
+                </Label>
+                <Label  BorderBrush="#5b5b5b" BorderThickness="2" Background="{Binding OClient.EQPList[TrayUnloader2].EQPStatus, Converter={StaticResource EQPStatus2Color}}" Margin="999,134,0,0" HorizontalAlignment="Left" Width="65" Height="45" VerticalAlignment="Top">
+                    <Label Content="Tray2" FontSize="10"  Width="50" Height="30"/>
+                </Label>
+                <Label  BorderBrush="#5b5b5b" BorderThickness="2" Width="30" Height="30" Margin="383,180,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" />
+                <Label  BorderBrush="#5b5b5b" BorderThickness="2" Width="30" Height="30" Margin="418,180,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" />
+                <Label  BorderBrush="#5b5b5b" BorderThickness="2" Width="30" Height="30" Margin="453,180,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" />
+                <Label  BorderBrush="#5b5b5b" BorderThickness="2" Width="35" Margin="378,56,0,0" HorizontalAlignment="Left" Height="35" VerticalAlignment="Top" />
+                <Label  BorderBrush="#5b5b5b" BorderThickness="2" Width="35" Margin="433,56,0,0" HorizontalAlignment="Left" Height="35" VerticalAlignment="Top" />
+            </Grid>
+        </Border>
+    </Grid>
+
+</UserControl>

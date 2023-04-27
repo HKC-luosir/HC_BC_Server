@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{46A010AA-5AF3-4899-9E5A-FFC7F9652496}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Glorysoft.BC.RV</RootNamespace>
+    <AssemblyName>Glorysoft.BC.RV</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Glorysoft.Auto.Contract">
+      <HintPath>..\..\CommonDll\Glorysoft.Auto.Contract.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>..\..\CommonDll\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="TIBCO.Rendezvous, Version=1.0.5155.23393, Culture=neutral, PublicKeyToken=1a696d1f90f6158a, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\CommonDll\TIBCO.Rendezvous.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Common\AbstractFDCMessageHandler.cs" />
+    <Compile Include="Common\AbstractMESMessageHandler.cs" />
+    <Compile Include="Common\MESClient.cs" />
+    <Compile Include="Common\TibcoManager.cs" />
+    <Compile Include="Common\XmlSerialization.cs" />
+    <Compile Include="Entity\MESDataSPC.cs" />
+    <Compile Include="Entity\MESData.cs" />
+    <Compile Include="Entity\MESReplyData.cs" />
+    <Compile Include="Entity\NewMessData.cs" />
+    <Compile Include="Entity\RVBodySPC.cs" />
+    <Compile Include="Entity\RVBody.cs" />
+    <Compile Include="RVMessage\Handlers\DefectAlarmHandler.cs" />
+    <Compile Include="RVMessage\Handlers\RecipeParamRequestHandler.cs" />
+    <Compile Include="RVMessage\Handlers\SPCRateDownloadHandler.cs" />
+    <Compile Include="RVMessage\Handlers\SamplingDownloadHandler.cs" />
+    <Compile Include="RVService\IMsgServer.cs" />
+    <Compile Include="RVService\ITibcoContext.cs" />
+    <Compile Include="RVService\ITibcoDispather.cs" />
+    <Compile Include="RVService\MessageInfo.cs" />
+    <Compile Include="RVService\MessageService.cs" />
+    <Compile Include="RVService\MsgEvent.cs" />
+    <Compile Include="RVService\TibcoContext.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Common\RVMessageDispatcher.cs" />
+    <Compile Include="RVMessage\SendMESMessage.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Glorysoft.BC.Db.Contract\Glorysoft.BC.Db.Contract.csproj">
+      <Project>{07007414-f814-414c-a437-a49b47cde4b3}</Project>
+      <Name>Glorysoft.BC.Db.Contract</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Glorysoft.BC.Entity\Glorysoft.BC.Entity.csproj">
+      <Project>{c95ba850-8855-41c9-8ad6-afc464a9236f}</Project>
+      <Name>Glorysoft.BC.Entity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Glorysoft.BC.EQP.Contract\Glorysoft.BC.EQP.Contract.csproj">
+      <Project>{0EF3879D-32AB-49BB-9F77-C8023A2A683D}</Project>
+      <Name>Glorysoft.BC.EQP.Contract</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Glorysoft.BC.Logic.Contract\Glorysoft.BC.Logic.Contract.csproj">
+      <Project>{80f38fd2-0d2a-4422-9911-e93fd197e0a5}</Project>
+      <Name>Glorysoft.BC.Logic.Contract</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<sqlMap namespace="GlassInfo"
+	xmlns="http://ibatis.apache.org/mapping"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <alias>
+    <typeAlias alias="wip_processend"  type="Glorysoft.BC.Entity.WebSocketEntity.wip_processend"/>
+	<typeAlias alias="wip_processend_glass"  type="Glorysoft.BC.Entity.WebSocketEntity.wip_processend_glass"/>
+  </alias>
+  <resultMaps>
+	  <resultMap id="wip_processendResult" class="wip_processend">
+		  <result property = "id" column="id"/>
+		  <result property = "equipmentid" column="equipmentid"/>
+		  <result property = "portid" column="portid"/>
+		  <result property = "porttype" column="porttype"/>
+		  <result property = "partname" column="partname"/>
+		  <result property = "stepname" column="stepname"/>
+		  <result property = "durableid" column="durableid"/>
+		  <result property = "mainqty" column="mainqty"/>
+		  <result property = "operatorid" column="operatorid"/>
+		  <result property = "actioncomment" column="actioncomment"/>
+		  <result property = "returncode" column="returncode"/>
+		  <result property = "returnmsg" column="returnmsg"/>
+		  <result property = "updatedate" column="updatedate"/>
+	  </resultMap>
+	<resultMap id="wip_processend_glassResult" class="wip_processend_glass">
+		<result property = "id" column="id"/>
+		<result property = "equipmentid" column="equipmentid"/>
+        <result property = "panelid" column="panelid"/>
+	    <result property = "lottype" column="lottype"/>
+		<result property = "blid" column="blid"/>
+		<result property = "grade" column="grade"/>
+		<result property = "position" column="position"/>
+		<result property = "actioncomment" column="actioncomment"/>
+		<result property = "abnormalcode" column="abnormalcode"/>
+		<result property = "defectcode" column="defectcode"/>
+		<result property = "parentid" column="parentid"/>
+		<result property = "returncode" column="returncode"/>
+		<result property = "returnmsg" column="returnmsg"/>
+		<result property = "updatedate" column="updatedate"/>
+	</resultMap>
+  </resultMaps>
+  <statements>
+	  <select id="Insertwip_processend" parameterClass="wip_processend">
+		  INSERT INTO public.wip_processend(
+		  equipmentid, portid, porttype, partname, stepname, durableid,
+		  mainqty, operatorid, actioncomment, returncode, returnmsg, updatedate)
+		  VALUES (
+		  #equipmentid#, #portid#, #porttype#, #partname#, #stepname#, #durableid#,
+		  #mainqty#, #operatorid#, #actioncomment#, #returncode#, #returnmsg#, localtimestamp(0)) RETURNING id;
+	  </select>
+	  <insert id="Insertwip_processend_glass" parameterClass="wip_processend_glass">
+		  INSERT INTO public.wip_processend_glass(
+		  equipmentid, panelid, lottype, blid, grade, position, actioncomment,
+		  abnormalcode, defectcode, parentid, returncode, returnmsg, updatedate)
+		  VALUES (
+		  #equipmentid#, #panelid#, #lottype#, #blid#, #grade#, #position#, #actioncomment#,
+		  #abnormalcode#, #defectcode#, #parentid#, #returncode#, #returnmsg#, localtimestamp(0));
+	  </insert>
+
+    <select id="Viewwip_processendList" resultMap="wip_processendResult" parameterClass="Hashtable">
+		select * from wip_processend
+		<dynamic prepend="where">
+        <isNotEmpty property="equipmentid" prepend="and">
+			equipmentid =#equipmentid#
+		</isNotEmpty>
+        <isNotEmpty property="portid" prepend="and">
+			portid =#portid#
+		</isNotEmpty>
+		<isNotEmpty property="durableid" prepend="and">
+			durableid like '%' || #durableid# || '%'
+		</isNotEmpty>
+			<isNotEmpty property="id" prepend="and">
+				id =#id#
+			</isNotEmpty>
+		</dynamic>
+	</select>
+	  
+	<select id="Viewwip_processend_glassList" resultMap="wip_processend_glassResult" parameterClass="Hashtable">
+		select * from wip_processend_glass
+		<dynamic prepend="where">
+        <isNotEmpty property="equipmentid" prepend="and">
+			equipmentid = #equipmentid#
+		</isNotEmpty>
+        <isNotEmpty property="panelid" prepend="and">
+			panelid like '%' || #panelid# || '%'
+		</isNotEmpty>
+        <isNotEmpty property="parentid" prepend="and">
+			parentid =#parentid#
+		</isNotEmpty>
+		<isNotEmpty property="id" prepend="and">
+			id =#id#
+		</isNotEmpty>
+		</dynamic>
+		order by id
+	</select>
+	  
+    <update id="Updatewip_processend" patameterClass="wip_processend">
+		UPDATE public.wip_processend
+		SET equipmentid=#equipmentid#, portid=#portid#, porttype=#porttype#, partname=#partname#, stepname=#stepname#, 
+			durableid=#durableid#, mainqty=#mainqty#, operatorid=#operatorid#, actioncomment=#actioncomment#, returncode=#returncode#, returnmsg=#returnmsg#, updatedate=localtimestamp(0)
+		WHERE id=#id#;
+	</update>
+	  
+    <update id="Updatewip_processend_glass" patameterClass="wip_processend_glass">
+		UPDATE public.wip_processend_glass
+		SET equipmentid=#equipmentid#, panelid=#panelid#, lottype=#lottype#, blid=#blid#, grade=#grade#, position=#position#, 
+			actioncomment=#actioncomment#, abnormalcode=#abnormalcode#, defectcode=#defectcode#, parentid=#parentid#, returncode=#returncode#, returnmsg=#returnmsg#, updatedate=localtimestamp(0)
+		WHERE id=#id#;
+	</update>
+	  
+    <delete id="Deletewip_processend" parameterClass="Hashtable">
+      delete from wip_processend WHERE id=#id#;
+    </delete>
+	  
+     <delete id="Deletewip_processend_glass" parameterClass="Hashtable">
+		 delete from wip_processend_glass
+		 <dynamic prepend="where">
+			 <isNotEmpty property="id" prepend="and">
+				 id = #id#
+			 </isNotEmpty>
+			 <isNotEmpty property="parentid" prepend="and">
+				 parentid =#parentid#
+			 </isNotEmpty>
+		 </dynamic>
+    </delete>
+	  
+</statements>
+</sqlMap>

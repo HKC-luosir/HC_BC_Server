@@ -1,0 +1,385 @@
+﻿<UserControl x:Class="Glorysoft.BC.Client.View.MainFormOCPacking"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity" 
+             xmlns:View="clr-namespace:Glorysoft.BC.Client.View" 
+             xmlns:vc="clr-namespace:Glorysoft.BC.Client.CommonClass"
+             mc:Ignorable="d" 
+             Width="1400"  Height="500">
+    <UserControl.Resources>
+        <vc:EQPStatus2Color x:Key="EQPStatus2Color" />
+        <vc:PLCConnect2String x:Key="PLCConnect2String" />
+    </UserControl.Resources>
+    <Grid>
+        <Border Grid.Column="0" Grid.ColumnSpan="3" Background="Transparent" Margin="0,0,0,0" >
+            <Grid>
+                <Label BorderBrush="#5b5b5b" BorderThickness="2" Background="#e6eded"  Margin="53,0,0,40" HorizontalAlignment="Left" Width="68" VerticalAlignment="Bottom" Height="120">
+                    <Label Content="A01" FontSize="10"  Width="55" Height="30"/>
+                </Label>
+                <Label Background="{StaticResource Conveyor}" Margin="503,0,0,40" HorizontalAlignment="Left" Width="80" VerticalAlignment="Bottom" RenderTransformOrigin="0.5,0.5" Height="57">
+                    <Label.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform Angle="-90.068"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Label.RenderTransform>
+                </Label>
+
+                <Label BorderBrush="#5b5b5b" BorderThickness="2" Background="#e6eded"  Margin="126,0,0,40" HorizontalAlignment="Left" Width="68" VerticalAlignment="Bottom" Height="120">
+                    <Label Content="A02" FontSize="10"  Width="55" Height="30"/>
+                </Label>
+                <Label BorderBrush="#5b5b5b" BorderThickness="2" Background="#e6eded"  Margin="199,0,0,40" HorizontalAlignment="Left" Width="68" VerticalAlignment="Bottom" Height="120">
+                    <Label Content="A03" FontSize="10"  Width="55" Height="30"/>
+                </Label>
+                <Label BorderBrush="#5b5b5b" BorderThickness="2" Background="#e6eded"  Margin="272,0,0,40" HorizontalAlignment="Left" Width="68" VerticalAlignment="Bottom" Height="120">
+                    <Label Content="A04" FontSize="10"  Width="55" Height="30"/>
+                </Label>
+                <Label BorderBrush="#5b5b5b" BorderThickness="2" Background="#e6eded"  Margin="345,0,0,40" HorizontalAlignment="Left" Width="68" VerticalAlignment="Bottom" Height="120">
+                    <Label Content="A05" FontSize="10"  Width="55" Height="30"/>
+                </Label>
+                <Label Background="{StaticResource Conveyor}" Margin="503,327,0,116" HorizontalAlignment="Left" Width="80" VerticalAlignment="Stretch" RenderTransformOrigin="0.5,0.5">
+                    <Label.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform Angle="-90.068"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Label.RenderTransform>
+                </Label>
+                <Label Background="{StaticResource Conveyor}" Margin="565,0,0,40" HorizontalAlignment="Left" Width="80" VerticalAlignment="Bottom" RenderTransformOrigin="0.5,0.5" Height="57">
+                    <Label.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform Angle="-90.068"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Label.RenderTransform>
+                </Label>
+                <Label Background="{StaticResource Conveyor}" Margin="565,327,0,116" HorizontalAlignment="Left" Width="80" VerticalAlignment="Stretch" RenderTransformOrigin="0.5,0.5">
+                    <Label.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform Angle="-90.068"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Label.RenderTransform>
+                </Label>
+                <Label Background="{StaticResource Conveyor}" Margin="627,0,0,40" HorizontalAlignment="Left" Width="80" VerticalAlignment="Bottom" RenderTransformOrigin="0.5,0.5" Height="57">
+                    <Label.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform Angle="-90.068"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Label.RenderTransform>
+                </Label>
+                <Label Background="{StaticResource Conveyor}" Margin="627,0,0,116" HorizontalAlignment="Left" Width="80" VerticalAlignment="Bottom" RenderTransformOrigin="0.5,0.5" Height="57">
+                    <Label.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform Angle="-90.068"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Label.RenderTransform>
+                </Label>
+                <Label Background="{StaticResource Conveyor}" Margin="689,0,0,40" HorizontalAlignment="Left" Width="80" VerticalAlignment="Bottom" RenderTransformOrigin="0.5,0.5" Height="57">
+                    <Label.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform Angle="-90.068"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Label.RenderTransform>
+                </Label>
+                <Label Background="{StaticResource Conveyor}" Margin="689,0,0,116" HorizontalAlignment="Left" Width="80" VerticalAlignment="Bottom" RenderTransformOrigin="0.5,0.5" Height="57">
+                    <Label.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform Angle="-90.068"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Label.RenderTransform>
+                </Label>
+                <Label Background="{StaticResource Conveyor}" Margin="752,0,0,40" HorizontalAlignment="Left" Width="80" VerticalAlignment="Bottom" RenderTransformOrigin="0.5,0.5" Height="57">
+                    <Label.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform Angle="-90.068"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Label.RenderTransform>
+                </Label>
+                <Label Background="{StaticResource Conveyor}" Margin="752,0,0,116" HorizontalAlignment="Left" Width="80" VerticalAlignment="Bottom" RenderTransformOrigin="0.5,0.5" Height="57">
+                    <Label.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform Angle="-90.068"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Label.RenderTransform>
+                </Label>
+                <Label Background="{StaticResource Conveyor}" Margin="815,0,0,40" HorizontalAlignment="Left" Width="80" VerticalAlignment="Bottom" RenderTransformOrigin="0.5,0.5" Height="57">
+                    <Label.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform Angle="-90.068"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Label.RenderTransform>
+                </Label>
+                <Label Background="{StaticResource Conveyor}" Margin="815,0,0,116" HorizontalAlignment="Left" Width="80" VerticalAlignment="Bottom" RenderTransformOrigin="0.5,0.5" Height="57">
+                    <Label.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform Angle="-90.068"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Label.RenderTransform>
+                </Label>
+                <Label Background="{StaticResource Conveyor}" Margin="815,0,0,191" HorizontalAlignment="Left" Width="80" VerticalAlignment="Bottom" RenderTransformOrigin="0.5,0.5" Height="57">
+                    <Label.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform Angle="-90.068"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Label.RenderTransform>
+                </Label>
+                <Label Background="{StaticResource Conveyor}" Margin="877,0,0,40" HorizontalAlignment="Left" Width="80" VerticalAlignment="Bottom" RenderTransformOrigin="0.5,0.5" Height="57">
+                    <Label.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform Angle="-90.068"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Label.RenderTransform>
+                </Label>
+                <Label Background="{StaticResource Conveyor}" Margin="877,0,0,116" HorizontalAlignment="Left" Width="80" VerticalAlignment="Bottom" RenderTransformOrigin="0.5,0.5" Height="57">
+                    <Label.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform Angle="-90.068"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Label.RenderTransform>
+                </Label>
+                <Label Background="{StaticResource Conveyor}" Margin="877,0,0,191" HorizontalAlignment="Left" Width="80" VerticalAlignment="Bottom" RenderTransformOrigin="0.5,0.5" Height="57">
+                    <Label.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform Angle="-90.068"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Label.RenderTransform>
+                </Label>
+                <Label Background="{StaticResource Conveyor}" Margin="940,0,0,40" HorizontalAlignment="Left" Width="80" VerticalAlignment="Bottom" RenderTransformOrigin="0.5,0.5" Height="57">
+                    <Label.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform Angle="-90.068"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Label.RenderTransform>
+                </Label>
+                <Label Background="{StaticResource Conveyor}" Margin="940,0,0,116" HorizontalAlignment="Left" Width="80" VerticalAlignment="Bottom" RenderTransformOrigin="0.5,0.5" Height="57">
+                    <Label.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform Angle="-90.068"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Label.RenderTransform>
+                </Label>
+                <Label Background="{StaticResource Conveyor}" Margin="940,0,0,191" HorizontalAlignment="Left" Width="80" VerticalAlignment="Bottom" RenderTransformOrigin="0.5,0.5" Height="57">
+                    <Label.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform Angle="-90.068"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Label.RenderTransform>
+                </Label>
+                <Label Background="{StaticResource Conveyor}" Margin="1003,0,0,40" HorizontalAlignment="Left" Width="80" VerticalAlignment="Bottom" RenderTransformOrigin="0.5,0.5" Height="57">
+                    <Label.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform Angle="-90.068"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Label.RenderTransform>
+                </Label>
+                <Label Background="{StaticResource Conveyor}" Margin="1003,0,0,116" HorizontalAlignment="Left" Width="80" VerticalAlignment="Bottom" RenderTransformOrigin="0.5,0.5" Height="57">
+                    <Label.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform Angle="-90.068"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Label.RenderTransform>
+                </Label>
+                <Label Background="{StaticResource Conveyor}" Margin="1003,0,0,191" HorizontalAlignment="Left" Width="80" VerticalAlignment="Bottom" RenderTransformOrigin="0.5,0.5" Height="57">
+                    <Label.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform Angle="-90.068"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Label.RenderTransform>
+                </Label>
+                <Label Background="{StaticResource Conveyor}" Margin="1066,0,0,40" HorizontalAlignment="Left" Width="80" VerticalAlignment="Bottom" RenderTransformOrigin="0.5,0.5" Height="57">
+                    <Label.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform Angle="-90.068"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Label.RenderTransform>
+                </Label>
+                <Label Background="{StaticResource Conveyor}" Margin="1066,0,0,116" HorizontalAlignment="Left" Width="80" VerticalAlignment="Bottom" RenderTransformOrigin="0.5,0.5" Height="57">
+                    <Label.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform Angle="-90.068"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Label.RenderTransform>
+                </Label>
+                <Label Background="{StaticResource Conveyor}" Margin="1066,0,0,191" HorizontalAlignment="Left" Width="80" VerticalAlignment="Bottom" RenderTransformOrigin="0.5,0.5" Height="57">
+                    <Label.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform Angle="-90.068"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Label.RenderTransform>
+                </Label>
+                <Label Background="{StaticResource Conveyor}" Margin="1129,0,0,40" HorizontalAlignment="Left" Width="80" VerticalAlignment="Bottom" RenderTransformOrigin="0.5,0.5" Height="57">
+                    <Label.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform Angle="-90.068"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Label.RenderTransform>
+                </Label>
+                <Label Background="{StaticResource Conveyor}" Margin="1129,0,0,116" HorizontalAlignment="Left" Width="80" VerticalAlignment="Bottom" RenderTransformOrigin="0.5,0.5" Height="57">
+                    <Label.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform Angle="-90.068"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Label.RenderTransform>
+                </Label>
+                <Label Background="{StaticResource Conveyor}" Margin="1129,0,0,191" HorizontalAlignment="Left" Width="80" VerticalAlignment="Bottom" RenderTransformOrigin="0.5,0.5" Height="57">
+                    <Label.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform Angle="-90.068"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Label.RenderTransform>
+                </Label>
+                <Label Background="{StaticResource Conveyor}" Margin="1192,0,0,40" HorizontalAlignment="Left" Width="80" VerticalAlignment="Bottom" RenderTransformOrigin="0.5,0.5" Height="57">
+                    <Label.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform Angle="-90.068"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Label.RenderTransform>
+                </Label>
+                <Label Background="{StaticResource Conveyor}" Margin="1192,0,0,116" HorizontalAlignment="Left" Width="80" VerticalAlignment="Bottom" RenderTransformOrigin="0.5,0.5" Height="57">
+                    <Label.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform Angle="-90.068"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Label.RenderTransform>
+                </Label>
+                <Label Background="{StaticResource Conveyor}" Margin="1192,0,0,191" HorizontalAlignment="Left" Width="80" VerticalAlignment="Bottom" RenderTransformOrigin="0.5,0.5" Height="57">
+                    <Label.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform Angle="-90.068"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Label.RenderTransform>
+                </Label>
+                <Label Background="{StaticResource Conveyor}" Margin="1255,0,0,40" HorizontalAlignment="Left" Width="80" VerticalAlignment="Bottom" RenderTransformOrigin="0.5,0.5" Height="57">
+                    <Label.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform Angle="-90.068"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Label.RenderTransform>
+                </Label>
+                <Label Background="{StaticResource Conveyor}" Margin="1255,0,0,116" HorizontalAlignment="Left" Width="80" VerticalAlignment="Bottom" RenderTransformOrigin="0.5,0.5" Height="57">
+                    <Label.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform Angle="-90.068"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Label.RenderTransform>
+                </Label>
+                <Label Background="{StaticResource Conveyor}" Margin="1255,0,0,191" HorizontalAlignment="Left" Width="80" VerticalAlignment="Bottom" RenderTransformOrigin="0.5,0.5" Height="57">
+                    <Label.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform Angle="-90.068"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Label.RenderTransform>
+                </Label>
+                <Label BorderBrush="#5b5b5b" BorderThickness="2" Background="#e6eded"  Margin="529,0,0,316" HorizontalAlignment="Left" Width="282" VerticalAlignment="Bottom" Height="152"/>
+                <Label Background="{StaticResource SingleRobot1}" Margin="636,83,0,0" HorizontalAlignment="Left" Width="68" Height="55" VerticalAlignment="Top"/>
+                <Label BorderBrush="#5b5b5b" BorderThickness="2" Background="#e6eded"  Margin="580,0,0,296" HorizontalAlignment="Left" Width="68" VerticalAlignment="Bottom" Height="44"/>
+                <Label BorderBrush="#5b5b5b" BorderThickness="2" Background="#e6eded"  Margin="688,0,0,296" HorizontalAlignment="Left" Width="68" VerticalAlignment="Bottom" Height="44"/>
+                <Label BorderBrush="#5b5b5b" BorderThickness="2" Background="#e6eded"  Margin="722,0,0,446" HorizontalAlignment="Left" Width="68" VerticalAlignment="Bottom" Height="44"/>
+                <Label BorderBrush="#5b5b5b" BorderThickness="2" Background="#e6eded"  Margin="636,0,0,446" HorizontalAlignment="Left" Width="68" VerticalAlignment="Bottom" Height="44"/>
+                <Label BorderBrush="#5b5b5b" BorderThickness="2" Background="#e6eded"  Margin="549,0,0,446" HorizontalAlignment="Left" Width="68" VerticalAlignment="Bottom" Height="44"/>
+            </Grid>
+        </Border>
+    </Grid>
+
+</UserControl>

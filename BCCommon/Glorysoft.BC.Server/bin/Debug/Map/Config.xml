@@ -1,0 +1,163 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<sqlMap namespace="Config"
+	xmlns="http://ibatis.apache.org/mapping"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<alias>
+		<!--<typeAlias alias="SystemConfig"  type="Glorysoft.BC.Entity.SystemConfig"/>-->
+		<typeAlias alias="CFGS1F5"  type="Glorysoft.BC.Entity.CFGS1F5"/>
+    <typeAlias alias="GlassExistencePosition"  type="Glorysoft.BC.Entity.GlassExistencePosition"/>
+    <!--<typeAlias alias="OPILink"  type="Glorysoft.BC.Entity.OPILink"/>-->
+
+    <typeAlias alias="CFGOLDPriority"  type="Glorysoft.BC.Entity.CFGOLDPriority"/>
+	</alias>
+	<resultMaps>
+		
+	<!--<resultMap id="SystemConfigResult" class="SystemConfig">
+		<result property="EQPID" column="eqpid"/>
+		<result property="RecipeCheckEnable" column="recipecheckenable"/>
+		<result property="RobotDispathMode" column="robotdispathmode"/>
+	</resultMap>-->
+		<resultMap id="CFGS1F5Result" class="CFGS1F5">
+			<result property="EQPID" column="eqpid"/>
+			<result property="UnitID" column="unitid"/>
+			<result property="SFCDName" column="sfcdname"/>
+			<result property="Enable" column="enable"/>
+		</resultMap>
+    <resultMap id="GlassExistencePositionResult" class="GlassExistencePosition">
+      <result property="EQPID" column="eqpid"/>
+      <result property="UnitID" column="unitid"/>
+      <result property="Position" column="position"/>
+      <result property="PositionName" column="positionname"/>
+      <result property="CassetteSequenceNo" column="cassettesequenceno"/>
+      <result property="SlotSequenceNo" column="slotsequenceno"/>
+      <result property="Exist" column="exist"/>
+    </resultMap>
+
+    <!--<resultMap id="OPILinkResult" class="OPILink">
+      <result property="EQPID" column="eqpid"/>
+      <result property="ID" column="id"/>
+      <result property="DownLinkUnitName" column="downlinkunitname"/>
+      <result property="DownLinkName" column="downlinkname"/>
+      <result property="UpLinkUnitName" column="uplinkunitname"/>
+      <result property="UpLinkName" column="uplinkname"/>
+      <result property="LinkGroupName" column="linkgroupname"/>
+    </resultMap>-->
+
+
+    <resultMap id="CFGOLDPriorityResult" class="CFGOLDPriority">
+      <result property="OldPriority" column="oldpriority"/>
+      <result property="TargetModelPosition" column="targetmodelposition"/>
+    </resultMap>
+    
+	</resultMaps>
+	<statements>
+		<!--<select id="ViewSystemConfig" resultMap="SystemConfigResult" parameterClass="string">
+			select * from cfg_systemconfig where eqpid = #value#
+		</select>-->
+		
+		<select id="ViewCFGS1F5" resultMap="CFGS1F5Result" parameterClass="Hashtable">
+			select * from cfg_s1f5
+			<dynamic prepend="where">
+				<isNotEmpty property="EQPID" prepend="and">
+					eqpid=#EQPID#
+				</isNotEmpty>
+				<isNotEmpty property="UnitID" prepend="and">
+					unitid=#UnitID#
+				</isNotEmpty>
+			</dynamic>
+		</select>
+		<insert id="InsertCFGS1F5" parameterClass="CFGS1F5">
+			INSERT INTO cfg_s1f5(
+			eqpid, unitid, sfcdname, enable)
+			VALUES (#EQPID#, #UnitID#, #SFCDName#, #Enable#);
+		</insert>
+		<update id="UpdateCFGS1F5" parameterClass="CFGS1F5">
+			UPDATE cfg_s1f5 SET  sfcdname=#SFCDName#,enable=#Enable#
+			<dynamic prepend="where">
+				<isNotEmpty property="EQPID" prepend="and">
+					eqpid=#EQPID#
+				</isNotEmpty>
+				<isNotEmpty property="UnitID" prepend="and">
+					unitid=#UnitID#
+				</isNotEmpty>
+			</dynamic>
+		</update>
+		<delete id="DeleteCFGS1F5" parameterClass="CFGS1F5">
+			DELETE FROM cfg_s1f5
+			<dynamic prepend="where">
+				<isNotEmpty property="EQPID" prepend="and">
+					eqpid=#EQPID#
+				</isNotEmpty>
+				<isNotEmpty property="UNITID" prepend="and">
+					unitid=#UNITID#
+				</isNotEmpty>
+				<isNotEmpty property="SFCDName" prepend="and">
+					sfcdname=#SFCDName#
+				</isNotEmpty>
+			</dynamic>
+		</delete>
+
+
+
+    <select id="ViewGlassExistencePosition" resultMap="GlassExistencePositionResult" parameterClass="Hashtable">
+      select * from cfg_glassexistenceposition
+      <dynamic prepend="where">
+        <isNotEmpty property="EQPID" prepend="and">
+          eqpid=#EQPID#
+        </isNotEmpty>
+        <isNotEmpty property="UnitID" prepend="and">
+          unitid=#UnitID#
+        </isNotEmpty>
+        <isNotEmpty property="Position" prepend="and">
+          "position"=#Position#
+        </isNotEmpty>
+      </dynamic>
+    </select>
+    <!--<insert id="InsertGlassExistencePosition" parameterClass="GlassExistencePosition">
+      INSERT INTO cfg_glassexistenceposition(
+      eqpid, unitid, "position", positionname, cassettesequenceno,
+      slotsequenceno)
+      VALUES (#EQPID#, #UnitID#, #Position#, #PositionName#, #CassetteSequenceNo#,
+      #SlotSequenceNo#);
+    </insert>-->
+    <update id="UpdateGlassExistencePosition" parameterClass="GlassExistencePosition">
+      UPDATE cfg_glassexistenceposition
+      SET    cassettesequenceno=#CassetteSequenceNo#,
+      slotsequenceno=#SlotSequenceNo#,exist=#Exist#
+      <dynamic prepend="where">
+        <isNotEmpty property="EQPID" prepend="and">
+          eqpid=#EQPID#
+        </isNotEmpty>
+        <isNotEmpty property="UnitID" prepend="and">
+          unitid=#UnitID#
+        </isNotEmpty>
+        <isNotEmpty property="Position" prepend="and">
+          "position"=#Position#
+        </isNotEmpty>
+      </dynamic>
+    </update>
+
+
+
+    <!--<select id="ViewOPILink" resultMap="OPILinkResult" parameterClass="Hashtable">
+      select * from cfg_opilink
+      <dynamic prepend="where">
+        <isNotEmpty property="EQPID" prepend="and">
+          eqpid=#EQPID#
+        </isNotEmpty>
+        <isNotEmpty property="ID" prepend="and">
+          id=#ID#
+        </isNotEmpty>       
+      </dynamic>
+    </select>-->
+
+
+
+    <select id="ViewCFGOLDPriority" resultMap="CFGOLDPriorityResult" parameterClass="Hashtable">
+      select * from cfg_oldpriority
+    </select>
+    <update id="UpdateCFGOLDPriority" parameterClass="CFGOLDPriority">
+      UPDATE cfg_oldpriority SET  oldpriority=#OldPriority#,targetmodelposition = #TargetModelPosition#
+    </update>
+	</statements>
+</sqlMap>

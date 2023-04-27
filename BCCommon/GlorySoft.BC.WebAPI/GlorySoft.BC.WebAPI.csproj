@@ -1,0 +1,272 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7CBA68EB-9A8C-40D8-AE97-9B834A8703B8}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GlorySoft.BC.WebAPI</RootNamespace>
+    <AssemblyName>GlorySoft.BC.WebAPI</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EIPDriver, Version=2.1.0.17, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\CommonDll\EIPDriver.dll</HintPath>
+    </Reference>
+    <Reference Include="Glorysoft.Auto.Contract, Version=3.7.0.4, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\CommonDll\Glorysoft.Auto.Contract.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>..\..\CommonDll\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Hosting">
+      <HintPath>..\..\CommonDll\webapi\Microsoft.AspNetCore.Hosting.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Hosting.Abstractions">
+      <HintPath>..\..\CommonDll\webapi\Microsoft.AspNetCore.Hosting.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Hosting.Server.Abstractions">
+      <HintPath>..\..\CommonDll\webapi\Microsoft.AspNetCore.Hosting.Server.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Http">
+      <HintPath>..\..\CommonDll\webapi\Microsoft.AspNetCore.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Http.Abstractions">
+      <HintPath>..\..\CommonDll\webapi\Microsoft.AspNetCore.Http.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Http.Extensions">
+      <HintPath>..\..\CommonDll\webapi\Microsoft.AspNetCore.Http.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Http.Features">
+      <HintPath>..\..\CommonDll\webapi\Microsoft.AspNetCore.Http.Features.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Server.Kestrel">
+      <HintPath>..\..\CommonDll\webapi\Microsoft.AspNetCore.Server.Kestrel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Server.Kestrel.Https">
+      <HintPath>..\..\CommonDll\webapi\Microsoft.AspNetCore.Server.Kestrel.Https.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.WebUtilities">
+      <HintPath>..\..\CommonDll\webapi\Microsoft.AspNetCore.WebUtilities.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Net.Http.Headers">
+      <HintPath>..\..\CommonDll\webapi\Microsoft.Net.Http.Headers.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\CommonDll\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Net.Http.WebRequest" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Http">
+      <HintPath>..\..\CommonDll\webapi\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc">
+      <HintPath>..\..\CommonDll\webapi\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssembliesResolver.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WebAPIController\WebAPIController.cs" />
+    <Compile Include="WebAPIHandler\AbstractWebAPIMessageHandlercs.cs" />
+    <Compile Include="WebAPIHandler\DVSamplingFlagCommandHandler.cs" />
+    <Compile Include="WebAPIHandler\GetBCCurrentInfoHandler.cs" />
+    <Compile Include="WebAPIHandler\PortGradeGroupControlHandler.cs" />
+    <Compile Include="WebAPIHandler\PortGradeGroupUpdateHandler.cs" />
+    <Compile Include="WebAPIHandler\RobotModelControlHandler.cs" />
+    <Compile Include="WebAPIHandler\RobotModelUpdateHandler.cs" />
+    <Compile Include="WebAPIHandler\RobotPathConfigureUpdateHandler.cs" />
+    <Compile Include="WebAPIHandler\RobotPathConfigureControlHandler.cs" />
+    <Compile Include="WebAPIHandler\RobotConfigureUpdateHandler.cs" />
+    <Compile Include="WebAPIHandler\RobotConfigureControlHandler.cs" />
+    <Compile Include="WebAPIHandler\EQPProfileImportHandler.cs" />
+    <Compile Include="WebAPIHandler\EQPProfileItemUpdateHandler.cs" />
+    <Compile Include="WebAPIHandler\EQPProfileItemGroupUpdateHandler.cs" />
+    <Compile Include="WebAPIHandler\EQPProfileControlHandler.cs" />
+    <Compile Include="WebAPIHandler\GetPortControlDataHandler.cs" />
+    <Compile Include="WebAPIHandler\importExcelAlarmListHandler.cs" />
+    <Compile Include="WebAPIHandler\SendMESProcessEndGlassData.cs" />
+    <Compile Include="WebAPIHandler\SendMESProcessEndData.cs" />
+    <Compile Include="WebAPIHandler\DeleteProcessEndData.cs" />
+    <Compile Include="WebAPIHandler\UpdateProcessEndData.cs" />
+    <Compile Include="WebAPIHandler\UpdateProcessEndGlassData.cs" />
+    <Compile Include="WebAPIHandler\DeleteProcessEndGlassData.cs" />
+    <Compile Include="WebAPIHandler\SaveProcessEndGlassData.cs" />
+    <Compile Include="WebAPIHandler\DeleteAlarmConfigSpecRequest.cs" />
+    <Compile Include="WebAPIHandler\GetProcessEndGlassData.cs" />
+    <Compile Include="WebAPIHandler\GetProcessEndData.cs" />
+    <Compile Include="WebAPIHandler\GetPalletHisData.cs" />
+    <Compile Include="WebAPIHandler\GetMaterialHisData.cs" />
+    <Compile Include="WebAPIHandler\GetMaterialDataHandler.cs" />
+    <Compile Include="WebAPIHandler\importExcelUserListHandler.cs" />
+    <Compile Include="WebAPIHandler\GetPortHisData.cs" />
+    <Compile Include="WebAPIHandler\UpdateAlarmConfigSpecRequest.cs" />
+    <Compile Include="WebAPIHandler\AddAlarmConfigSpecRequest.cs" />
+    <Compile Include="WebAPIHandler\AddLineStatusSpecRequest.cs" />
+    <Compile Include="WebAPIHandler\AddOperationModeData.cs" />
+    <Compile Include="WebAPIHandler\AddRecipeInfoRequest.cs" />
+    <Compile Include="WebAPIHandler\AddRobotModelData.cs" />
+    <Compile Include="WebAPIHandler\AllDataUpdateRequestHandler.cs" />
+    <Compile Include="WebAPIHandler\BcUserInfo.cs" />
+    <Compile Include="WebAPIHandler\RecoveryGlassDataHandler.cs" />
+    <Compile Include="WebAPIHandler\GetEqRuleList.cs" />
+    <Compile Include="WebAPIHandler\RecipeControlHandler.cs" />
+    <Compile Include="WebAPIHandler\SamplingDownloadCommandHandler.cs" />
+    <Compile Include="WebAPIHandler\CIMMessageCommandHandler.cs" />
+    <Compile Include="WebAPIHandler\cmdRobotControlHandler.cs" />
+    <Compile Include="WebAPIHandler\DelAlarmDataHandler.cs" />
+    <Compile Include="WebAPIHandler\DelCassetteData.cs" />
+    <Compile Include="WebAPIHandler\DelEqpDataHandler.cs" />
+    <Compile Include="WebAPIHandler\DeleteLineStatusSpecRequest.cs" />
+    <Compile Include="WebAPIHandler\DeleteRecipeInfoRequest.cs" />
+    <Compile Include="WebAPIHandler\DeleteUserGroupsHandler.cs" />
+    <Compile Include="WebAPIHandler\DeleteUsers.cs" />
+    <Compile Include="WebAPIHandler\DelGlassDataHandler.cs" />
+    <Compile Include="WebAPIHandler\DelOperationModeData.cs" />
+    <Compile Include="WebAPIHandler\DelPortDataHandler.cs" />
+    <Compile Include="WebAPIHandler\DelRobotModelData.cs" />
+    <Compile Include="WebAPIHandler\DelUnitDataHandler.cs" />
+    <Compile Include="WebAPIHandler\EQPControlCommandHandler.cs" />
+    <Compile Include="WebAPIHandler\EQPInfoRequestHandler.cs" />
+    <Compile Include="WebAPIHandler\EquipemntInformationRequestHandler.cs" />
+    <Compile Include="WebAPIHandler\GetAlarmDataHandler.cs" />
+    <Compile Include="WebAPIHandler\GetAlarmHisData.cs" />
+    <Compile Include="WebAPIHandler\GetAlarmInfoBylineId.cs" />
+    <Compile Include="WebAPIHandler\GetAllOperationModeData.cs" />
+    <Compile Include="WebAPIHandler\GetCassetteCommandHandler.cs" />
+    <Compile Include="WebAPIHandler\GetCassetteData.cs" />
+    <Compile Include="WebAPIHandler\GetCassetteHisData.cs" />
+    <Compile Include="WebAPIHandler\GetCfgAlarmSpec.cs" />
+    <Compile Include="WebAPIHandler\GetCfgEqpStatusGroupList.cs" />
+    <Compile Include="WebAPIHandler\GetCfgEqpStatusGroupUpdate.cs" />
+    <Compile Include="WebAPIHandler\GetCfgMixRunConfigDelete.cs" />
+    <Compile Include="WebAPIHandler\GetCfgMixRunConfigList.cs" />
+    <Compile Include="WebAPIHandler\GetCfgMixRunConfigUpdate.cs" />
+    <Compile Include="WebAPIHandler\GetCfgMixRunInputRatioUpdateHandler.cs" />
+    <Compile Include="WebAPIHandler\GetCfgRecipeParameter.cs" />
+    <Compile Include="WebAPIHandler\GetcfgSvData.cs" />
+    <Compile Include="WebAPIHandler\GetCfg_dvdata.cs" />
+    <Compile Include="WebAPIHandler\GetClassInfoInsert.cs" />
+    <Compile Include="WebAPIHandler\GetDispatchModeCut.cs" />
+    <Compile Include="WebAPIHandler\GetEqpDataHandler.cs" />
+    <Compile Include="WebAPIHandler\GetEquipmentCommandsHandler.cs" />
+    <Compile Include="WebAPIHandler\GetGlassDataHandler.cs" />
+    <Compile Include="WebAPIHandler\GetGlassEventList.cs" />
+    <Compile Include="WebAPIHandler\GetGlassInfoHisData.cs" />
+    <Compile Include="WebAPIHandler\GetHistoryBySeachConditionHandler.cs" />
+    <Compile Include="WebAPIHandler\GetHistoryDeleteHandler.cs" />
+    <Compile Include="WebAPIHandler\GetHistorySelectFilesHandler.cs" />
+    <Compile Include="WebAPIHandler\GetHistoryTableInformationHandler.cs" />
+    <Compile Include="WebAPIHandler\GetInitHistoryHandler.cs" />
+    <Compile Include="WebAPIHandler\GetJobByEquipmentRequestHandler.cs" />
+    <Compile Include="WebAPIHandler\GetLineMaskInfoHandler.cs" />
+    <Compile Include="WebAPIHandler\GetLinkSignalItems.cs" />
+    <Compile Include="WebAPIHandler\GetMesRuleList.cs" />
+    <Compile Include="WebAPIHandler\GetMIXRunInputRatioListHandler.cs" />
+    <Compile Include="WebAPIHandler\GETModePathDis.cs" />
+    <Compile Include="WebAPIHandler\LineOperationModeCommandHandler.cs" />
+    <Compile Include="WebAPIHandler\GetOperationModeData.cs" />
+    <Compile Include="WebAPIHandler\GetOPILogAllDelete.cs" />
+    <Compile Include="WebAPIHandler\GetPortDataHandler.cs" />
+    <Compile Include="WebAPIHandler\GetPortIDListHandler.cs" />
+    <Compile Include="WebAPIHandler\GetPortInformationListHandel.cs" />
+    <Compile Include="WebAPIHandler\GetPPIDRecipeInfoRequest.cs" />
+    <Compile Include="WebAPIHandler\GetRecipListHandler.cs" />
+    <Compile Include="WebAPIHandler\GetRobotCommandHisAllDelete.cs" />
+    <Compile Include="WebAPIHandler\GetRobotModelData.cs" />
+    <Compile Include="WebAPIHandler\GetrobotModelListHandler.cs" />
+    <Compile Include="WebAPIHandler\GetServerLinesMessageRequestHandler.cs" />
+    <Compile Include="WebAPIHandler\GetUnitDataHandler.cs" />
+    <Compile Include="WebAPIHandler\GetUnitHisData.cs" />
+    <Compile Include="WebAPIHandler\GetUnitList.cs" />
+    <Compile Include="WebAPIHandler\GetUserGroupInfoHandler.cs" />
+    <Compile Include="WebAPIHandler\GetUsergroupListHandler.cs" />
+    <Compile Include="WebAPIHandler\GetUserGroupNameRequestHandler.cs" />
+    <Compile Include="WebAPIHandler\IsColdRunChangeRequest.cs" />
+    <Compile Include="WebAPIHandler\MESControlModeCommandHandler.cs" />
+    <Compile Include="WebAPIHandler\Pht600SetPortHandler.cs" />
+    <Compile Include="WebAPIHandler\PortInformationRequestHandler.cs" />
+    <Compile Include="WebAPIHandler\PortCommandHandler.cs" />
+    <Compile Include="WebAPIHandler\SaveHistoryTableHandler.cs" />
+    <Compile Include="WebAPIHandler\SaveUser.cs" />
+    <Compile Include="WebAPIHandler\SaveUserGroupHandler.cs" />
+    <Compile Include="WebAPIHandler\SaveSystemSettingRequest.cs" />
+    <Compile Include="WebAPIHandler\SelectAlarmConfigRequest.cs" />
+    <Compile Include="WebAPIHandler\SelectSystemSettingRequest.cs" />
+    <Compile Include="WebAPIHandler\SelectLineStatusSpecRequest.cs" />
+    <Compile Include="WebAPIHandler\SetColdRunCount.cs" />
+    <Compile Include="WebAPIHandler\SetLocalRecive.cs" />
+    <Compile Include="WebAPIHandler\TestDataDelete.cs" />
+    <Compile Include="WebAPIHandler\TestDataList.cs" />
+    <Compile Include="WebAPIHandler\UnitInfoRequestHandler.cs" />
+    <Compile Include="WebAPIHandler\UnitInformationRequestHandler.cs" />
+    <Compile Include="WebAPIHandler\UpdateCfgAlarmSpec.cs" />
+    <Compile Include="WebAPIHandler\UpdateCfgDvData.cs" />
+    <Compile Include="WebAPIHandler\UpdateCfgRecipeParameter.cs" />
+    <Compile Include="WebAPIHandler\UpdateCfgSvData.cs" />
+    <Compile Include="WebAPIHandler\UpdateRecipeInfoRequest.cs" />
+    <Compile Include="WebAPIHandler\updateRobotModelData.cs" />
+    <Compile Include="WebAPIHandler\UpdateUserInfo.cs" />
+    <Compile Include="WebAPIHandler\UserLoginReqeustHandler.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Glorysoft.BC.Db.Contract\Glorysoft.BC.Db.Contract.csproj">
+      <Project>{07007414-f814-414c-a437-a49b47cde4b3}</Project>
+      <Name>Glorysoft.BC.Db.Contract</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Glorysoft.BC.EIP\Glorysoft.BC.EIP.csproj">
+      <Project>{93707E3F-85F0-46C4-9E7A-056CFD7C20DE}</Project>
+      <Name>Glorysoft.BC.EIP</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Glorysoft.BC.Entity\Glorysoft.BC.Entity.csproj">
+      <Project>{c95ba850-8855-41c9-8ad6-afc464a9236f}</Project>
+      <Name>Glorysoft.BC.Entity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Glorysoft.BC.EQP.Contract\Glorysoft.BC.EQP.Contract.csproj">
+      <Project>{0ef3879d-32ab-49bb-9f77-c8023a2a683d}</Project>
+      <Name>Glorysoft.BC.EQP.Contract</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Glorysoft.BC.Logic.Contract\Glorysoft.BC.Logic.Contract.csproj">
+      <Project>{80f38fd2-0d2a-4422-9911-e93fd197e0a5}</Project>
+      <Name>Glorysoft.BC.Logic.Contract</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GlorySoft.BC.WebSocket\GlorySoft.BC.WebSocket.csproj">
+      <Project>{fbd2e2e2-cb8f-46c3-8a6a-83dd6b0b34a4}</Project>
+      <Name>GlorySoft.BC.WebSocket</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

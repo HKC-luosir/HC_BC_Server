@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<sqlMap namespace="Pallet"
+	xmlns="http://ibatis.apache.org/mapping"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <alias>
+    <typeAlias alias="his_pallet"  type="Glorysoft.BC.Entity.WebSocketEntity.his_pallet"/>
+   
+  </alias>
+  <resultMaps>
+    <resultMap id="his_palletResult" class="his_pallet">
+      <result property = "id" column="id"/>      
+      <result property = "eqpid" column="eqpid"/>
+      <result property = "unitid" column="unitid"/>
+      <result property = "palletid" column="palletid"/>
+      <result property = "palletstatus" column="palletstatus"/>
+      <result property = "pallettype" column="pallettype"/>
+      <result property = "productid" column="productid"/>
+      <result property = "operationid" column="operationid"/>
+      <result property = "lottype" column="lottype"/>
+      <result property = "grade" column="grade"/>
+      <result property = "boxqty" column="boxqty"/>
+      <result property = "reserveqty" column="reserveqty"/>
+      <result property = "createdate" column="createdate"/>
+	</resultMap>
+	  <resultMap id="his_palletResultCount" class="his_pallet">
+		  <result property = "palletid" column="palletid"/>
+	  </resultMap>
+  </resultMaps>
+  <statements>
+	  <select id="Inserthis_pallet" parameterClass="his_pallet">
+		INSERT INTO public.his_pallet(
+		eqpid, unitid, palletid, palletstatus, pallettype, productid,
+		operationid, lottype, grade, boxqty, reserveqty, createdate)
+		VALUES (
+		#eqpid#, #unitid#, #palletid#, #palletstatus#, #pallettype#, #productid#,
+		#operationid#, #lottype#, #grade#, #boxqty#, #reserveqty#, localtimestamp(0)) RETURNING id;
+	  </select>
+
+    <select id="Viewhis_palletList" resultMap="his_palletResult" parameterClass="Hashtable">
+		select * from his_pallet
+		<dynamic prepend="where">
+        <isNotEmpty property="eqpid" prepend="and">
+			eqpid =#eqpid#
+		</isNotEmpty>
+        <isNotEmpty property="unitid" prepend="and">
+			unitid =#unitid#
+		</isNotEmpty>
+		  <isNotEmpty property="palletid" prepend="and">
+			  palletid like '%' || #palletid# || '%'
+		  </isNotEmpty>
+			<isNotEmpty property="startcreatedate" prepend="and">createdate <![CDATA[ >= ]]> #startcreatedate#::timestamp</isNotEmpty>
+			<isNotEmpty property = "endcreatedate" prepend = "and" > createdate <![CDATA[ <= ]]> #endcreatedate#::timestamp</isNotEmpty>
+		</dynamic>
+		order by createdate desc
+		<isParameterPresent>
+			<isNotNull property="limitpage">
+				limit $limitcount$ offset $limitpage$*$limitcount$
+			</isNotNull>
+		</isParameterPresent>
+	</select>
+
+	  <select id="Viewhis_palletListCount" resultMap="his_palletResultCount" parameterClass="Hashtable">
+		  select palletid from his_pallet
+		  <dynamic prepend="where">
+			  <isNotEmpty property="eqpid" prepend="and">
+				  eqpid =#eqpid#
+			  </isNotEmpty>
+			  <isNotEmpty property="unitid" prepend="and">
+				  unitid =#unitid#
+			  </isNotEmpty>
+			  <isNotEmpty property="palletid" prepend="and">
+				  palletid like '%' || #palletid# || '%'
+			  </isNotEmpty>
+			  <isNotEmpty property="startcreatedate" prepend="and">createdate <![CDATA[ >= ]]> #startcreatedate#::timestamp</isNotEmpty>
+			  <isNotEmpty property = "endcreatedate" prepend = "and" > createdate <![CDATA[ <= ]]> #endcreatedate#::timestamp</isNotEmpty>
+		  </dynamic>
+		  order by createdate desc
+	  </select>
+	  
+    <update id="Updatehis_pallet" patameterClass="his_pallet">
+		UPDATE his_pallet
+		SET productid=#productid#, operationid=#operationid#, lottype=#lottype#, grade=#grade#, reserveqty=#reserveqty#
+		where id = #id#
+	</update>
+	  
+</statements>
+</sqlMap>

@@ -1,0 +1,1431 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+  <BlockMap Name="Afterbevelingcleaner">
+    <Block Name="RV_EQToCIM_Data01_05_01_00" Area="B" Action="READ" StartAddress="0" Points="568" ClassType="Class1">
+      <Block Name="EQPEvent" Area="B" Action="READ" StartAddress="0" Points="2">
+        <Items Name="UpstreamInlineMode" Event="T" Offset="0" Points="1" Type="BIT" />
+        <Items Name="DownstreamInlineMode" Event="T" Offset="1" Points="1" Type="BIT" />
+        <Items Name="CIMMode" Event="T" Offset="2" Points="1" Type="BIT" />
+        <Items Name="MachineAutoMode" Event="T" Offset="3" Points="1" Type="BIT" />
+        <Items Name="MachineAlive" LogMove="T" Event="T" Offset="4" Points="1" Type="BIT" />
+        <Items Name="MachineStatusChangeReport" Offset="5" Points="1" Type="BIT" />
+        <Items Name="CIMMessageConfirmReport" Offset="6" Points="1" Type="BIT" />
+        <Items Name="DateTimeRequest" Offset="7" Points="1" Type="BIT" />
+        <Items Name="VCRStatusReport" Offset="8" Points="1" Type="BIT" />
+        <Items Name="VCRReadCompleteReport" Offset="9" Points="1" Type="BIT" />
+        <Items Name="MachineModeChangeReport" Offset="10" Points="1" Type="BIT" />
+        <Items Name="CSTMoveInReport" Offset="11" Points="1" Type="BIT" />
+        <Items Name="CSTMoveOutReport" Offset="12" Points="1" Type="BIT" />
+        <Items Name="OperatorLoginReport" Offset="13" Points="1" Type="BIT" />
+        <Items Name="AlarmReport" Offset="14" Points="1" Type="BIT" />
+        <Items Name="JobJudgeResultReport1" Offset="15" Points="1" Type="BIT" />
+        <Items Name="JobJudgeResultReport2" Offset="16" Points="1" Type="BIT" />
+        <Items Name="JobManualMoveReport" Offset="17" Points="1" Type="BIT" />
+        <Items Name="JobDataChangeReport" Offset="18" Points="1" Type="BIT" />
+        <Items Name="JobDataRequest" Offset="19" Points="1" Type="BIT" />
+        <Items Name="ProcessStartReport" Offset="20" Points="1" Type="BIT" />
+        <Items Name="ProcessEndReport" Offset="21" Points="1" Type="BIT" />
+        <Items Name="AbnormalCodeReport" Offset="22" Points="1" Type="BIT" />
+        <Items Name="IonizerStatusReport" Offset="23" Points="1" Type="BIT" />
+      </Block>
+      <Block Name="BCCommandReply" Area="B" Action="READ" StartAddress="2" Points="1">
+        <Items Name="CIMModeChangeCommandReply" Offset="0" Points="1" Type="BIT" />
+        <Items Name="CIMMessageSetCommandReply" Offset="1" Points="1" Type="BIT" />
+        <Items Name="CIMMessageClearCommandReply" Offset="2" Points="1" Type="BIT" />
+        <Items Name="DateTimeSetCommandReply" Offset="3" Points="1" Type="BIT" />
+        <Items Name="MachineModeChangeCommandReply" Offset="4" Points="1" Type="BIT" />
+        <Items Name="SamplingDownloadCommandReply" Offset="5" Points="1" Type="BIT" />
+      </Block>
+      <Block Name="MachineStatusChangeReportBlock" Area="W" Action="READ" StartAddress="3" Points="24">
+        <Items Name="MachineStatus" Offset="0" Points="1" Type="I" />
+        <Items Name="MachinestatusReasonCode" Offset="1" Points="1" Type="I" />
+        <Items Name="AlarmID" Offset="2" Points="1" Type="I" />
+        <Items Name="Unitstatus#1" Offset="3" Points="1" Type="I" />
+        <Items Name="Unitstatus#2" Offset="4" Points="1" Type="I" />
+        <Items Name="Unitstatus#3" Offset="5" Points="1" Type="I" />
+        <Items Name="Unitstatus#4" Offset="6" Points="1" Type="I" />
+        <Items Name="Unitstatus#5" Offset="7" Points="1" Type="I" />
+        <Items Name="Unitstatus#6" Offset="8" Points="1" Type="I" />
+        <Items Name="Unitstatus#7" Offset="9" Points="1" Type="I" />
+        <Items Name="Unitstatus#8" Offset="10" Points="1" Type="I" />
+        <Items Name="Unitstatus#9" Offset="11" Points="1" Type="I" />
+      </Block>
+      <Block Name="CIMMessageConfirmReportBlock" Area="W" Action="READ" StartAddress="27" Points="2">
+        <Items Name="CIMMessageID" Offset="0" Points="1" Type="I" />
+        <Items Name="TouchPanelNumber" Offset="1" Points="1" Type="I" />
+      </Block>
+      <Block Name="DateTimeRequestBlock" Area="W" Action="READ" StartAddress="29" Points="1">
+        <Items Name="TouchPanelNumber" Offset="0" Points="1" Type="I" />
+      </Block>
+      <Block Name="VCRStatusReportBlock" Area="W" Action="READ" StartAddress="30" Points="7">
+        <Items Name="VCRNumber" Offset="0" Points="1" Type="I" />
+        <Items Name="VCRStatus" Offset="1" Points="1" Type="I" />
+      </Block>
+      <Block Name="VCRReadCompleteReportBlock" Area="W" Action="READ" StartAddress="37" Points="35">
+        <Items Name="JobID" Offset="0" Points="20" Type="A" />
+        <Items Name="LotSequenceNumber" Offset="20" Points="1" Type="I" />
+        <Items Name="SlotSequenceNumber" Offset="21" Points="1" Type="I" />
+        <Items Name="UnitNumber" Offset="22" Points="1" Type="I" />
+        <Items Name="VCRNumber" Offset="23" Points="1" Type="I" />
+        <Items Name="VCRResult" Offset="24" Points="1" Type="I" />
+      </Block>
+      <Block Name="MachineModeChangeReportBlock" Area="W" Action="READ" StartAddress="72" Points="1">
+        <Items Name="MachineMode" Offset="0" Points="1" Type="I" />
+      </Block>
+      <Block Name="CSTMoveInReportBlock" Area="W" Action="READ" StartAddress="73" Points="20">
+        <Items Name="LotSequenceNumber" Offset="0" Points="1" Type="I" />
+        <Items Name="CassetteID" Offset="1" Points="10" Type="A" />
+        <Items Name="UnitorPort" Offset="11" Points="1" Type="I" />
+        <Items Name="UnitNumberorPortNumber" Offset="12" Points="1" Type="I" />
+      </Block>
+      <Block Name="CSTMoveOutReportBlock" Area="W" Action="READ" StartAddress="93" Points="20">
+        <Items Name="LotSequenceNumber" Offset="0" Points="1" Type="I" />
+        <Items Name="CassetteID" Offset="1" Points="10" Type="A" />
+        <Items Name="UnitorPort" Offset="11" Points="1" Type="I" />
+        <Items Name="UnitNumberorPortNumber" Offset="12" Points="1" Type="I" />
+      </Block>
+      <Block Name="OperatorLoginReportBlock" Area="W" Action="READ" StartAddress="113" Points="22">
+        <Items Name="OperatorID" Offset="0" Points="10" Type="A" />
+        <Items Name="TouchPanelNumber" Offset="10" Points="1" Type="I" />
+        <Items Name="ReportOption" Offset="11" Points="1" Type="I" />
+        <Items Name="LoginLogoutTimeYear" Offset="12" Points="1" Type="I" />
+        <Items Name="LoginLogoutTimeMonth" Offset="13" Points="1" Type="I" />
+        <Items Name="LoginLogoutTimeDay" Offset="14" Points="1" Type="I" />
+        <Items Name="LoginLogoutTimeHour" Offset="15" Points="1" Type="I" />
+        <Items Name="LoginLogoutTimeMinute" Offset="16" Points="1" Type="I" />
+        <Items Name="LoginLogoutTimeSecond" Offset="17" Points="1" Type="I" />
+      </Block>
+      <Block Name="AlarmReportBlock" Area="W" Action="READ" StartAddress="135" Points="10">
+        <Items Name="AlarmID" Offset="0" Points="1" Type="I" />
+        <Items Name="AlarmType" Offset="1" Points="1" Type="I" />
+        <Items Name="AlarmStatus" Offset="2" Points="1" Type="I" />
+        <Items Name="AlarmUnitNumber" Offset="3" Points="1" Type="I" />
+        <Items Name="AlarmCode" Offset="4" Points="1" Type="I" />
+      </Block>
+      <Block Name="JobJudgeResultReport1Block" Area="W" Action="READ" StartAddress="145" Points="30">
+        <Items Name="JobID" Offset="0" Points="20" Type="A" />
+        <Items Name="LotSequenceNumber" Offset="20" Points="1" Type="I" />
+        <Items Name="SlotSequenceNumber" Offset="21" Points="1" Type="I" />
+        <Items Name="UnitNumber" Offset="22" Points="1" Type="I" />
+        <Items Name="SlotNumber" Offset="23" Points="1" Type="I" />
+        <Items Name="JobJudgeCode" Offset="24" Points="1" Type="A" />
+        <Items Name="JobGradeCode" Offset="25" Points="1" Type="A" />
+        <Items Name="MPKNGType" Offset="26" Points="1" Type="I" />
+      </Block>
+      <Block Name="JobJudgeResultReport2Block" Area="W" Action="READ" StartAddress="175" Points="30">
+        <Items Name="JobID" Offset="0" Points="20" Type="A" />
+        <Items Name="LotSequenceNumber" Offset="20" Points="1" Type="I" />
+        <Items Name="SlotSequenceNumber" Offset="21" Points="1" Type="I" />
+        <Items Name="UnitNumber" Offset="22" Points="1" Type="I" />
+        <Items Name="SlotNumber" Offset="23" Points="1" Type="I" />
+        <Items Name="JobJudgeCode" Offset="24" Points="1" Type="A" />
+        <Items Name="JobGradeCode" Offset="25" Points="1" Type="A" />
+        <Items Name="MPKNGType" Offset="26" Points="1" Type="I" />
+      </Block>
+      <Block Name="JobManualMoveReportBlock" Area="W" Action="READ" StartAddress="205" Points="47">
+        <Items Name="JobID" Offset="0" Points="20" Type="A" />
+        <Items Name="LotSequenceNumber" Offset="20" Points="1" Type="I" />
+        <Items Name="SlotSequenceNumber" Offset="21" Points="1" Type="I" />
+        <Items Name="JobPosition" Offset="22" Points="1" Type="I" />
+        <Items Name="ReportOption" Offset="23" Points="1" Type="I" />
+        <Items Name="OperatorID" Offset="24" Points="10" Type="A" />
+        <Items Name="UnitorPort" Offset="34" Points="1" Type="I" />
+        <Items Name="UnitNumberorPortNo" Offset="35" Points="1" Type="I" />
+        <Items Name="SlotNumber" Offset="36" Points="1" Type="I" />
+      </Block>
+      <Block Name="JobDataChangeReportBlock" Area="W" Action="READ" StartAddress="252" Points="140">
+        <ItemGroup Name="Afterbevelingcleaner_JOBDATA" Offset="0" Points="140" />
+      </Block>
+      <Block Name="JobDataRequestBlock" Area="W" Action="READ" StartAddress="392" Points="28">
+        <Items Name="RequestJobID" Offset="0" Points="20" Type="A" />
+        <Items Name="LotSequenceNumber" Offset="20" Points="1" Type="I" />
+        <Items Name="SlotSequenceNumber" Offset="21" Points="1" Type="I" />
+        <Items Name="RequestOption" Offset="22" Points="1" Type="I" />
+      </Block>
+      <Block Name="ProcessStartReportBlock" Area="W" Action="READ" StartAddress="420" Points="36">
+        <Items Name="JobID" Offset="0" Points="20" Type="A" />
+        <Items Name="LotSequenceNumber" Offset="20" Points="1" Type="I" />
+        <Items Name="SlotSequenceNumber" Offset="21" Points="1" Type="I" />
+        <Items Name="UnitNumber" Offset="22" Points="1" Type="I" />
+        <Items Name="SlotNumber" Offset="23" Points="1" Type="I" />
+        <Items Name="ProcessStartTimeYear" Offset="24" Points="1" Type="I" />
+        <Items Name="ProcessStartTimeMonth" Offset="25" Points="1" Type="I" />
+        <Items Name="ProcessStartTimeDay" Offset="26" Points="1" Type="I" />
+        <Items Name="ProcessStartTimeHour" Offset="27" Points="1" Type="I" />
+        <Items Name="ProcessStartTimeMinute" Offset="28" Points="1" Type="I" />
+        <Items Name="ProcessStartTimeSecond" Offset="29" Points="1" Type="I" />
+      </Block>
+      <Block Name="ProcessEndReportBlock" Area="W" Action="READ" StartAddress="456" Points="36">
+        <Items Name="JobID" Offset="0" Points="20" Type="A" />
+        <Items Name="LotSequenceNumber" Offset="20" Points="1" Type="I" />
+        <Items Name="SlotSequenceNumber" Offset="21" Points="1" Type="I" />
+        <Items Name="UnitNumber" Offset="22" Points="1" Type="I" />
+        <Items Name="SlotNumber" Offset="23" Points="1" Type="I" />
+        <Items Name="ProcessEndTimeYear" Offset="24" Points="1" Type="I" />
+        <Items Name="ProcessEndTimeMonth" Offset="25" Points="1" Type="I" />
+        <Items Name="ProcessEndTimeDay" Offset="26" Points="1" Type="I" />
+        <Items Name="ProcessEndTimeHour" Offset="27" Points="1" Type="I" />
+        <Items Name="ProcessEndTimeMinute" Offset="28" Points="1" Type="I" />
+        <Items Name="ProcessEndTimeSecond" Offset="29" Points="1" Type="I" />
+      </Block>
+      <Block Name="AbnormalCodeReportBlock" Area="W" Action="READ" StartAddress="492" Points="20">
+        <Items Name="LotSequenceNumber" Offset="0" Points="1" Type="I" />
+        <Items Name="SlotSequenceNumber" Offset="1" Points="1" Type="I" />
+        <Items Name="AbnormalFlag1" Offset="2" Points="1" Type="BIT" />
+        <Items Name="AbnormalFlag2" Offset="3" Points="1" Type="BIT" />
+        <Items Name="AbnormalFlag3" Offset="4" Points="1" Type="BIT" />
+        <Items Name="AbnormalFlag4" Offset="5" Points="1" Type="BIT" />
+        <Items Name="AbnormalFlag5" Offset="6" Points="1" Type="BIT" />
+        <Items Name="AbnormalFlag6" Offset="7" Points="1" Type="BIT" />
+        <Items Name="AbnormalFlag7" Offset="8" Points="1" Type="BIT" />
+        <Items Name="AbnormalFlag8" Offset="9" Points="1" Type="BIT" />
+        <Items Name="PanelPosition" Offset="10" Points="1" Type="I" />
+      </Block>
+      <Block Name="IonizerStatusReportBlock" Area="W" Action="READ" StartAddress="512" Points="1">
+        <Items Name="IonizerStatusNotUsed" Offset="0" Points="1" Type="BIT" />
+        <Items Name="IonizerStatus#1" Offset="1" Points="1" Type="BIT" />
+        <Items Name="IonizerStatus#2" Offset="2" Points="1" Type="BIT" />
+        <Items Name="IonizerStatus#3" Offset="3" Points="1" Type="BIT" />
+        <Items Name="IonizerStatus#4" Offset="4" Points="1" Type="BIT" />
+        <Items Name="IonizerStatus#5" Offset="5" Points="1" Type="BIT" />
+        <Items Name="IonizerStatus#6" Offset="6" Points="1" Type="BIT" />
+        <Items Name="IonizerStatus#7" Offset="7" Points="1" Type="BIT" />
+        <Items Name="IonizerStatus#8" Offset="8" Points="1" Type="BIT" />
+        <Items Name="IonizerStatus#9" Offset="9" Points="1" Type="BIT" />
+        <Items Name="IonizerStatus#10" Offset="10" Points="1" Type="BIT" />
+        <Items Name="IonizerStatus#11" Offset="11" Points="1" Type="BIT" />
+        <Items Name="IonizerStatus#12" Offset="12" Points="1" Type="BIT" />
+        <Items Name="IonizerStatus#13" Offset="13" Points="1" Type="BIT" />
+        <Items Name="IonizerStatus#14" Offset="14" Points="1" Type="BIT" />
+        <Items Name="IonizerStatus#15" Offset="15" Points="1" Type="BIT" />
+      </Block>
+      <Block Name="CIMModeChangeCommandReplyBlock" Area="W" Action="READ" StartAddress="513" Points="1">
+        <Items Name="ReturnCode" Offset="0" Points="1" Type="I" />
+      </Block>
+      <Block Name="CIMMessageSetCommandReplyBlock" Area="W" Action="READ" StartAddress="514" Points="1">
+        <Items Name="ReturnCode" Offset="0" Points="1" Type="I" />
+      </Block>
+      <Block Name="CIMMessageClearCommandReplyBlock" Area="W" Action="READ" StartAddress="515" Points="1">
+        <Items Name="ReturnCode" Offset="0" Points="1" Type="I" />
+      </Block>
+      <Block Name="MachineModeChangeCommandReplyBlock" Area="W" Action="READ" StartAddress="516" Points="1">
+        <Items Name="MachineModeChangeReturnCode" Offset="0" Points="1" Type="I" />
+      </Block>
+      <Block Name="SamplingDownloadCommandReplyBlock" Area="W" Action="READ" StartAddress="517" Points="1">
+        <Items Name="ReturnCode" Offset="0" Points="1" Type="I" />
+      </Block>
+      <Block Name="JobCountBlock" Area="W" Action="READ" StartAddress="518" Points="10">
+        <Items Name="CurrentJobCount" Offset="0" Points="1" Type="I" />
+        <Items Name="HistoryJobCount" Offset="1" Points="2" Type="I" />
+        <Items Name="StartCountTimeYear" Offset="3" Points="1" Type="I" />
+        <Items Name="StartCountTimeMonth" Offset="4" Points="1" Type="I" />
+        <Items Name="StartCountTimeDay" Offset="5" Points="1" Type="I" />
+        <Items Name="StartCountTimeHour" Offset="6" Points="1" Type="I" />
+        <Items Name="StartCountTimeMinute" Offset="7" Points="1" Type="I" />
+        <Items Name="StartCountTimeSecond" Offset="8" Points="1" Type="I" />
+      </Block>
+    </Block>
+    <Block Name="RV_EQToCIM_Data02_05_01_00" Area="B" Action="READ" StartAddress="0" Points="537" ClassType="Class1">
+      <Block Name="EQPEvent" Area="B" Action="READ" StartAddress="0" Points="1">
+        <Items Name="OCIDRequest" Offset="0" Points="1" Type="BIT" />
+        <Items Name="BoxWeightCheckRequest" Offset="1" Points="1" Type="BIT" />
+        <Items Name="CuttingRequest" Offset="2" Points="1" Type="BIT" />
+        <Items Name="OCIDChangeReport" Offset="3" Points="1" Type="BIT" />
+        <Items Name="DefectCodeReport" Offset="4" Points="1" Type="BIT" />
+        <Items Name="PalletInfoRequest" Offset="5" Points="1" Type="BIT" />
+        <Items Name="SamplingFlagReport" Offset="6" Points="1" Type="BIT" />
+        <Items Name="SamplingRequest" Offset="7" Points="1" Type="BIT" />
+        <Items Name="SpecialCodeRequest" Offset="8" Points="1" Type="BIT" />
+        <Items Name="SamplingRuleReport" Offset="9" Points="1" Type="BIT" />
+        <Items Name="LableInfoRequestReport" Offset="10" Points="1" Type="BIT" />
+      </Block>
+      <Block Name="OCIDRequestBlock" Area="W" Action="READ" StartAddress="1" Points="30">
+        <Items Name="JobID" Offset="0" Points="20" Type="A" />
+        <Items Name="LotSequenceNumber" Offset="20" Points="1" Type="I" />
+        <Items Name="SlotSequenceNumber" Offset="21" Points="1" Type="I" />
+      </Block>
+      <Block Name="BoxWeightCheckRequestBlock" Area="W" Action="READ" StartAddress="31" Points="30">
+        <Items Name="CassetteID(BoxID)" Offset="0" Points="15" Type="A" />
+        <Items Name="BoxWeight" Offset="15" Points="2" Type="SF" />
+        <Items Name="UnitNumber" Offset="17" Points="1" Type="I" />
+      </Block>
+      <Block Name="CuttingRequestBlock" Area="W" Action="READ" StartAddress="61" Points="208">
+        <Items Name="ScriberCount" Offset="0" Points="1" Type="I" />
+        <Items Name="JobID" Offset="1" Points="20" Type="A" />
+        <Items Name="LotSequenceNumber" Offset="21" Points="1" Type="I" />
+        <Items Name="SlotSequenceNumber" Offset="22" Points="1" Type="I" />
+        <Items Name="CutPanel#1ID" Offset="23" Points="1" Type="A" />
+        <Items Name="QPanel#1Code" Offset="24" Points="1" Type="A" />
+        <Items Name="Scriber#1ModuleType" Offset="25" Points="1" Type="A" />
+        <Items Name="CutPanel#1LotSequenceNumber" Offset="26" Points="1" Type="I" />
+        <Items Name="CutPanel#1SlotSequenceNumber" Offset="27" Points="1" Type="I" />
+        <Items Name="CutPanel#2ID" Offset="28" Points="1" Type="A" />
+        <Items Name="QPanel#2Code" Offset="29" Points="1" Type="A" />
+        <Items Name="Scriber#2ModuleType" Offset="30" Points="1" Type="A" />
+        <Items Name="CutPanel#2LotSequenceNumber" Offset="31" Points="1" Type="I" />
+        <Items Name="CutPanel#2SlotSequenceNumber" Offset="32" Points="1" Type="I" />
+        <Items Name="CutPanel#3ID" Offset="33" Points="1" Type="A" />
+        <Items Name="QPanel#3Code" Offset="34" Points="1" Type="A" />
+        <Items Name="Scriber#3ModuleType" Offset="35" Points="1" Type="A" />
+        <Items Name="CutPanel#3LotSequenceNumber" Offset="36" Points="1" Type="I" />
+        <Items Name="CutPanel#3SlotSequenceNumber" Offset="37" Points="1" Type="I" />
+        <Items Name="CutPanel#4ID" Offset="38" Points="1" Type="A" />
+        <Items Name="QPanel#4Code" Offset="39" Points="1" Type="A" />
+        <Items Name="Scriber#4ModuleType" Offset="40" Points="1" Type="A" />
+        <Items Name="CutPanel#4LotSequenceNumber" Offset="41" Points="1" Type="I" />
+        <Items Name="CutPanel#4SlotSequenceNumber" Offset="42" Points="1" Type="I" />
+        <Items Name="CutPanel#5ID" Offset="43" Points="1" Type="A" />
+        <Items Name="QPanel#5Code" Offset="44" Points="1" Type="A" />
+        <Items Name="Scriber#5ModuleType" Offset="45" Points="1" Type="A" />
+        <Items Name="CutPanel#5LotSequenceNumber" Offset="46" Points="1" Type="I" />
+        <Items Name="CutPanel#5SlotSequenceNumber" Offset="47" Points="1" Type="I" />
+        <Items Name="CutPanel#6ID" Offset="48" Points="1" Type="A" />
+        <Items Name="QPanel#6Code" Offset="49" Points="1" Type="A" />
+        <Items Name="Scriber#6ModuleType" Offset="50" Points="1" Type="A" />
+        <Items Name="CutPanel#6LotSequenceNumber" Offset="51" Points="1" Type="I" />
+        <Items Name="CutPanel#6SlotSequenceNumber" Offset="52" Points="1" Type="I" />
+        <Items Name="CutPanel#7ID" Offset="53" Points="1" Type="A" />
+        <Items Name="QPanel#7Code" Offset="54" Points="1" Type="A" />
+        <Items Name="Scriber#7ModuleType" Offset="55" Points="1" Type="A" />
+        <Items Name="CutPanel#7LotSequenceNumber" Offset="56" Points="1" Type="I" />
+        <Items Name="CutPanel#7SlotSequenceNumber" Offset="57" Points="1" Type="I" />
+        <Items Name="CutPanel#8ID" Offset="58" Points="1" Type="A" />
+        <Items Name="QPanel#8Code" Offset="59" Points="1" Type="A" />
+        <Items Name="Scriber#8ModuleType" Offset="60" Points="1" Type="A" />
+        <Items Name="CutPanel#8LotSequenceNumber" Offset="61" Points="1" Type="I" />
+        <Items Name="CutPanel#8SlotSequenceNumber" Offset="62" Points="1" Type="I" />
+        <Items Name="CutPanel#9ID" Offset="63" Points="1" Type="A" />
+        <Items Name="QPanel#9Code" Offset="64" Points="1" Type="A" />
+        <Items Name="Scriber#9ModuleType" Offset="65" Points="1" Type="A" />
+        <Items Name="CutPanel#9LotSequenceNumber" Offset="66" Points="1" Type="I" />
+        <Items Name="CutPanel#9SlotSequenceNumber" Offset="67" Points="1" Type="I" />
+        <Items Name="CutPanel#10ID" Offset="68" Points="1" Type="A" />
+        <Items Name="QPanel#10Code" Offset="69" Points="1" Type="A" />
+        <Items Name="Scriber#10ModuleType" Offset="70" Points="1" Type="A" />
+        <Items Name="CutPanel#10LotSequenceNumber" Offset="71" Points="1" Type="I" />
+        <Items Name="CutPanel#10SlotSequenceNumber" Offset="72" Points="1" Type="I" />
+        <Items Name="CutPanel#11ID" Offset="73" Points="1" Type="A" />
+        <Items Name="QPanel#11Code" Offset="74" Points="1" Type="A" />
+        <Items Name="Scriber#11ModuleType" Offset="75" Points="1" Type="A" />
+        <Items Name="CutPanel#11LotSequenceNumber" Offset="76" Points="1" Type="I" />
+        <Items Name="CutPanel#11SlotSequenceNumber" Offset="77" Points="1" Type="I" />
+        <Items Name="CutPanel#12ID" Offset="78" Points="1" Type="A" />
+        <Items Name="QPanel#12Code" Offset="79" Points="1" Type="A" />
+        <Items Name="Scriber#12ModuleType" Offset="80" Points="1" Type="A" />
+        <Items Name="CutPanel#12LotSequenceNumber" Offset="81" Points="1" Type="I" />
+        <Items Name="CutPanel#12SlotSequenceNumber" Offset="82" Points="1" Type="I" />
+        <Items Name="CutPanel#13ID" Offset="83" Points="1" Type="A" />
+        <Items Name="QPanel#13Code" Offset="84" Points="1" Type="A" />
+        <Items Name="Scriber#13ModuleType" Offset="85" Points="1" Type="A" />
+        <Items Name="CutPanel#13LotSequenceNumber" Offset="86" Points="1" Type="I" />
+        <Items Name="CutPanel#13SlotSequenceNumber" Offset="87" Points="1" Type="I" />
+        <Items Name="CutPanel#14ID" Offset="88" Points="1" Type="A" />
+        <Items Name="QPanel#14Code" Offset="89" Points="1" Type="A" />
+        <Items Name="Scriber#14ModuleType" Offset="90" Points="1" Type="A" />
+        <Items Name="CutPanel#14LotSequenceNumber" Offset="91" Points="1" Type="I" />
+        <Items Name="CutPanel#14SlotSequenceNumber" Offset="92" Points="1" Type="I" />
+        <Items Name="CutPanel#15ID" Offset="93" Points="1" Type="A" />
+        <Items Name="QPanel#15Code" Offset="94" Points="1" Type="A" />
+        <Items Name="Scriber#15ModuleType" Offset="95" Points="1" Type="A" />
+        <Items Name="CutPanel#15LotSequenceNumber" Offset="96" Points="1" Type="I" />
+        <Items Name="CutPanel#15SlotSequenceNumber" Offset="97" Points="1" Type="I" />
+        <Items Name="CutPanel#16ID" Offset="98" Points="1" Type="A" />
+        <Items Name="QPanel#16Code" Offset="99" Points="1" Type="A" />
+        <Items Name="Scriber#16ModuleType" Offset="100" Points="1" Type="A" />
+        <Items Name="CutPanel#16LotSequenceNumber" Offset="101" Points="1" Type="I" />
+        <Items Name="CutPanel#16SlotSequenceNumber" Offset="102" Points="1" Type="I" />
+        <Items Name="CutPanel#17ID" Offset="103" Points="1" Type="A" />
+        <Items Name="QPanel#17Code" Offset="104" Points="1" Type="A" />
+        <Items Name="Scriber#17ModuleType" Offset="105" Points="1" Type="A" />
+        <Items Name="CutPanel#17LotSequenceNumber" Offset="106" Points="1" Type="I" />
+        <Items Name="CutPanel#17SlotSequenceNumber" Offset="107" Points="1" Type="I" />
+        <Items Name="CutPanel#18ID" Offset="108" Points="1" Type="A" />
+        <Items Name="QPanel#18Code" Offset="109" Points="1" Type="A" />
+        <Items Name="Scriber#18ModuleType" Offset="110" Points="1" Type="A" />
+        <Items Name="CutPanel#18LotSequenceNumber" Offset="111" Points="1" Type="I" />
+        <Items Name="CutPanel#18SlotSequenceNumber" Offset="112" Points="1" Type="I" />
+        <Items Name="CutPanel#19ID" Offset="113" Points="1" Type="A" />
+        <Items Name="QPanel#19Code" Offset="114" Points="1" Type="A" />
+        <Items Name="Scriber#19ModuleType" Offset="115" Points="1" Type="A" />
+        <Items Name="CutPanel#19LotSequenceNumber" Offset="116" Points="1" Type="I" />
+        <Items Name="CutPanel#19SlotSequenceNumber" Offset="117" Points="1" Type="I" />
+        <Items Name="CutPanel#20ID" Offset="118" Points="1" Type="A" />
+        <Items Name="QPanel#20Code" Offset="119" Points="1" Type="A" />
+        <Items Name="Scriber#20ModuleType" Offset="120" Points="1" Type="A" />
+        <Items Name="CutPanel#20LotSequenceNumber" Offset="121" Points="1" Type="I" />
+        <Items Name="CutPanel#20SlotSequenceNumber" Offset="122" Points="1" Type="I" />
+      </Block>
+      <Block Name="OCIDChangeReportBlock" Area="W" Action="READ" StartAddress="269" Points="15">
+        <Items Name="LotSequenceNumber" Offset="0" Points="1" Type="I" />
+        <Items Name="SlotSequenceNumber" Offset="1" Points="1" Type="I" />
+        <Items Name="OCID" Offset="2" Points="11" Type="A" />
+      </Block>
+      <Block Name="DefectCodeReportBlock" Area="W" Action="READ" StartAddress="284" Points="40">
+        <Items Name="JobID" Offset="0" Points="20" Type="A" />
+        <Items Name="LotSequenceNumber" Offset="20" Points="1" Type="I" />
+        <Items Name="SlotSequenceNumber" Offset="21" Points="1" Type="I" />
+        <Items Name="DefectCodeName" Offset="22" Points="10" Type="A" />
+        <Items Name="JobJudgeCode" Offset="32" Points="1" Type="A" />
+        <Items Name="JobGradeCode" Offset="33" Points="1" Type="A" />
+      </Block>
+      <Block Name="PalletInfoRequestBlock" Area="W" Action="READ" StartAddress="324" Points="25">
+        <Items Name="PalletID" Offset="0" Points="20" Type="A" />
+        <Items Name="PalletStatus" Offset="20" Points="1" Type="I" />
+        <Items Name="BoxQTY" Offset="21" Points="1" Type="I" />
+        <Items Name="PalletType" Offset="22" Points="1" Type="I" />
+        <Items Name="PortNumber" Offset="23" Points="1" Type="I" />
+      </Block>
+      <Block Name="SamplingFlagReportBlock" Area="W" Action="READ" StartAddress="349" Points="32">
+        <Items Name="JobID" Offset="0" Points="20" Type="A" />
+        <Items Name="LotSequenceNumber" Offset="20" Points="1" Type="I" />
+        <Items Name="SlotSequenceNumber" Offset="21" Points="1" Type="I" />
+      </Block>
+      <Block Name="SamplingRequestBlock" Area="W" Action="READ" StartAddress="381" Points="36">
+        <Items Name="SamplingCode" Offset="0" Points="1" Type="I" />
+      </Block>
+      <Block Name="SpecialCodeRequestBlock" Area="W" Action="READ" StartAddress="417" Points="24">
+        <Items Name="JobID" Offset="0" Points="20" Type="A" />
+        <Items Name="LotSequenceNumber" Offset="20" Points="1" Type="I" />
+        <Items Name="SlotSequenceNumber" Offset="21" Points="1" Type="I" />
+      </Block>
+      <Block Name="SamplingRuleReportBlock" Area="W" Action="READ" StartAddress="441" Points="1">
+        <Items Name="BatchQty" Offset="0" Points="1" Type="I" />
+      </Block>
+      <Block Name="LableInfoRequestReportBlock" Area="W" Action="READ" StartAddress="442" Points="40">
+        <Items Name="JobID" Offset="0" Points="20" Type="A" />
+        <Items Name="BoxID" Offset="20" Points="10" Type="A" />
+      </Block>
+    </Block>
+    <Block Name="RV_EQToCIM_ReceiveJob_05_01_00" Area="B" Action="READ" StartAddress="0" Points="563" ClassType="Class1">
+      <Block Name="EQPEvent" Area="B" Action="READ" StartAddress="0" Points="1">
+        <Items Name="ReceivedJobReport1" Offset="0" Points="1" Type="BIT" />
+        <Items Name="ReceivedJobReport2" Offset="1" Points="1" Type="BIT" />
+      </Block>
+      <Block Name="ReceivedJobReport1Block" Area="W" Action="READ" StartAddress="1" Points="281">
+        <ItemGroup Name="Afterbevelingcleaner_JOBDATA" Offset="0" Points="140" Suffix="1" />
+        <ItemGroup Name="Afterbevelingcleaner_JOBDATA" Offset="140" Points="140" Suffix="2" />
+        <Items Name="UpstreamPathNumber" Offset="280" Points="1" Type="I" />
+      </Block>
+      <Block Name="ReceivedJobReport2Block" Area="W" Action="READ" StartAddress="282" Points="281">
+        <ItemGroup Name="Afterbevelingcleaner_JOBDATA" Offset="0" Points="140" Suffix="1" />
+        <ItemGroup Name="Afterbevelingcleaner_JOBDATA" Offset="140" Points="140" Suffix="2" />
+        <Items Name="UpstreamPathNumber" Offset="280" Points="1" Type="I" />
+      </Block>
+    </Block>
+    <Block Name="RV_EQToCIM_SentJob_05_01_00" Area="B" Action="READ" StartAddress="0" Points="563" ClassType="Class1">
+      <Block Name="EQPEvent" Area="B" Action="READ" StartAddress="0" Points="1">
+        <Items Name="SentOutJobReport1" Offset="0" Points="1" Type="BIT" />
+        <Items Name="SentOutJobReport2" Offset="1" Points="1" Type="BIT" />
+      </Block>
+      <Block Name="SentOutJobReport1Block" Area="W" Action="READ" StartAddress="1" Points="281">
+        <ItemGroup Name="Afterbevelingcleaner_JOBDATA" Offset="0" Points="140" Suffix="1" />
+        <ItemGroup Name="Afterbevelingcleaner_JOBDATA" Offset="140" Points="140" Suffix="2" />
+        <Items Name="DownstreamPathNumber" Offset="280" Points="1" Type="I" />
+      </Block>
+      <Block Name="SentOutJobReport2Block" Area="W" Action="READ" StartAddress="282" Points="281">
+        <ItemGroup Name="Afterbevelingcleaner_JOBDATA" Offset="0" Points="140" Suffix="1" />
+        <ItemGroup Name="Afterbevelingcleaner_JOBDATA" Offset="140" Points="140" Suffix="2" />
+        <Items Name="DownstreamPathNumber" Offset="280" Points="1" Type="I" />
+      </Block>
+    </Block>
+    <Block Name="RV_EQToCIM_RecipeData_05_01_00" Area="B" Action="READ" StartAddress="0" Points="105" ClassType="Class1">
+      <Block Name="EQPEvent" Area="B" Action="READ" StartAddress="0" Points="1">
+        <Items Name="AutoRecipeChangeModeReport" Offset="0" Points="1" Type="BIT" />
+        <Items Name="CurrentRecipeNumberChangeReport" Offset="1" Points="1" Type="BIT" />
+        <Items Name="RecipeChangeReport" Offset="2" Points="1" Type="BIT" />
+        <Items Name="RecipeParameterValueValidationRequest" Offset="3" Points="1" Type="BIT" />
+      </Block>
+      <Block Name="BCCommandReply" Area="B" Action="READ" StartAddress="1" Points="1">
+        <Items Name="RecipeParameterRequestCommandReply" Offset="0" Points="1" Type="BIT" />
+        <Items Name="RecipeParameterDataDownloadReply" Offset="1" Points="1" Type="BIT" />
+      </Block>
+      <Block Name="AutoRecipeChangeModeReportBlock" Area="W" Action="READ" StartAddress="2" Points="1">
+        <Items Name="AutoRecipeChangeMode" Offset="0" Points="1" Type="I" />
+      </Block>
+      <Block Name="CurrentRecipeNumberChangeReportBlock" Area="W" Action="READ" StartAddress="3" Points="12">
+        <Items Name="CurrentRecipeNumber" Offset="0" Points="1" Type="I" />
+        <Items Name="RecipeVersionTimeYear" Offset="1" Points="1" Type="I" />
+        <Items Name="RecipeVersionTimeMonth" Offset="2" Points="1" Type="I" />
+        <Items Name="RecipeVersionTimeDay" Offset="3" Points="1" Type="I" />
+        <Items Name="RecipeVersionTimeHour" Offset="4" Points="1" Type="I" />
+        <Items Name="RecipeVersionTimeMinute" Offset="5" Points="1" Type="I" />
+        <Items Name="RecipeVersionTimeSecond" Offset="6" Points="1" Type="I" />
+        <Items Name="UnitNumber" Offset="7" Points="1" Type="I" />
+      </Block>
+      <Block Name="RecipeChangeReportBlock" Area="W" Action="READ" StartAddress="15" Points="25">
+        <Items Name="RecipeChangeType" Offset="0" Points="1" Type="I" />
+        <Items Name="RecipeVersionTimeYear" Offset="1" Points="1" Type="I" />
+        <Items Name="RecipeVersionTimeMonth" Offset="2" Points="1" Type="I" />
+        <Items Name="RecipeVersionTimeDay" Offset="3" Points="1" Type="I" />
+        <Items Name="RecipeVersionTimeHour" Offset="4" Points="1" Type="I" />
+        <Items Name="RecipeVersionTimeMinute" Offset="5" Points="1" Type="I" />
+        <Items Name="RecipeVersionTimeSecond" Offset="6" Points="1" Type="I" />
+        <Items Name="OperatorID" Offset="7" Points="10" Type="A" />
+        <Items Name="UnitNumber" Offset="17" Points="1" Type="I" />
+        <Items Name="RecipeNumber" Offset="18" Points="1" Type="I" />
+      </Block>
+      <Block Name="RecipeParameterValueValidationRequestBlock" Area="W" Action="READ" StartAddress="40" Points="27">
+        <Items Name="RecipeVersionTimeYear" Offset="0" Points="1" Type="I" />
+        <Items Name="RecipeVersionTimeMonth" Offset="1" Points="1" Type="I" />
+        <Items Name="RecipeVersionTimeDay" Offset="2" Points="1" Type="I" />
+        <Items Name="RecipeVersionTimeHour" Offset="3" Points="1" Type="I" />
+        <Items Name="RecipeVersionTimeMinute" Offset="4" Points="1" Type="I" />
+        <Items Name="RecipeVersionTimeSecond" Offset="5" Points="1" Type="I" />
+        <Items Name="OperatorID" Offset="6" Points="10" Type="A" />
+        <Items Name="RecipeNumber" Offset="16" Points="1" Type="I" />
+      </Block>
+      <Block Name="RecipeParameterRequestCommandReplyBlock" Area="W" Action="READ" StartAddress="67" Points="12">
+        <Items Name="RecipeNumber" Offset="0" Points="1" Type="I" />
+        <Items Name="RecipeVersionTimeYear" Offset="1" Points="1" Type="I" />
+        <Items Name="RecipeVersionTimeMonth" Offset="2" Points="1" Type="I" />
+        <Items Name="RecipeVersionTimeDay" Offset="3" Points="1" Type="I" />
+        <Items Name="RecipeVersionTimeHour" Offset="4" Points="1" Type="I" />
+        <Items Name="RecipeVersionTimeMinute" Offset="5" Points="1" Type="I" />
+        <Items Name="RecipeVersionTimeSecond" Offset="6" Points="1" Type="I" />
+        <Items Name="UnitNumber" Offset="7" Points="1" Type="I" />
+        <Items Name="RecipeStepNumber" Offset="8" Points="1" Type="I" />
+        <Items Name="Result" Offset="9" Points="1" Type="I" />
+      </Block>
+      <Block Name="RecipeParameterDataDownloadReplyBlock" Area="W" Action="READ" StartAddress="79" Points="1">
+        <Items Name="RecipeParameterDataDownloadResult" Offset="0" Points="1" Type="I" />
+      </Block>
+    </Block>
+    <Block Name="BC_EQToCIM_ParameterINT_05_01_00" Area="W" Action="READ" StartAddress="0" Points="210" ClassType="Class3">
+      <Block Name="ParameterINTFormatDataBlock" Area="W" Action="READ" StartAddress="0" Points="210">
+        <ItemGroup Name="Afterbevelingcleaner_PARAMETERINT" Offset="0" Points="210" />
+      </Block>
+    </Block>
+    <Block Name="BC_EQToCIM_ParameterSI_05_01_00" Area="W" Action="READ" StartAddress="0" Points="210" ClassType="Class3">
+      <Block Name="ParameterSIFormatDataBlock" Area="W" Action="READ" StartAddress="0" Points="210">
+        <ItemGroup Name="Afterbevelingcleaner_PARAMETERSI" Offset="0" Points="210" />
+      </Block>
+    </Block>
+    <Block Name="BC_EQToCIM_ParameterFLOAT_05_01_00" Area="W" Action="READ" StartAddress="0" Points="210" ClassType="Class3">
+      <Block Name="ParameterFLOATFormatDataBlock" Area="W" Action="READ" StartAddress="0" Points="210">
+        <ItemGroup Name="Afterbevelingcleaner_PARAMETERFLOAT" Offset="0" Points="210" />
+      </Block>
+    </Block>
+    <Block Name="BC_EQToCIM_ParameterASCII_05_01_00" Area="W" Action="READ" StartAddress="0" Points="210" ClassType="Class3">
+      <Block Name="ParameterASCIIFormatDataBlock" Area="W" Action="READ" StartAddress="0" Points="210">
+        <ItemGroup Name="Afterbevelingcleaner_PARAMETERASCII" Offset="0" Points="210" />
+      </Block>
+    </Block>
+    <Block Name="RV_EQToCIM_JudgeData_05_01_00" Area="B" Action="READ" StartAddress="0" Points="389" ClassType="Class1">
+      <Block Name="EQEvent" Area="B" Action="READ" StartAddress="0" Points="1">
+        <Items Name="PanelJudgeDataDownloadRequest" Offset="0" Points="1" Type="BIT" />
+        <Items Name="PanelDataUpdateReport" Offset="1" Points="1" Type="BIT" />
+      </Block>
+      <Block Name="PanelJudgeDataDownloadRequestBlock" Area="W" Action="READ" StartAddress="1" Points="42">
+        <Items Name="JobID" Offset="0" Points="20" Type="A" />
+        <Items Name="LotSequenceNumber" Offset="20" Points="1" Type="I" />
+        <Items Name="SlotSequenceNumber" Offset="21" Points="1" Type="I" />
+      </Block>
+      <Block Name="PanelDataUpdateReportBlock" Area="W" Action="READ" StartAddress="43" Points="346">
+        <Items Name="JobID" Offset="0" Points="20" Type="A" />
+        <Items Name="LotSequenceNumber" Offset="20" Points="1" Type="I" />
+        <Items Name="SlotSequenceNumber" Offset="21" Points="1" Type="I" />
+        <Items Name="PanelJudgeData1" Offset="22" Points="1" Type="A" />
+        <Items Name="PanelJudgeData2" Offset="23" Points="1" Type="A" />
+        <Items Name="PanelJudgeData3" Offset="24" Points="1" Type="A" />
+        <Items Name="PanelJudgeData4" Offset="25" Points="1" Type="A" />
+      </Block>
+    </Block>
+    <Block Name="BC_EQToCIM_CVDataINT_05_01_00" Area="W" Action="READ" StartAddress="0" Points="210" ClassType="Class3">
+      <Block Name="CVDataINTBlock" Area="W" Action="READ" StartAddress="0" Points="210">
+        <ItemGroup Name="Afterbevelingcleaner_CVDATAINT" Offset="0" Points="210" />
+      </Block>
+    </Block>
+    <Block Name="BC_EQToCIM_CVDataSI_05_01_00" Area="W" Action="READ" StartAddress="0" Points="210" ClassType="Class3">
+      <Block Name="CVDataSIBlock" Area="W" Action="READ" StartAddress="0" Points="210">
+        <ItemGroup Name="Afterbevelingcleaner_CVDATASI" Offset="0" Points="210" />
+      </Block>
+    </Block>
+    <Block Name="BC_EQToCIM_CVDataFLOAT_05_01_00" Area="W" Action="READ" StartAddress="0" Points="210" ClassType="Class3">
+      <Block Name="CVDataFLOATBlock" Area="W" Action="READ" StartAddress="0" Points="210">
+        <ItemGroup Name="Afterbevelingcleaner_CVDATAFLOAT" Offset="0" Points="210" />
+      </Block>
+    </Block>
+    <Block Name="BC_EQToCIM_CVDataASCII_05_01_00" Area="W" Action="READ" StartAddress="0" Points="210" ClassType="Class3">
+      <Block Name="CVDataASCIIBlock" Area="W" Action="READ" StartAddress="0" Points="210">
+        <ItemGroup Name="Afterbevelingcleaner_CVDATAASCII" Offset="0" Points="210" />
+      </Block>
+    </Block>
+    <Block Name="BC_EQToCIM_DVDataINT_05_01_00" Area="W" Action="READ" StartAddress="0" Points="210" ClassType="Class3">
+      <Block Name="DVDataINTBlock" Area="W" Action="READ" StartAddress="0" Points="210">
+        <ItemGroup Name="Afterbevelingcleaner_DVDATAINT" Offset="0" Points="210" />
+      </Block>
+    </Block>
+    <Block Name="BC_EQToCIM_DVDataSI_05_01_00" Area="W" Action="READ" StartAddress="0" Points="210" ClassType="Class3">
+      <Block Name="DVDataSIBlock" Area="W" Action="READ" StartAddress="0" Points="210">
+        <ItemGroup Name="Afterbevelingcleaner_DVDATASI" Offset="0" Points="210" />
+      </Block>
+    </Block>
+    <Block Name="BC_EQToCIM_DVDataFLOAT_05_01_00" Area="W" Action="READ" StartAddress="0" Points="210" ClassType="Class3">
+      <Block Name="DVDataFLOATBlock" Area="W" Action="READ" StartAddress="0" Points="210">
+        <ItemGroup Name="Afterbevelingcleaner_DVDATAFLOAT" Offset="0" Points="210" />
+      </Block>
+    </Block>
+    <Block Name="BC_EQToCIM_DVDataASCII_05_01_00" Area="W" Action="READ" StartAddress="0" Points="210" ClassType="Class3">
+      <Block Name="DVDataASCIIBlock" Area="W" Action="READ" StartAddress="0" Points="210">
+        <ItemGroup Name="Afterbevelingcleaner_DVDATAASCII" Offset="0" Points="210" />
+      </Block>
+    </Block>
+    <Block Name="RV_EQToCIM_PositionStatus_05_01_00" Area="W" Action="READ" StartAddress="0" Points="333" ClassType="Class1">
+      <Block Name="PositionStatus" Monitor="T" Area="W" Action="READ" StartAddress="0" Points="10">
+        <Items Name="PositionExist001" Offset="0" Points="1" Type="BIT" />
+        <Items Name="PositionExist002" Offset="1" Points="1" Type="BIT" />
+        <Items Name="PositionExist003" Offset="2" Points="1" Type="BIT" />
+        <Items Name="PositionExist004" Offset="3" Points="1" Type="BIT" />
+        <Items Name="PositionExist005" Offset="4" Points="1" Type="BIT" />
+        <Items Name="PositionExist006" Offset="5" Points="1" Type="BIT" />
+        <Items Name="PositionExist007" Offset="6" Points="1" Type="BIT" />
+        <Items Name="PositionExist008" Offset="7" Points="1" Type="BIT" />
+        <Items Name="PositionExist009" Offset="8" Points="1" Type="BIT" />
+        <Items Name="PositionExist010" Offset="9" Points="1" Type="BIT" />
+        <Items Name="PositionExist011" Offset="10" Points="1" Type="BIT" />
+        <Items Name="PositionExist012" Offset="11" Points="1" Type="BIT" />
+        <Items Name="PositionExist013" Offset="12" Points="1" Type="BIT" />
+        <Items Name="PositionExist014" Offset="13" Points="1" Type="BIT" />
+        <Items Name="PositionExist015" Offset="14" Points="1" Type="BIT" />
+        <Items Name="PositionExist016" Offset="15" Points="1" Type="BIT" />
+        <Items Name="PositionExist017" Offset="16" Points="1" Type="BIT" />
+        <Items Name="PositionExist018" Offset="17" Points="1" Type="BIT" />
+        <Items Name="PositionExist019" Offset="18" Points="1" Type="BIT" />
+        <Items Name="PositionExist020" Offset="19" Points="1" Type="BIT" />
+        <Items Name="PositionExist021" Offset="20" Points="1" Type="BIT" />
+        <Items Name="PositionExist022" Offset="21" Points="1" Type="BIT" />
+        <Items Name="PositionExist023" Offset="22" Points="1" Type="BIT" />
+        <Items Name="PositionExist024" Offset="23" Points="1" Type="BIT" />
+        <Items Name="PositionExist025" Offset="24" Points="1" Type="BIT" />
+        <Items Name="PositionExist026" Offset="25" Points="1" Type="BIT" />
+        <Items Name="PositionExist027" Offset="26" Points="1" Type="BIT" />
+        <Items Name="PositionExist028" Offset="27" Points="1" Type="BIT" />
+        <Items Name="PositionExist029" Offset="28" Points="1" Type="BIT" />
+        <Items Name="PositionExist030" Offset="29" Points="1" Type="BIT" />
+        <Items Name="PositionExist031" Offset="30" Points="1" Type="BIT" />
+        <Items Name="PositionExist032" Offset="31" Points="1" Type="BIT" />
+        <Items Name="PositionExist033" Offset="32" Points="1" Type="BIT" />
+        <Items Name="PositionExist034" Offset="33" Points="1" Type="BIT" />
+        <Items Name="PositionExist035" Offset="34" Points="1" Type="BIT" />
+        <Items Name="PositionExist036" Offset="35" Points="1" Type="BIT" />
+      </Block>
+      <Block Name="PositionGlassCodeBlock" Monitor="T" Area="W" Action="READ" StartAddress="10" Points="323">
+        <Items Name="Position001GlassCodeLotNumber" Offset="0" Points="1" Type="I" />
+        <Items Name="Position001GlassCodeSlotNumber" Offset="1" Points="1" Type="I" />
+        <Items Name="Position002GlassCodeLotNumber" Offset="2" Points="1" Type="I" />
+        <Items Name="Position002GlassCodeSlotNumber" Offset="3" Points="1" Type="I" />
+        <Items Name="Position003GlassCodeLotNumber" Offset="4" Points="1" Type="I" />
+        <Items Name="Position003GlassCodeSlotNumber" Offset="5" Points="1" Type="I" />
+        <Items Name="Position004GlassCodeLotNumber" Offset="6" Points="1" Type="I" />
+        <Items Name="Position004GlassCodeSlotNumber" Offset="7" Points="1" Type="I" />
+        <Items Name="Position005GlassCodeLotNumber" Offset="8" Points="1" Type="I" />
+        <Items Name="Position005GlassCodeSlotNumber" Offset="9" Points="1" Type="I" />
+        <Items Name="Position006GlassCodeLotNumber" Offset="10" Points="1" Type="I" />
+        <Items Name="Position006GlassCodeSlotNumber" Offset="11" Points="1" Type="I" />
+        <Items Name="Position007GlassCodeLotNumber" Offset="12" Points="1" Type="I" />
+        <Items Name="Position007GlassCodeSlotNumber" Offset="13" Points="1" Type="I" />
+        <Items Name="Position008GlassCodeLotNumber" Offset="14" Points="1" Type="I" />
+        <Items Name="Position008GlassCodeSlotNumber" Offset="15" Points="1" Type="I" />
+        <Items Name="Position009GlassCodeLotNumber" Offset="16" Points="1" Type="I" />
+        <Items Name="Position009GlassCodeSlotNumber" Offset="17" Points="1" Type="I" />
+        <Items Name="Position010GlassCodeLotNumber" Offset="18" Points="1" Type="I" />
+        <Items Name="Position010GlassCodeSlotNumber" Offset="19" Points="1" Type="I" />
+        <Items Name="Position011GlassCodeLotNumber" Offset="20" Points="1" Type="I" />
+        <Items Name="Position011GlassCodeSlotNumber" Offset="21" Points="1" Type="I" />
+        <Items Name="Position012GlassCodeLotNumber" Offset="22" Points="1" Type="I" />
+        <Items Name="Position012GlassCodeSlotNumber" Offset="23" Points="1" Type="I" />
+        <Items Name="Position013GlassCodeLotNumber" Offset="24" Points="1" Type="I" />
+        <Items Name="Position013GlassCodeSlotNumber" Offset="25" Points="1" Type="I" />
+        <Items Name="Position014GlassCodeLotNumber" Offset="26" Points="1" Type="I" />
+        <Items Name="Position014GlassCodeSlotNumber" Offset="27" Points="1" Type="I" />
+        <Items Name="Position015GlassCodeLotNumber" Offset="28" Points="1" Type="I" />
+        <Items Name="Position015GlassCodeSlotNumber" Offset="29" Points="1" Type="I" />
+        <Items Name="Position016GlassCodeLotNumber" Offset="30" Points="1" Type="I" />
+        <Items Name="Position016GlassCodeSlotNumber" Offset="31" Points="1" Type="I" />
+        <Items Name="Position017GlassCodeLotNumber" Offset="32" Points="1" Type="I" />
+        <Items Name="Position017GlassCodeSlotNumber" Offset="33" Points="1" Type="I" />
+        <Items Name="Position018GlassCodeLotNumber" Offset="34" Points="1" Type="I" />
+        <Items Name="Position018GlassCodeSlotNumber" Offset="35" Points="1" Type="I" />
+        <Items Name="Position019GlassCodeLotNumber" Offset="36" Points="1" Type="I" />
+        <Items Name="Position019GlassCodeSlotNumber" Offset="37" Points="1" Type="I" />
+        <Items Name="Position020GlassCodeLotNumber" Offset="38" Points="1" Type="I" />
+        <Items Name="Position020GlassCodeSlotNumber" Offset="39" Points="1" Type="I" />
+        <Items Name="Position021GlassCodeLotNumber" Offset="40" Points="1" Type="I" />
+        <Items Name="Position021GlassCodeSlotNumber" Offset="41" Points="1" Type="I" />
+        <Items Name="Position022GlassCodeLotNumber" Offset="42" Points="1" Type="I" />
+        <Items Name="Position022GlassCodeSlotNumber" Offset="43" Points="1" Type="I" />
+        <Items Name="Position023GlassCodeLotNumber" Offset="44" Points="1" Type="I" />
+        <Items Name="Position023GlassCodeSlotNumber" Offset="45" Points="1" Type="I" />
+        <Items Name="Position024GlassCodeLotNumber" Offset="46" Points="1" Type="I" />
+        <Items Name="Position024GlassCodeSlotNumber" Offset="47" Points="1" Type="I" />
+        <Items Name="Position025GlassCodeLotNumber" Offset="48" Points="1" Type="I" />
+        <Items Name="Position025GlassCodeSlotNumber" Offset="49" Points="1" Type="I" />
+        <Items Name="Position026GlassCodeLotNumber" Offset="50" Points="1" Type="I" />
+        <Items Name="Position026GlassCodeSlotNumber" Offset="51" Points="1" Type="I" />
+        <Items Name="Position027GlassCodeLotNumber" Offset="52" Points="1" Type="I" />
+        <Items Name="Position027GlassCodeSlotNumber" Offset="53" Points="1" Type="I" />
+        <Items Name="Position028GlassCodeLotNumber" Offset="54" Points="1" Type="I" />
+        <Items Name="Position028GlassCodeSlotNumber" Offset="55" Points="1" Type="I" />
+        <Items Name="Position029GlassCodeLotNumber" Offset="56" Points="1" Type="I" />
+        <Items Name="Position029GlassCodeSlotNumber" Offset="57" Points="1" Type="I" />
+        <Items Name="Position030GlassCodeLotNumber" Offset="58" Points="1" Type="I" />
+        <Items Name="Position030GlassCodeSlotNumber" Offset="59" Points="1" Type="I" />
+        <Items Name="Position031GlassCodeLotNumber" Offset="60" Points="1" Type="I" />
+        <Items Name="Position031GlassCodeSlotNumber" Offset="61" Points="1" Type="I" />
+        <Items Name="Position032GlassCodeLotNumber" Offset="62" Points="1" Type="I" />
+        <Items Name="Position032GlassCodeSlotNumber" Offset="63" Points="1" Type="I" />
+        <Items Name="Position033GlassCodeLotNumber" Offset="64" Points="1" Type="I" />
+        <Items Name="Position033GlassCodeSlotNumber" Offset="65" Points="1" Type="I" />
+        <Items Name="Position034GlassCodeLotNumber" Offset="66" Points="1" Type="I" />
+        <Items Name="Position034GlassCodeSlotNumber" Offset="67" Points="1" Type="I" />
+        <Items Name="Position035GlassCodeLotNumber" Offset="68" Points="1" Type="I" />
+        <Items Name="Position035GlassCodeSlotNumber" Offset="69" Points="1" Type="I" />
+        <Items Name="Position036GlassCodeLotNumber" Offset="70" Points="1" Type="I" />
+        <Items Name="Position036GlassCodeSlotNumber" Offset="71" Points="1" Type="I" />
+      </Block>
+    </Block>
+    <Block Name="RV_EQToCIM_MachineVariable_05_01_00" Area="B" Action="READ" StartAddress="0" Points="85" ClassType="Class1">
+      <Block Name="EQPEvent" Area="B" Action="READ" StartAddress="0" Points="1">
+        <Items Name="DVDataReport" Offset="0" Points="1" Type="BIT" />
+        <Items Name="CVDataReport" Offset="1" Points="1" Type="BIT" />
+      </Block>
+      <Block Name="BCCommandReply" Area="B" Action="READ" StartAddress="1" Points="1">
+        <Items Name="CVReportTimeChangeCommandReply" Offset="0" Points="1" Type="BIT" />
+        <Items Name="DVSamplingFlagCommandReply" Offset="1" Points="1" Type="BIT" />
+      </Block>
+      <Block Name="DVDataReportBlock" Area="W" Action="READ" StartAddress="2" Points="48">
+        <Items Name="DVType" Offset="0" Points="1" Type="I" />
+        <Items Name="JOBID" Offset="1" Points="20" Type="A" />
+        <Items Name="LotSequenceNumber" Offset="21" Points="1" Type="I" />
+        <Items Name="SlotSequenceNumber" Offset="22" Points="1" Type="I" />
+        <Items Name="LocalProcessStartTimeYear" Offset="23" Points="1" Type="I" />
+        <Items Name="LocalProcessStartTimeMonth" Offset="24" Points="1" Type="I" />
+        <Items Name="LocalProcessStartTimeDay" Offset="25" Points="1" Type="I" />
+        <Items Name="LocalProcessStartTimeHour" Offset="26" Points="1" Type="I" />
+        <Items Name="LocalProcessStartTimeMinute" Offset="27" Points="1" Type="I" />
+        <Items Name="LocalProcessStartTimeSecond" Offset="28" Points="1" Type="I" />
+        <Items Name="LocalProcessEndTimeYear" Offset="29" Points="1" Type="I" />
+        <Items Name="LocalProcessEndTimeMonth" Offset="30" Points="1" Type="I" />
+        <Items Name="LocalProcessEndTimeDay" Offset="31" Points="1" Type="I" />
+        <Items Name="LocalProcessEndTimeHour" Offset="32" Points="1" Type="I" />
+        <Items Name="LocalProcessEndTimeMinute" Offset="33" Points="1" Type="I" />
+        <Items Name="LocalProcessEndTimeSecond" Offset="34" Points="1" Type="I" />
+        <Items Name="UnitNumber" Offset="35" Points="1" Type="I" />
+        <Items Name="SlotNumber" Offset="36" Points="1" Type="I" />
+        <Items Name="RecipeNumber" Offset="37" Points="1" Type="I" />
+        <Items Name="DVSamplingFlag" Offset="38" Points="1" Type="I" />
+      </Block>
+      <Block Name="CVReportTimeChangeCommandReplyBlock" Area="W" Action="READ" StartAddress="50" Points="5">
+        <Items Name="CVCommandReturnCode" Offset="0" Points="1" Type="I" />
+        <Items Name="CycleType" Offset="1" Points="1" Type="I" />
+      </Block>
+      <Block Name="DVSamplingFlagCommandReplyBlock" Area="W" Action="READ" StartAddress="55" Points="1">
+        <Items Name="ReasonCode" Offset="0" Points="1" Type="I" />
+      </Block>
+      <Block Name="CVDataReportBlock" Area="W" Action="READ" StartAddress="56" Points="1">
+        <Items Name="CVData" Offset="0" Points="1" Type="I" />
+      </Block>
+    </Block>
+    <Block Name="RV_EQToCIM_StoredJob_05_01_00" Area="B" Action="READ" StartAddress="0" Points="451" ClassType="Class1">
+      <Block Name="EQPEvent" Area="B" Action="READ" StartAddress="0" Points="1">
+        <Items Name="StoredJobReport1" Offset="0" Points="1" Type="BIT" />
+        <Items Name="StoredJobReport2" Offset="1" Points="1" Type="BIT" />
+        <Items Name="StoredJobReport3" Offset="2" Points="1" Type="BIT" />
+        <Items Name="StoredJobReport4" Offset="3" Points="1" Type="BIT" />
+        <Items Name="StoredJobReport5" Offset="4" Points="1" Type="BIT" />
+        <Items Name="StoredJobReport6" Offset="5" Points="1" Type="BIT" />
+        <Items Name="StoredJobReport7" Offset="6" Points="1" Type="BIT" />
+        <Items Name="StoredJobReport8" Offset="7" Points="1" Type="BIT" />
+        <Items Name="StoredJobReport9" Offset="8" Points="1" Type="BIT" />
+      </Block>
+      <Block Name="StoredJobReport1Block" Area="W" Action="READ" StartAddress="1" Points="30">
+        <Items Name="JobID" Offset="0" Points="20" Type="A" />
+        <Items Name="LotSequenceNumber" Offset="20" Points="1" Type="I" />
+        <Items Name="SlotSequenceNumber" Offset="21" Points="1" Type="I" />
+        <Items Name="UnitorPort" Offset="22" Points="1" Type="I" />
+        <Items Name="UnitNumber" Offset="23" Points="1" Type="I" />
+        <Items Name="PortNo" Offset="24" Points="1" Type="I" />
+        <Items Name="SlotNumber" Offset="25" Points="1" Type="I" />
+      </Block>
+      <Block Name="StoredJobReport2Block" Area="W" Action="READ" StartAddress="31" Points="30">
+        <Items Name="JobID" Offset="0" Points="20" Type="A" />
+        <Items Name="LotSequenceNumber" Offset="20" Points="1" Type="I" />
+        <Items Name="SlotSequenceNumber" Offset="21" Points="1" Type="I" />
+        <Items Name="UnitorPort" Offset="22" Points="1" Type="I" />
+        <Items Name="UnitNumber" Offset="23" Points="1" Type="I" />
+        <Items Name="PortNo" Offset="24" Points="1" Type="I" />
+        <Items Name="SlotNumber" Offset="25" Points="1" Type="I" />
+      </Block>
+      <Block Name="StoredJobReport3Block" Area="W" Action="READ" StartAddress="61" Points="30">
+        <Items Name="JobID" Offset="0" Points="20" Type="A" />
+        <Items Name="LotSequenceNumber" Offset="20" Points="1" Type="I" />
+        <Items Name="SlotSequenceNumber" Offset="21" Points="1" Type="I" />
+        <Items Name="UnitorPort" Offset="22" Points="1" Type="I" />
+        <Items Name="UnitNumber" Offset="23" Points="1" Type="I" />
+        <Items Name="PortNo" Offset="24" Points="1" Type="I" />
+        <Items Name="SlotNumber" Offset="25" Points="1" Type="I" />
+      </Block>
+      <Block Name="StoredJobReport4Block" Area="W" Action="READ" StartAddress="91" Points="30">
+        <Items Name="JobID" Offset="0" Points="20" Type="A" />
+        <Items Name="LotSequenceNumber" Offset="20" Points="1" Type="I" />
+        <Items Name="SlotSequenceNumber" Offset="21" Points="1" Type="I" />
+        <Items Name="UnitorPort" Offset="22" Points="1" Type="I" />
+        <Items Name="UnitNumber" Offset="23" Points="1" Type="I" />
+        <Items Name="PortNo" Offset="24" Points="1" Type="I" />
+        <Items Name="SlotNumber" Offset="25" Points="1" Type="I" />
+      </Block>
+      <Block Name="StoredJobReport5Block" Area="W" Action="READ" StartAddress="121" Points="30">
+        <Items Name="JobID" Offset="0" Points="20" Type="A" />
+        <Items Name="LotSequenceNumber" Offset="20" Points="1" Type="I" />
+        <Items Name="SlotSequenceNumber" Offset="21" Points="1" Type="I" />
+        <Items Name="UnitorPort" Offset="22" Points="1" Type="I" />
+        <Items Name="UnitNumber" Offset="23" Points="1" Type="I" />
+        <Items Name="PortNo" Offset="24" Points="1" Type="I" />
+        <Items Name="SlotNumber" Offset="25" Points="1" Type="I" />
+      </Block>
+      <Block Name="StoredJobReport6Block" Area="W" Action="READ" StartAddress="151" Points="30">
+        <Items Name="JobID" Offset="0" Points="20" Type="A" />
+        <Items Name="LotSequenceNumber" Offset="20" Points="1" Type="I" />
+        <Items Name="SlotSequenceNumber" Offset="21" Points="1" Type="I" />
+        <Items Name="UnitorPort" Offset="22" Points="1" Type="I" />
+        <Items Name="UnitNumber" Offset="23" Points="1" Type="I" />
+        <Items Name="PortNo" Offset="24" Points="1" Type="I" />
+        <Items Name="SlotNumber" Offset="25" Points="1" Type="I" />
+      </Block>
+      <Block Name="StoredJobReport7Block" Area="W" Action="READ" StartAddress="181" Points="30">
+        <Items Name="JobID" Offset="0" Points="20" Type="A" />
+        <Items Name="LotSequenceNumber" Offset="20" Points="1" Type="I" />
+        <Items Name="SlotSequenceNumber" Offset="21" Points="1" Type="I" />
+        <Items Name="UnitorPort" Offset="22" Points="1" Type="I" />
+        <Items Name="UnitNumber" Offset="23" Points="1" Type="I" />
+        <Items Name="PortNo" Offset="24" Points="1" Type="I" />
+        <Items Name="SlotNumber" Offset="25" Points="1" Type="I" />
+      </Block>
+      <Block Name="StoredJobReport8Block" Area="W" Action="READ" StartAddress="211" Points="30">
+        <Items Name="JobID" Offset="0" Points="20" Type="A" />
+        <Items Name="LotSequenceNumber" Offset="20" Points="1" Type="I" />
+        <Items Name="SlotSequenceNumber" Offset="21" Points="1" Type="I" />
+        <Items Name="UnitorPort" Offset="22" Points="1" Type="I" />
+        <Items Name="UnitNumber" Offset="23" Points="1" Type="I" />
+        <Items Name="PortNo" Offset="24" Points="1" Type="I" />
+        <Items Name="SlotNumber" Offset="25" Points="1" Type="I" />
+      </Block>
+      <Block Name="StoredJobReport9Block" Area="W" Action="READ" StartAddress="241" Points="30">
+        <Items Name="JobID" Offset="0" Points="20" Type="A" />
+        <Items Name="LotSequenceNumber" Offset="20" Points="1" Type="I" />
+        <Items Name="SlotSequenceNumber" Offset="21" Points="1" Type="I" />
+        <Items Name="UnitorPort" Offset="22" Points="1" Type="I" />
+        <Items Name="UnitNumber" Offset="23" Points="1" Type="I" />
+        <Items Name="PortNo" Offset="24" Points="1" Type="I" />
+        <Items Name="SlotNumber" Offset="25" Points="1" Type="I" />
+      </Block>
+    </Block>
+    <Block Name="RV_EQToCIM_FetchedOut_05_01_00" Area="B" Action="READ" StartAddress="0" Points="451" ClassType="Class1">
+      <Block Name="EQPEvent" Area="B" Action="READ" StartAddress="0" Points="1">
+        <Items Name="FetchedOutJobReport1" Offset="0" Points="1" Type="BIT" />
+        <Items Name="FetchedOutJobReport2" Offset="1" Points="1" Type="BIT" />
+        <Items Name="FetchedOutJobReport3" Offset="2" Points="1" Type="BIT" />
+        <Items Name="FetchedOutJobReport4" Offset="3" Points="1" Type="BIT" />
+        <Items Name="FetchedOutJobReport5" Offset="4" Points="1" Type="BIT" />
+        <Items Name="FetchedOutJobReport6" Offset="5" Points="1" Type="BIT" />
+        <Items Name="FetchedOutJobReport7" Offset="6" Points="1" Type="BIT" />
+        <Items Name="FetchedOutJobReport8" Offset="7" Points="1" Type="BIT" />
+        <Items Name="FetchedOutJobReport9" Offset="8" Points="1" Type="BIT" />
+      </Block>
+      <Block Name="FetchedOutJobReport1Block" Area="W" Action="READ" StartAddress="1" Points="30">
+        <Items Name="JobID" Offset="0" Points="20" Type="A" />
+        <Items Name="LotSequenceNumber" Offset="20" Points="1" Type="I" />
+        <Items Name="SlotSequenceNumber" Offset="21" Points="1" Type="I" />
+        <Items Name="UnitorPort" Offset="22" Points="1" Type="I" />
+        <Items Name="UnitNumber" Offset="23" Points="1" Type="I" />
+        <Items Name="PortNo" Offset="24" Points="1" Type="I" />
+        <Items Name="SlotNumber" Offset="25" Points="1" Type="I" />
+      </Block>
+      <Block Name="FetchedOutJobReport2Block" Area="W" Action="READ" StartAddress="31" Points="30">
+        <Items Name="JobID" Offset="0" Points="20" Type="A" />
+        <Items Name="LotSequenceNumber" Offset="20" Points="1" Type="I" />
+        <Items Name="SlotSequenceNumber" Offset="21" Points="1" Type="I" />
+        <Items Name="UnitorPort" Offset="22" Points="1" Type="I" />
+        <Items Name="UnitNumber" Offset="23" Points="1" Type="I" />
+        <Items Name="PortNo" Offset="24" Points="1" Type="I" />
+        <Items Name="SlotNumber" Offset="25" Points="1" Type="I" />
+      </Block>
+      <Block Name="FetchedOutJobReport3Block" Area="W" Action="READ" StartAddress="61" Points="30">
+        <Items Name="JobID" Offset="0" Points="20" Type="A" />
+        <Items Name="LotSequenceNumber" Offset="20" Points="1" Type="I" />
+        <Items Name="SlotSequenceNumber" Offset="21" Points="1" Type="I" />
+        <Items Name="UnitorPort" Offset="22" Points="1" Type="I" />
+        <Items Name="UnitNumber" Offset="23" Points="1" Type="I" />
+        <Items Name="PortNo" Offset="24" Points="1" Type="I" />
+        <Items Name="SlotNumber" Offset="25" Points="1" Type="I" />
+      </Block>
+      <Block Name="FetchedOutJobReport4Block" Area="W" Action="READ" StartAddress="91" Points="30">
+        <Items Name="JobID" Offset="0" Points="20" Type="A" />
+        <Items Name="LotSequenceNumber" Offset="20" Points="1" Type="I" />
+        <Items Name="SlotSequenceNumber" Offset="21" Points="1" Type="I" />
+        <Items Name="UnitorPort" Offset="22" Points="1" Type="I" />
+        <Items Name="UnitNumber" Offset="23" Points="1" Type="I" />
+        <Items Name="PortNo" Offset="24" Points="1" Type="I" />
+        <Items Name="SlotNumber" Offset="25" Points="1" Type="I" />
+      </Block>
+      <Block Name="FetchedOutJobReport5Block" Area="W" Action="READ" StartAddress="121" Points="30">
+        <Items Name="JobID" Offset="0" Points="20" Type="A" />
+        <Items Name="LotSequenceNumber" Offset="20" Points="1" Type="I" />
+        <Items Name="SlotSequenceNumber" Offset="21" Points="1" Type="I" />
+        <Items Name="UnitorPort" Offset="22" Points="1" Type="I" />
+        <Items Name="UnitNumber" Offset="23" Points="1" Type="I" />
+        <Items Name="PortNo" Offset="24" Points="1" Type="I" />
+        <Items Name="SlotNumber" Offset="25" Points="1" Type="I" />
+      </Block>
+      <Block Name="FetchedOutJobReport6Block" Area="W" Action="READ" StartAddress="151" Points="30">
+        <Items Name="JobID" Offset="0" Points="20" Type="A" />
+        <Items Name="LotSequenceNumber" Offset="20" Points="1" Type="I" />
+        <Items Name="SlotSequenceNumber" Offset="21" Points="1" Type="I" />
+        <Items Name="UnitorPort" Offset="22" Points="1" Type="I" />
+        <Items Name="UnitNumber" Offset="23" Points="1" Type="I" />
+        <Items Name="PortNo" Offset="24" Points="1" Type="I" />
+        <Items Name="SlotNumber" Offset="25" Points="1" Type="I" />
+      </Block>
+      <Block Name="FetchedOutJobReport7Block" Area="W" Action="READ" StartAddress="181" Points="30">
+        <Items Name="JobID" Offset="0" Points="20" Type="A" />
+        <Items Name="LotSequenceNumber" Offset="20" Points="1" Type="I" />
+        <Items Name="SlotSequenceNumber" Offset="21" Points="1" Type="I" />
+        <Items Name="UnitorPort" Offset="22" Points="1" Type="I" />
+        <Items Name="UnitNumber" Offset="23" Points="1" Type="I" />
+        <Items Name="PortNo" Offset="24" Points="1" Type="I" />
+        <Items Name="SlotNumber" Offset="25" Points="1" Type="I" />
+      </Block>
+      <Block Name="FetchedOutJobReport8Block" Area="W" Action="READ" StartAddress="211" Points="30">
+        <Items Name="JobID" Offset="0" Points="20" Type="A" />
+        <Items Name="LotSequenceNumber" Offset="20" Points="1" Type="I" />
+        <Items Name="SlotSequenceNumber" Offset="21" Points="1" Type="I" />
+        <Items Name="UnitorPort" Offset="22" Points="1" Type="I" />
+        <Items Name="UnitNumber" Offset="23" Points="1" Type="I" />
+        <Items Name="PortNo" Offset="24" Points="1" Type="I" />
+        <Items Name="SlotNumber" Offset="25" Points="1" Type="I" />
+      </Block>
+      <Block Name="FetchedOutJobReport9Block" Area="W" Action="READ" StartAddress="241" Points="30">
+        <Items Name="JobID" Offset="0" Points="20" Type="A" />
+        <Items Name="LotSequenceNumber" Offset="20" Points="1" Type="I" />
+        <Items Name="SlotSequenceNumber" Offset="21" Points="1" Type="I" />
+        <Items Name="UnitorPort" Offset="22" Points="1" Type="I" />
+        <Items Name="UnitNumber" Offset="23" Points="1" Type="I" />
+        <Items Name="PortNo" Offset="24" Points="1" Type="I" />
+        <Items Name="SlotNumber" Offset="25" Points="1" Type="I" />
+      </Block>
+    </Block>
+    <Block Name="SD_CIMToEQ_BCAlive_01_05_00" Area="B" Action="WRITE" StartAddress="0" Points="1" ClassType="Class1">
+      <Block Name="BCCommand" Area="B" Action="WRITE" StartAddress="0" Points="1">
+        <Items Name="BCAlive" Offset="0" Points="1" Type="BIT" />
+      </Block>
+    </Block>
+    <Block Name="SD_CIMToEQ_Data01_01_05_00" Area="B" Action="WRITE" StartAddress="0" Points="281" ClassType="Class1">
+      <Block Name="BCCommand" Area="B" Action="WRITE" StartAddress="0" Points="1">
+        <Items Name="CIMModeChangeCommand" Offset="0" Points="1" Type="BIT" />
+        <Items Name="CIMMessageSetCommand" Offset="1" Points="1" Type="BIT" />
+        <Items Name="CIMMessageClearCommand" Offset="2" Points="1" Type="BIT" />
+        <Items Name="DateTimeSetCommand" Offset="3" Points="1" Type="BIT" />
+        <Items Name="MachineModeChangeCommand" Offset="4" Points="1" Type="BIT" />
+        <Items Name="RecipeParameterRequestCommand" Offset="5" Points="1" Type="BIT" />
+        <Items Name="RecipeParameterDataDownload" Offset="6" Points="1" Type="BIT" />
+        <Items Name="SamplingDownloadCommand" Offset="7" Points="1" Type="BIT" />
+      </Block>
+      <Block Name="EQEventReply" Area="B" Action="WRITE" StartAddress="1" Points="3">
+        <Items Name="MachineStatusChangeReportReply" Offset="0" Points="1" Type="BIT" />
+        <Items Name="CIMMessageConfirmReportReply" Offset="1" Points="1" Type="BIT" />
+        <Items Name="DateTimeRequestReply" Offset="2" Points="1" Type="BIT" />
+        <Items Name="VCRStatusReportReply" Offset="3" Points="1" Type="BIT" />
+        <Items Name="VCRReadCompleteReportReply" Offset="4" Points="1" Type="BIT" />
+        <Items Name="MachineModeChangeReportReply" Offset="5" Points="1" Type="BIT" />
+        <Items Name="CSTMoveInReportReply" Offset="6" Points="1" Type="BIT" />
+        <Items Name="CSTMoveOutReportReply" Offset="7" Points="1" Type="BIT" />
+        <Items Name="OperatorLoginReportReply" Offset="8" Points="1" Type="BIT" />
+        <Items Name="CuttingRequestReply" Offset="9" Points="1" Type="BIT" />
+        <Items Name="AlarmReportReply" Offset="10" Points="1" Type="BIT" />
+        <Items Name="JobJudgeResultReport1Reply" Offset="11" Points="1" Type="BIT" />
+        <Items Name="JobJudgeResultReport2Reply" Offset="12" Points="1" Type="BIT" />
+        <Items Name="AutoRecipeChangeModeReportReply" Offset="13" Points="1" Type="BIT" />
+        <Items Name="CurrentRecipeNumberChangeReportReply" Offset="14" Points="1" Type="BIT" />
+        <Items Name="RecipeChangeReportReply" Offset="15" Points="1" Type="BIT" />
+        <Items Name="OCIDRequestReply" Offset="16" Points="1" Type="BIT" />
+        <Items Name="BoxWeightCheckRequestReply" Offset="17" Points="1" Type="BIT" />
+        <Items Name="TransferBoxReportReply" Offset="18" Points="1" Type="BIT" />
+        <Items Name="JobAssemblyReportReply" Offset="19" Points="1" Type="BIT" />
+        <Items Name="OCIDChangeReportReply" Offset="20" Points="1" Type="BIT" />
+        <Items Name="DefectCodeReportReply" Offset="21" Points="1" Type="BIT" />
+        <Items Name="IonizerStatusReportReply" Offset="22" Points="1" Type="BIT" />
+        <Items Name="RecipeParameterValueValidationRequestReply" Offset="23" Points="1" Type="BIT" />
+        <Items Name="PalletInfoRequestReply" Offset="24" Points="1" Type="BIT" />
+        <Items Name="AbnormalCodeReportReply" Offset="25" Points="1" Type="BIT" />
+        <Items Name="SamplingFlagReportReply" Offset="26" Points="1" Type="BIT" />
+        <Items Name="SamplingRequestReply" Offset="27" Points="1" Type="BIT" />
+        <Items Name="SpecialCodeRequestReply" Offset="28" Points="1" Type="BIT" />
+        <Items Name="SamplingRuleReportReply" Offset="29" Points="1" Type="BIT" />
+      </Block>
+      <Block Name="CIMModeChangeCommandBlock" Area="W" Action="WRITE" StartAddress="4" Points="1">
+        <Items Name="CIMMode" Offset="0" Points="1" Type="I" />
+      </Block>
+      <Block Name="CIMMessageSetCommandBlock" Area="W" Action="WRITE" StartAddress="5" Points="19">
+        <Items Name="CIMMessageType" Offset="0" Points="1" Type="I" />
+        <Items Name="CIMMessageID" Offset="1" Points="1" Type="I" />
+        <Items Name="TouchPanelNumber" Offset="2" Points="1" Type="I" />
+        <Items Name="CIMMessageData" Offset="3" Points="16" Type="A" />
+      </Block>
+      <Block Name="CIMMessageClearCommandBlock" Area="W" Action="WRITE" StartAddress="24" Points="2">
+        <Items Name="CIMMessageID" Offset="0" Points="1" Type="I" />
+        <Items Name="TouchPanelNo" Offset="1" Points="1" Type="I" />
+      </Block>
+      <Block Name="DateTimeSetCommandBlock" Area="W" Action="WRITE" StartAddress="26" Points="6">
+        <Items Name="DateTimeYear" Offset="0" Points="1" Type="I" />
+        <Items Name="DateTimeMonth" Offset="1" Points="1" Type="I" />
+        <Items Name="DateTimeDay" Offset="2" Points="1" Type="I" />
+        <Items Name="DateTimeHour" Offset="3" Points="1" Type="I" />
+        <Items Name="DateTimeMinute" Offset="4" Points="1" Type="I" />
+        <Items Name="DateTimeSecond" Offset="5" Points="1" Type="I" />
+      </Block>
+      <Block Name="MachineModeChangeCommandBlock" Area="W" Action="WRITE" StartAddress="32" Points="1">
+        <Items Name="MachineMode" Offset="0" Points="1" Type="I" />
+      </Block>
+      <Block Name="RecipeParameterRequestCommandBlock" Area="W" Action="WRITE" StartAddress="33" Points="12">
+        <Items Name="RecipeNumber" Offset="0" Points="1" Type="I" />
+        <Items Name="RecipeVersionTimeYear" Offset="1" Points="1" Type="I" />
+        <Items Name="RecipeVersionTimeMonth" Offset="2" Points="1" Type="I" />
+        <Items Name="RecipeVersionTimeDay" Offset="3" Points="1" Type="I" />
+        <Items Name="RecipeVersionTimeHour" Offset="4" Points="1" Type="I" />
+        <Items Name="RecipeVersionTimeMinute" Offset="5" Points="1" Type="I" />
+        <Items Name="RecipeVersionTimeSecond" Offset="6" Points="1" Type="I" />
+        <Items Name="UnitNumber" Offset="7" Points="1" Type="I" />
+        <Items Name="RecipeStepNumber" Offset="8" Points="1" Type="I" />
+      </Block>
+      <Block Name="RecipeParameterDataDownloadBlock" Area="W" Action="WRITE" StartAddress="45" Points="12">
+        <Items Name="RecipeNumber" Offset="0" Points="1" Type="I" />
+        <Items Name="RecipeVersionTimeYear" Offset="1" Points="1" Type="I" />
+        <Items Name="RecipeVersionTimeMonth" Offset="2" Points="1" Type="I" />
+        <Items Name="RecipeVersionTimeDay" Offset="3" Points="1" Type="I" />
+        <Items Name="RecipeVersionTimeHour" Offset="4" Points="1" Type="I" />
+        <Items Name="RecipeVersionTimeMinute" Offset="5" Points="1" Type="I" />
+        <Items Name="RecipeVersionTimeSecond" Offset="6" Points="1" Type="I" />
+        <Items Name="UnitNumber" Offset="7" Points="1" Type="I" />
+        <Items Name="RecipeStepNumber" Offset="8" Points="1" Type="I" />
+      </Block>
+      <Block Name="SamplingDownloadCommandBlock" Area="W" Action="WRITE" StartAddress="57" Points="23">
+        <Items Name="BatchQty" Offset="0" Points="1" Type="I" />
+      </Block>
+      <Block Name="DateTimeRequestReplyBlock" Area="W" Action="WRITE" StartAddress="80" Points="6">
+        <Items Name="DateTimeYear" Offset="0" Points="1" Type="I" />
+        <Items Name="DateTimeMonth" Offset="1" Points="1" Type="I" />
+        <Items Name="DateTimeDay" Offset="2" Points="1" Type="I" />
+        <Items Name="DateTimeHour" Offset="3" Points="1" Type="I" />
+        <Items Name="DateTimeMinute" Offset="4" Points="1" Type="I" />
+        <Items Name="DateTimeSecond" Offset="5" Points="1" Type="I" />
+      </Block>
+      <Block Name="OCIDRequestReplyBlock" Area="W" Action="WRITE" StartAddress="86" Points="44">
+        <Items Name="JobID" Offset="0" Points="10" Type="A" />
+        <Items Name="LotSequenceNumber" Offset="10" Points="1" Type="I" />
+        <Items Name="SlotSequenceNumber" Offset="11" Points="1" Type="I" />
+        <Items Name="OCID" Offset="12" Points="11" Type="A" />
+        <Items Name="DateTime" Offset="23" Points="2" Type="A" />
+        <Items Name="ModelType" Offset="25" Points="10" Type="A" />
+        <Items Name="Version" Offset="35" Points="2" Type="A" />
+        <Items Name="ReturnCode" Offset="37" Points="1" Type="I" />
+      </Block>
+      <Block Name="BoxWeightCheckRequestReplyBlock" Area="W" Action="WRITE" StartAddress="130" Points="12">
+        <Items Name="ReturnCode" Offset="0" Points="1" Type="I" />
+      </Block>
+      <Block Name="RecipeParameterValueValidationRequestReplyBlock" Area="W" Action="WRITE" StartAddress="142" Points="10">
+        <Items Name="ReturnCode" Offset="0" Points="1" Type="I" />
+      </Block>
+      <Block Name="PalletInfoRequestReplyBlock" Area="W" Action="WRITE" StartAddress="152" Points="38">
+        <Items Name="PalletID" Offset="0" Points="20" Type="A" />
+        <Items Name="BoxQTY" Offset="20" Points="1" Type="I" />
+        <Items Name="ReserveQTY" Offset="21" Points="1" Type="I" />
+      </Block>
+      <Block Name="SamplingRequestReplyBlock" Area="W" Action="WRITE" StartAddress="190" Points="23">
+        <Items Name="BatchQty" Offset="0" Points="1" Type="I" />
+      </Block>
+      <Block Name="SpecialCodeRequestReplyBlock" Area="W" Action="WRITE" StartAddress="213" Points="30">
+        <Items Name="JobID" Offset="0" Points="20" Type="A" />
+        <Items Name="LotSequenceNumber" Offset="20" Points="1" Type="I" />
+        <Items Name="SlotSequenceNumber" Offset="21" Points="1" Type="I" />
+        <Items Name="AbnormalFlag1" Offset="22" Points="1" Type="BIT" />
+        <Items Name="AbnormalFlag2" Offset="23" Points="1" Type="BIT" />
+        <Items Name="AbnormalFlag3" Offset="24" Points="1" Type="BIT" />
+        <Items Name="AbnormalFlag4" Offset="25" Points="1" Type="BIT" />
+        <Items Name="AbnormalFlag5" Offset="26" Points="1" Type="BIT" />
+        <Items Name="AbnormalFlag6" Offset="27" Points="1" Type="BIT" />
+        <Items Name="AbnormalFlag7" Offset="28" Points="1" Type="BIT" />
+        <Items Name="AbnormalFlag8" Offset="29" Points="1" Type="BIT" />
+      </Block>
+      <Block Name="CuttingRequestReplyBlock" Area="W" Action="WRITE" StartAddress="243" Points="6">
+        <Items Name="ReturnCode" Offset="0" Points="1" Type="I" />
+      </Block>
+      <Block Name="RecipeChangeReportReplyBlock" Area="W" Action="WRITE" StartAddress="249" Points="1">
+        <Items Name="ReturnCode" Offset="0" Points="1" Type="I" />
+      </Block>
+    </Block>
+    <Block Name="SD_CIMToEQ_Data02_01_05_00" Area="B" Action="WRITE" StartAddress="0" Points="211" ClassType="Class1">
+      <Block Name="BCCommand" Area="B" Action="WRITE" StartAddress="0" Points="1">
+        <Items Name="CVReportTimeChangeCommand" Offset="0" Points="1" Type="BIT" />
+        <Items Name="DVSamplingFlagCommand" Offset="1" Points="1" Type="BIT" />
+      </Block>
+      <Block Name="EQPEventReply" Area="B" Action="WRITE" StartAddress="1" Points="3">
+        <Items Name="ReceivedJobReport1Reply" Offset="0" Points="1" Type="BIT" />
+        <Items Name="ReceivedJobReport2Reply" Offset="1" Points="1" Type="BIT" />
+        <Items Name="SentOutJobReport1Reply" Offset="2" Points="1" Type="BIT" />
+        <Items Name="SentOutJobReport2Reply" Offset="3" Points="1" Type="BIT" />
+        <Items Name="JobManualMoveReportReply" Offset="4" Points="1" Type="BIT" />
+        <Items Name="JobDataChangeReportReply" Offset="5" Points="1" Type="BIT" />
+        <Items Name="JobDataRequestReply" Offset="6" Points="1" Type="BIT" />
+        <Items Name="ProcessStartReportReply" Offset="7" Points="1" Type="BIT" />
+        <Items Name="ProcessEndReportReply" Offset="8" Points="1" Type="BIT" />
+        <Items Name="DVDataReportReply" Offset="9" Points="1" Type="BIT" />
+        <Items Name="CVDataReportReply" Offset="10" Points="1" Type="BIT" />
+        <Items Name="StoredJobReport1Reply" Offset="11" Points="1" Type="BIT" />
+        <Items Name="StoredJobReport2Reply" Offset="12" Points="1" Type="BIT" />
+        <Items Name="StoredJobReport3Reply" Offset="13" Points="1" Type="BIT" />
+        <Items Name="StoredJobReport4Reply" Offset="14" Points="1" Type="BIT" />
+        <Items Name="StoredJobReport5Reply" Offset="15" Points="1" Type="BIT" />
+        <Items Name="StoredJobReport6Reply" Offset="16" Points="1" Type="BIT" />
+        <Items Name="StoredJobReport7Reply" Offset="17" Points="1" Type="BIT" />
+        <Items Name="StoredJobReport8Reply" Offset="18" Points="1" Type="BIT" />
+        <Items Name="StoredJobReport9Reply" Offset="19" Points="1" Type="BIT" />
+        <Items Name="FetchedOutJobReport1Reply" Offset="20" Points="1" Type="BIT" />
+        <Items Name="FetchedOutJobReport2Reply" Offset="21" Points="1" Type="BIT" />
+        <Items Name="FetchedOutJobReport3Reply" Offset="22" Points="1" Type="BIT" />
+        <Items Name="FetchedOutJobReport4Reply" Offset="23" Points="1" Type="BIT" />
+        <Items Name="FetchedOutJobReport5Reply" Offset="24" Points="1" Type="BIT" />
+        <Items Name="FetchedOutJobReport6Reply" Offset="25" Points="1" Type="BIT" />
+        <Items Name="FetchedOutJobReport7Reply" Offset="26" Points="1" Type="BIT" />
+        <Items Name="FetchedOutJobReport8Reply" Offset="27" Points="1" Type="BIT" />
+        <Items Name="FetchedOutJobReport9Reply" Offset="28" Points="1" Type="BIT" />
+        <Items Name="LableInfoRequestReportReply" Offset="29" Points="1" Type="BIT" />
+      </Block>
+      <Block Name="CVReportTimeChangeCommandBlock" Area="W" Action="WRITE" StartAddress="4" Points="20">
+        <Items Name="CVReportEnableMode" Offset="0" Points="1" Type="I" />
+        <Items Name="CycleType" Offset="1" Points="1" Type="I" />
+        <Items Name="CVReportFrequencyMinute" Offset="2" Points="1" Type="I" />
+        <Items Name="CVReportHour1" Offset="3" Points="1" Type="I" />
+        <Items Name="CVReportMinute1" Offset="4" Points="1" Type="I" />
+        <Items Name="CVReportHour2" Offset="5" Points="1" Type="I" />
+        <Items Name="CVReportMinute2" Offset="6" Points="1" Type="I" />
+        <Items Name="CVReportHour3" Offset="7" Points="1" Type="I" />
+        <Items Name="CVReportMinute3" Offset="8" Points="1" Type="I" />
+        <Items Name="CVReportHour4" Offset="9" Points="1" Type="I" />
+        <Items Name="CVReportMinute4" Offset="10" Points="1" Type="I" />
+        <Items Name="CVReportHour5" Offset="11" Points="1" Type="I" />
+        <Items Name="CVReportMinute5" Offset="12" Points="1" Type="I" />
+        <Items Name="CVReportHour6" Offset="13" Points="1" Type="I" />
+        <Items Name="CVReportMinute6" Offset="14" Points="1" Type="I" />
+      </Block>
+      <Block Name="JobDataRequestReplyBlock" Area="W" Action="WRITE" StartAddress="24" Points="141">
+        <ItemGroup Name="Afterbevelingcleaner_JOBDATA" Offset="0" Points="140" />
+        <Items Name="JobDataRequestAck" Offset="140" Points="1" Type="I" />
+      </Block>
+      <Block Name="DVSamplingFlagCommandBlock" Area="W" Action="WRITE" StartAddress="165" Points="2">
+        <Items Name="BatchQty" Offset="0" Points="1" Type="I" />
+      </Block>
+    </Block>
+    <Block Name="BC_CIMToEQ_ParameterINT_01_05_00" Area="W" Action="WRITE" StartAddress="0" Points="210" ClassType="Class3">
+      <Block Name="ParameterINTFormatDataBlock" Area="W" Action="WRITE" StartAddress="0" Points="210">
+        <ItemGroup Name="Afterbevelingcleaner_PARAMETERINT" Offset="0" Points="210" />
+      </Block>
+    </Block>
+    <Block Name="BC_CIMToEQ_ParameterSI_01_05_00" Area="W" Action="WRITE" StartAddress="0" Points="210" ClassType="Class3">
+      <Block Name="ParameterSIFormatDataBlock" Area="W" Action="WRITE" StartAddress="0" Points="210">
+        <ItemGroup Name="Afterbevelingcleaner_PARAMETERSI" Offset="0" Points="210" />
+      </Block>
+    </Block>
+    <Block Name="BC_CIMToEQ_ParameterFLOAT_01_05_00" Area="W" Action="WRITE" StartAddress="0" Points="210" ClassType="Class3">
+      <Block Name="ParameterFLOATFormatDataBlock" Area="W" Action="WRITE" StartAddress="0" Points="210">
+        <ItemGroup Name="Afterbevelingcleaner_PARAMETERFLOAT" Offset="0" Points="210" />
+      </Block>
+    </Block>
+    <Block Name="BC_CIMToEQ_ParameterASCII_01_05_00" Area="W" Action="WRITE" StartAddress="0" Points="210" ClassType="Class3">
+      <Block Name="ParameterASCIIFormatDataBlock" Area="W" Action="WRITE" StartAddress="0" Points="210">
+        <ItemGroup Name="Afterbevelingcleaner_PARAMETERASCII" Offset="0" Points="210" />
+      </Block>
+    </Block>
+    <Block Name="SD_CIMToEQ_PanelManagement_01_05_00" Area="B" Action="WRITE" StartAddress="0" Points="306" ClassType="Class1">
+      <Block Name="PanelJudgeEventReply" Area="B" Action="WRITE" StartAddress="0" Points="1">
+        <Items Name="PanelJudgeDataDownloadRequestReply" Offset="0" Points="1" Type="BIT" />
+        <Items Name="PanelDataUpdateReportReply" Offset="1" Points="1" Type="BIT" />
+      </Block>
+      <Block Name="PanelJudgeDataDownloadRequestReplyBlock" Area="W" Action="WRITE" StartAddress="1" Points="240">
+        <Items Name="JobID" Offset="0" Points="20" Type="A" />
+        <Items Name="LotSequenceNumber" Offset="20" Points="1" Type="I" />
+        <Items Name="SlotSequenceNumber" Offset="21" Points="1" Type="I" />
+        <Items Name="PanelJudgeData1" Offset="22" Points="1" Type="A" />
+        <Items Name="PanelJudgeData2" Offset="23" Points="1" Type="A" />
+        <Items Name="PanelJudgeData3" Offset="24" Points="1" Type="A" />
+        <Items Name="PanelJudgeData4" Offset="25" Points="1" Type="A" />
+        <Items Name="PanelJudgeData5" Offset="26" Points="1" Type="A" />
+        <Items Name="PanelJudgeData6" Offset="27" Points="1" Type="A" />
+        <Items Name="PanelJudgeData7" Offset="28" Points="1" Type="A" />
+        <Items Name="PanelJudgeData8" Offset="29" Points="1" Type="A" />
+        <Items Name="PanelJudgeData9" Offset="30" Points="1" Type="A" />
+        <Items Name="PanelJudgeData10" Offset="31" Points="1" Type="A" />
+        <Items Name="ReturnCode" Offset="32" Points="1" Type="I" />
+      </Block>
+    </Block>
+    <Block Name="RV_EQToEQ_LinkSignal_05_04_00" Area="B" Action="READ" StartAddress="0" Points="609" ClassType="Class1">
+      <Block Name="UpstreamLinkSignal" Area="B" Action="READ" StartAddress="0" Points="4">
+        <Items Name="UpstreamInline" Offset="0" Points="1" Type="BIT" Function="UpstreamLinkSignal" />
+        <Items Name="UpstreamTrouble" Offset="1" Points="1" Type="BIT" Function="UpstreamLinkSignal" />
+        <Items Name="StretchComplete" Offset="2" Points="1" Type="BIT" Function="UpstreamLinkSignal" />
+        <Items Name="SlotNumber#1" Offset="3" Points="1" Type="BIT" Function="UpstreamLinkSignal" />
+        <Items Name="SlotNumber#2" Offset="4" Points="1" Type="BIT" Function="UpstreamLinkSignal" />
+        <Items Name="SlotNumber#3" Offset="5" Points="1" Type="BIT" Function="UpstreamLinkSignal" />
+        <Items Name="SlotNumber#4" Offset="6" Points="1" Type="BIT" Function="UpstreamLinkSignal" />
+        <Items Name="SlotNumber#5" Offset="7" Points="1" Type="BIT" Function="UpstreamLinkSignal" />
+        <Items Name="SlotNumber#6" Offset="8" Points="1" Type="BIT" Function="UpstreamLinkSignal" />
+        <Items Name="SendReady" Offset="9" Points="1" Type="BIT" Function="UpstreamLinkSignal" />
+        <Items Name="SlotPairFlag" Offset="10" Points="1" Type="BIT" Function="UpstreamLinkSignal" />
+        <Items Name="ArmSlotPairFlag" Offset="11" Points="1" Type="BIT" Function="UpstreamLinkSignal" />
+        <Items Name="JobTransferSignal#1" Offset="12" Points="1" Type="BIT" Function="UpstreamLinkSignal" />
+        <Items Name="JobTransferSignal#2" Offset="13" Points="1" Type="BIT" Function="UpstreamLinkSignal" />
+        <Items Name="SendAble" Offset="14" Points="1" Type="BIT" Function="UpstreamLinkSignal" />
+        <Items Name="SendStart" Offset="15" Points="1" Type="BIT" Function="UpstreamLinkSignal" />
+        <Items Name="SendComplete" Offset="16" Points="1" Type="BIT" Function="UpstreamLinkSignal" />
+        <Items Name="ExchangePossible" Offset="17" Points="1" Type="BIT" Function="UpstreamLinkSignal" />
+        <Items Name="ExchangeExecute" Offset="18" Points="1" Type="BIT" Function="UpstreamLinkSignal" />
+        <Items Name="InitialRequest" Offset="19" Points="1" Type="BIT" Function="UpstreamLinkSignal" />
+        <Items Name="InitialAck" Offset="20" Points="1" Type="BIT" Function="UpstreamLinkSignal" />
+        <Items Name="InitialNack" Offset="21" Points="1" Type="BIT" Function="UpstreamLinkSignal" />
+        <Items Name="ConveyerState" Offset="22" Points="1" Type="BIT" Function="UpstreamLinkSignal" />
+        <Items Name="ShutterState" Offset="23" Points="1" Type="BIT" Function="UpstreamLinkSignal" />
+        <Items Name="PinState" Offset="24" Points="1" Type="BIT" Function="UpstreamLinkSignal" />
+        <Items Name="RobotInterlock" Offset="25" Points="1" Type="BIT" Function="UpstreamLinkSignal" />
+        <Items Name="RobotVacuum" Offset="26" Points="1" Type="BIT" Function="UpstreamLinkSignal" />
+        <Items Name="GripUp" Offset="27" Points="1" Type="BIT" Function="UpstreamLinkSignal" />
+        <Items Name="GripComplete" Offset="28" Points="1" Type="BIT" Function="UpstreamLinkSignal" />
+        <Items Name="Abnormal" Offset="29" Points="1" Type="BIT" Function="UpstreamLinkSignal" />
+        <Items Name="Empty" Offset="30" Points="1" Type="BIT" Function="UpstreamLinkSignal" />
+        <Items Name="Idle" Offset="31" Points="1" Type="BIT" Function="UpstreamLinkSignal" />
+        <Items Name="Run" Offset="32" Points="1" Type="BIT" Function="UpstreamLinkSignal" />
+        <Items Name="Complete" Offset="33" Points="1" Type="BIT" Function="UpstreamLinkSignal" />
+        <Items Name="LiftUporPinUp" Offset="34" Points="1" Type="BIT" Function="UpstreamLinkSignal" />
+        <Items Name="LiftDownorPinDown" Offset="35" Points="1" Type="BIT" Function="UpstreamLinkSignal" />
+        <Items Name="StopperUporShutterOpen" Offset="36" Points="1" Type="BIT" Function="UpstreamLinkSignal" />
+        <Items Name="StopperDownorShutterClose" Offset="37" Points="1" Type="BIT" Function="UpstreamLinkSignal" />
+        <Items Name="ManualOperation" Offset="38" Points="1" Type="BIT" Function="UpstreamLinkSignal" />
+        <Items Name="BodyMoving" Offset="39" Points="1" Type="BIT" Function="UpstreamLinkSignal" />
+        <Items Name="GlassExistArm#1" Offset="40" Points="1" Type="BIT" Function="UpstreamLinkSignal" />
+        <Items Name="GlassExistArm#2" Offset="41" Points="1" Type="BIT" Function="UpstreamLinkSignal" />
+        <Items Name="GlassExistArm#3" Offset="42" Points="1" Type="BIT" Function="UpstreamLinkSignal" />
+        <Items Name="GlassExistArm#4" Offset="43" Points="1" Type="BIT" Function="UpstreamLinkSignal" />
+        <Items Name="PositionFront#1" Offset="44" Points="1" Type="BIT" Function="UpstreamLinkSignal" />
+        <Items Name="PositionBack#1" Offset="45" Points="1" Type="BIT" Function="UpstreamLinkSignal" />
+        <Items Name="PositionFront#2" Offset="46" Points="1" Type="BIT" Function="UpstreamLinkSignal" />
+        <Items Name="PositionBack#2" Offset="47" Points="1" Type="BIT" Function="UpstreamLinkSignal" />
+        <Items Name="PairSlotNumber#1" Offset="48" Points="1" Type="BIT" Function="UpstreamLinkSignal" />
+        <Items Name="PairSlotNumber#2" Offset="49" Points="1" Type="BIT" Function="UpstreamLinkSignal" />
+        <Items Name="PairSlotNumber#3" Offset="50" Points="1" Type="BIT" Function="UpstreamLinkSignal" />
+        <Items Name="PairSlotNumber#4" Offset="51" Points="1" Type="BIT" Function="UpstreamLinkSignal" />
+        <Items Name="PairSlotNumber#5" Offset="52" Points="1" Type="BIT" Function="UpstreamLinkSignal" />
+        <Items Name="PairSlotNumber#6" Offset="53" Points="1" Type="BIT" Function="UpstreamLinkSignal" />
+        <Items Name="JobProcessReady" Offset="54" Points="1" Type="BIT" Function="UpstreamLinkSignal" />
+        <Items Name="RobotArmStretchingComplete" Offset="55" Points="1" Type="BIT" Function="UpstreamLinkSignal" />
+        <Items Name="RobotReady" Offset="56" Points="1" Type="BIT" Function="UpstreamLinkSignal" />
+        <Items Name="RobotBusy" Offset="57" Points="1" Type="BIT" Function="UpstreamLinkSignal" />
+      </Block>
+      <Block Name="DownstreamLinkSignal" Area="B" Action="READ" StartAddress="4" Points="4">
+        <Items Name="DownstreamInline" Offset="0" Points="1" Type="BIT" Function="DownstreamLinkSignal" />
+        <Items Name="DownstreamTrouble" Offset="1" Points="1" Type="BIT" Function="DownstreamLinkSignal" />
+        <Items Name="StretchComplete" Offset="2" Points="1" Type="BIT" Function="DownstreamLinkSignal" />
+        <Items Name="SlotNumber#1" Offset="3" Points="1" Type="BIT" Function="DownstreamLinkSignal" />
+        <Items Name="SlotNumber#2" Offset="4" Points="1" Type="BIT" Function="DownstreamLinkSignal" />
+        <Items Name="SlotNumber#3" Offset="5" Points="1" Type="BIT" Function="DownstreamLinkSignal" />
+        <Items Name="SlotNumber#4" Offset="6" Points="1" Type="BIT" Function="DownstreamLinkSignal" />
+        <Items Name="SlotNumber#5" Offset="7" Points="1" Type="BIT" Function="DownstreamLinkSignal" />
+        <Items Name="SlotNumber#6" Offset="8" Points="1" Type="BIT" Function="DownstreamLinkSignal" />
+        <Items Name="ReceiveReady" Offset="9" Points="1" Type="BIT" Function="DownstreamLinkSignal" />
+        <Items Name="SlotPairFlag" Offset="10" Points="1" Type="BIT" Function="DownstreamLinkSignal" />
+        <Items Name="ArmSlotPairFlag" Offset="11" Points="1" Type="BIT" Function="DownstreamLinkSignal" />
+        <Items Name="JobTransferSignal#1" Offset="12" Points="1" Type="BIT" Function="DownstreamLinkSignal" />
+        <Items Name="JobTransferSignal#2" Offset="13" Points="1" Type="BIT" Function="DownstreamLinkSignal" />
+        <Items Name="ReceiveAble" Offset="14" Points="1" Type="BIT" Function="DownstreamLinkSignal" />
+        <Items Name="ReceiveStart" Offset="15" Points="1" Type="BIT" Function="DownstreamLinkSignal" />
+        <Items Name="ReceiveComplete" Offset="16" Points="1" Type="BIT" Function="DownstreamLinkSignal" />
+        <Items Name="ExchangePossible" Offset="17" Points="1" Type="BIT" Function="DownstreamLinkSignal" />
+        <Items Name="ExchangeExecute" Offset="18" Points="1" Type="BIT" Function="DownstreamLinkSignal" />
+        <Items Name="InitialRequest" Offset="19" Points="1" Type="BIT" Function="DownstreamLinkSignal" />
+        <Items Name="InitialAck" Offset="20" Points="1" Type="BIT" Function="DownstreamLinkSignal" />
+        <Items Name="InitialNack" Offset="21" Points="1" Type="BIT" Function="DownstreamLinkSignal" />
+        <Items Name="ConveyerState" Offset="22" Points="1" Type="BIT" Function="DownstreamLinkSignal" />
+        <Items Name="ShutterState" Offset="23" Points="1" Type="BIT" Function="DownstreamLinkSignal" />
+        <Items Name="PinState" Offset="24" Points="1" Type="BIT" Function="DownstreamLinkSignal" />
+        <Items Name="RobotInterlock" Offset="25" Points="1" Type="BIT" Function="DownstreamLinkSignal" />
+        <Items Name="RobotVacuum" Offset="26" Points="1" Type="BIT" Function="DownstreamLinkSignal" />
+        <Items Name="GripUp" Offset="27" Points="1" Type="BIT" Function="DownstreamLinkSignal" />
+        <Items Name="GripComplete" Offset="28" Points="1" Type="BIT" Function="DownstreamLinkSignal" />
+        <Items Name="Abnormal" Offset="29" Points="1" Type="BIT" Function="DownstreamLinkSignal" />
+        <Items Name="Empty" Offset="30" Points="1" Type="BIT" Function="DownstreamLinkSignal" />
+        <Items Name="Idle" Offset="31" Points="1" Type="BIT" Function="DownstreamLinkSignal" />
+        <Items Name="Run" Offset="32" Points="1" Type="BIT" Function="DownstreamLinkSignal" />
+        <Items Name="Complete" Offset="33" Points="1" Type="BIT" Function="DownstreamLinkSignal" />
+        <Items Name="LiftUporPinUp" Offset="34" Points="1" Type="BIT" Function="DownstreamLinkSignal" />
+        <Items Name="LiftDownorPinDown" Offset="35" Points="1" Type="BIT" Function="DownstreamLinkSignal" />
+        <Items Name="StopperUporShutterOpen" Offset="36" Points="1" Type="BIT" Function="DownstreamLinkSignal" />
+        <Items Name="StopperDownorShutterClose" Offset="37" Points="1" Type="BIT" Function="DownstreamLinkSignal" />
+        <Items Name="ManualOperation" Offset="38" Points="1" Type="BIT" Function="DownstreamLinkSignal" />
+        <Items Name="BodyMoving" Offset="39" Points="1" Type="BIT" Function="DownstreamLinkSignal" />
+        <Items Name="GlassExistArm#1" Offset="40" Points="1" Type="BIT" Function="DownstreamLinkSignal" />
+        <Items Name="GlassExistArm#2" Offset="41" Points="1" Type="BIT" Function="DownstreamLinkSignal" />
+        <Items Name="GlassExistArm#3" Offset="42" Points="1" Type="BIT" Function="DownstreamLinkSignal" />
+        <Items Name="GlassExistArm#4" Offset="43" Points="1" Type="BIT" Function="DownstreamLinkSignal" />
+        <Items Name="PositionFront#1" Offset="44" Points="1" Type="BIT" Function="DownstreamLinkSignal" />
+        <Items Name="PositionBack#1" Offset="45" Points="1" Type="BIT" Function="DownstreamLinkSignal" />
+        <Items Name="PositionFront#2" Offset="46" Points="1" Type="BIT" Function="DownstreamLinkSignal" />
+        <Items Name="PositionBack#2" Offset="47" Points="1" Type="BIT" Function="DownstreamLinkSignal" />
+        <Items Name="PairSlotNumber#1" Offset="48" Points="1" Type="BIT" Function="DownstreamLinkSignal" />
+        <Items Name="PairSlotNumber#2" Offset="49" Points="1" Type="BIT" Function="DownstreamLinkSignal" />
+        <Items Name="PairSlotNumber#3" Offset="50" Points="1" Type="BIT" Function="DownstreamLinkSignal" />
+        <Items Name="PairSlotNumber#4" Offset="51" Points="1" Type="BIT" Function="DownstreamLinkSignal" />
+        <Items Name="PairSlotNumber#5" Offset="52" Points="1" Type="BIT" Function="DownstreamLinkSignal" />
+        <Items Name="PairSlotNumber#6" Offset="53" Points="1" Type="BIT" Function="DownstreamLinkSignal" />
+        <Items Name="JobProcessReady" Offset="54" Points="1" Type="BIT" Function="DownstreamLinkSignal" />
+        <Items Name="RobotArmStretchingComplete" Offset="55" Points="1" Type="BIT" Function="DownstreamLinkSignal" />
+        <Items Name="RobotReady" Offset="56" Points="1" Type="BIT" Function="DownstreamLinkSignal" />
+        <Items Name="RobotBusy" Offset="57" Points="1" Type="BIT" Function="DownstreamLinkSignal" />
+      </Block>
+      <Block Name="JobData#1" Monitor="T" Area="W" Action="READ" StartAddress="8" Points="280">
+        <ItemGroup Name="Afterbevelingcleaner_JOBDATA" Offset="0" Points="140" Suffix="1" />
+        <ItemGroup Name="Afterbevelingcleaner_JOBDATA" Offset="140" Points="140" Suffix="2" />
+      </Block>
+      <Block Name="JobData#2" Monitor="T" Area="W" Action="READ" StartAddress="288" Points="280">
+        <ItemGroup Name="Afterbevelingcleaner_JOBDATA" Offset="0" Points="140" Suffix="1" />
+        <ItemGroup Name="Afterbevelingcleaner_JOBDATA" Offset="140" Points="140" Suffix="2" />
+      </Block>
+    </Block>
+    <Block Name="RV_EQToEQ_LinkSignal_05_06_00" Area="B" Action="READ" StartAddress="0" Points="609" ClassType="Class1">
+      <Block Name="UpstreamLinkSignal" Area="B" Action="READ" StartAddress="0" Points="4">
+        <Items Name="UpstreamInline" Offset="0" Points="1" Type="BIT" Function="UpstreamLinkSignal" />
+        <Items Name="UpstreamTrouble" Offset="1" Points="1" Type="BIT" Function="UpstreamLinkSignal" />
+        <Items Name="StretchComplete" Offset="2" Points="1" Type="BIT" Function="UpstreamLinkSignal" />
+        <Items Name="SlotNumber#1" Offset="3" Points="1" Type="BIT" Function="UpstreamLinkSignal" />
+        <Items Name="SlotNumber#2" Offset="4" Points="1" Type="BIT" Function="UpstreamLinkSignal" />
+        <Items Name="SlotNumber#3" Offset="5" Points="1" Type="BIT" Function="UpstreamLinkSignal" />
+        <Items Name="SlotNumber#4" Offset="6" Points="1" Type="BIT" Function="UpstreamLinkSignal" />
+        <Items Name="SlotNumber#5" Offset="7" Points="1" Type="BIT" Function="UpstreamLinkSignal" />
+        <Items Name="SlotNumber#6" Offset="8" Points="1" Type="BIT" Function="UpstreamLinkSignal" />
+        <Items Name="SendReady" Offset="9" Points="1" Type="BIT" Function="UpstreamLinkSignal" />
+        <Items Name="SlotPairFlag" Offset="10" Points="1" Type="BIT" Function="UpstreamLinkSignal" />
+        <Items Name="ArmSlotPairFlag" Offset="11" Points="1" Type="BIT" Function="UpstreamLinkSignal" />
+        <Items Name="JobTransferSignal#1" Offset="12" Points="1" Type="BIT" Function="UpstreamLinkSignal" />
+        <Items Name="JobTransferSignal#2" Offset="13" Points="1" Type="BIT" Function="UpstreamLinkSignal" />
+        <Items Name="SendAble" Offset="14" Points="1" Type="BIT" Function="UpstreamLinkSignal" />
+        <Items Name="SendStart" Offset="15" Points="1" Type="BIT" Function="UpstreamLinkSignal" />
+        <Items Name="SendComplete" Offset="16" Points="1" Type="BIT" Function="UpstreamLinkSignal" />
+        <Items Name="ExchangePossible" Offset="17" Points="1" Type="BIT" Function="UpstreamLinkSignal" />
+        <Items Name="ExchangeExecute" Offset="18" Points="1" Type="BIT" Function="UpstreamLinkSignal" />
+        <Items Name="InitialRequest" Offset="19" Points="1" Type="BIT" Function="UpstreamLinkSignal" />
+        <Items Name="InitialAck" Offset="20" Points="1" Type="BIT" Function="UpstreamLinkSignal" />
+        <Items Name="InitialNack" Offset="21" Points="1" Type="BIT" Function="UpstreamLinkSignal" />
+        <Items Name="ConveyerState" Offset="22" Points="1" Type="BIT" Function="UpstreamLinkSignal" />
+        <Items Name="ShutterState" Offset="23" Points="1" Type="BIT" Function="UpstreamLinkSignal" />
+        <Items Name="PinState" Offset="24" Points="1" Type="BIT" Function="UpstreamLinkSignal" />
+        <Items Name="RobotInterlock" Offset="25" Points="1" Type="BIT" Function="UpstreamLinkSignal" />
+        <Items Name="RobotVacuum" Offset="26" Points="1" Type="BIT" Function="UpstreamLinkSignal" />
+        <Items Name="GripUp" Offset="27" Points="1" Type="BIT" Function="UpstreamLinkSignal" />
+        <Items Name="GripComplete" Offset="28" Points="1" Type="BIT" Function="UpstreamLinkSignal" />
+        <Items Name="Abnormal" Offset="29" Points="1" Type="BIT" Function="UpstreamLinkSignal" />
+        <Items Name="Empty" Offset="30" Points="1" Type="BIT" Function="UpstreamLinkSignal" />
+        <Items Name="Idle" Offset="31" Points="1" Type="BIT" Function="UpstreamLinkSignal" />
+        <Items Name="Run" Offset="32" Points="1" Type="BIT" Function="UpstreamLinkSignal" />
+        <Items Name="Complete" Offset="33" Points="1" Type="BIT" Function="UpstreamLinkSignal" />
+        <Items Name="LiftUporPinUp" Offset="34" Points="1" Type="BIT" Function="UpstreamLinkSignal" />
+        <Items Name="LiftDownorPinDown" Offset="35" Points="1" Type="BIT" Function="UpstreamLinkSignal" />
+        <Items Name="StopperUporShutterOpen" Offset="36" Points="1" Type="BIT" Function="UpstreamLinkSignal" />
+        <Items Name="StopperDownorShutterClose" Offset="37" Points="1" Type="BIT" Function="UpstreamLinkSignal" />
+        <Items Name="ManualOperation" Offset="38" Points="1" Type="BIT" Function="UpstreamLinkSignal" />
+        <Items Name="BodyMoving" Offset="39" Points="1" Type="BIT" Function="UpstreamLinkSignal" />
+        <Items Name="GlassExistArm#1" Offset="40" Points="1" Type="BIT" Function="UpstreamLinkSignal" />
+        <Items Name="GlassExistArm#2" Offset="41" Points="1" Type="BIT" Function="UpstreamLinkSignal" />
+        <Items Name="GlassExistArm#3" Offset="42" Points="1" Type="BIT" Function="UpstreamLinkSignal" />
+        <Items Name="GlassExistArm#4" Offset="43" Points="1" Type="BIT" Function="UpstreamLinkSignal" />
+        <Items Name="PositionFront#1" Offset="44" Points="1" Type="BIT" Function="UpstreamLinkSignal" />
+        <Items Name="PositionBack#1" Offset="45" Points="1" Type="BIT" Function="UpstreamLinkSignal" />
+        <Items Name="PositionFront#2" Offset="46" Points="1" Type="BIT" Function="UpstreamLinkSignal" />
+        <Items Name="PositionBack#2" Offset="47" Points="1" Type="BIT" Function="UpstreamLinkSignal" />
+        <Items Name="PairSlotNumber#1" Offset="48" Points="1" Type="BIT" Function="UpstreamLinkSignal" />
+        <Items Name="PairSlotNumber#2" Offset="49" Points="1" Type="BIT" Function="UpstreamLinkSignal" />
+        <Items Name="PairSlotNumber#3" Offset="50" Points="1" Type="BIT" Function="UpstreamLinkSignal" />
+        <Items Name="PairSlotNumber#4" Offset="51" Points="1" Type="BIT" Function="UpstreamLinkSignal" />
+        <Items Name="PairSlotNumber#5" Offset="52" Points="1" Type="BIT" Function="UpstreamLinkSignal" />
+        <Items Name="PairSlotNumber#6" Offset="53" Points="1" Type="BIT" Function="UpstreamLinkSignal" />
+        <Items Name="JobProcessReady" Offset="54" Points="1" Type="BIT" Function="UpstreamLinkSignal" />
+        <Items Name="RobotArmStretchingComplete" Offset="55" Points="1" Type="BIT" Function="UpstreamLinkSignal" />
+        <Items Name="RobotReady" Offset="56" Points="1" Type="BIT" Function="UpstreamLinkSignal" />
+        <Items Name="RobotBusy" Offset="57" Points="1" Type="BIT" Function="UpstreamLinkSignal" />
+      </Block>
+      <Block Name="DownstreamLinkSignal" Area="B" Action="READ" StartAddress="4" Points="4">
+        <Items Name="DownstreamInline" Offset="0" Points="1" Type="BIT" Function="DownstreamLinkSignal" />
+        <Items Name="DownstreamTrouble" Offset="1" Points="1" Type="BIT" Function="DownstreamLinkSignal" />
+        <Items Name="StretchComplete" Offset="2" Points="1" Type="BIT" Function="DownstreamLinkSignal" />
+        <Items Name="SlotNumber#1" Offset="3" Points="1" Type="BIT" Function="DownstreamLinkSignal" />
+        <Items Name="SlotNumber#2" Offset="4" Points="1" Type="BIT" Function="DownstreamLinkSignal" />
+        <Items Name="SlotNumber#3" Offset="5" Points="1" Type="BIT" Function="DownstreamLinkSignal" />
+        <Items Name="SlotNumber#4" Offset="6" Points="1" Type="BIT" Function="DownstreamLinkSignal" />
+        <Items Name="SlotNumber#5" Offset="7" Points="1" Type="BIT" Function="DownstreamLinkSignal" />
+        <Items Name="SlotNumber#6" Offset="8" Points="1" Type="BIT" Function="DownstreamLinkSignal" />
+        <Items Name="ReceiveReady" Offset="9" Points="1" Type="BIT" Function="DownstreamLinkSignal" />
+        <Items Name="SlotPairFlag" Offset="10" Points="1" Type="BIT" Function="DownstreamLinkSignal" />
+        <Items Name="ArmSlotPairFlag" Offset="11" Points="1" Type="BIT" Function="DownstreamLinkSignal" />
+        <Items Name="JobTransferSignal#1" Offset="12" Points="1" Type="BIT" Function="DownstreamLinkSignal" />
+        <Items Name="JobTransferSignal#2" Offset="13" Points="1" Type="BIT" Function="DownstreamLinkSignal" />
+        <Items Name="ReceiveAble" Offset="14" Points="1" Type="BIT" Function="DownstreamLinkSignal" />
+        <Items Name="ReceiveStart" Offset="15" Points="1" Type="BIT" Function="DownstreamLinkSignal" />
+        <Items Name="ReceiveComplete" Offset="16" Points="1" Type="BIT" Function="DownstreamLinkSignal" />
+        <Items Name="ExchangePossible" Offset="17" Points="1" Type="BIT" Function="DownstreamLinkSignal" />
+        <Items Name="ExchangeExecute" Offset="18" Points="1" Type="BIT" Function="DownstreamLinkSignal" />
+        <Items Name="InitialRequest" Offset="19" Points="1" Type="BIT" Function="DownstreamLinkSignal" />
+        <Items Name="InitialAck" Offset="20" Points="1" Type="BIT" Function="DownstreamLinkSignal" />
+        <Items Name="InitialNack" Offset="21" Points="1" Type="BIT" Function="DownstreamLinkSignal" />
+        <Items Name="ConveyerState" Offset="22" Points="1" Type="BIT" Function="DownstreamLinkSignal" />
+        <Items Name="ShutterState" Offset="23" Points="1" Type="BIT" Function="DownstreamLinkSignal" />
+        <Items Name="PinState" Offset="24" Points="1" Type="BIT" Function="DownstreamLinkSignal" />
+        <Items Name="RobotInterlock" Offset="25" Points="1" Type="BIT" Function="DownstreamLinkSignal" />
+        <Items Name="RobotVacuum" Offset="26" Points="1" Type="BIT" Function="DownstreamLinkSignal" />
+        <Items Name="GripUp" Offset="27" Points="1" Type="BIT" Function="DownstreamLinkSignal" />
+        <Items Name="GripComplete" Offset="28" Points="1" Type="BIT" Function="DownstreamLinkSignal" />
+        <Items Name="Abnormal" Offset="29" Points="1" Type="BIT" Function="DownstreamLinkSignal" />
+        <Items Name="Empty" Offset="30" Points="1" Type="BIT" Function="DownstreamLinkSignal" />
+        <Items Name="Idle" Offset="31" Points="1" Type="BIT" Function="DownstreamLinkSignal" />
+        <Items Name="Run" Offset="32" Points="1" Type="BIT" Function="DownstreamLinkSignal" />
+        <Items Name="Complete" Offset="33" Points="1" Type="BIT" Function="DownstreamLinkSignal" />
+        <Items Name="LiftUporPinUp" Offset="34" Points="1" Type="BIT" Function="DownstreamLinkSignal" />
+        <Items Name="LiftDownorPinDown" Offset="35" Points="1" Type="BIT" Function="DownstreamLinkSignal" />
+        <Items Name="StopperUporShutterOpen" Offset="36" Points="1" Type="BIT" Function="DownstreamLinkSignal" />
+        <Items Name="StopperDownorShutterClose" Offset="37" Points="1" Type="BIT" Function="DownstreamLinkSignal" />
+        <Items Name="ManualOperation" Offset="38" Points="1" Type="BIT" Function="DownstreamLinkSignal" />
+        <Items Name="BodyMoving" Offset="39" Points="1" Type="BIT" Function="DownstreamLinkSignal" />
+        <Items Name="GlassExistArm#1" Offset="40" Points="1" Type="BIT" Function="DownstreamLinkSignal" />
+        <Items Name="GlassExistArm#2" Offset="41" Points="1" Type="BIT" Function="DownstreamLinkSignal" />
+        <Items Name="GlassExistArm#3" Offset="42" Points="1" Type="BIT" Function="DownstreamLinkSignal" />
+        <Items Name="GlassExistArm#4" Offset="43" Points="1" Type="BIT" Function="DownstreamLinkSignal" />
+        <Items Name="PositionFront#1" Offset="44" Points="1" Type="BIT" Function="DownstreamLinkSignal" />
+        <Items Name="PositionBack#1" Offset="45" Points="1" Type="BIT" Function="DownstreamLinkSignal" />
+        <Items Name="PositionFront#2" Offset="46" Points="1" Type="BIT" Function="DownstreamLinkSignal" />
+        <Items Name="PositionBack#2" Offset="47" Points="1" Type="BIT" Function="DownstreamLinkSignal" />
+        <Items Name="PairSlotNumber#1" Offset="48" Points="1" Type="BIT" Function="DownstreamLinkSignal" />
+        <Items Name="PairSlotNumber#2" Offset="49" Points="1" Type="BIT" Function="DownstreamLinkSignal" />
+        <Items Name="PairSlotNumber#3" Offset="50" Points="1" Type="BIT" Function="DownstreamLinkSignal" />
+        <Items Name="PairSlotNumber#4" Offset="51" Points="1" Type="BIT" Function="DownstreamLinkSignal" />
+        <Items Name="PairSlotNumber#5" Offset="52" Points="1" Type="BIT" Function="DownstreamLinkSignal" />
+        <Items Name="PairSlotNumber#6" Offset="53" Points="1" Type="BIT" Function="DownstreamLinkSignal" />
+        <Items Name="JobProcessReady" Offset="54" Points="1" Type="BIT" Function="DownstreamLinkSignal" />
+        <Items Name="RobotArmStretchingComplete" Offset="55" Points="1" Type="BIT" Function="DownstreamLinkSignal" />
+        <Items Name="RobotReady" Offset="56" Points="1" Type="BIT" Function="DownstreamLinkSignal" />
+        <Items Name="RobotBusy" Offset="57" Points="1" Type="BIT" Function="DownstreamLinkSignal" />
+      </Block>
+      <Block Name="JobData#1" Monitor="T" Area="W" Action="READ" StartAddress="8" Points="280">
+        <ItemGroup Name="Afterbevelingcleaner_JOBDATA" Offset="0" Points="140" Suffix="1" />
+        <ItemGroup Name="Afterbevelingcleaner_JOBDATA" Offset="140" Points="140" Suffix="2" />
+      </Block>
+      <Block Name="JobData#2" Monitor="T" Area="W" Action="READ" StartAddress="288" Points="280">
+        <ItemGroup Name="Afterbevelingcleaner_JOBDATA" Offset="0" Points="140" Suffix="1" />
+        <ItemGroup Name="Afterbevelingcleaner_JOBDATA" Offset="140" Points="140" Suffix="2" />
+      </Block>
+    </Block>
+  </BlockMap>
+</configuration>

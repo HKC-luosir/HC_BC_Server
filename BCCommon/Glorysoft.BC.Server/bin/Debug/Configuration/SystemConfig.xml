@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<SystemConfig>
+
+	<RecipeCheckEnable>true</RecipeCheckEnable>
+	<!--<RobotDispathMode>1</RobotDispathMode>-->
+	<PLCDateTimeEnable>false</PLCDateTimeEnable>
+	<DispatchTimeOutDate>180</DispatchTimeOutDate>
+	<UserName>admin</UserName>
+	<Password>123456</Password>
+	<LinkSleep>1000</LinkSleep>
+	<!--毫秒-->
+
+ <!--PHTUnits:unitname-->
+	<PHTUnits>PhotoTrack2,PhotoTrack3,PhotoTrack4,PhotoTrack5,PhotoTrack6,PhotoTrack7,PhotoTrack8,PhotoTrack9</PHTUnits>
+	<PHTUnitsID>A1PHT620,A1PHT630,A1PHT640,A1PHT650,A1PHT660,A1PHT670,A1PHT680,A1PHT690</PHTUnitsID>
+	<PHTUnitName>PhotoTrack</PHTUnitName>
+ 
+</SystemConfig>

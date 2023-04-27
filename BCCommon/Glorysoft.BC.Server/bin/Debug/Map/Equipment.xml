@@ -1,0 +1,567 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<sqlMap namespace="Equipment"
+	xmlns="http://ibatis.apache.org/mapping"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+  <alias>
+    <!--alias:取别名
+		assembly:表示类所在的文件
+		type:表示该类的完整的名称-->
+
+    <typeAlias alias="EQPInfo"  type="Glorysoft.BC.Entity.EQPInfo"/>
+    <typeAlias alias="HisEQPInfo"  type="Glorysoft.BC.Entity.EQPInfo"/>
+    <typeAlias alias="Unit"  type="Glorysoft.BC.Entity.Unit"/>
+    <typeAlias alias="SUnit"  type="Glorysoft.BC.Entity.SUnit"/>
+    <typeAlias alias="SSUnit"  type="Glorysoft.BC.Entity.SSUnit"/>
+    <typeAlias alias="User"  type="Glorysoft.BC.Entity.User"/>
+    
+    <typeAlias alias="EventInfo"  type="Glorysoft.BC.Entity.EventInfo"/>
+    <typeAlias alias="ECInfo"  type="Glorysoft.BC.Entity.ECInfo"/>
+	  <typeAlias alias="EQPStatusRule"  type="Glorysoft.BC.Entity.EQPStatusRule"/>
+	  <typeAlias alias="EQPStatusGroup"  type="Glorysoft.BC.Entity.EQPStatusGroup"/>
+	  <typeAlias alias="VCR"  type="Glorysoft.BC.Entity.VCR"/>
+  </alias>
+
+  <resultMaps>
+    
+    <resultMap id="EQPInfoResult" class="EQPInfo">     
+      <result property="EQPID" column="eqpid"/>     
+      <result property="EqpStatus" column="eqpstatus"/>
+      <result property="UpdateDate" column="updatedate"/>
+      <result property="ReasonCode" column="reasoncode"/>    
+      <result property="RobotDispatchMode" column="robotdispatchmode"/>
+	    <result property="IndexerOperationMode" column="indexeroperationmode"/>
+	    <result property="LineType" column="linetype"/>      
+		  <result property="LineMode" column="linemode"/>
+      <result property="ColdRunTotalQuantity" column="coldruntotalquantity"/>
+      <result property="ColdRunCurrentQuantity" column="coldruncurrentquantity"/>
+      <result property="ControlState" column="controlstate"/>
+      <result property="IsColdRun" column="iscoldrun"/>
+      <result property="PHT600Port" column="pht600port"/>
+      <result property="PHT600PortSlot" column="pht600portslot"/>
+    </resultMap>
+    <resultMap id="HisEQPInfoResult" class="EQPInfo">
+      <result property="EQPID" column="eqpid"/>
+      <result property="EqpStatus" column="eqpstatus"/>
+      <result property="UpdateDate" column="updatedate"/>
+      <result property="ReasonCode" column="reasoncode"/>
+	  <result property="ControlState" column="controlstate"/>
+      <result property="RobotDispatchMode" column="robotdispatchmode"/>
+      <result property="IndexerOperationMode" column="indexeroperationmode"/>
+      <result property="LineType" column="linetype"/>
+      <result property="LineMode" column="linemode"/>
+      <result property="ColdRunTotalQuantity" column="coldruntotalquantity"/>
+      <result property="ColdRunCurrentQuantity" column="coldruncurrentquantity"/>
+      <result property="FunctionName" column="functionname"/>
+    </resultMap>
+    <resultMap id="UserResult" class="User">
+      <result property="UserID" column="userid"/>
+      <result property="UserName" column="username"/>
+      <result property="Password" column="password"/>
+      <result property="Level" column ="level" />
+      <result property="Creator" column="creator"/>
+      <result property="CreateDate" column="createdate"/>
+      <result property="GroupId" column="groupid"/>
+    </resultMap>
+	  <resultMap id="HisUnitResult" class="Unit">		  
+		  <result property="FunctionName" column="functionname"/>
+		  <result property="EQPID" column="eqpid"/>
+		  <result property="UnitID" column="unitid"/>
+		  <result property="UnitName" column="unitname"/>
+		  <result property="UnitNo" column="unitno"/>
+		  <result property="UnitType" column="unittype"/>
+		  <result property="UnitCapacity" column="unitcapacity"/>
+		 
+		  <result property="CRST" column="crst"/>
+		  <result property="UnitStatus" column="unitstatus"/>
+		  <result property="UnitSTCode" column="unitstcode"/>
+		  <result property="ReasonCode" column="reasoncode"/>
+		  <result property="HasSUnit" column="hassunit"/>
+		  <result property="UnitMode" column="unitmode"/>
+		  <result property="CassetteOperationMode" column="cassetteoperationmode"/>
+		  <result property="IsEqpEnd" column="iseqpend"/>
+		  <result property="IsEqpStart" column="iseqpstart"/>
+		  <result property="CurrentRecipeIdCheck" column="currentrecipeidcheck"/>
+		  <result property="IsProcessEnd" column="isprocessend"/>
+		  <result property="IsJobDataRequest" column="isjobdatarequest"/>
+		  <result property="VCRStatus" column="vcrstatus"/>
+		  <result property="LocalNo" column="localno"/>
+		  <result property="PortQTime" column="portqtime"/>
+		  <result property="CommandType" column="commandtype"/>
+		  <result property = "CurrentRecipeID" column="currentrecipeid"/>
+		  <result property = "DownstreamInlineMode" column="downstreaminlinemode"/>
+		  <result property = "UpstreamInlineMode" column="upstreaminlinemode"/>
+		  <result property="LoadingStop" column="loadingstop"/>
+		  <result property="CIMMode" column="cimmode"/>
+      <result property="OldUnitStatus" column="oldunitstatus"/>      
+    </resultMap>
+    <resultMap id="UnitResult" class="Unit">
+      <result property="EQPID" column="eqpid"/>
+      <result property="UnitNo" column="unitno"/>
+      <result property="UnitType" column="unittype"/>
+      <result property="UnitCapacity" column="unitcapacity"/>
+      <result property="UnitID" column="unitid"/>
+      <result property="UnitName" column="unitname"/>
+      <result property="CRST" column="crst"/>
+      <result property="UnitStatus" column="unitstatus"/>
+      <result property="UnitSTCode" column="unitstcode"/>
+      <result property="ReasonCode" column="reasoncode"/>
+      <result property="HasSUnit" column="hassunit"/>
+      <result property="UnitMode" column="unitmode"/>            
+      <result property="CassetteOperationMode" column="cassetteoperationmode"/>
+	  <result property="IsEqpEnd" column="iseqpend"/>
+	  <result property="IsEqpStart" column="iseqpstart"/>
+	  <result property="CurrentRecipeIdCheck" column="currentrecipeidcheck"/>
+	  <result property="IsProcessEnd" column="isprocessend"/>
+	  <result property="IsJobDataRequest" column="isjobdatarequest"/>
+	  <result property="VCRStatus" column="vcrstatus"/>
+		<result property="DeviceType" column="devicetype"/>
+		<result property="Class3IP" column="class3ip"/>
+		<result property="PLCIP" column="plcip"/>
+		<result property="PLCPort" column="plcport"/>
+	  <result property="LocalNo" column="localno"/>
+      <result property="PortQTime" column="portqtime"/>
+	    <result property="CommandType" column="commandtype"/>
+		  <result property = "CurrentRecipeID" column="currentrecipeid"/>
+		  <result property = "DownstreamInlineMode" column="downstreaminlinemode"/>
+		  <result property = "UpstreamInlineMode" column="upstreaminlinemode"/>
+      <result property="LoadingStop" column="loadingstop"/>
+      <result property="CIMMode" column="cimmode"/>
+    </resultMap>
+    <resultMap id="SUnitResult" class="SUnit">
+      <result property="EQPID" column="eqpid"/>
+      <result property="SubUnitNo" column="subunitno"/>
+      <result property="UnitID" column="unitid"/>
+      <result property="UnitName" column="unitname"/>
+      <result property="SUnitPathNo" column="sunitpathno"/>
+      <result property="SUnitType" column="sunittype"/>
+      <result property="SUnitID" column="sunitid"/>
+      <result property="SUnitName" column="sunitname"/>
+      <result property="SUnitStatus" column="sunitstatus"/>
+      <result property="SUnitSTCode" column="sunitstcode"/>      
+      <result property="HasSSUnit" column="hasssunit"/>
+	  <result property="ReportMesState" column="reportmesstate"/>
+    </resultMap>
+    <resultMap id="HisSUnitResult" class="SUnit">
+      <result property="EQPID" column="eqpid"/>
+      <result property="SubUnitNo" column="subunitno"/>
+      <result property="UnitID" column="unitid"/>
+      <result property="UnitName" column="unitname"/>
+      <result property="SUnitPathNo" column="sunitpathno"/>
+      <result property="SUnitType" column="sunittype"/>
+      <result property="SUnitID" column="sunitid"/>
+      <result property="SUnitName" column="sunitname"/>
+      <result property="SUnitStatus" column="sunitstatus"/>
+      <result property="SUnitSTCode" column="sunitstcode"/>
+      <result property="HasSSUnit" column="hasssunit"/>
+	  <result property="ReportMesState" column="reportmesstate"/>
+    </resultMap>
+    <resultMap id="SSUnitResult" class="SSUnit">
+      <result property="EQPID" column="eqpid"/>     
+      <result property="UnitID" column="unitid"/>
+      <result property="UnitName" column="unitname"/>
+      <result property="SUnitID" column="sunitid"/>
+      <result property="SUnitName" column="sunitname"/>
+      <result property="SSUnitID" column="ssunitid"/>
+      <result property="SSUnitName" column="ssunitname"/>
+      <result property="SSUnitStatus" column="ssunitstatus"/>
+      <result property="SSUnitSTCode" column="ssunitstcode"/>
+      <result property="SSUnitNo" column="ssunitno"/>
+      <result property="SSUnitType" column="ssunittype"/>
+    </resultMap>
+
+   
+    <resultMap id="EventResult" class="EventInfo">
+      <result property="CEID" column="ceid"/>
+      <result property="CEED" column="ceed"/>
+      <result property="Description" column="description"/>
+      <result property="IsUsed" column="isused"/>
+      <result property="UpdateTime" column="updatetime"/>
+    </resultMap>
+    <resultMap id="ECInfoResult" class="ECInfo">
+      <result property="ECID" column="ecid"/>
+      <result property="ECName" column="ecname"/>
+      <result property="ECMax" column="ecmax"/>
+      <result property="ECMin" column="ecmin"/>
+      <result property="ECV" column="ecv"/>
+      <result property="ECDef" column="ecdef"/>
+      <result property="UpdateTime" column="updatetime"/>
+    </resultMap>
+
+
+	  <resultMap id="EQPStatusRuleResult" class="EQPStatusRule">
+		  <result property = "EQPID" column="eqpid"/>
+		  <result property = "EQPStatus" column="eqpstatus"/>
+		  <result property = "UnitIDList" column="unitidlist"/>
+		  <result property = "CheckEnable" column="checkenable"/>		 
+	  </resultMap>
+	  <resultMap id="EQPStatusGroupResult" class="EQPStatusGroup">
+		  <result property = "EQPID" column="eqpid"/>
+		  <result property = "EQPStatus" column="eqpstatus"/>
+		  <result property = "Index" column="index"/>
+	  </resultMap>
+
+
+	  <resultMap id="VCRResult" class="VCR">
+		  <result property = "EQPID" column="eqpid"/>
+		  <result property = "UnitID" column="unitid"/>
+		  <result property = "UnitName" column="unitname"/>
+		  <result property = "VCREnableMode" column="vcrenablemode"/>
+		  <result property = "VCRNO" column="vcrno"/>
+		  <result property = "VCRReadFailOperationMode" column="vcrreadfailoperationmode"/>
+	  </resultMap>
+    <resultMap id="HisVCRResult" class="VCR">
+      <result property = "EQPID" column="eqpid"/>
+      <result property = "UnitID" column="unitid"/>
+      <result property = "UnitName" column="unitname"/>
+      <result property = "VCREnableMode" column="vcrenablemode"/>
+      <result property = "VCRNO" column="vcrno"/>
+      <result property = "VCRReadFailOperationMode" column="vcrreadfailoperationmode"/>
+      <result property = "CreateDate" column="createdate"/>
+    </resultMap>
+  </resultMaps>
+
+  <statements>
+    <select id="ViewEQPList" resultMap="EQPInfoResult" parameterClass="Hashtable">
+		select * from cfg_eqp
+		<dynamic prepend="where">
+			<isNotEmpty property="EQPID" prepend="and">
+				eqpid=#EQPID#
+			</isNotEmpty>
+		</dynamic>
+    </select>
+
+    <update id="UpdateEQPInfo" patameterClass="EQPInfo">
+      update cfg_eqp set eqpstatus=#EqpStatus#,
+      updatedate=#UpdateDate#,robotdispatchmode=#RobotDispatchMode#,indexeroperationmode=#IndexerOperationMode#,
+      linetype=#LineType#,linemode=#LineMode#,
+      controlstate=#ControlState#
+      <dynamic prepend="where">
+        <isNotEmpty property="EQPID" prepend="and">
+          eqpid=#EQPID#
+        </isNotEmpty>       
+      </dynamic>
+    </update>
+    <insert id="InsertHisEQPInfo" parameterClass="EQPInfo">
+		INSERT INTO his_eqp(
+		eqpid, updatedate, indexeroperationmode,
+		linetype, linemode, robotdispatchmode, eqpstatus,functionname,controlstate)
+		VALUES (#EQPID#, localtimestamp(0),  #IndexerOperationMode#,
+		#LineType#, #LineMode#, #RobotDispatchMode#,  #EqpStatus#,#FunctionName#,#ControlState#);
+	</insert>
+	  <insert id="InsertEQPInfo" parameterClass="EQPInfo">
+		  INSERT INTO cfg_eqp(
+		  eqpid, updatedate,  indexeroperationmode,
+		  linetype, linemode, robotdispatchmode,  eqpstatus, controlstate)
+		  VALUES (#EQPID#, localtimestamp(0),  #IndexerOperationMode#,
+		  #LineType#, #LineMode#, #RobotDispatchMode#, #EqpStatus#, #ControlState#);
+	  </insert>
+	  <delete id="DeleteEQPInfo" parameterClass="EQPInfo">
+		  delete from cfg_eqp
+		  <dynamic prepend="where">
+			  <isNotEmpty property="EQPID" prepend="and">
+				  eqpid=#EQPID#
+			  </isNotEmpty>
+		  </dynamic>
+	  </delete>
+    
+    
+    
+	  <insert id="InsertHisUnitResult" parameterClass="Unit">
+		  INSERT INTO public.his_unit(
+		  functionname, eqpid, unitid, unitname, unittype, unitcapacity, reasoncode, unitstcode, hassunit, unitmode,
+		  cassetteoperationmode, iseqpend, iseqpstart, portqtime, commandtype, currentrecipeid, downstreaminlinemode, upstreaminlinemode,
+		  unitno, loadingstop, crst, unitstatus,createdate,oldunitstatus,currentrecipeidcheck,localno,cimmode,isprocessend,isjobdatarequest,vcrstatus)
+		  VALUES (#FunctionName#, #EQPID#, #UnitID#, #UnitName#, #UnitType#, #UnitCapacity#, #ReasonCode#, #UnitSTCode#, #HasSUnit#, #UnitMode#,
+		  #CassetteOperationMode#, #IsEqpEnd#, #IsEqpStart#, #PortQTime#, #CommandType#, #CurrentRecipeID#, #DownstreamInlineMode#, #UpstreamInlineMode#,
+		  #UnitNo#, #LoadingStop#, #CRST#, #UnitStatus#,localtimestamp(0),#OldUnitStatus#,#CurrentRecipeIdCheck#,#LocalNo#,#CIMMode#,#IsProcessEnd#,#IsJobDataRequest#,#VCRStatus#);
+	  </insert>
+	  <insert id="InsertUnitResult" parameterClass="Unit">
+		  INSERT INTO public.cfg_unit(
+		  eqpid, unitid, unitname, unittype, unitcapacity, reasoncode, unitstcode, hassunit, unitmode,
+		  cassetteoperationmode, iseqpend, iseqpstart, portqtime, commandtype, currentrecipeid, downstreaminlinemode, upstreaminlinemode,
+		  unitno, loadingstop, crst, unitstatus,currentrecipeidcheck,localno,cimmode,isprocessend,isjobdatarequest,vcrstatus,devicetype,class3ip,plcip,plcport)
+		  VALUES (#EQPID#, #UnitID#, #UnitName#, #UnitType#, #UnitCapacity#, #ReasonCode#, #UnitSTCode#, #HasSUnit#, #UnitMode#,
+		  #CassetteOperationMode#, #IsEqpEnd#, #IsEqpStart#, #PortQTime#, #CommandType#, #CurrentRecipeID#, #DownstreamInlineMode#, #UpstreamInlineMode#,
+		  #UnitNo#, #LoadingStop#, #CRST#, #UnitStatus#,#CurrentRecipeIdCheck#,#LocalNo#,#CIMMode#,#IsProcessEnd#,#IsJobDataRequest#,#VCRStatus#,#DeviceType#,#Class3IP#,#PLCIP#,#PLCPort#);
+	  </insert>
+	  
+    <select id="ViewUnitList" resultMap="UnitResult" parameterClass="Hashtable">
+      select * from cfg_unit 
+      <dynamic prepend="where">
+        <isNotEmpty property="EQPID" prepend="and">
+          eqpid=#EQPID#
+        </isNotEmpty>
+        <isNotEmpty property="UnitID" prepend="and">
+          unitid=#UnitID#
+        </isNotEmpty>
+      </dynamic>
+		order by localno
+	</select>
+	  <update id="UpdateUnitInfo" patameterClass="Unit">
+		  update cfg_unit set unitno=#UnitNo#, unitname=#UnitName#, unittype=#UnitType#, unitstatus=#UnitStatus# ,reasoncode=#ReasonCode#,
+		  crst=#CRST#,unitstcode=#UnitSTCode#,unitmode=#UnitMode#,cassetteoperationmode=#CassetteOperationMode#,iseqpend=#IsEqpEnd#,iseqpstart=#IsEqpStart#,portqtime=#PortQTime#,commandtype=#CommandType#,
+		  currentrecipeid=#CurrentRecipeID#,downstreaminlinemode=#DownstreamInlineMode#,upstreaminlinemode=#UpstreamInlineMode#,loadingstop=#LoadingStop#,cimmode=#CIMMode#,currentrecipeidcheck=#CurrentRecipeIdCheck#,localno=#LocalNo#,isprocessend=#IsProcessEnd#,isjobdatarequest=#IsJobDataRequest#,vcrstatus=#VCRStatus#,devicetype=#DeviceType#,class3ip=#Class3IP#,plcip=#PLCIP#,plcport=#PLCPort#
+		  <dynamic prepend="where">
+			  <isNotEmpty property="EQPID" prepend="and">
+				  eqpid=#EQPID#
+			  </isNotEmpty>
+			  <isNotEmpty property="UnitID" prepend="and">
+				  unitid=#UnitID#
+			  </isNotEmpty>
+		  </dynamic>
+	  </update>
+
+	  <delete id="DeleteUnitInfo" parameterClass="Unit">
+		  delete from cfg_unit
+		  <dynamic prepend="where">
+			  <isNotEmpty property="UnitID" prepend="and">
+				  unitid=#UnitID#
+			  </isNotEmpty>
+		  </dynamic>
+	  </delete>
+
+    <select id="ViewSUnitList" resultMap="SUnitResult" parameterClass="Hashtable">
+      select * from cfg_sunit  
+      <dynamic prepend="where">
+        <isNotEmpty property="EQPID" prepend="and">
+          eqpid=#EQPID#
+        </isNotEmpty>
+        <isNotEmpty property="UnitID" prepend="and">
+          unitid=#UnitID#
+        </isNotEmpty>
+        <isNotEmpty property="SUnitID" prepend="and">
+          sunitid=#SUnitID#
+        </isNotEmpty>
+      </dynamic>  order by unitid,subunitno
+	</select>
+    <update id="UpdateSUnitInfo" patameterClass="SUnit">
+      update cfg_sunit set subunitno=#SubUnitNo#, unitname=#UnitName#, sunitname=#SUnitName#, sunitstatus=#SUnitStatus#
+      <dynamic prepend="where">
+        <isNotEmpty property="EQPID" prepend="and">
+          eqpid=#EQPID#
+        </isNotEmpty>
+        <isNotEmpty property="UnitID" prepend="and">
+          unitid=#UnitID#
+        </isNotEmpty>
+        <isNotEmpty property="SUnitID" prepend="and">
+          sunitid=#SUnitID#
+        </isNotEmpty>
+      </dynamic>
+    </update>
+	  <delete id="DeleteSUnitInfo" parameterClass="SUnit">
+		  delete from cfg_sunit
+		  <dynamic prepend="where">
+			  <isNotEmpty property="SUnitID" prepend="and">
+				  sunitid=#SUnitID#
+			  </isNotEmpty>
+		  </dynamic>
+	  </delete>
+    <insert id="InsertHisSUnitResult" parameterClass="SUnit">
+		INSERT INTO his_sunit(
+		eqpid, subunitno, unitid, unitname, sunitpathno, sunittype, sunitid,
+		sunitname, sunitstcode,  hasssunit, sunitstatus, reportmesstate, updatedate)
+		VALUES (#EQPID#, #SubUnitNo#, #UnitID#, #UnitName#, #SUnitPathNo#, #SUnitType#, #SUnitID#,
+		#SUnitName#, #SUnitSTCode#, #HasSSUnit#, #SUnitStatus#, #ReportMesState#, localtimestamp(0));
+	</insert>
+	  <insert id="InsertSUnitResult" parameterClass="SUnit">
+		  INSERT INTO cfg_sunit(
+		  eqpid, subunitno, unitid, unitname, sunitpathno, sunittype, sunitid,
+		  sunitname, sunitstcode,  hasssunit, sunitstatus, reportmesstate)
+		  VALUES (#EQPID#, #SubUnitNo#, #UnitID#, #UnitName#, #SUnitPathNo#, #SUnitType#, #SUnitID#,
+		  #SUnitName#, #SUnitSTCode#, #HasSSUnit#, #SUnitStatus#, #ReportMesState#);
+	  </insert>
+    
+    <select id="ViewSSUnitList" resultMap="SSUnitResult" parameterClass="Hashtable">
+      select * from cfg_ssunit
+      <dynamic prepend="where">
+        <isNotEmpty property="EQPID" prepend="and">
+          eqpid=#EQPID#
+        </isNotEmpty>
+        <isNotEmpty property="UnitID" prepend="and">
+          unitid=#UnitID#
+        </isNotEmpty>
+        <isNotEmpty property="SUnitID" prepend="and">
+          sunitid=#SUnitID#
+        </isNotEmpty>
+        <isNotEmpty property="SSUnitID" prepend="and">
+          ssunitid=#SSUnitID#
+        </isNotEmpty>
+      </dynamic>  order by ssunitno
+    </select>
+    <update id="UpdateSSUnitInfo" patameterClass="SSUnit">
+      update cfg_ssunit set  ssunitstatus=#SSUnitStatus# , ssunitstcode=#SSUnitSTCode#,ssunittype=#SSUnitType#
+      <dynamic prepend="where">
+        <isNotEmpty property="EQPID" prepend="and">
+          eqpid=#EQPID#
+        </isNotEmpty>
+        <isNotEmpty property="UnitID" prepend="and">
+          unitid=#UnitID#
+        </isNotEmpty>
+        <isNotEmpty property="SUnitID" prepend="and">
+          sunitid=#SUnitID#
+        </isNotEmpty>
+        <isNotEmpty property="SSUnitID" prepend="and">
+          ssunitid=#SSUnitID#
+        </isNotEmpty>
+      </dynamic>
+    </update>
+    
+    
+	  
+	  
+    <select id="ViewEventList" resultMap="EventResult" parameterClass="string">
+      select * from cfg_ceid where ceed = #value# order by ceid
+    </select>
+
+    <select id="ViewAllEventList" resultMap="EventResult" parameterClass="string">
+      select * from cfg_ceid
+    </select>
+    <update id="UpdateEventInfo" parameterClass="Hashtable">
+      update cfg_ceid set ceed=#CEED#
+      <dynamic prepend="where">
+        <isPropertyAvailable property="CEIDList" prepend="and">
+          <iterate property="CEIDList" open="(" close=")" conjunction="or">
+            ceid = #CEIDList[]#
+          </iterate>
+        </isPropertyAvailable>
+      </dynamic>
+    </update>
+
+    <update id="UpdateAllEventInfo" parameterClass="string">
+      update cfg_ceid set ceed=#value#
+    </update>
+
+    <select id="ViewECList" resultMap="ECInfoResult" parameterClass="string">
+      select * from cfg_ecid
+    </select>
+    <update id="UpdateECInfo" parameterClass="ECInfo">
+      update cfg_ecid set ecv=#ECV#,updatetime=#UpdateTime#
+      <dynamic prepend="where">
+        <isNotEmpty property="ECID" prepend="and">
+          ecid=#ECID#
+        </isNotEmpty>
+      </dynamic>
+    </update>
+    
+   
+    <select id="FindUser" resultMap="UserResult" parameterClass="string">
+      select * from his_user where userid=#value#
+    </select>
+
+    <select id="GetUserList" resultMap="UserResult">
+      select * from his_user order by userid
+    </select>
+
+    <insert id="InsertUser" parameterClass="User">
+      INSERT INTO his_user(userid,username, password, level, creator, createdate,groupid)
+      VALUES (#UserID#,#UserName#, #Password#, #Level#, #Creator#, localtimestamp(0),#GroupId#);
+    </insert>
+
+    <update id="UpdateUser" parameterClass="User">
+      UPDATE his_user SET password=#Password#, level=#Level#,username=#UserName#, createdate = localtimestamp(0), groupid = #GroupId#
+      WHERE userid=#UserID#
+    </update>
+
+    <delete id="DeleteUser" parameterClass="string">
+      DELETE FROM his_user WHERE userid=#value#
+    </delete>
+
+   
+
+
+
+
+	  <select id="ViewEQPStatusRuleList" resultMap="EQPStatusRuleResult" parameterClass="Hashtable">
+		  select * from cfg_eqpstatusrule
+		  <dynamic prepend="where">
+			  <isNotEmpty property="EQPID" prepend="and">
+				  eqpid=#EQPID#
+			  </isNotEmpty>
+			  <isNotEmpty property="EQPStatus" prepend="and">
+				  eqpstatus=#EQPStatus#
+			  </isNotEmpty>			  
+		  </dynamic>		  
+	  </select>	
+	  <insert id="InsertEQPStatusRule" parameterClass="EQPStatusRule">
+		  INSERT INTO cfg_eqpstatusrule(
+		  eqpid, eqpstatus, unitidlist, checkenable)
+		  VALUES (#EQPID#,#EQPStatus#, #UnitIDList#, #CheckEnable#);
+	  </insert>
+	  <delete id="DeleteEQPStatusRule" parameterClass="Hashtable">
+		  DELETE FROM cfg_eqpstatusrule  
+		  <dynamic prepend="where">
+			  <isNotEmpty property="EQPID" prepend="and">
+				  eqpid=#EQPID#
+			  </isNotEmpty>
+			  <isNotEmpty property="UnitID" prepend="and">
+				  unitid=#UnitID#
+			  </isNotEmpty>
+		  </dynamic>
+	  </delete>
+
+
+
+
+	  <select id="ViewEQPStatusGroupList" resultMap="EQPStatusGroupResult" parameterClass="Hashtable">
+		  select * from cfg_eqpstatusgroup
+		  <dynamic prepend="where">
+			  <isNotEmpty property="EQPID" prepend="and">
+				  eqpid=#EQPID#
+			  </isNotEmpty>
+		  </dynamic>
+		  order by index desc
+	  </select>	 
+	  <insert id="InsertEQPStatusGroup" parameterClass="EQPStatusGroup">
+		  INSERT INTO cfg_eqpstatusgroup(
+		  eqpid, eqpstatus,index)
+		  VALUES (#EQPID#,#EQPStatus#, #Index#);
+	  </insert>
+	  <delete id="DeleteEQPStatusGroup" parameterClass="Hashtable">
+		  DELETE FROM cfg_eqpstatusgroup
+		  <dynamic prepend="where">
+			  <isNotEmpty property="EQPID" prepend="and">
+				  eqpid=#EQPID#
+			  </isNotEmpty>			  
+		  </dynamic>
+	  </delete>
+
+
+
+	  <select id="ViewVCRList" resultMap="VCRResult" parameterClass="Hashtable">
+		  select * from cfg_vcr
+		  <dynamic prepend="where">
+			  <isNotEmpty property="EQPID" prepend="and">
+				  eqpid=#EQPID#
+			  </isNotEmpty>
+			  <isNotEmpty property="UnitID" prepend="and">
+				  unitid=#UnitID#
+			  </isNotEmpty>
+		  </dynamic>
+		  order by vcrno desc
+	  </select>
+	  <update id="UpdateVCR" parameterClass="VCR">
+		  UPDATE cfg_vcr
+		  SET  vcrenablemode=#VCREnableMode#,  vcrreadfailoperationmode=#VCRReadFailOperationMode#
+		  <dynamic prepend="where">
+			  <isNotEmpty property="EQPID" prepend="and">
+				  eqpid=#EQPID#
+			  </isNotEmpty>
+			  <isNotEmpty property="UnitID" prepend="and">
+				  unitid=#UnitID#
+			  </isNotEmpty>
+			  <isNotEmpty property="VCRNO" prepend="and">
+				  vcrno=#VCRNO#
+			  </isNotEmpty>
+		  </dynamic>
+	  </update>
+
+    <insert id="InsertHisVCRResult" parameterClass="VCR">
+      INSERT INTO his_vcr(
+      eqpid, unitid, unitname, vcrenablemode, vcrno, vcrreadfailoperationmode,
+      createdate)
+      VALUES (#EQPID#, #UnitID#, #UnitName#, #VCREnableMode#, #VCRNO#, #VCRReadFailOperationMode#,
+      localtimestamp(0));
+    </insert>
+  </statements>
+</sqlMap>

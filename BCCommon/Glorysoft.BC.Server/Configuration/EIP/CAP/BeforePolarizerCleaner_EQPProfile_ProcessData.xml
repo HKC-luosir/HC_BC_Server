@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+  <ItemGroup Name="BeforePolarizerCleaner_CVDATAINT">
+    <Item Name="Parameter1ID" Offset="0" Points="1" Type="I" />
+    <Item Name="Value1" Offset="1" Points="1" Type="I" />
+  </ItemGroup>
+  <ItemGroup Name="BeforePolarizerCleaner_CVDATAASCII">
+    <Item Name="Parameter1ID" Offset="0" Points="1" Type="I" />
+    <Item Name="Value1" Offset="1" Points="20" Type="A" />
+  </ItemGroup>
+  <ItemGroup Name="BeforePolarizerCleaner_CVDATASI">
+    <Item Name="Parameter1ID" Offset="0" Points="1" Type="I" />
+    <Item Name="Value1" Offset="1" Points="2" Type="SI" />
+  </ItemGroup>
+  <ItemGroup Name="BeforePolarizerCleaner_CVDATAFLOAT">
+    <Item Name="Parameter1ID" Offset="0" Points="1" Type="I" />
+    <Item Name="Value1" Offset="1" Points="2" Type="SF" />
+  </ItemGroup>
+  <ItemGroup Name="BeforePolarizerCleaner_DVDATAINT">
+    <Item Name="Parameter1ID" Offset="0" Points="1" Type="I" />
+    <Item Name="Value1" Offset="1" Points="1" Type="I" />
+  </ItemGroup>
+  <ItemGroup Name="BeforePolarizerCleaner_DVDATAASCII">
+    <Item Name="Parameter1ID" Offset="0" Points="1" Type="I" />
+    <Item Name="Value1" Offset="1" Points="20" Type="A" />
+  </ItemGroup>
+  <ItemGroup Name="BeforePolarizerCleaner_DVDATASI">
+    <Item Name="Parameter1ID" Offset="0" Points="1" Type="I" />
+    <Item Name="Value1" Offset="1" Points="2" Type="SI" />
+  </ItemGroup>
+  <ItemGroup Name="BeforePolarizerCleaner_DVDATAFLOAT">
+    <Item Name="Parameter1ID" Offset="0" Points="1" Type="I" />
+    <Item Name="Value1" Offset="1" Points="2" Type="SF" />
+  </ItemGroup>
+</configuration>

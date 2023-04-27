@@ -1,0 +1,2836 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<sqlMap namespace="User"
+	xmlns="http://ibatis.apache.org/mapping"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+  <alias>
+    <!--alias:取别名
+		assembly:表示类所在的文件
+		type:表示该类的完整的名称-->
+
+    <typeAlias alias="BC_Group"  type="Glorysoft.BC.Entity.WebSocketEntity.BC_Group"/>
+    <typeAlias alias="Group_Authority"  type="Glorysoft.BC.Entity.WebSocketEntity.Group_Authority"/>
+    <typeAlias alias="bcUser"  type="Glorysoft.BC.Entity.WebSocketEntity.bcUser"/>
+    <typeAlias alias="AllTable"  type="Glorysoft.BC.Entity.WebSocketEntity.AllTable"/>
+    <typeAlias alias="TableStructure"  type="Glorysoft.BC.Entity.WebSocketEntity.TableStructure"/>
+    <typeAlias alias="BcGroupAuthority"  type="Glorysoft.BC.Entity.WebSocketEntity.BcGroupAuthority"/>
+    <typeAlias alias="BcRobotConfigure"  type="Glorysoft.BC.Entity.WebSocketEntity.BcRobotConfigure"/>
+    <typeAlias alias="BcRobotGroupCconfigure"  type="Glorysoft.BC.Entity.WebSocketEntity.BcRobotGroupCconfigure"/>
+    <typeAlias alias="DisCol"  type="Glorysoft.BC.Entity.WebSocketEntity.DisCol"/>
+    <typeAlias alias="bc_robot_linksignal_configure"  type="Glorysoft.BC.Entity.WebSocketEntity.bc_robot_linksignal_configure"/>
+    <typeAlias alias="cfg_alarm"  type="Glorysoft.BC.Entity.WebSocketEntity.cfg_alarm"/>
+    <typeAlias alias="cfg_ceid"  type="Glorysoft.BC.Entity.WebSocketEntity.cfg_ceid"/>
+    <typeAlias alias="cfg_ecid"  type="Glorysoft.BC.Entity.WebSocketEntity.cfg_ecid"/>
+    <typeAlias alias="cfg_eqp"  type="Glorysoft.BC.Entity.WebSocketEntity.cfg_eqp"/>
+    <typeAlias alias="cfg_port"  type="Glorysoft.BC.Entity.WebSocketEntity.cfg_port"/>
+    <typeAlias alias="cfg_ssunit"  type="Glorysoft.BC.Entity.WebSocketEntity.cfg_ssunit"/>
+    <typeAlias alias="cfg_sunit"  type="Glorysoft.BC.Entity.WebSocketEntity.cfg_sunit"/>
+    <typeAlias alias="cfg_unit"  type="Glorysoft.BC.Entity.WebSocketEntity.cfg_unit"/>
+    <typeAlias alias="his_alarm"  type="Glorysoft.BC.Entity.WebSocketEntity.his_alarm"/>
+    <typeAlias alias="his_carrier"  type="Glorysoft.BC.Entity.WebSocketEntity.his_carrier"/>
+    <typeAlias alias="his_maskinfo"  type="Glorysoft.BC.Entity.WebSocketEntity.his_maskinfo"/>
+    <typeAlias alias="his_material"  type="Glorysoft.BC.Entity.WebSocketEntity.his_material"/>
+    <typeAlias alias="his_packingbox"  type="Glorysoft.BC.Entity.WebSocketEntity.his_packingbox"/>
+    <typeAlias alias="his_recipe"  type="Glorysoft.BC.Entity.WebSocketEntity.his_recipe"/>
+    <typeAlias alias="his_recipeppidmap"  type="Glorysoft.BC.Entity.WebSocketEntity.his_recipeppidmap"/>
+    <typeAlias alias="his_spanel"  type="Glorysoft.BC.Entity.WebSocketEntity.his_spanel"/>
+    <typeAlias alias="his_trayinfo"  type="Glorysoft.BC.Entity.WebSocketEntity.his_trayinfo"/>
+    <typeAlias alias="wip_cstbox"  type="Glorysoft.BC.Entity.WebSocketEntity.wip_cstbox"/>
+    <typeAlias alias="cfg_systemconfig"  type="Glorysoft.BC.Entity.WebSocketEntity.cfg_systemconfig"/>
+    <typeAlias alias="wip_glassinfo"  type="Glorysoft.BC.Entity.WebSocketEntity.wip_glassinfo"/>
+    <typeAlias alias="his_user"  type="Glorysoft.BC.Entity.WebSocketEntity.his_user"/>
+    <typeAlias alias="his_glassinfo"  type="Glorysoft.BC.Entity.WebSocketEntity.his_glassinfo"/>
+    <typeAlias alias="bc_user_group"  type="Glorysoft.BC.Entity.WebSocketEntity.bc_user_group"/>
+    <typeAlias alias="wip_alarm"  type="Glorysoft.BC.Entity.WebSocketEntity.wip_alarm"/>
+    <typeAlias alias="bc_eqp_command_conf"  type="Glorysoft.BC.Entity.WebSocketEntity.bc_eqp_command_conf"/>
+    <typeAlias alias="bc_eqp_command_para"  type="Glorysoft.BC.Entity.WebSocketEntity.bc_eqp_command_para"/>
+    <typeAlias alias="cfg_eqpstatusrule"  type="Glorysoft.BC.Entity.WebSocketEntity.cfg_eqpstatusrule"/>
+    <!--<typeAlias alias="bc_robot_model"  type="Glorysoft.BC.Entity.WebSocketEntity.bc_robot_model"/>-->
+    <typeAlias alias="cfg_operationmode"  type="Glorysoft.BC.Entity.WebSocketEntity.cfg_operationmode"/>
+    <typeAlias alias="wip_cassette"  type="Glorysoft.BC.Entity.WebSocketEntity.wip_cassette"/>
+    <typeAlias alias="cfg_eqpstatusgroup"  type="Glorysoft.BC.Entity.WebSocketEntity.cfg_eqpstatusgroup"/>
+    <typeAlias alias="cfg_mixrunconfig"  type="Glorysoft.BC.Entity.WebSocketEntity.cfg_mixrunconfig"/>
+    <typeAlias alias="his_opilog"  type="Glorysoft.BC.Entity.WebSocketEntity.his_opilog"/>
+    <typeAlias alias="cfg_alarmspec"  type="Glorysoft.BC.Entity.WebSocketEntity.cfg_alarmspec"/>
+    <typeAlias alias="his_unit"  type="Glorysoft.BC.Entity.WebSocketEntity.his_unit"/>
+    <typeAlias alias="his_cassette"  type="Glorysoft.BC.Entity.WebSocketEntity.his_cassette"/>
+    <typeAlias alias="GlassInfoEvent"  type="Glorysoft.BC.Entity.WebSocketEntity.GlassInfoEvent"/>
+    <typeAlias alias="cfg_glassexistenceposition"  type="Glorysoft.BC.Entity.WebSocketEntity.cfg_glassexistenceposition"/>
+    <typeAlias alias="ModePath"  type="Glorysoft.BC.Entity.WebSocketEntity.ModePath"/>
+    <typeAlias alias="his_eqp"  type="Glorysoft.BC.Entity.WebSocketEntity.his_eqp"/>
+    <typeAlias alias="his_sunit"  type="Glorysoft.BC.Entity.WebSocketEntity.his_sunit"/>
+    <typeAlias alias="his_port"  type="Glorysoft.BC.Entity.WebSocketEntity.his_port"/>
+    <typeAlias alias="his_vcr"  type="Glorysoft.BC.Entity.WebSocketEntity.his_vcr"/>
+    <typeAlias alias="his_robotcommand"  type="Glorysoft.BC.Entity.WebSocketEntity.his_robotcommand"/>
+	<typeAlias alias="bc_sys_setting"  type="Glorysoft.BC.Entity.WebSocketEntity.bc_sys_setting"/>
+	  <typeAlias alias="historydata"  type="Glorysoft.BC.Entity.WebSocketEntity.historydata"/>
+  </alias>
+
+  <resultMaps>
+	  <resultMap id="bc_sys_settingResult" class="bc_sys_setting">
+		  <result property="bckey" column="bckey"/>
+		  <result property="bcvalue" column="bcvalue"/>
+		  <result property="describe" column="describe"/>
+		  <result property="eqpid" column="eqpid"/>
+		  <result property="unitid" column="unitid"/>
+		  <result property="id" column="id"/>
+	  </resultMap>
+
+	  <resultMap id="his_robotcommandResult" class="his_robotcommand">
+      <result property="sequenceno" column="sequenceno"/>
+      <result property="strcmd1" column="strcmd1"/>
+      <result property="starmno1" column="starmno1"/>
+      <result property="stgetposition1" column="stgetposition1"/>
+      <result property="stputposition1" column="stputposition1"/>
+      <result property="stgetslotno1" column="stgetslotno1"/>
+      <result property="stputslotno1" column="stputslotno1"/>
+      <result property="stsubcommand1" column="stsubcommand1"/>
+      <result property="stgetslotpostion1" column="stgetslotpostion1"/>
+      <result property="stputslotpostion1" column="stputslotpostion1"/>
+      <result property="ndrcmd2" column="ndrcmd2"/>
+      <result property="ndarmno2" column="ndarmno2"/>
+      <result property="ndgetposition2" column="ndgetposition2"/>
+      <result property="ndputposition2" column="ndputposition2"/>
+      <result property="ndgetslotno2" column="ndgetslotno2"/>
+      <result property="ndputslotno2" column="ndputslotno2"/>
+      <result property="ndsubcommand2" column="ndsubcommand2"/>
+      <result property="ndgetslotpostion2" column="ndgetslotpostion2"/>
+      <result property="ndputslotpostion2" column="ndputslotpostion2"/>
+      <result property="commandresult1" column="commandresult1"/>
+      <result property="commandresult2" column="commandresult2"/>
+      <result property="commandresult3" column="commandresult3"/>
+      <result property="commandresult4" column="commandresult4"/>
+      <result property="currentposition" column="currentposition"/>
+      <result property="functionname" column="functionname"/>
+      <result property="createdate" column="createdate"/>
+    </resultMap>
+    
+    
+    <resultMap id="his_vcrResult" class="his_vcr">
+      <result property="eqpid" column="eqpid"/>
+      <result property="unitid" column="unitid"/>
+      <result property="unitname" column="unitname"/>
+      <result property="vcrenablemode" column="vcrenablemode"/>
+      <result property="vcrno" column="vcrno"/>
+      <result property="vcrreadfailoperationmode" column="vcrreadfailoperationmode"/>
+      <result property="createdate" column="createdate"/>
+    </resultMap>
+
+    <resultMap id="his_portResult" class="his_port">
+      <result property="eqpid" column="eqpid"/>
+      <result property="unitid" column="unitid"/>
+      <result property="unitname" column="unitname"/>
+      <result property="portno" column="portno"/>
+      <result property="portid" column="portid"/>
+      <result property="portstatus" column="portstatus"/>
+      <result property="portmode" column="portmode"/>
+      <result property="portcsttype" column="portcsttype"/>
+      <result property="portoperationmode" column="portoperationmode"/>
+      <result property="porttypeautochangemode" column="porttypeautochangemode"/>
+      <result property="capacity" column="capacity"/>
+      <result property="portqtime" column="portqtime"/>
+      <result property="glasstype" column="glasstype"/>
+      <result property="portgrade" column="portgrade"/>
+      <result property="portenablemode" column="portenablemode"/>
+      <result property="userms" column="userms"/>
+      <result property="updatedate" column="updatedate"/>
+      <result property="isingetput" column="isingetput"/>
+      <result property="productiontype" column="productiontype"/>
+      <result property="cassettesequenceno" column="cassettesequenceno"/>
+      <result property="cassetteid" column="cassetteid"/>
+      <result property="porttype" column="porttype"/>
+      <result property="transfermode" column="transfermode"/>
+	  <result property="portpausemode" column="portpausemode"/>
+      <result property="portusetype" column="portusetype"/>
+      <result property="functionname" column="functionname"/>
+    </resultMap>
+	  <resultMap id="his_portResultCount" class="his_port">
+		  <result property="portid" column="portid"/>
+	  </resultMap>
+
+
+    <resultMap id="his_sunitResult" class="his_sunit">
+      <result property="eqpid" column="eqpid"/>
+      <result property="subunitno" column="subunitno"/>
+      <result property="unitid" column="unitid"/>
+      <result property="unitname" column="unitname"/>
+      <result property="sunitpathno" column="sunitpathno"/>
+      <result property="sunittype" column="sunittype"/>
+      <result property="sunitid" column="sunitid"/>
+      <result property="sunitname" column="sunitname"/>
+      <result property="sunitstcode" column="sunitstcode"/>
+      <result property="hasssunit" column="hasssunit"/>
+      <result property="sunitstatus" column="sunitstatus"/>
+	  <result property="reportmesstate" column="reportmesstate"/>
+    </resultMap>
+
+    <resultMap id="his_eqpResult" class="his_eqp">
+      <result property="eqpid" column="eqpid"/>
+      <result property="updatedate" column="updatedate"/>
+      <result property="reasoncode" column="reasoncode"/>
+      <result property="indexeroperationmode" column="indexeroperationmode"/>
+      <result property="linetype" column="linetype"/>
+      <result property="linemode" column="linemode"/>
+      <result property="robotdispatchmode" column="robotdispatchmode"/>
+      <result property="coldruntotalquantity" column="coldruntotalquantity"/>
+      <result property="coldruncurrentquantity" column="coldruncurrentquantity"/>
+      <result property="eqpstatus" column="eqpstatus"/>
+      <result property="functionname" column="functionname"/>
+    </resultMap>
+
+    <resultMap id="cfg_glassexistencepositionResult" class="cfg_glassexistenceposition">
+      <result property="eqpid" column="eqpid"/>
+      <result property="unitid" column="unitid"/>
+      <result property="position" column="position"/>
+      <result property="positionname" column="positionname"/>
+      <result property="cassettesequenceno" column="cassettesequenceno"/>
+      <result property="slotsequenceno" column="slotsequenceno"/>
+      <result property="exist" column="exist"/>
+    </resultMap>
+
+    <resultMap id="bc_robot_path_configureDisResult" class="ModePath">
+      <result property="modepath" column="modepath"/>
+    </resultMap>
+
+    <resultMap id="GlassInfoEventResult" class="GlassInfoEvent">
+      <result property="functionname" column="functionname"/>
+    </resultMap>
+    <resultMap id="his_glassinfoResult" class="his_glassinfo">
+      <result property="functionname" column="functionname"/>
+      <result property="productid" column="productid"/>
+      <result property="operationid" column="operationid"/>
+      <result property="lotid" column="lotid"/>
+      <result property="ppid1" column="ppid1"/>
+      <result property="ppid2" column="ppid2"/>
+      <result property="ppid3" column="ppid3"/>
+      <result property="ppid4" column="ppid4"/>
+      <result property="ppid5" column="ppid5"/>
+      <result property="ppid6" column="ppid6"/>
+      <result property="ppid7" column="ppid7"/>
+      <result property="ppid8" column="ppid8"/>
+      <result property="ppid9" column="ppid9"/>
+      <result property="ppid10" column="ppid10"/>
+      <result property="glassid" column="glassid"/>
+      <result property="cassettesequenceno" column="cassettesequenceno"/>
+      <result property="slotsequenceno" column="slotsequenceno"/>
+      <result property="slotposition" column="slotposition"/>
+      <result property="cuttingsequenceno" column="cuttingsequenceno"/>
+      <result property="glassjudgecode" column="glassjudgecode"/>
+      <result property="glassgradecode" column="glassgradecode"/>
+      <result property="processingflag" column="processingflag"/>
+      <result property="glasssizecode" column="glasssizecode"/>
+      <result property="glassthicknesscode" column="glassthicknesscode"/>
+      <result property="glasstype" column="glasstype"/>
+      <result property="lotcode" column="lotcode"/>
+      <result property="processingcount" column="processingcount"/>
+      <result property="inspectionflag" column="inspectionflag"/>
+      <result property="skipflag" column="skipflag"/>
+      <result property="inlineeqdata" column="inlineeqdata"/>
+      <result property="workorder" column="workorder"/>
+      <result property="processflowname" column="processflowname"/>
+      <result property="processflowversion" column="processflowversion"/>
+      <result property="processoperationversion" column="processoperationversion"/>
+      <result property="productspecversion" column="productspecversion"/>
+      <result property="productiontype" column="productiontype"/>
+      <result property="halfproductjudge" column="halfproductjudge"/>
+      <result property="glassmaker" column="glassmaker"/>
+      <result property="productrecipe" column="productrecipe"/>
+      <result property="reworktype" column="reworktype"/>
+      <result property="reworkcount" column="reworkcount"/>
+      <result property="samplingflag" column="samplingflag"/>
+      <result property="exposurerecipename" column="exposurerecipename"/>
+      <result property="turndegree" column="turndegree"/>
+      <result property="flowmodevalue" column="flowmodevalue"/>
+      <result property="evaskipflag" column="evaskipflag"/>
+      <result property="beforeprocessmachine" column="beforeprocessmachine"/>
+      <result property="producttype" column="producttype"/>
+      <result property="maskspecname" column="maskspecname"/>
+      <result property="processflowrunstate" column="processflowrunstate"/>
+      <result property="position" column="position"/>
+      <result property="processinginfo" column="processinginfo"/>
+      <result property="vcrproductname" column="vcrproductname"/>
+      <result property="nginputcomment" column="nginputcomment"/>
+      <result property="panelgrade" column="panelgrade"/>
+      <result property="paneljudge" column="paneljudge"/>
+      <result property="updatedate" column="updatedate"/>
+      <result property="modelposition" column="modelposition"/>
+      <result property="currentunit" column="currentunit"/>
+      <result property="productalarm" column="productalarm"/>
+      <result property="rglassid" column="rglassid"/>
+      <result property="slotsatus" column="slotsatus"/>
+      <result property="fetchdatetime" column="fetchdatetime"/>
+      <result property="portid" column="portid"/>
+      <result property="cassetteid" column="cassetteid"/>
+      <result property="currentsunit" column="currentsunit"/>
+      <result property="currentssunit" column="currentssunit"/>
+      <result property="begindate" column="begindate"/>
+      <result property="enddate" column="enddate"/>
+      <result property="currentslotno" column="currentslotno"/>
+      <result property="createdate" column="createdate"/>
+      <result property="slotflag" column="slotflag"/>
+      <result property="modepath" column="modepath"/>
+		<result property="cratename" column="cratename"/>
+		<result property="inportid" column="inportid"/>
+		<result property="incstid" column="incstid"/>
+		<result property="fslotno" column="fslotno"/>
+		<result property="outcstid" column="outcstid"/>
+		<result property="outportid" column="outportid"/>
+		<result property="tslotno" column="tslotno"/>
+		<result property="cvdflag" column="cvdflag"/>
+		<result property="recvjobtime" column="recvjobtime"/>
+		<result property="recvunitjobtime" column="recvunitjobtime"/>
+		<result property="ismestrackin" column="ismestrackin"/>
+		<result property="blid" column="blid"/>
+		<result property = "panelcode" column="panelcode"/>
+		<result property = "scribermoduletype" column="scribermoduletype"/>
+		<result property="ppid11" column="ppid11"/>
+		<result property="ppid12" column="ppid12"/>
+		<result property="ppid13" column="ppid13"/>
+		<result property="ppid14" column="ppid14"/>
+		<result property="ppid15" column="ppid15"/>
+		<result property="ppid16" column="ppid16"/>
+		<result property="ppid17" column="ppid17"/>
+		<result property="ppid18" column="ppid18"/>
+		<result property="ppid19" column="ppid19"/>
+		<result property="ppid20" column="ppid20"/>
+		<result property="ppid21" column="ppid21"/>
+		<result property="ppid22" column="ppid22"/>
+		<result property="ppid23" column="ppid23"/>
+		<result property="ppid24" column="ppid24"/>
+		<result property="ppid25" column="ppid25"/>
+		<result property="ppid26" column="ppid26"/>
+		<result property="ppid27" column="ppid27"/>
+		<result property="ppid28" column="ppid28"/>
+		<result property="ppid29" column="ppid29"/>
+		<result property="ppid30" column="ppid30"/>
+		<result property="propertycode" column="propertycode"/>
+		<result property="jobangle" column="jobangle"/>
+		<result property="jobflip" column="jobflip"/>
+		<result property="mmgcode" column="mmgcode"/>
+		<result property="panelinchsizex" column="panelinchsizex"/>
+		<result property="panelinchsizey" column="panelinchsizey"/>
+		<result property="abnormalcodes" column="abnormalcodes"/>
+		<result property = "defectcodes" column="defectcodes"/>
+		<result property="id" column="id"/>
+    </resultMap>
+
+	  <resultMap id="his_glassinfoResultCount" class="historydata">
+		  <result property="rowcount" column="rowcount"/>
+	  </resultMap>
+    <resultMap id="his_cassetteResult" class="his_cassette">
+      <result property="eqpid" column="eqpid"/>
+      <result property="unitid" column="unitid"/>
+      <result property="unitname" column="unitname"/>
+      <result property="portno" column="portno"/>
+      <result property="portid" column="portid"/>
+      <result property="cassettesequenceno" column="cassettesequenceno"/>
+      <result property="cassettestatus" column="cassettestatus"/>
+      <result property="porttype" column="porttype"/>
+      <result property="portstatus" column="portstatus"/>
+      <result property="cassetteid" column="cassetteid"/>
+      <result property="lotname" column="lotname"/>
+      <result property="processflowname" column="processflowname"/>
+      <result property="processflowversion" column="processflowversion"/>
+      <result property="processoperationname" column="processoperationname"/>
+      <result property="processoperationversion" column="processoperationversion"/>
+      <result property="portusetype" column="portusetype"/>
+      <result property="productspecname" column="productspecname"/>
+      <result property="productspecversion" column="productspecversion"/>
+      <result property="productiontype" column="productiontype"/>
+      <result property="productquantity" column="productquantity"/>
+      <result property="slotmap" column="slotmap"/>
+      <result property="slotsel" column="slotsel"/>
+      <result property="machinerecipename" column="machinerecipename"/>
+      <result property="workorder" column="workorder"/>
+      <result property="lotjudge" column="lotjudge"/>
+      <result property="cassetteprocessendtime" column="cassetteprocessendtime"/>
+      <result property="cassetteprocessstarttime" column="cassetteprocessstarttime"/>
+      <result property="updatedate" column="updatedate"/>
+      <result property="qtimeflag" column="qtimeflag"/>
+      <result property="cassettecode" column="cassettecode"/>
+      <result property="jobexistenceslot" column="jobexistenceslot"/>
+      <result property="carriertype" column="carriertype"/>
+      <result property="compeletedcassettedata" column="compeletedcassettedata"/>
+      <result property="functionname" column="functionname"/>
+	  <result property="id" column="id"/>
+    </resultMap>
+
+	  <resultMap id="his_cassetteResultCount" class="his_cassette">
+		  <result property="id" column="id"/>
+	  </resultMap>
+
+    <resultMap id="his_unitResult" class="his_unit">
+      <result property="functionname" column="functionname"/>
+      <result property="eqpid" column="eqpid"/>
+      <result property="unitid" column="unitid"/>
+      <result property="unitname" column="unitname"/>
+      <result property="unittype" column="unittype"/>
+      <result property="unitcapacity" column="unitcapacity"/>
+      <result property="reasoncode" column="reasoncode"/>
+      <result property="unitstcode" column="unitstcode"/>
+      <result property="hassunit" column="hassunit"/>
+      <result property="unitmode" column="unitmode"/>
+      <result property="cassetteoperationmode" column="cassetteoperationmode"/>
+	  <result property="iseqpend" column="iseqpend"/>
+	  <result property="iseqpstart" column="iseqpstart"/>
+	  <result property="currentrecipeidcheck" column="currentrecipeidcheck"/>
+	  <result property="isprocessend" column="isprocessend"/>
+	  <result property="isjobdatarequest" column="isjobdatarequest"/>
+	  <result property="vcrstatus" column="vcrstatus"/>
+	  <result property="localno" column="localno"/>
+      <result property="portqtime" column="portqtime"/>
+      <result property="commandtype" column="commandtype"/>
+      <result property="currentrecipeid" column="currentrecipeid"/>
+      <result property="downstreaminlinemode" column="downstreaminlinemode"/>
+      <result property="upstreaminlinemode" column="upstreaminlinemode"/>
+      <result property="unitno" column="unitno"/>
+      <result property="loadingstop" column="loadingstop"/>
+      <result property="crst" column="crst"/>
+      <result property="unitstatus" column="unitstatus"/>
+      <result property="createdate" column="createdate"/>
+      <result property="oldunitstatus" column="oldunitstatus"/>
+	  <result property="cimmode" column="cimmode"/>
+    </resultMap>
+
+	  <resultMap id="his_unitResultCount" class="his_unit">
+		  <result property="unitno" column="unitno"/>
+	  </resultMap>
+
+    <resultMap id="cfg_alarmspecResult" class="cfg_alarmspec">
+      <result property="eqpid" column="eqpid"/>
+      <result property="alarmtext" column="alarmtext"/>
+      <result property="unitid" column="unitid"/>
+      <result property="alarmid" column="alarmid"/>
+      <result property="createdate" column="createdate"/>
+      <result property="unitno" column="unitno"/>
+      <result property="alarmtype" column="alarmtype"/>
+    </resultMap>
+
+    <resultMap id='his_opilogResult' class='his_opilog'>
+      <result property='userid' column='userid'/>
+      <result property='operating' column='operating'/>
+      <result property='operationresult' column='operationresult'/>
+	  <result property='clientip' column='clientip'/>
+      <result property='createtime' column='createtime'/>
+      <result property='id' column='id'/>
+    </resultMap>
+	  <resultMap id='his_opilogResultCount' class='his_opilog'>
+		  <result property='userid' column='userid'/>
+	  </resultMap>
+
+    <resultMap id="cfg_mixrunconfigResult" class="cfg_mixrunconfig">
+      <result property="machinerecipename" column="machinerecipename"/>
+      <result property="exist" column="exist"/>
+      <result property="inputcount" column="inputcount"/>
+      <result property="currentratioid" column="currentratioid"/>
+      <result property="eqpid" column="eqpid"/>
+      <result property="id" column="id"/>
+      <result property="type" column="type"/>
+    </resultMap>
+
+    <resultMap id="wip_cassetteResult" class="wip_cassette">
+      <result property="eqpid" column="eqpid"/>
+      <result property="unitid" column="unitid"/>
+      <result property="unitname" column="unitname"/>
+      <result property="portno" column="portno"/>
+      <result property="portid" column="portid"/>
+      <result property="cassettesequenceno" column="cassettesequenceno"/>
+      <result property="cassettestatus" column="cassettestatus"/>
+      <result property="porttype" column="porttype"/>
+      <result property="portstatus" column="portstatus"/>
+      <result property="cassetteid" column="cassetteid"/>
+      <result property="lotname" column="lotname"/>
+      <result property="processflowname" column="processflowname"/>
+      <result property="processflowversion" column="processflowversion"/>
+      <result property="processoperationname" column="processoperationname"/>
+      <result property="processoperationversion" column="processoperationversion"/>
+      <result property="portusetype" column="portusetype"/>
+      <result property="productspecname" column="productspecname"/>
+      <result property="productspecversion" column="productspecversion"/>
+      <result property="productiontype" column="productiontype"/>
+      <result property="productquantity" column="productquantity"/>
+      <result property="slotmap" column="slotmap"/>
+      <result property="slotsel" column="slotsel"/>
+      <result property="machinerecipename" column="machinerecipename"/>
+      <result property="workorder" column="workorder"/>
+      <result property="lotjudge" column="lotjudge"/>
+      <result property="cassetteprocessendtime" column="cassetteprocessendtime"/>
+      <result property="cassetteprocessstarttime" column="cassetteprocessstarttime"/>
+      <result property="updatedate" column="updatedate"/>
+      <result property="qtimeflag" column="qtimeflag"/>
+      <result property="cassettecode" column="cassettecode"/>
+      <result property="jobexistenceslot" column="jobexistenceslot"/>
+      <result property="carriertype" column="carriertype"/>
+      <result property="compeletedcassettedata" column="compeletedcassettedata"/>
+	  <result property="id" column="id"/>
+    </resultMap>
+
+    <resultMap id="cfg_operationmodeResult" class="cfg_operationmode">
+      <result property="eqpid" column="eqpid"/>
+      <result property="equipmentvalue" column="equipmentvalue"/>
+      <result property="operationmodename" column="operationmodename"/>
+      <result property="updatetime" column="updatetime"/>
+      <result property="updateuser" column="updateuser"/>
+    </resultMap>
+
+    <!--<resultMap id="bc_robot_modelResult" class="bc_robot_model">
+      <result property="eqpid" column="eqpid"/>
+      <result property="unitid" column="unitid"/>
+      <result property="modelid" column="modelid"/>
+      <result property="modelposition" column="modelposition"/>
+      <result property="uplinkname" column="uplinkname"/>
+      <result property="downlinkname" column="downlinkname"/>
+      <result property="portid" column="portid"/>
+      <result property="sentoutname" column="sentoutname"/>
+      <result property="unitno" column="unitno"/>
+      <result property="robotmotion" column="robotmotion"/>
+      <result property="portgettype" column="portgettype"/>
+      <result property="exchangeenable" column="exchangeenable"/>
+      <result property="transferenable" column="transferenable"/>
+      <result property="getwaitenable" column="getwaitenable"/>
+      <result property="putwaitenable" column="putwaitenable"/>
+      <result property="modelname" column="modelname"/>
+      <result property="dualarm" column="dualarm"/>
+    </resultMap>-->
+
+    <resultMap id="cfg_eqpstatusruleResult" class="cfg_eqpstatusrule">
+      <result property="eqpid" column="eqpid"/>
+      <result property="unitidlist" column="unitidlist"/>
+      <result property="checkenable" column="checkenable"/>
+      <result property="eqpstatus" column="eqpstatus"/>
+    </resultMap>
+
+    <resultMap id="GetBcUserGroupResult" class="BC_Group">
+      <result property="object_id" column="object_id"/>
+      <result property="group_id" column="group_id"/>
+      <result property="description" column="description"/>
+      <result property="create_time" column="create_time"/>
+      <result property="create_user" column="create_user"/>
+      <result property="update_user" column="update_user"/>
+      <result property="update_time" column="update_time"/>
+    </resultMap>
+
+    <resultMap id="GetGroup_AuthorityResult" class="Group_Authority">
+      <result property="groupId" column="group_id"/>
+      <result property="menuName" column="menu_name"/>
+      <result property="pageName" column="page_name"/>
+      <result property="action" column="action"/>
+    </resultMap>
+
+    <resultMap id="AllTableNameResult" class="AllTable">
+      <result property="TableName" column="tablename"/>
+    </resultMap>
+
+    <resultMap id="TableStructureResult" class="TableStructure">
+      <result property="majorKey" column="majorKey"/>
+      <result property="propertyName" column="propertyName"/>
+      <result property="pType" column="pType"/>
+      <result property="pLength" column="pLength"/>
+      <result property="pPoint" column="pPoint"/>
+      <result property="isNull" column="isNull"/>
+      <result property="description" column="description"/>
+    </resultMap>
+
+    <resultMap id="BcGroupAuthorityResult" class="BcGroupAuthority">
+      <result property="group_id" column="group_id"/>
+      <result property="menu_name" column="menu_name"/>
+      <result property="page_name" column="page_name"/>
+      <result property="action" column="action"/>
+    </resultMap>
+
+    <resultMap id="BcRobotConfigureResult" class="BcRobotConfigure">
+      <result property="idx_name" column="idx_name"/>
+      <result property="robot_name" column="robot_name"/>
+      <result property="log_name" column="log_name"/>
+      <result property="log_path" column="log_path"/>
+      <result property="line_name" column="line_name"/>
+    </resultMap>
+
+    <resultMap id="BcRobotGroupCconfigureResult" class="BcRobotGroupCconfigure">
+      <result property="idx_name" column="idx_name"/>
+      <result property="group_name" column="group_name"/>
+      <result property="group_list" column="group_list"/>
+      <result property="group_method" column="group_method"/>
+      <result property="line_name" column="line_name"/>
+    </resultMap>
+
+    <resultMap id="DisColResult" class="DisCol">
+      <result property="returnstr" column="returnstr"/>
+    </resultMap>
+
+    <resultMap id="bc_robot_linksignal_configureResult" class="bc_robot_linksignal_configure">
+      <result property="line_name" column="line_name"/>
+      <result property="eqp_name" column="eqp_name"/>
+      <result property="unit_name" column="unit_name"/>
+      <result property="inout_type" column="inout_type"/>
+      <result property="is_put_first" column="is_put_first"/>
+      <result property="is_get_delay" column="is_get_delay"/>
+      <result property="get_delay_time" column="get_delay_time"/>
+    </resultMap>
+
+    <resultMap id="bc_robot_path_configureResult" class="bc_robot_path_configure">
+      <result property="idx_name" column="idx_name"/>
+      <result property="path_name" column="path_name"/>
+      <result property="source_path_name" column="source_path_name"/>
+      <result property="target_path_name" column="target_path_name"/>
+      <result property="robot_fixed" column="robot_fixed"/>
+      <result property="robot_arm" column="robot_arm"/>
+      <result property="rule_id" column="rule_id"/>
+      <result property="out_source_priority" column="out_source_priority"/>
+      <result property="in_target_priority" column="in_target_priority"/>
+      <result property="line_name" column="line_name"/>
+      <result property="port_get_check_receive" column="port_get_check_receive"/>
+
+    </resultMap>
+
+    <resultMap id="cfg_alarmResult" class="cfg_alarm">
+      <result property="eqpid" column="eqpid"/>
+      <result property="alarmtext" column="alarmtext"/>
+      <result property="alarmenable" column="alarmenable"/>
+      <result property="unitid" column="unitid"/>
+      <result property="sunitid" column="sunitid"/>
+      <result property="alarmcode" column="alarmcode"/>
+      <result property="alarmlevel" column="alarmlevel"/>
+      <result property="alarmtype" column="alarmtype"/>
+      <result property="alarmid" column="alarmid"/>
+    </resultMap>
+
+    <resultMap id="cfg_ceidResult" class="cfg_ceid">
+      <result property="ceid" column="ceid"/>
+      <result property="ceed" column="ceed"/>
+      <result property="description" column="description"/>
+      <result property="isused" column="isused"/>
+      <result property="updatetime" column="updatetime"/>
+    </resultMap>
+
+    <resultMap id="cfg_ecidResult" class="cfg_ecid">
+      <result property="ecid" column="ecid"/>
+      <result property="ecname" column="ecname"/>
+      <result property="ecmax" column="ecmax"/>
+      <result property="ecmin" column="ecmin"/>
+      <result property="ecdef" column="ecdef"/>
+      <result property="ecv" column="ecv"/>
+      <result property="updatetime" column="updatetime"/>
+    </resultMap>
+    <resultMap id="cfg_eqpResult" class="cfg_eqp">
+      <result property="eqpid" column="eqpid"/>
+      <result property="updatedate" column="updatedate"/>
+      <result property="reasoncode" column="reasoncode"/>
+      <result property="portqtime" column="portqtime"/>
+      <result property="indexeroperationmode" column="indexeroperationmode"/>
+      <result property="linetype" column="linetype"/>
+      <result property="eqpstatus" column="eqpstatus"/>
+      <result property="linemode" column="linemode"/>
+      <result property="robotdispatchmode" column="robotdispatchmode"/>
+      <result property="coldruntotalquantity" column="coldruntotalquantity"/>
+      <result property="coldruncurrentquantity" column="coldruncurrentquantity"/>
+    <result property="iscoldrun" column="iscoldrun"/> 
+    </resultMap>
+
+
+    <resultMap id="cfg_portResult" class="cfg_port">
+      <result property="eqpid" column="eqpid"/>
+      <result property="unitid" column="unitid"/>
+      <result property="unitname" column="unitname"/>
+      <result property="portno" column="portno"/>
+      <result property="portid" column="portid"/>
+      <result property="portstatus" column="portstatus"/>
+      <result property="portmode" column="portmode"/>
+      <result property="portcsttype" column="portcsttype"/>
+      <result property="portoperationmode" column="portoperationmode"/>
+      <result property="porttypeautochangemode" column="porttypeautochangemode"/>
+      <result property="capacity" column="capacity"/>
+      <result property="portqtime" column="portqtime"/>
+      <result property="glasstype" column="glasstype"/>
+      <result property="portgrade" column="portgrade"/>
+      <result property="portenablemode" column="portenablemode"/>
+      <result property="userms" column="userms"/>
+      <result property="updatedate" column="updatedate"/>
+      <result property="isingetput" column="isingetput"/>
+      <result property="productiontype" column="productiontype"/>
+      <result property="cassettesequenceno" column="cassettesequenceno"/>
+      <result property="cassetteid" column="cassetteid"/>
+      <result property="porttype" column="porttype"/>
+      <result property="transfermode" column="transfermode"/>
+	  <result property="portpausemode" column="portpausemode"/>
+      <result property="portusetype" column="portusetype"/>
+	  <result property = "waitingforprocessingtime" column="waitingforprocessingtime"/>
+      <result property = "usetype" column="usetype"/>
+    </resultMap>
+
+
+    <resultMap id="cfg_ssunitResult" class="cfg_ssunit">
+      <result property="eqpid" column="eqpid"/>
+      <result property="unitid" column="unitid"/>
+      <result property="unitname" column="unitname"/>
+      <result property="sunitid" column="sunitid"/>
+      <result property="sunitname" column="sunitname"/>
+      <result property="ssunitid" column="ssunitid"/>
+      <result property="ssunitname" column="ssunitname"/>
+      <result property="ssunitstatus" column="ssunitstatus"/>
+      <result property="ssunitstcode" column="ssunitstcode"/>
+      <result property="ssunitno" column="ssunitno"/>
+      <result property="ssunittype" column="ssunittype"/>
+    </resultMap>
+    <resultMap id="cfg_sunitResult" class="cfg_sunit">
+      <result property="eqpid" column="eqpid"/>
+      <result property="subunitno" column="subunitno"/>
+      <result property="unitid" column="unitid"/>
+      <result property="unitname" column="unitname"/>
+      <result property="sunitpathno" column="sunitpathno"/>
+      <result property="sunittype" column="sunittype"/>
+      <result property="sunitid" column="sunitid"/>
+      <result property="sunitname" column="sunitname"/>
+      <result property="sunitstatus" column="sunitstatus"/>
+      <result property="sunitstcode" column="sunitstcode"/>
+      <result property="linkpathno" column="linkpathno"/>
+      <result property="hasssunit" column="hasssunit"/>
+	  <result property="reportmesstate" column="reportmesstate"/>
+    </resultMap>
+
+    <resultMap id="cfg_unitResult" class="cfg_unit">
+      <result property="eqpid" column="eqpid"/>
+      <result property="unitid" column="unitid"/>
+      <result property="unitname" column="unitname"/>
+      <result property="unittype" column="unittype"/>
+      <result property="unitcapacity" column="unitcapacity"/>
+      <result property="reasoncode" column="reasoncode"/>
+      <result property="crst" column="crst"/>
+      <result property="unitstcode" column="unitstcode"/>
+      <result property="hassunit" column="hassunit"/>
+      <result property="unitmode" column="unitmode"/>
+      <result property="cassetteoperationmode" column="cassetteoperationmode"/>
+	  <result property="iseqpend" column="iseqpend"/>
+	  <result property="iseqpstart" column="iseqpstart"/>
+	  <result property="currentrecipeidcheck" column="currentrecipeidcheck"/>
+	  <result property="isprocessend" column="isprocessend"/>
+	  <result property="isjobdatarequest" column="isjobdatarequest"/>
+	  <result property="vcrstatus" column="vcrstatus"/>
+      <result property="localno" column="localno"/>
+      <result property="portqtime" column="portqtime"/>
+      <result property="commandtype" column="commandtype"/>
+      <result property="currentrecipeid" column="currentrecipeid"/>
+      <result property="downstreaminlinemode" column="downstreaminlinemode"/>
+      <result property="upstreaminlinemode" column="upstreaminlinemode"/>
+      <result property="unitno" column="unitno"/>
+      <result property="loadingstop" column="loadingstop"/>
+      <result property="unitstatus" column="unitstatus"/>
+	  <result property="cimmode" column="cimmode"/>
+    </resultMap>
+
+
+    <resultMap id="his_alarmResult" class="his_alarm">
+      <result property="eqpid" column="eqpid"/>
+      <result property="alarmstatus" column="alarmstatus"/>
+      <result property="alarmtext" column="alarmtext"/>
+      <result property="createdate" column="createdate"/>
+      <result property="unitid" column="unitid"/>
+      <result property="alarmtype" column="alarmtype"/>
+      <result property="alarmid" column="alarmid"/>
+	  <result property="alarmunitnumber" column="alarmunitnumber"/>
+	  <result property="alarmcode" column="alarmcode"/>
+    </resultMap>
+	  <resultMap id="his_alarmResultCount" class="his_alarm">
+		  <result property="alarmid" column="alarmid"/>
+	  </resultMap>
+    <resultMap id="his_carrierResult" class="his_carrier">
+      <result property="lineid" column="lineid"/>
+      <result property="eqpid" column="eqpid"/>
+      <result property="portid" column="portid"/>
+      <result property="carrierid" column="carrierid"/>
+      <result property="carriertype" column="carriertype"/>
+      <result property="mescarriertype" column="mescarriertype"/>
+      <result property="slotmap" column="slotmap"/>
+      <result property="inputproductmap" column="inputproductmap"/>
+      <result property="lotid" column="lotid"/>
+      <result property="lotgrade" column="lotgrade"/>
+      <result property="productspecid" column="productspecid"/>
+      <result property="productiontype" column="productiontype"/>
+      <result property="operationid" column="operationid"/>
+      <result property="createdate" column="createdate"/>
+    </resultMap>
+    <resultMap id="his_maskinfoResult" class="his_maskinfo">
+      <result property="outunitname" column="outunitname"/>
+      <result property="outsunitname" column="outsunitname"/>
+      <result property="createdate" column="createdate"/>
+      <result property="fportid" column="fportid"/>
+      <result property="tportid" column="tportid"/>
+      <result property="fcstid" column="fcstid"/>
+      <result property="tcstid" column="tcstid"/>
+      <result property="isoutport" column="isoutport"/>
+      <result property="isexist" column="isexist"/>
+      <result property="slotsatus" column="slotsatus"/>
+      <result property="fetchdatetime" column="fetchdatetime"/>
+      <result property="maskid" column="maskid"/>
+      <result property="maskgroupname" column="maskgroupname"/>
+      <result property="masktype" column="masktype"/>
+      <result property="position" column="position"/>
+      <result property="maskrecipename" column="maskrecipename"/>
+      <result property="maskclnstate" column="maskclnstate"/>
+      <result property="maskaoistate" column="maskaoistate"/>
+      <result property="maskrepaircnt" column="maskrepaircnt"/>
+      <result property="maskinspstate" column="maskinspstate"/>
+      <result property="maskngcode" column="maskngcode"/>
+      <result property="maskamhszone" column="maskamhszone"/>
+      <result property="shelfno" column="shelfno"/>
+      <result property="ppid" column="ppid"/>
+      <result property="fslotno" column="fslotno"/>
+      <result property="tslotno" column="tslotno"/>
+      <result property="maskinsunitid" column="maskinsunitid"/>
+      <result property="sslotno" column="sslotno"/>
+      <result property="maskmaxcnt" column="maskmaxcnt"/>
+      <result property="maskusecnt" column="maskusecnt"/>
+      <result property="offsetx" column="offsetx"/>
+      <result property="offsety" column="offsety"/>
+      <result property="offsett" column="offsett"/>
+      <result property="maskmagnet" column="maskmagnet"/>
+      <result property="maskthickness" column="maskthickness"/>
+      <result property="prodid" column="prodid"/>
+      <result property="maskspec" column="maskspec"/>
+      <result property="maskjudge" column="maskjudge"/>
+      <result property="maskmodelno" column="maskmodelno"/>
+      <result property="processingflag" column="processingflag"/>
+      <result property="processflow" column="processflow"/>
+      <result property="processflowversion" column="processflowversion"/>
+      <result property="operid" column="operid"/>
+      <result property="operversion" column="operversion"/>
+      <result property="maskstatus" column="maskstatus"/>
+      <result property="processoperationname" column="processoperationname"/>
+      <result property="processoperationversion" column="processoperationversion"/>
+      <result property="maskusedlimit" column="maskusedlimit"/>
+      <result property="chambername" column="chambername"/>
+      <result property="stagename" column="stagename"/>
+      <result property="fcassettesequence" column="fcassettesequence"/>
+      <result property="tcassettesequence" column="tcassettesequence"/>
+      <result property="unitid" column="unitid"/>
+      <result property="sunitid" column="sunitid"/>
+      <result property="fslotposition" column="fslotposition"/>
+      <result property="tslotposition" column="tslotposition"/>
+    </resultMap>
+    <resultMap id="his_materialResult" class="his_material">
+      <result property="eqpid" column="eqpid"/>
+      <result property="createdate" column="createdate"/>
+      <result property="unitid" column="unitid"/>
+      <result property="materialtype" column="materialtype"/>
+      <result property="materialid" column="materialid"/>
+      <result property="materialstate" column="materialstate"/>
+      <result property="materialusedcnt" column="materialusedcnt"/>
+      <result property="materialposition" column="materialposition"/>
+    </resultMap>
+	  <resultMap id="his_materialResultCount" class="his_material">
+      <result property="materialid" column="materialid"/>
+    </resultMap>
+
+    <resultMap id="his_packingboxResult" class="his_packingbox">
+      <result property="boxid" column="boxid"/>
+      <result property="boxspecid" column="boxspecid"/>
+      <result property="boxoperationid" column="boxoperationid"/>
+      <result property="boxproductiontype" column="boxproductiontype"/>
+      <result property="boxworkorder" column="boxworkorder"/>
+      <result property="boxgroupid" column="boxgroupid"/>
+      <result property="boxcheckincode" column="boxcheckincode"/>
+      <result property="boxweight" column="boxweight"/>
+      <result property="boxrivisioncode" column="boxrivisioncode"/>
+      <result property="boxfgcode" column="boxfgcode"/>
+      <result property="boxgrade" column="boxgrade"/>
+      <result property="panelqty" column="panelqty"/>
+      <result property="boxserial" column="boxserial"/>
+      <result property="palletid" column="palletid"/>
+      <result property="createdate" column="createdate"/>
+      <result property="tranid" column="tranid"/>
+    </resultMap>
+    <resultMap id="his_recipeResult" class="his_recipe">
+      <result property="eqpid" column="eqpid"/>
+      <result property="createdate" column="createdate"/>
+      <result property="unitid" column="unitid"/>
+      <result property="sunitid" column="sunitid"/>
+      <result property="recipeno" column="recipeno"/>
+      <result property="recipeversion" column="recipeversion"/>
+      <result property="parametercount" column="parametercount"/>
+      <result property="eventid" column="eventid"/>
+      <result property="previousrecipeno" column="previousrecipeno"/>
+      <result property="recipechangetime" column="recipechangetime"/>
+      <result property="recipeparameteritems" column="recipeparameteritems"/>
+      <result property="recipetype" column="recipetype"/>
+      <result property="messagesequenceno" column="messagesequenceno"/>
+    </resultMap>
+    <resultMap id="his_recipeppidmapResult" class="his_recipeppidmap">
+      <result property="lineid" column="lineid"/>
+      <result property="eqpid" column="eqpid"/>
+      <result property="recipeid" column="recipeid"/>
+      <result property="ppid" column="ppid"/>
+      <result property="targetplace" column="targetplace"/>
+      <result property="createuser" column="createuser"/>
+      <result property="createdate" column="createdate"/>
+      <result property="eqpname" column="eqpname"/>
+    </resultMap>
+    <resultMap id="his_spanelResult" class="his_spanel">
+      <result property="hpanelid" column="hpanelid"/>
+      <result property="panelgrade" column="panelgrade"/>
+      <result property="fptid" column="fptid"/>
+      <result property="tptid" column="tptid"/>
+      <result property="fslotno" column="fslotno"/>
+      <result property="tslotno" column="tslotno"/>
+      <result property="lotid" column="lotid"/>
+      <result property="fcstid" column="fcstid"/>
+      <result property="tcstid" column="tcstid"/>
+      <result property="createdate" column="createdate"/>
+      <result property="qty" column="qty"/>
+      <result property="slotsel" column="slotsel"/>
+      <result property="fjobsequencenumber" column="fjobsequencenumber"/>
+      <result property="ppid" column="ppid"/>
+      <result property="lotjudge" column="lotjudge"/>
+      <result property="lotsorttype" column="lotsorttype"/>
+      <result property="unitpathno" column="unitpathno"/>
+      <result property="operid" column="operid"/>
+      <result property="prodid" column="prodid"/>
+      <result property="smplflag" column="smplflag"/>
+      <result property="rwkcnt" column="rwkcnt"/>
+      <result property="cfglsid" column="cfglsid"/>
+      <result property="lottype" column="lottype"/>
+      <result property="spnlid" column="spnlid"/>
+      <result property="pnljudge" column="pnljudge"/>
+      <result property="pnlsorttype" column="pnlsorttype"/>
+      <result property="atpnlgrade" column="atpnlgrade"/>
+      <result property="assypnlgrade" column="assypnlgrade"/>
+      <result property="osrepair" column="osrepair"/>
+      <result property="atrepair" column="atrepair"/>
+      <result property="pnlgrade" column="pnlgrade"/>
+      <result property="readpanelid" column="readpanelid"/>
+      <result property="fcassettesequence" column="fcassettesequence"/>
+      <result property="tcassettesequence" column="tcassettesequence"/>
+      <result property="tjobsequencenumber" column="tjobsequencenumber"/>
+    </resultMap>
+    <resultMap id="his_trayinfoResult" class="his_trayinfo">
+      <result property="trayid" column="trayid"/>
+      <result property="processflowname" column="processflowname"/>
+      <result property="processflowversion" column="processflowversion"/>
+      <result property="processoperationname" column="processoperationname"/>
+      <result property="processoperationversion" column="processoperationversion"/>
+      <result property="productspecname" column="productspecname"/>
+      <result property="productspecversion" column="productspecversion"/>
+      <result property="productiontype" column="productiontype"/>
+      <result property="productquantity" column="productquantity"/>
+      <result property="machinerecipename" column="machinerecipename"/>
+      <result property="productrequestname" column="productrequestname"/>
+      <result property="lotid" column="lotid"/>
+      <result property="operid" column="operid"/>
+      <result property="prodid" column="prodid"/>
+      <result property="lotjudge" column="lotjudge"/>
+      <result property="position" column="position"/>
+      <result property="ppid" column="ppid"/>
+      <result property="cellcount" column="cellcount"/>
+      <result property="slotno" column="slotno"/>
+      <result property="createdate" column="createdate"/>
+      <result property="portid" column="portid"/>
+      <result property="porttype" column="porttype"/>
+      <result property="portusetype" column="portusetype"/>
+    </resultMap>
+
+    <resultMap id="wip_cstboxResult" class="wip_cstbox">
+      <result property="lineid" column="lineid"/>
+      <result property="eqpid" column="eqpid"/>
+      <result property="carrierid" column="carrierid"/>
+      <result property="cstboxid" column="cstboxid"/>
+      <result property="panelid" column="panelid"/>
+      <result property="slotid" column="slotid"/>
+      <result property="createdate" column="createdate"/>
+    </resultMap>
+    <resultMap id="cfg_systemconfigResult" class="cfg_systemconfig">
+      <result property="eqpid" column="eqpid"/>
+      <result property="recipecheckenable" column="recipecheckenable"/>
+      <result property="robotdispathmode" column="robotdispathmode"/>
+    </resultMap>
+    <resultMap id="wip_glassinfoResult" class="wip_glassinfo">
+      <result property="productid" column="productid"/>
+      <result property="operationid" column="operationid"/>
+      <result property="lotid" column="lotid"/>
+      <result property="ppid1" column="ppid1"/>
+      <result property="ppid2" column="ppid2"/>
+      <result property="ppid3" column="ppid3"/>
+      <result property="ppid4" column="ppid4"/>
+      <result property="ppid5" column="ppid5"/>
+      <result property="ppid6" column="ppid6"/>
+      <result property="ppid7" column="ppid7"/>
+      <result property="ppid8" column="ppid8"/>
+      <result property="ppid9" column="ppid9"/>
+      <result property="ppid10" column="ppid10"/>
+      <result property="glassid" column="glassid"/>
+      <result property="cassettesequenceno" column="cassettesequenceno"/>
+      <result property="slotsequenceno" column="slotsequenceno"/>
+      <result property="slotposition" column="slotposition"/>
+      <result property="cuttingsequenceno" column="cuttingsequenceno"/>
+      <result property="glassjudgecode" column="glassjudgecode"/>
+      <result property="glassgradecode" column="glassgradecode"/>
+      <result property="processingflag" column="processingflag"/>
+      <result property="glasssizecode" column="glasssizecode"/>
+      <result property="glassthicknesscode" column="glassthicknesscode"/>
+      <result property="glasstype" column="glasstype"/>
+      <result property="lotcode" column="lotcode"/>
+      <result property="processingcount" column="processingcount"/>
+      <result property="inspectionflag" column="inspectionflag"/>
+      <result property="skipflag" column="skipflag"/>
+      <result property="inlineeqdata" column="inlineeqdata"/>
+      <result property="workorder" column="workorder"/>
+      <result property="processflowname" column="processflowname"/>
+      <result property="processflowversion" column="processflowversion"/>
+      <result property="processoperationversion" column="processoperationversion"/>
+      <result property="productspecversion" column="productspecversion"/>
+      <result property="productiontype" column="productiontype"/>
+      <result property="halfproductjudge" column="halfproductjudge"/>
+      <result property="glassmaker" column="glassmaker"/>
+      <result property="productrecipe" column="productrecipe"/>
+      <result property="reworktype" column="reworktype"/>
+      <result property="reworkcount" column="reworkcount"/>
+      <result property="samplingflag" column="samplingflag"/>
+      <result property="exposurerecipename" column="exposurerecipename"/>
+      <result property="turndegree" column="turndegree"/>
+      <result property="flowmodevalue" column="flowmodevalue"/>
+      <result property="evaskipflag" column="evaskipflag"/>
+      <result property="beforeprocessmachine" column="beforeprocessmachine"/>
+      <result property="producttype" column="producttype"/>
+      <result property="maskspecname" column="maskspecname"/>
+      <result property="processflowrunstate" column="processflowrunstate"/>
+      <result property="position" column="position"/>
+      <result property="processinginfo" column="processinginfo"/>
+      <result property="vcrproductname" column="vcrproductname"/>
+      <result property="nginputcomment" column="nginputcomment"/>
+      <result property="panelgrade" column="panelgrade"/>
+      <result property="paneljudge" column="paneljudge"/>
+      <result property="updatedate" column="updatedate"/>
+      <result property="modelposition" column="modelposition"/>
+      <result property="currentunit" column="currentunit"/>
+      <result property="productalarm" column="productalarm"/>
+      <result property="rglassid" column="rglassid"/>
+      <result property="slotsatus" column="slotsatus"/>
+      <result property="fetchdatetime" column="fetchdatetime"/>
+      <result property="portid" column="portid"/>
+      <result property="cassetteid" column="cassetteid"/>
+      <result property="currentsunit" column="currentsunit"/>
+      <result property="currentssunit" column="currentssunit"/>
+      <result property="begindate" column="begindate"/>
+      <result property="enddate" column="enddate"/>
+      <result property="currentslotno" column="currentslotno"/>
+      <result property="createdate" column="createdate"/>
+      <result property="modepath" column="modepath"/>
+		<result property="cratename" column="cratename"/>
+		<result property="inportid" column="inportid"/>
+		<result property="incstid" column="incstid"/>
+		<result property="fslotno" column="fslotno"/>
+		<result property="outcstid" column="outcstid"/>
+		<result property="outportid" column="outportid"/>
+		<result property="tslotno" column="tslotno"/>
+		<result property="cvdflag" column="cvdflag"/>
+		<result property="recvjobtime" column="recvjobtime"/>
+		<result property="recvunitjobtime" column="recvunitjobtime"/>
+		<result property="ismestrackin" column="ismestrackin"/>
+		<result property="blid" column="blid"/>
+		<result property = "panelcode" column="panelcode"/>
+		<result property = "scribermoduletype" column="scribermoduletype"/>
+		<result property="ppid11" column="ppid11"/>
+		<result property="ppid12" column="ppid12"/>
+		<result property="ppid13" column="ppid13"/>
+		<result property="ppid14" column="ppid14"/>
+		<result property="ppid15" column="ppid15"/>
+		<result property="ppid16" column="ppid16"/>
+		<result property="ppid17" column="ppid17"/>
+		<result property="ppid18" column="ppid18"/>
+		<result property="ppid19" column="ppid19"/>
+		<result property="ppid20" column="ppid20"/>
+		<result property="ppid21" column="ppid21"/>
+		<result property="ppid22" column="ppid22"/>
+		<result property="ppid23" column="ppid23"/>
+		<result property="ppid24" column="ppid24"/>
+		<result property="ppid25" column="ppid25"/>
+		<result property="ppid26" column="ppid26"/>
+		<result property="ppid27" column="ppid27"/>
+		<result property="ppid28" column="ppid28"/>
+		<result property="ppid29" column="ppid29"/>
+		<result property="ppid30" column="ppid30"/>
+		<result property="propertycode" column="propertycode"/>
+		<result property="jobangle" column="jobangle"/>
+		<result property="jobflip" column="jobflip"/>
+		<result property="mmgcode" column="mmgcode"/>
+		<result property="panelinchsizex" column="panelinchsizex"/>
+		<result property="panelinchsizey" column="panelinchsizey"/>
+		<result property="abnormalcodes" column="abnormalcodes"/>
+		<result property = "defectcodes" column="defectcodes"/>
+		<result property="id" column="id"/>
+		<result property="slotflag" column="slotflag"/>
+    </resultMap>
+
+    <resultMap id="his_userResult" class="his_user">
+      <result property="username" column="username"/>
+      <result property="userid" column="userid"/>
+      <result property="password" column="password"/>
+      <result property="level" column="level"/>
+      <result property="creator" column="creator"/>
+      <result property="createdate" column="createdate"/>
+      <result property="groupid" column="groupid"/>
+    </resultMap>
+
+
+
+    <resultMap id="bc_user_groupResult" class="bc_user_group">
+      <result property="group_id" column="group_id"/>
+      <result property="group_name" column="group_name"/>
+      <result property="user_count" column="user_count"/>
+      <result property="depart" column="depart"/>
+      <result property="comments" column="comments"/>
+      <result property="user_id" column="user_id"/>
+    </resultMap>
+    <resultMap id="wip_alarmResult" class="wip_alarm">
+      <result property="eqpid" column="eqpid"/>
+      <result property="alarmstatus" column="alarmstatus"/>
+      <result property="alarmtext" column="alarmtext"/>
+      <result property="createdate" column="createdate"/>
+      <result property="unitid" column="unitid"/>
+      <result property="alarmtype" column="alarmtype"/>
+      <result property="alarmid" column="alarmid"/>
+      <result property="id" column="id"/>
+	  <result property="alarmunitnumber" column="alarmunitnumber"/>
+	  <result property="alarmcode" column="alarmcode"/>
+    </resultMap>
+    <resultMap id="bc_eqp_command_confResult" class="bc_eqp_command_conf">
+      <result property="object_id" column="object_id"/>
+      <result property="line_id" column="line_id"/>
+      <result property="equipment_no" column="equipment_no"/>
+      <result property="equipment_id" column="equipment_id"/>
+      <result property="subequipment_no" column="subequipment_no"/>
+      <result property="machine" column="machine"/>
+      <result property="command_type" column="command_type"/>
+      <result property="protocol" column="protocol"/>
+      <result property="command_secsname" column="command_secsname"/>
+      <result property="command_to_map" column="command_to_map"/>
+    </resultMap>
+    <resultMap id="bc_eqp_command_paraResult" class="bc_eqp_command_para">
+      <result property="object_id" column="object_id"/>
+      <result property="command_type" column="command_type"/>
+      <result property="parameter_id" column="parameter_id"/>
+      <result property="parameter_type" column="parameter_type"/>
+      <result property="required" column="required"/>
+      <result property="reference_value" column="reference_value"/>
+      <result property="max_value" column="max_value"/>
+      <result property="min_value" column="min_value"/>
+      <result property="line_id" column="line_id"/>
+      <result property="parameter_name" column="parameter_name"/>
+      <result property="item_number" column="item_number"/>
+      <result property="equipment_no" column="equipment_no"/>
+    </resultMap>
+
+    <resultMap id="cfg_eqpstatusgroupResult" class="cfg_eqpstatusgroup">
+      <result property="eqpid" column="eqpid"/>
+      <result property="index" column="index"/>
+      <result property="eqpstatus" column="eqpstatus"/>
+    </resultMap>
+
+
+
+  </resultMaps>
+
+  <statements>
+
+    <select id="Viewhis_robotcommand" resultMap="his_robotcommandResult"  parameterClass="Hashtable">
+      select * from his_robotcommand<dynamic prepend="where">
+        <isNotEmpty property="sequenceno" prepend="and">sequenceno=$sequenceno$</isNotEmpty>
+        <isNotEmpty property="strcmd1" prepend="and">strcmd1=#strcmd1#</isNotEmpty>
+        <isNotEmpty property="starmno1" prepend="and">starmno1=#starmno1#</isNotEmpty>
+        <isNotEmpty property="stgetposition1" prepend="and">stgetposition1=$stgetposition1$</isNotEmpty>
+        <isNotEmpty property="stputposition1" prepend="and">stputposition1=$stputposition1$</isNotEmpty>
+        <isNotEmpty property="stgetslotno1" prepend="and">stgetslotno1=$stgetslotno1$</isNotEmpty>
+        <isNotEmpty property="stputslotno1" prepend="and">stputslotno1=$stputslotno1$</isNotEmpty>
+        <isNotEmpty property="stsubcommand1" prepend="and">stsubcommand1=#stsubcommand1#</isNotEmpty>
+        <isNotEmpty property="stgetslotpostion1" prepend="and">stgetslotpostion1=$stgetslotpostion1$</isNotEmpty>
+        <isNotEmpty property="stputslotpostion1" prepend="and">stputslotpostion1=$stputslotpostion1$</isNotEmpty>
+        <isNotEmpty property="ndrcmd2" prepend="and">ndrcmd2=#ndrcmd2#</isNotEmpty>
+        <isNotEmpty property="ndarmno2" prepend="and">ndarmno2=#ndarmno2#</isNotEmpty>
+        <isNotEmpty property="ndgetposition2" prepend="and">ndgetposition2=$ndgetposition2$</isNotEmpty>
+        <isNotEmpty property="ndputposition2" prepend="and">ndputposition2=$ndputposition2$</isNotEmpty>
+        <isNotEmpty property="ndgetslotno2" prepend="and">ndgetslotno2=$ndgetslotno2$</isNotEmpty>
+        <isNotEmpty property="ndputslotno2" prepend="and">ndputslotno2=$ndputslotno2$</isNotEmpty>
+        <isNotEmpty property="ndsubcommand2" prepend="and">ndsubcommand2=#ndsubcommand2#</isNotEmpty>
+        <isNotEmpty property="ndgetslotpostion2" prepend="and">ndgetslotpostion2=$ndgetslotpostion2$</isNotEmpty>
+        <isNotEmpty property="ndputslotpostion2" prepend="and">ndputslotpostion2=$ndputslotpostion2$</isNotEmpty>
+        <isNotEmpty property="commandresult1" prepend="and">commandresult1=$commandresult1$</isNotEmpty>
+        <isNotEmpty property="commandresult2" prepend="and">commandresult2=$commandresult2$</isNotEmpty>
+        <isNotEmpty property="commandresult3" prepend="and">commandresult3=$commandresult3$</isNotEmpty>
+        <isNotEmpty property="commandresult4" prepend="and">commandresult4=$commandresult4$</isNotEmpty>
+        <isNotEmpty property="currentposition" prepend="and">currentposition=$currentposition$</isNotEmpty>
+        <isNotEmpty property="functionname" prepend="and">functionname=#functionname#</isNotEmpty>
+        <isNotEmpty property="startcreatedate" prepend="and">createdate <![CDATA[ >= ]]> #startcreatedate#::timestamp</isNotEmpty>
+        <isNotEmpty property = "endcreatedate" prepend = "and" > createdate <![CDATA[ <= ]]> #endcreatedate#::timestamp</isNotEmpty>
+      </dynamic>
+    </select>
+
+
+
+    <select id="Viewhis_vcr" resultMap="his_vcrResult"  parameterClass="Hashtable">
+      select * from his_vcr<dynamic prepend="where">
+        <isNotEmpty property="eqpid" prepend="and">eqpid=#eqpid#</isNotEmpty>
+        <isNotEmpty property="unitid" prepend="and">unitid=#unitid#</isNotEmpty>
+        <isNotEmpty property="unitname" prepend="and">unitname=#unitname#</isNotEmpty>
+        <isNotEmpty property="vcrenablemode" prepend="and">vcrenablemode=$vcrenablemode$</isNotEmpty>
+        <isNotEmpty property="vcrno" prepend="and">vcrno=$vcrno$</isNotEmpty>
+        <isNotEmpty property="vcrreadfailoperationmode" prepend="and">vcrreadfailoperationmode=$vcrreadfailoperationmode$</isNotEmpty>
+        <isNotEmpty property="startcreatedate" prepend="and">createdate <![CDATA[ >= ]]> #startcreatedate#::timestamp</isNotEmpty>
+        <isNotEmpty property = "endcreatedate" prepend = "and" > createdate <![CDATA[ <= ]]> #endcreatedate#::timestamp</isNotEmpty>
+      </dynamic>
+    </select>
+
+    <select id="Viewhis_port" resultMap="his_portResult"  parameterClass="Hashtable">
+      select * from his_port<dynamic prepend="where">
+        <isNotEmpty property="eqpid" prepend="and">eqpid=#eqpid#</isNotEmpty>
+        <isNotEmpty property="unitid" prepend="and">unitid=#unitid#</isNotEmpty>
+        <isNotEmpty property="unitname" prepend="and">unitname=#unitname#</isNotEmpty>
+        <isNotEmpty property="portno" prepend="and">portno=$portno$</isNotEmpty>
+        <isNotEmpty property="portid" prepend="and">portid=#portid#</isNotEmpty>
+        <isNotEmpty property="portstatus" prepend="and">portstatus=$portstatus$</isNotEmpty>
+        <isNotEmpty property="portmode" prepend="and">portmode=$portmode$</isNotEmpty>
+        <isNotEmpty property="portcsttype" prepend="and">portcsttype=$portcsttype$</isNotEmpty>
+        <isNotEmpty property="portoperationmode" prepend="and">portoperationmode=$portoperationmode$</isNotEmpty>
+        <isNotEmpty property="porttypeautochangemode" prepend="and">porttypeautochangemode=$porttypeautochangemode$</isNotEmpty>
+        <isNotEmpty property="capacity" prepend="and">capacity=$capacity$</isNotEmpty>
+        <isNotEmpty property="portqtime" prepend="and">portqtime=$portqtime$</isNotEmpty>
+        <isNotEmpty property="glasstype" prepend="and">glasstype=$glasstype$</isNotEmpty>
+        <isNotEmpty property="portgrade" prepend="and">portgrade=#portgrade#</isNotEmpty>
+        <isNotEmpty property="portenablemode" prepend="and">portenablemode=$portenablemode$</isNotEmpty>
+        <isNotEmpty property="userms" prepend="and">userms=$userms$</isNotEmpty>
+        <isNotEmpty property="startcreatedate" prepend="and">updatedate <![CDATA[ >= ]]> #startcreatedate#::timestamp</isNotEmpty>
+        <isNotEmpty property = "endcreatedate" prepend = "and" > updatedate <![CDATA[ <= ]]> #endcreatedate#::timestamp</isNotEmpty>
+        <isNotEmpty property="isingetput" prepend="and">isingetput=$isingetput$</isNotEmpty>
+        <isNotEmpty property="productiontype" prepend="and">productiontype=#productiontype#</isNotEmpty>
+        <isNotEmpty property="cassettesequenceno" prepend="and">cassettesequenceno=$cassettesequenceno$</isNotEmpty>
+        <isNotEmpty property="cassetteid" prepend="and">cassetteid=#cassetteid#</isNotEmpty>
+        <isNotEmpty property="porttype" prepend="and">porttype=#porttype#</isNotEmpty>
+        <isNotEmpty property="transfermode" prepend="and">transfermode=#transfermode#</isNotEmpty>
+		<isNotEmpty property="portpausemode" prepend="and">portpausemode=#portpausemode#</isNotEmpty>
+        <isNotEmpty property="portusetype" prepend="and">portusetype=#portusetype#</isNotEmpty>
+        <isNotEmpty property="functionname" prepend="and">functionname=#functionname#</isNotEmpty>
+      </dynamic>
+		order by updatedate desc
+		<isParameterPresent>
+			<isNotNull property="limitpage">
+				limit $limitcount$ offset $limitpage$*$limitcount$
+			</isNotNull>
+		</isParameterPresent>
+	</select>
+
+	  <select id="Viewhis_portCount" resultMap="his_portResultCount"  parameterClass="Hashtable">
+		  select portid from his_port<dynamic prepend="where">
+			  <isNotEmpty property="eqpid" prepend="and">eqpid=#eqpid#</isNotEmpty>
+			  <isNotEmpty property="unitid" prepend="and">unitid=#unitid#</isNotEmpty>
+			  <isNotEmpty property="unitname" prepend="and">unitname=#unitname#</isNotEmpty>
+			  <isNotEmpty property="portno" prepend="and">portno=$portno$</isNotEmpty>
+			  <isNotEmpty property="portid" prepend="and">portid=#portid#</isNotEmpty>
+			  <isNotEmpty property="portstatus" prepend="and">portstatus=$portstatus$</isNotEmpty>
+			  <isNotEmpty property="portmode" prepend="and">portmode=$portmode$</isNotEmpty>
+			  <isNotEmpty property="portcsttype" prepend="and">portcsttype=$portcsttype$</isNotEmpty>
+			  <isNotEmpty property="portoperationmode" prepend="and">portoperationmode=$portoperationmode$</isNotEmpty>
+			  <isNotEmpty property="porttypeautochangemode" prepend="and">porttypeautochangemode=$porttypeautochangemode$</isNotEmpty>
+			  <isNotEmpty property="capacity" prepend="and">capacity=$capacity$</isNotEmpty>
+			  <isNotEmpty property="portqtime" prepend="and">portqtime=$portqtime$</isNotEmpty>
+			  <isNotEmpty property="glasstype" prepend="and">glasstype=$glasstype$</isNotEmpty>
+			  <isNotEmpty property="portgrade" prepend="and">portgrade=#portgrade#</isNotEmpty>
+			  <isNotEmpty property="portenablemode" prepend="and">portenablemode=$portenablemode$</isNotEmpty>
+			  <isNotEmpty property="userms" prepend="and">userms=$userms$</isNotEmpty>
+			  <isNotEmpty property="startcreatedate" prepend="and">updatedate <![CDATA[ >= ]]> #startcreatedate#::timestamp</isNotEmpty>
+			  <isNotEmpty property = "endcreatedate" prepend = "and" > updatedate <![CDATA[ <= ]]> #endcreatedate#::timestamp</isNotEmpty>
+			  <isNotEmpty property="isingetput" prepend="and">isingetput=$isingetput$</isNotEmpty>
+			  <isNotEmpty property="productiontype" prepend="and">productiontype=#productiontype#</isNotEmpty>
+			  <isNotEmpty property="cassettesequenceno" prepend="and">cassettesequenceno=$cassettesequenceno$</isNotEmpty>
+			  <isNotEmpty property="cassetteid" prepend="and">cassetteid=#cassetteid#</isNotEmpty>
+			  <isNotEmpty property="porttype" prepend="and">porttype=#porttype#</isNotEmpty>
+			  <isNotEmpty property="transfermode" prepend="and">transfermode=#transfermode#</isNotEmpty>
+			  <isNotEmpty property="portpausemode" prepend="and">portpausemode=#portpausemode#</isNotEmpty>
+			  <isNotEmpty property="portusetype" prepend="and">portusetype=#portusetype#</isNotEmpty>
+			  <isNotEmpty property="functionname" prepend="and">functionname=#functionname#</isNotEmpty>
+		  </dynamic>
+		  order by updatedate desc
+	  </select>
+
+    <select id="Viewhis_sunit" resultMap="his_sunitResult"  parameterClass="Hashtable">
+      select * from his_sunit<dynamic prepend="where">
+        <isNotEmpty property="eqpid" prepend="and">eqpid=#eqpid#</isNotEmpty>
+        <isNotEmpty property="subunitno" prepend="and">subunitno=#subunitno#</isNotEmpty>
+        <isNotEmpty property="unitid" prepend="and">unitid=#unitid#</isNotEmpty>
+        <isNotEmpty property="unitname" prepend="and">unitname=#unitname#</isNotEmpty>
+        <isNotEmpty property="sunitpathno" prepend="and">sunitpathno=#sunitpathno#</isNotEmpty>
+        <isNotEmpty property="sunittype" prepend="and">sunittype=#sunittype#</isNotEmpty>
+        <isNotEmpty property="sunitid" prepend="and">sunitid=#sunitid#</isNotEmpty>
+        <isNotEmpty property="sunitname" prepend="and">sunitname=#sunitname#</isNotEmpty>
+        <isNotEmpty property="sunitstcode" prepend="and">sunitstcode=#sunitstcode#</isNotEmpty>
+        <isNotEmpty property="hasssunit" prepend="and">hasssunit=$hasssunit$</isNotEmpty>
+        <isNotEmpty property="sunitstatus" prepend="and">sunitstatus=#sunitstatus#</isNotEmpty>
+      </dynamic>
+    </select>
+
+
+    <select id="Viewhis_eqp" resultMap="his_eqpResult"  parameterClass="Hashtable">
+      select * from his_eqp<dynamic prepend="where">
+        <isNotEmpty property="eqpid" prepend="and">eqpid=#eqpid#</isNotEmpty>
+        <isNotEmpty property="startcreatedate" prepend="and">updatedate <![CDATA[ >= ]]> #startcreatedate#::timestamp</isNotEmpty>
+        <isNotEmpty property = "endcreatedate" prepend = "and" > updatedate <![CDATA[ <= ]]> #endcreatedate#::timestamp</isNotEmpty>
+        <isNotEmpty property="reasoncode" prepend="and">reasoncode=#reasoncode#</isNotEmpty>
+        <isNotEmpty property="indexeroperationmode" prepend="and">indexeroperationmode=#indexeroperationmode#</isNotEmpty>
+        <isNotEmpty property="linetype" prepend="and">linetype=$linetype$</isNotEmpty>
+        <isNotEmpty property="linemode" prepend="and">linemode=$linemode$</isNotEmpty>
+        <isNotEmpty property="robotdispatchmode" prepend="and">robotdispatchmode=$robotdispatchmode$</isNotEmpty>
+        <isNotEmpty property="coldruntotalquantity" prepend="and">coldruntotalquantity=$coldruntotalquantity$</isNotEmpty>
+        <isNotEmpty property="coldruncurrentquantity" prepend="and">coldruncurrentquantity=$coldruncurrentquantity$</isNotEmpty>
+        <isNotEmpty property="eqpstatus" prepend="and">eqpstatus=#eqpstatus#</isNotEmpty>
+        <isNotEmpty property="functionname" prepend="and">functionname=#functionname#</isNotEmpty>
+      </dynamic>
+    </select>
+
+
+
+    <select id="Viewcfg_glassexistenceposition" resultMap="cfg_glassexistencepositionResult"  parameterClass="Hashtable">
+      select * from cfg_glassexistenceposition<dynamic prepend="where">
+        <isNotEmpty property="eqpid" prepend="and">eqpid=#eqpid#</isNotEmpty>
+        <isNotEmpty property="unitid" prepend="and">unitid=#unitid#</isNotEmpty>
+        <isNotEmpty property="position" prepend="and">position=$position$</isNotEmpty>
+        <isNotEmpty property="positionname" prepend="and">positionname=#positionname#</isNotEmpty>
+        <isNotEmpty property="cassettesequenceno" prepend="and">cassettesequenceno=$cassettesequenceno$</isNotEmpty>
+        <isNotEmpty property="slotsequenceno" prepend="and">slotsequenceno=$slotsequenceno$</isNotEmpty>
+      </dynamic>
+      order by position asc
+    </select>
+
+    <select id="ViewGlassInfoEvent" resultMap="GlassInfoEventResult">
+      select functionname from his_glassinfo GROUP BY functionname
+    </select>
+    <select id="Viewhis_glassinfo" resultMap="his_glassinfoResult"  parameterClass="Hashtable">
+      select * from his_glassinfo<dynamic prepend="where">
+        <isNotEmpty property="functionname" prepend="and">functionname=#functionname#</isNotEmpty>
+        <isNotEmpty property="productid" prepend="and">productid=#productid#</isNotEmpty>
+        <isNotEmpty property="operationid" prepend="and">operationid=#operationid#</isNotEmpty>
+        <isNotEmpty property="lotid" prepend="and">lotid=#lotid#</isNotEmpty>
+        <isNotEmpty property="ppid1" prepend="and">ppid1=#ppid1#</isNotEmpty>
+        <isNotEmpty property="ppid2" prepend="and">ppid2=#ppid2#</isNotEmpty>
+        <isNotEmpty property="ppid3" prepend="and">ppid3=#ppid3#</isNotEmpty>
+        <isNotEmpty property="ppid4" prepend="and">ppid4=#ppid4#</isNotEmpty>
+        <isNotEmpty property="ppid5" prepend="and">ppid5=#ppid5#</isNotEmpty>
+        <isNotEmpty property="ppid6" prepend="and">ppid6=#ppid6#</isNotEmpty>
+        <isNotEmpty property="ppid7" prepend="and">ppid7=#ppid7#</isNotEmpty>
+        <isNotEmpty property="ppid8" prepend="and">ppid8=#ppid8#</isNotEmpty>
+        <isNotEmpty property="ppid9" prepend="and">ppid9=#ppid9#</isNotEmpty>
+        <isNotEmpty property="ppid10" prepend="and">ppid10=#ppid10#</isNotEmpty>
+        <isNotEmpty property="glassid" prepend="and">glassid=#glassid#</isNotEmpty>
+        <isNotEmpty property="cassettesequenceno" prepend="and">cassettesequenceno=$cassettesequenceno$</isNotEmpty>
+        <isNotEmpty property="slotsequenceno" prepend="and">slotsequenceno=$slotsequenceno$</isNotEmpty>
+        <isNotEmpty property="slotposition" prepend="and">slotposition=$slotposition$</isNotEmpty>
+        <isNotEmpty property="cuttingsequenceno" prepend="and">cuttingsequenceno=$cuttingsequenceno$</isNotEmpty>
+        <isNotEmpty property="glassjudgecode" prepend="and">glassjudgecode=#glassjudgecode#</isNotEmpty>
+        <isNotEmpty property="glassgradecode" prepend="and">glassgradecode=#glassgradecode#</isNotEmpty>
+        <isNotEmpty property="processingflag" prepend="and">processingflag=#processingflag#</isNotEmpty>
+        <isNotEmpty property="glasssizecode" prepend="and">glasssizecode=#glasssizecode#</isNotEmpty>
+        <isNotEmpty property="glassthicknesscode" prepend="and">glassthicknesscode=#glassthicknesscode#</isNotEmpty>
+        <isNotEmpty property="glasstype" prepend="and">glasstype=#glasstype#</isNotEmpty>
+        <isNotEmpty property="lotcode" prepend="and">lotcode=#lotcode#</isNotEmpty>
+        <isNotEmpty property="processingcount" prepend="and">processingcount=#processingcount#</isNotEmpty>
+        <isNotEmpty property="inspectionflag" prepend="and">inspectionflag=#inspectionflag#</isNotEmpty>
+        <isNotEmpty property="skipflag" prepend="and">skipflag=#skipflag#</isNotEmpty>
+        <isNotEmpty property="inlineeqdata" prepend="and">inlineeqdata=#inlineeqdata#</isNotEmpty>
+        <isNotEmpty property="workorder" prepend="and">workorder=#workorder#</isNotEmpty>
+        <isNotEmpty property="processflowname" prepend="and">processflowname=#processflowname#</isNotEmpty>
+        <isNotEmpty property="processflowversion" prepend="and">processflowversion=#processflowversion#</isNotEmpty>
+        <isNotEmpty property="processoperationversion" prepend="and">processoperationversion=#processoperationversion#</isNotEmpty>
+        <isNotEmpty property="productspecversion" prepend="and">productspecversion=#productspecversion#</isNotEmpty>
+        <isNotEmpty property="productiontype" prepend="and">productiontype=#productiontype#</isNotEmpty>
+        <isNotEmpty property="halfproductjudge" prepend="and">halfproductjudge=#halfproductjudge#</isNotEmpty>
+        <isNotEmpty property="glassmaker" prepend="and">glassmaker=#glassmaker#</isNotEmpty>
+        <isNotEmpty property="productrecipe" prepend="and">productrecipe=#productrecipe#</isNotEmpty>
+        <isNotEmpty property="reworktype" prepend="and">reworktype=#reworktype#</isNotEmpty>
+        <isNotEmpty property="reworkcount" prepend="and">reworkcount=#reworkcount#</isNotEmpty>
+        <isNotEmpty property="samplingflag" prepend="and">samplingflag=#samplingflag#</isNotEmpty>
+        <isNotEmpty property="exposurerecipename" prepend="and">exposurerecipename=#exposurerecipename#</isNotEmpty>
+        <isNotEmpty property="turndegree" prepend="and">turndegree=#turndegree#</isNotEmpty>
+        <isNotEmpty property="flowmodevalue" prepend="and">flowmodevalue=#flowmodevalue#</isNotEmpty>
+        <isNotEmpty property="evaskipflag" prepend="and">evaskipflag=#evaskipflag#</isNotEmpty>
+        <isNotEmpty property="beforeprocessmachine" prepend="and">beforeprocessmachine=#beforeprocessmachine#</isNotEmpty>
+        <isNotEmpty property="producttype" prepend="and">producttype=#producttype#</isNotEmpty>
+        <isNotEmpty property="maskspecname" prepend="and">maskspecname=#maskspecname#</isNotEmpty>
+        <isNotEmpty property="processflowrunstate" prepend="and">processflowrunstate=#processflowrunstate#</isNotEmpty>
+        <isNotEmpty property="position" prepend="and">position=$position$</isNotEmpty>
+        <isNotEmpty property="processinginfo" prepend="and">processinginfo=#processinginfo#</isNotEmpty>
+        <isNotEmpty property="vcrproductname" prepend="and">vcrproductname=#vcrproductname#</isNotEmpty>
+        <isNotEmpty property="nginputcomment" prepend="and">nginputcomment=#nginputcomment#</isNotEmpty>
+        <isNotEmpty property="panelgrade" prepend="and">panelgrade=#panelgrade#</isNotEmpty>
+        <isNotEmpty property="paneljudge" prepend="and">paneljudge=#paneljudge#</isNotEmpty>
+        <isNotEmpty property="updatedate" prepend="and">updatedate=#updatedate#</isNotEmpty>
+        <isNotEmpty property="modelposition" prepend="and">modelposition=$modelposition$</isNotEmpty>
+        <isNotEmpty property="currentunit" prepend="and">currentunit=#currentunit#</isNotEmpty>
+        <isNotEmpty property="productalarm" prepend="and">productalarm=$productalarm$</isNotEmpty>
+        <isNotEmpty property="rglassid" prepend="and">rglassid=#rglassid#</isNotEmpty>
+        <isNotEmpty property="slotsatus" prepend="and">slotsatus=$slotsatus$</isNotEmpty>
+        <isNotEmpty property="fetchdatetime" prepend="and">fetchdatetime=#fetchdatetime#</isNotEmpty>
+        <isNotEmpty property="portid" prepend="and">portid=#portid#</isNotEmpty>
+        <isNotEmpty property="cassetteid" prepend="and">cassetteid=#cassetteid#</isNotEmpty>
+        <isNotEmpty property="currentsunit" prepend="and">currentsunit like '%' || #currentsunit# || '%'</isNotEmpty>
+        <isNotEmpty property="currentssunit" prepend="and">currentssunit=#currentssunit#</isNotEmpty>
+        <isNotEmpty property="begindate" prepend="and">begindate=#begindate#</isNotEmpty>
+        <isNotEmpty property="enddate" prepend="and">enddate=#enddate#</isNotEmpty>
+        <isNotEmpty property="currentslotno" prepend="and">currentslotno=$currentslotno$</isNotEmpty>
+        <isNotEmpty property="startcreatedate" prepend="and">createdate <![CDATA[ >= ]]> #startcreatedate#::timestamp</isNotEmpty>
+        <isNotEmpty property = "endcreatedate" prepend = "and" > createdate <![CDATA[ <= ]]> #endcreatedate#::timestamp</isNotEmpty>
+        <isNotEmpty property="slotflag" prepend="and">slotflag=$slotflag$</isNotEmpty>
+        <isNotEmpty property="modepath" prepend="and">processmode=#modepath#</isNotEmpty>
+      </dynamic>
+		order by updatedate desc
+		<isParameterPresent>
+			<isNotNull property="limitpage">
+				limit $limitcount$ offset $limitpage$*$limitcount$
+			</isNotNull>
+		</isParameterPresent>
+	</select>
+
+	  <select id="Viewhis_glassinfoCount" parameterClass="Hashtable" resultMap="his_glassinfoResultCount">
+		  select count(1) as rowcount from his_glassinfo
+		  <dynamic prepend="where">
+			  <isNotEmpty property="functionname" prepend="and">functionname=#functionname#</isNotEmpty>
+			  <isNotEmpty property="productid" prepend="and">productid=#productid#</isNotEmpty>
+			  <isNotEmpty property="operationid" prepend="and">operationid=#operationid#</isNotEmpty>
+			  <isNotEmpty property="lotid" prepend="and">lotid=#lotid#</isNotEmpty>
+			  <isNotEmpty property="ppid1" prepend="and">ppid1=#ppid1#</isNotEmpty>
+			  <isNotEmpty property="ppid2" prepend="and">ppid2=#ppid2#</isNotEmpty>
+			  <isNotEmpty property="ppid3" prepend="and">ppid3=#ppid3#</isNotEmpty>
+			  <isNotEmpty property="ppid4" prepend="and">ppid4=#ppid4#</isNotEmpty>
+			  <isNotEmpty property="ppid5" prepend="and">ppid5=#ppid5#</isNotEmpty>
+			  <isNotEmpty property="ppid6" prepend="and">ppid6=#ppid6#</isNotEmpty>
+			  <isNotEmpty property="ppid7" prepend="and">ppid7=#ppid7#</isNotEmpty>
+			  <isNotEmpty property="ppid8" prepend="and">ppid8=#ppid8#</isNotEmpty>
+			  <isNotEmpty property="ppid9" prepend="and">ppid9=#ppid9#</isNotEmpty>
+			  <isNotEmpty property="ppid10" prepend="and">ppid10=#ppid10#</isNotEmpty>
+			  <isNotEmpty property="glassid" prepend="and">glassid=#glassid#</isNotEmpty>
+			  <isNotEmpty property="cassettesequenceno" prepend="and">cassettesequenceno=$cassettesequenceno$</isNotEmpty>
+			  <isNotEmpty property="slotsequenceno" prepend="and">slotsequenceno=$slotsequenceno$</isNotEmpty>
+			  <isNotEmpty property="slotposition" prepend="and">slotposition=$slotposition$</isNotEmpty>
+			  <isNotEmpty property="cuttingsequenceno" prepend="and">cuttingsequenceno=$cuttingsequenceno$</isNotEmpty>
+			  <isNotEmpty property="glassjudgecode" prepend="and">glassjudgecode=#glassjudgecode#</isNotEmpty>
+			  <isNotEmpty property="glassgradecode" prepend="and">glassgradecode=#glassgradecode#</isNotEmpty>
+			  <isNotEmpty property="processingflag" prepend="and">processingflag=#processingflag#</isNotEmpty>
+			  <isNotEmpty property="glasssizecode" prepend="and">glasssizecode=#glasssizecode#</isNotEmpty>
+			  <isNotEmpty property="glassthicknesscode" prepend="and">glassthicknesscode=#glassthicknesscode#</isNotEmpty>
+			  <isNotEmpty property="glasstype" prepend="and">glasstype=#glasstype#</isNotEmpty>
+			  <isNotEmpty property="lotcode" prepend="and">lotcode=#lotcode#</isNotEmpty>
+			  <isNotEmpty property="processingcount" prepend="and">processingcount=#processingcount#</isNotEmpty>
+			  <isNotEmpty property="inspectionflag" prepend="and">inspectionflag=#inspectionflag#</isNotEmpty>
+			  <isNotEmpty property="skipflag" prepend="and">skipflag=#skipflag#</isNotEmpty>
+			  <isNotEmpty property="inlineeqdata" prepend="and">inlineeqdata=#inlineeqdata#</isNotEmpty>
+			  <isNotEmpty property="workorder" prepend="and">workorder=#workorder#</isNotEmpty>
+			  <isNotEmpty property="processflowname" prepend="and">processflowname=#processflowname#</isNotEmpty>
+			  <isNotEmpty property="processflowversion" prepend="and">processflowversion=#processflowversion#</isNotEmpty>
+			  <isNotEmpty property="processoperationversion" prepend="and">processoperationversion=#processoperationversion#</isNotEmpty>
+			  <isNotEmpty property="productspecversion" prepend="and">productspecversion=#productspecversion#</isNotEmpty>
+			  <isNotEmpty property="productiontype" prepend="and">productiontype=#productiontype#</isNotEmpty>
+			  <isNotEmpty property="halfproductjudge" prepend="and">halfproductjudge=#halfproductjudge#</isNotEmpty>
+			  <isNotEmpty property="glassmaker" prepend="and">glassmaker=#glassmaker#</isNotEmpty>
+			  <isNotEmpty property="productrecipe" prepend="and">productrecipe=#productrecipe#</isNotEmpty>
+			  <isNotEmpty property="reworktype" prepend="and">reworktype=#reworktype#</isNotEmpty>
+			  <isNotEmpty property="reworkcount" prepend="and">reworkcount=#reworkcount#</isNotEmpty>
+			  <isNotEmpty property="samplingflag" prepend="and">samplingflag=#samplingflag#</isNotEmpty>
+			  <isNotEmpty property="exposurerecipename" prepend="and">exposurerecipename=#exposurerecipename#</isNotEmpty>
+			  <isNotEmpty property="turndegree" prepend="and">turndegree=#turndegree#</isNotEmpty>
+			  <isNotEmpty property="flowmodevalue" prepend="and">flowmodevalue=#flowmodevalue#</isNotEmpty>
+			  <isNotEmpty property="evaskipflag" prepend="and">evaskipflag=#evaskipflag#</isNotEmpty>
+			  <isNotEmpty property="beforeprocessmachine" prepend="and">beforeprocessmachine=#beforeprocessmachine#</isNotEmpty>
+			  <isNotEmpty property="producttype" prepend="and">producttype=#producttype#</isNotEmpty>
+			  <isNotEmpty property="maskspecname" prepend="and">maskspecname=#maskspecname#</isNotEmpty>
+			  <isNotEmpty property="processflowrunstate" prepend="and">processflowrunstate=#processflowrunstate#</isNotEmpty>
+			  <isNotEmpty property="position" prepend="and">position=$position$</isNotEmpty>
+			  <isNotEmpty property="processinginfo" prepend="and">processinginfo=#processinginfo#</isNotEmpty>
+			  <isNotEmpty property="vcrproductname" prepend="and">vcrproductname=#vcrproductname#</isNotEmpty>
+			  <isNotEmpty property="nginputcomment" prepend="and">nginputcomment=#nginputcomment#</isNotEmpty>
+			  <isNotEmpty property="panelgrade" prepend="and">panelgrade=#panelgrade#</isNotEmpty>
+			  <isNotEmpty property="paneljudge" prepend="and">paneljudge=#paneljudge#</isNotEmpty>
+			  <isNotEmpty property="updatedate" prepend="and">updatedate=#updatedate#</isNotEmpty>
+			  <isNotEmpty property="modelposition" prepend="and">modelposition=$modelposition$</isNotEmpty>
+			  <isNotEmpty property="currentunit" prepend="and">currentunit=#currentunit#</isNotEmpty>
+			  <isNotEmpty property="productalarm" prepend="and">productalarm=$productalarm$</isNotEmpty>
+			  <isNotEmpty property="rglassid" prepend="and">rglassid=#rglassid#</isNotEmpty>
+			  <isNotEmpty property="slotsatus" prepend="and">slotsatus=$slotsatus$</isNotEmpty>
+			  <isNotEmpty property="fetchdatetime" prepend="and">fetchdatetime=#fetchdatetime#</isNotEmpty>
+			  <isNotEmpty property="portid" prepend="and">portid=#portid#</isNotEmpty>
+			  <isNotEmpty property="cassetteid" prepend="and">cassetteid=#cassetteid#</isNotEmpty>
+			  <isNotEmpty property="currentsunit" prepend="and">currentsunit like '%' || #currentsunit# || '%'</isNotEmpty>
+			  <isNotEmpty property="currentssunit" prepend="and">currentssunit=#currentssunit#</isNotEmpty>
+			  <isNotEmpty property="begindate" prepend="and">begindate=#begindate#</isNotEmpty>
+			  <isNotEmpty property="enddate" prepend="and">enddate=#enddate#</isNotEmpty>
+			  <isNotEmpty property="currentslotno" prepend="and">currentslotno=$currentslotno$</isNotEmpty>
+			  <isNotEmpty property="startcreatedate" prepend="and">createdate <![CDATA[ >= ]]> #startcreatedate#::timestamp</isNotEmpty>
+			  <isNotEmpty property = "endcreatedate" prepend = "and" > createdate <![CDATA[ <= ]]> #endcreatedate#::timestamp</isNotEmpty>
+			  <isNotEmpty property="slotflag" prepend="and">slotflag=$slotflag$</isNotEmpty>
+			  <isNotEmpty property="modepath" prepend="and">processmode=#modepath#</isNotEmpty>
+		  </dynamic>
+	  </select>
+
+
+
+    <select id="Viewhis_cassette" resultMap="his_cassetteResult"  parameterClass="Hashtable">
+      select * from his_cassette<dynamic prepend="where">
+        <isNotEmpty property="eqpid" prepend="and">eqpid=#eqpid#</isNotEmpty>
+        <isNotEmpty property="unitid" prepend="and">unitid=#unitid#</isNotEmpty>
+        <isNotEmpty property="unitname" prepend="and">unitname=#unitname#</isNotEmpty>
+        <isNotEmpty property="portno" prepend="and">portno=$portno$</isNotEmpty>
+        <isNotEmpty property="portid" prepend="and">portid=#portid#</isNotEmpty>
+        <isNotEmpty property="cassettesequenceno" prepend="and">cassettesequenceno=$cassettesequenceno$</isNotEmpty>
+        <isNotEmpty property="cassettestatus" prepend="and">cassettestatus=$cassettestatus$</isNotEmpty>
+        <isNotEmpty property="porttype" prepend="and">porttype=$porttype$</isNotEmpty>
+        <isNotEmpty property="portstatus" prepend="and">portstatus=$portstatus$</isNotEmpty>
+        <isNotEmpty property="cassetteid" prepend="and">cassetteid=#cassetteid#</isNotEmpty>
+        <isNotEmpty property="lotname" prepend="and">lotname=#lotname#</isNotEmpty>
+        <isNotEmpty property="processflowname" prepend="and">processflowname=#processflowname#</isNotEmpty>
+        <isNotEmpty property="processflowversion" prepend="and">processflowversion=#processflowversion#</isNotEmpty>
+        <isNotEmpty property="processoperationname" prepend="and">processoperationname=#processoperationname#</isNotEmpty>
+        <isNotEmpty property="processoperationversion" prepend="and">processoperationversion=#processoperationversion#</isNotEmpty>
+        <isNotEmpty property="portusetype" prepend="and">portusetype=#portusetype#</isNotEmpty>
+        <isNotEmpty property="productspecname" prepend="and">productspecname=#productspecname#</isNotEmpty>
+        <isNotEmpty property="productspecversion" prepend="and">productspecversion=#productspecversion#</isNotEmpty>
+        <isNotEmpty property="productiontype" prepend="and">productiontype=#productiontype#</isNotEmpty>
+        <isNotEmpty property="productquantity" prepend="and">productquantity=$productquantity$</isNotEmpty>
+        <isNotEmpty property="slotmap" prepend="and">slotmap=#slotmap#</isNotEmpty>
+        <isNotEmpty property="slotsel" prepend="and">slotsel=#slotsel#</isNotEmpty>
+        <isNotEmpty property="machinerecipename" prepend="and">machinerecipename=#machinerecipename#</isNotEmpty>
+        <isNotEmpty property="workorder" prepend="and">workorder=#workorder#</isNotEmpty>
+        <isNotEmpty property="lotjudge" prepend="and">lotjudge=#lotjudge#</isNotEmpty>
+        <isNotEmpty property="cassetteprocessendtime" prepend="and">cassetteprocessendtime=#cassetteprocessendtime#</isNotEmpty>
+        <isNotEmpty property="cassetteprocessstarttime" prepend="and">cassetteprocessstarttime=#cassetteprocessstarttime#</isNotEmpty>
+        <isNotEmpty property="startcreatedate" prepend="and">updatedate <![CDATA[ >= ]]> #startcreatedate#::timestamp</isNotEmpty>
+        <isNotEmpty property = "endcreatedate" prepend = "and" > updatedate <![CDATA[ <= ]]> #endcreatedate#::timestamp</isNotEmpty>
+        <isNotEmpty property="qtimeflag" prepend="and">qtimeflag=$qtimeflag$</isNotEmpty>
+        <isNotEmpty property="cassettecode" prepend="and">cassettecode=#cassettecode#</isNotEmpty>
+        <isNotEmpty property="jobexistenceslot" prepend="and">jobexistenceslot=#jobexistenceslot#</isNotEmpty>
+        <isNotEmpty property="carriertype" prepend="and">carriertype=#carriertype#</isNotEmpty>
+        <isNotEmpty property="compeletedcassettedata" prepend="and">compeletedcassettedata=$compeletedcassettedata$</isNotEmpty>
+        <isNotEmpty property="functionname" prepend="and">functionname=#functionname#</isNotEmpty>
+		<isNotEmpty property="id" prepend="and">id=#id#</isNotEmpty>
+      </dynamic>
+		order by updatedate desc
+		<isParameterPresent>
+			<isNotNull property="limitpage">
+				limit $limitcount$ offset $limitpage$*$limitcount$
+			</isNotNull>
+		</isParameterPresent>
+	</select>
+
+	  <select id="Viewhis_cassetteCount" resultMap="his_cassetteResultCount"  parameterClass="Hashtable">
+		  select id from his_cassette<dynamic prepend="where">
+			  <isNotEmpty property="eqpid" prepend="and">eqpid=#eqpid#</isNotEmpty>
+			  <isNotEmpty property="unitid" prepend="and">unitid=#unitid#</isNotEmpty>
+			  <isNotEmpty property="unitname" prepend="and">unitname=#unitname#</isNotEmpty>
+			  <isNotEmpty property="portno" prepend="and">portno=$portno$</isNotEmpty>
+			  <isNotEmpty property="portid" prepend="and">portid=#portid#</isNotEmpty>
+			  <isNotEmpty property="cassettesequenceno" prepend="and">cassettesequenceno=$cassettesequenceno$</isNotEmpty>
+			  <isNotEmpty property="cassettestatus" prepend="and">cassettestatus=$cassettestatus$</isNotEmpty>
+			  <isNotEmpty property="porttype" prepend="and">porttype=$porttype$</isNotEmpty>
+			  <isNotEmpty property="portstatus" prepend="and">portstatus=$portstatus$</isNotEmpty>
+			  <isNotEmpty property="cassetteid" prepend="and">cassetteid=#cassetteid#</isNotEmpty>
+			  <isNotEmpty property="lotname" prepend="and">lotname=#lotname#</isNotEmpty>
+			  <isNotEmpty property="processflowname" prepend="and">processflowname=#processflowname#</isNotEmpty>
+			  <isNotEmpty property="processflowversion" prepend="and">processflowversion=#processflowversion#</isNotEmpty>
+			  <isNotEmpty property="processoperationname" prepend="and">processoperationname=#processoperationname#</isNotEmpty>
+			  <isNotEmpty property="processoperationversion" prepend="and">processoperationversion=#processoperationversion#</isNotEmpty>
+			  <isNotEmpty property="portusetype" prepend="and">portusetype=#portusetype#</isNotEmpty>
+			  <isNotEmpty property="productspecname" prepend="and">productspecname=#productspecname#</isNotEmpty>
+			  <isNotEmpty property="productspecversion" prepend="and">productspecversion=#productspecversion#</isNotEmpty>
+			  <isNotEmpty property="productiontype" prepend="and">productiontype=#productiontype#</isNotEmpty>
+			  <isNotEmpty property="productquantity" prepend="and">productquantity=$productquantity$</isNotEmpty>
+			  <isNotEmpty property="slotmap" prepend="and">slotmap=#slotmap#</isNotEmpty>
+			  <isNotEmpty property="slotsel" prepend="and">slotsel=#slotsel#</isNotEmpty>
+			  <isNotEmpty property="machinerecipename" prepend="and">machinerecipename=#machinerecipename#</isNotEmpty>
+			  <isNotEmpty property="workorder" prepend="and">workorder=#workorder#</isNotEmpty>
+			  <isNotEmpty property="lotjudge" prepend="and">lotjudge=#lotjudge#</isNotEmpty>
+			  <isNotEmpty property="cassetteprocessendtime" prepend="and">cassetteprocessendtime=#cassetteprocessendtime#</isNotEmpty>
+			  <isNotEmpty property="cassetteprocessstarttime" prepend="and">cassetteprocessstarttime=#cassetteprocessstarttime#</isNotEmpty>
+			  <isNotEmpty property="startcreatedate" prepend="and">updatedate <![CDATA[ >= ]]> #startcreatedate#::timestamp</isNotEmpty>
+			  <isNotEmpty property = "endcreatedate" prepend = "and" > updatedate <![CDATA[ <= ]]> #endcreatedate#::timestamp</isNotEmpty>
+			  <isNotEmpty property="qtimeflag" prepend="and">qtimeflag=$qtimeflag$</isNotEmpty>
+			  <isNotEmpty property="cassettecode" prepend="and">cassettecode=#cassettecode#</isNotEmpty>
+			  <isNotEmpty property="jobexistenceslot" prepend="and">jobexistenceslot=#jobexistenceslot#</isNotEmpty>
+			  <isNotEmpty property="carriertype" prepend="and">carriertype=#carriertype#</isNotEmpty>
+			  <isNotEmpty property="compeletedcassettedata" prepend="and">compeletedcassettedata=$compeletedcassettedata$</isNotEmpty>
+			  <isNotEmpty property="functionname" prepend="and">functionname=#functionname#</isNotEmpty>
+			  <isNotEmpty property="id" prepend="and">id=#id#</isNotEmpty>
+		  </dynamic>
+		  order by updatedate desc
+	  </select>
+
+    <select id="Viewhis_unit" resultMap="his_unitResult"  parameterClass="Hashtable">
+      select * from his_unit<dynamic prepend="where">
+        <isNotEmpty property="functionname" prepend="and">functionname=#functionname#</isNotEmpty>
+        <isNotEmpty property="eqpid" prepend="and">eqpid=#eqpid#</isNotEmpty>
+        <isNotEmpty property="unitid" prepend="and">unitid=#unitid#</isNotEmpty>
+        <isNotEmpty property="unitname" prepend="and">unitname=#unitname#</isNotEmpty>
+        <isNotEmpty property="unittype" prepend="and">unittype=$unittype$</isNotEmpty>
+        <isNotEmpty property="unitcapacity" prepend="and">unitcapacity=$unitcapacity$</isNotEmpty>
+        <isNotEmpty property="reasoncode" prepend="and">reasoncode=#reasoncode#</isNotEmpty>
+        <isNotEmpty property="unitstcode" prepend="and">unitstcode=#unitstcode#</isNotEmpty>
+        <isNotEmpty property="hassunit" prepend="and">hassunit=$hassunit$</isNotEmpty>
+        <isNotEmpty property="unitmode" prepend="and">unitmode=$unitmode$</isNotEmpty>
+        <isNotEmpty property="cassetteoperationmode" prepend="and">cassetteoperationmode=$cassetteoperationmode$</isNotEmpty>
+		<isNotEmpty property="iseqpend" prepend="and">iseqpend=#iseqpend#</isNotEmpty>
+		<isNotEmpty property="iseqpstart" prepend="and">iseqpstart=#iseqpstart#</isNotEmpty>
+		<isNotEmpty property="currentrecipeidcheck" prepend="and">currentrecipeidcheck=#currentrecipeidcheck#</isNotEmpty>
+		<isNotEmpty property="isprocessend" prepend="and">isprocessend=#isprocessend#</isNotEmpty>
+		<isNotEmpty property="isjobdatarequest" prepend="and">isjobdatarequest=#isjobdatarequest#</isNotEmpty>
+		<isNotEmpty property="vcrstatus" prepend="and">vcrstatus=#vcrstatus#</isNotEmpty>
+		<isNotEmpty property="localno" prepend="and">localno=#localno#</isNotEmpty>
+        <isNotEmpty property="portqtime" prepend="and">portqtime=$portqtime$</isNotEmpty>
+        <isNotEmpty property="commandtype" prepend="and">commandtype=$commandtype$</isNotEmpty>
+        <isNotEmpty property="currentrecipeid" prepend="and">currentrecipeid=$currentrecipeid$</isNotEmpty>
+        <isNotEmpty property="downstreaminlinemode" prepend="and">downstreaminlinemode=$downstreaminlinemode$</isNotEmpty>
+        <isNotEmpty property="upstreaminlinemode" prepend="and">upstreaminlinemode=$upstreaminlinemode$</isNotEmpty>
+        <isNotEmpty property="unitno" prepend="and">unitno=#unitno#</isNotEmpty>
+        <isNotEmpty property="loadingstop" prepend="and">loadingstop=$loadingstop$</isNotEmpty>
+        <isNotEmpty property="crst" prepend="and">crst=$crst$</isNotEmpty>
+        <isNotEmpty property="unitstatus" prepend="and">unitstatus=#unitstatus#</isNotEmpty>
+		<isNotEmpty property="cimmode" prepend="and">cimmode=#cimmode#</isNotEmpty>
+        <isNotEmpty property="startcreatedate" prepend="and">createdate <![CDATA[ >= ]]> #startcreatedate#::timestamp</isNotEmpty>
+        <isNotEmpty property = "endcreatedate" prepend = "and" > createdate <![CDATA[ <= ]]> #endcreatedate#::timestamp</isNotEmpty>
+	  </dynamic>
+		order by createdate desc
+		<isParameterPresent>
+			<isNotNull property="limitpage">
+				limit $limitcount$ offset $limitpage$*$limitcount$
+			</isNotNull>
+		</isParameterPresent>
+    </select>
+
+	  <select id="Viewhis_unitCount" resultMap="his_unitResultCount"  parameterClass="Hashtable">
+		  select unitno from his_unit<dynamic prepend="where">
+			  <isNotEmpty property="functionname" prepend="and">functionname=#functionname#</isNotEmpty>
+			  <isNotEmpty property="eqpid" prepend="and">eqpid=#eqpid#</isNotEmpty>
+			  <isNotEmpty property="unitid" prepend="and">unitid=#unitid#</isNotEmpty>
+			  <isNotEmpty property="unitname" prepend="and">unitname=#unitname#</isNotEmpty>
+			  <isNotEmpty property="unittype" prepend="and">unittype=$unittype$</isNotEmpty>
+			  <isNotEmpty property="unitcapacity" prepend="and">unitcapacity=$unitcapacity$</isNotEmpty>
+			  <isNotEmpty property="reasoncode" prepend="and">reasoncode=#reasoncode#</isNotEmpty>
+			  <isNotEmpty property="unitstcode" prepend="and">unitstcode=#unitstcode#</isNotEmpty>
+			  <isNotEmpty property="hassunit" prepend="and">hassunit=$hassunit$</isNotEmpty>
+			  <isNotEmpty property="unitmode" prepend="and">unitmode=$unitmode$</isNotEmpty>
+			  <isNotEmpty property="cassetteoperationmode" prepend="and">cassetteoperationmode=$cassetteoperationmode$</isNotEmpty>
+			  <isNotEmpty property="iseqpend" prepend="and">iseqpend=#iseqpend#</isNotEmpty>
+			  <isNotEmpty property="iseqpstart" prepend="and">iseqpstart=#iseqpstart#</isNotEmpty>
+			  <isNotEmpty property="currentrecipeidcheck" prepend="and">currentrecipeidcheck=#currentrecipeidcheck#</isNotEmpty>
+			  <isNotEmpty property="isprocessend" prepend="and">isprocessend=#isprocessend#</isNotEmpty>
+			  <isNotEmpty property="isjobdatarequest" prepend="and">isjobdatarequest=#isjobdatarequest#</isNotEmpty>
+			  <isNotEmpty property="vcrstatus" prepend="and">vcrstatus=#vcrstatus#</isNotEmpty>
+			  <isNotEmpty property="localno" prepend="and">localno=#localno#</isNotEmpty>
+			  <isNotEmpty property="portqtime" prepend="and">portqtime=$portqtime$</isNotEmpty>
+			  <isNotEmpty property="commandtype" prepend="and">commandtype=$commandtype$</isNotEmpty>
+			  <isNotEmpty property="currentrecipeid" prepend="and">currentrecipeid=$currentrecipeid$</isNotEmpty>
+			  <isNotEmpty property="downstreaminlinemode" prepend="and">downstreaminlinemode=$downstreaminlinemode$</isNotEmpty>
+			  <isNotEmpty property="upstreaminlinemode" prepend="and">upstreaminlinemode=$upstreaminlinemode$</isNotEmpty>
+			  <isNotEmpty property="unitno" prepend="and">unitno=#unitno#</isNotEmpty>
+			  <isNotEmpty property="loadingstop" prepend="and">loadingstop=$loadingstop$</isNotEmpty>
+			  <isNotEmpty property="crst" prepend="and">crst=$crst$</isNotEmpty>
+			  <isNotEmpty property="unitstatus" prepend="and">unitstatus=#unitstatus#</isNotEmpty>
+			  <isNotEmpty property="cimmode" prepend="and">cimmode=#cimmode#</isNotEmpty>
+			  <isNotEmpty property="startcreatedate" prepend="and">createdate <![CDATA[ >= ]]> #startcreatedate#::timestamp</isNotEmpty>
+			  <isNotEmpty property = "endcreatedate" prepend = "and" > createdate <![CDATA[ <= ]]> #endcreatedate#::timestamp</isNotEmpty>
+		  </dynamic>
+		  order by createdate desc
+	  </select>
+
+
+    <select id="Viewcfg_alarmspec" resultMap="cfg_alarmspecResult"  parameterClass="Hashtable">
+      select * from cfg_alarmspec<dynamic prepend="where">
+        <isNotEmpty property="eqpid" prepend="and">eqpid=#eqpid#</isNotEmpty>
+        <isNotEmpty property="alarmtext" prepend="and">alarmtext=#alarmtext#</isNotEmpty>
+        <isNotEmpty property="unitid" prepend="and">unitid=#unitid#</isNotEmpty>
+        <isNotEmpty property="alarmid" prepend="and">alarmid=#alarmid#</isNotEmpty>
+        <isNotEmpty property="createdate" prepend="and">createdate=#createdate#</isNotEmpty>
+        <isNotEmpty property="unitno" prepend="and">unitno=#unitno#</isNotEmpty>
+        <isNotEmpty property="alarmtype" prepend="and">alarmtype=#alarmtype#</isNotEmpty>
+      </dynamic>
+    </select>
+
+    <update id="Updatecfg_alarmspec" parameterClass="Hashtable">
+      UPDATE public.cfg_alarmspec
+      SET  alarmtext=#alarmtext#
+      <dynamic prepend="where">
+        <isNotEmpty property="eqpid" prepend="and">
+          eqpid=#eqpid#
+        </isNotEmpty>
+        <isNotEmpty property="unitid" prepend="and">
+          unitid=#unitid#
+        </isNotEmpty>
+        <isNotEmpty property="alarmid" prepend="and">
+          alarmid=#alarmid#
+        </isNotEmpty>
+      </dynamic>
+    </update>
+
+    <select id="Viewhis_opilog" resultMap="his_opilogResult"  parameterClass="Hashtable">
+      select * from his_opilog<dynamic prepend="where">
+        <isNotEmpty property="userid" prepend="and">userid like '%' || #userid# || '%'</isNotEmpty>
+        <isNotEmpty property="operating" prepend="and">operating like '%' || #operating# || '%'</isNotEmpty>
+        <isNotEmpty property="operationresult" prepend="and">operationresult=#operationresult#</isNotEmpty>
+		<isNotEmpty property="clientip" prepend="and">clientip=#clientip#</isNotEmpty>
+        <isNotEmpty property="createtime" prepend="and">createtime=#createtime#</isNotEmpty>
+		<isNotEmpty property="firstdate" prepend="and">createtime <![CDATA[ >= ]]> #firstdate#::timestamp</isNotEmpty>
+		<isNotEmpty property = "lastdate" prepend = "and" > createtime <![CDATA[ <= ]]> #lastdate#::timestamp</isNotEmpty>
+	  </dynamic>
+		order by createtime desc
+		<isParameterPresent>
+			<isNotNull property="limitpage">
+				limit $limitcount$ offset $limitpage$*$limitcount$
+			</isNotNull>
+		</isParameterPresent>
+	</select>
+
+	  <select id="Viewhis_opilogCount" resultMap="his_opilogResultCount"  parameterClass="Hashtable">
+		  select userid from his_opilog<dynamic prepend="where">
+			  <isNotEmpty property="userid" prepend="and">userid like '%' || #userid# || '%'</isNotEmpty>
+			  <isNotEmpty property="operating" prepend="and">operating like '%' || #operating# || '%'</isNotEmpty>
+			  <isNotEmpty property="operationresult" prepend="and">operationresult=#operationresult#</isNotEmpty>
+			  <isNotEmpty property="clientip" prepend="and">clientip=#clientip#</isNotEmpty>
+			  <isNotEmpty property="createtime" prepend="and">createtime=#createtime#</isNotEmpty>
+			  <isNotEmpty property="firstdate" prepend="and">createtime <![CDATA[ >= ]]> #firstdate#::timestamp</isNotEmpty>
+			  <isNotEmpty property = "lastdate" prepend = "and" > createtime <![CDATA[ <= ]]> #lastdate#::timestamp</isNotEmpty>
+		  </dynamic>
+		  order by createtime desc
+	  </select>
+
+    <insert id="Inserthis_opilog" parameterClass="Hashtable">
+		INSERT INTO his_opilog(
+		userid, operating,operationresult,clientip,createtime)
+		VALUES (#userid#,#operating#, #operationresult#,#clientip#,localtimestamp(0))
+	</insert>
+
+
+    <select id="Viewwip_cassette" resultMap="wip_cassetteResult"  parameterClass="Hashtable">
+      select * from wip_cassette<dynamic prepend="where">
+        <isNotEmpty property="eqpid" prepend="and">eqpid=#eqpid#</isNotEmpty>
+        <isNotEmpty property="unitid" prepend="and">unitid=#unitid#</isNotEmpty>
+        <isNotEmpty property="unitname" prepend="and">unitname=#unitname#</isNotEmpty>
+        <isNotEmpty property="portno" prepend="and">portno=$portno$</isNotEmpty>
+        <isNotEmpty property="portid" prepend="and">portid=#portid#</isNotEmpty>
+        <isNotEmpty property="cassettesequenceno" prepend="and">cassettesequenceno=$cassettesequenceno$</isNotEmpty>
+        <isNotEmpty property="cassettestatus" prepend="and">cassettestatus=$cassettestatus$</isNotEmpty>
+        <isNotEmpty property="porttype" prepend="and">porttype=$porttype$</isNotEmpty>
+        <isNotEmpty property="portstatus" prepend="and">portstatus=$portstatus$</isNotEmpty>
+        <isNotEmpty property="cassetteid" prepend="and">cassetteid=#cassetteid#</isNotEmpty>
+        <isNotEmpty property="lotname" prepend="and">lotname=#lotname#</isNotEmpty>
+        <isNotEmpty property="processflowname" prepend="and">processflowname=#processflowname#</isNotEmpty>
+        <isNotEmpty property="processflowversion" prepend="and">processflowversion=#processflowversion#</isNotEmpty>
+        <isNotEmpty property="processoperationname" prepend="and">processoperationname=#processoperationname#</isNotEmpty>
+        <isNotEmpty property="processoperationversion" prepend="and">processoperationversion=#processoperationversion#</isNotEmpty>
+        <isNotEmpty property="portusetype" prepend="and">portusetype=#portusetype#</isNotEmpty>
+        <isNotEmpty property="productspecname" prepend="and">productspecname=#productspecname#</isNotEmpty>
+        <isNotEmpty property="productspecversion" prepend="and">productspecversion=#productspecversion#</isNotEmpty>
+        <isNotEmpty property="productiontype" prepend="and">productiontype=#productiontype#</isNotEmpty>
+        <isNotEmpty property="productquantity" prepend="and">productquantity=$productquantity$</isNotEmpty>
+        <isNotEmpty property="slotmap" prepend="and">slotmap=#slotmap#</isNotEmpty>
+        <isNotEmpty property="slotsel" prepend="and">slotsel=#slotsel#</isNotEmpty>
+        <isNotEmpty property="machinerecipename" prepend="and">machinerecipename=#machinerecipename#</isNotEmpty>
+        <isNotEmpty property="workorder" prepend="and">workorder=#workorder#</isNotEmpty>
+        <isNotEmpty property="lotjudge" prepend="and">lotjudge=#lotjudge#</isNotEmpty>
+        <isNotEmpty property="cassetteprocessendtime" prepend="and">cassetteprocessendtime <![CDATA[ >= ]]> #cassetteprocessendtime#::timestamp</isNotEmpty>
+        <isNotEmpty property="cassetteprocessstarttime" prepend="and">cassetteprocessstarttime <![CDATA[ >= ]]> #cassetteprocessstarttime#::timestamp</isNotEmpty>
+        <isNotEmpty property="updatedate" prepend="and">updatedate <![CDATA[ >= ]]> #updatedate#::timestamp</isNotEmpty>
+        <isNotEmpty property="qtimeflag" prepend="and">qtimeflag=$qtimeflag$</isNotEmpty>
+        <isNotEmpty property="cassettecode" prepend="and">cassettecode=#cassettecode#</isNotEmpty>
+        <isNotEmpty property="jobexistenceslot" prepend="and">jobexistenceslot=#jobexistenceslot#</isNotEmpty>
+        <isNotEmpty property="carriertype" prepend="and">carriertype=#carriertype#</isNotEmpty>
+        <isNotEmpty property="compeletedcassettedata" prepend="and">compeletedcassettedata=$compeletedcassettedata$</isNotEmpty>
+		<isNotEmpty property="id" prepend="and">id=#id#</isNotEmpty>
+      </dynamic>
+    </select>
+
+
+    <select id="Viewcfg_operationmode" resultMap="cfg_operationmodeResult"  parameterClass="Hashtable">
+      select * from cfg_operationmode<dynamic prepend="where">
+        <isNotEmpty property="eqpid" prepend="and">eqpid=#eqpid#</isNotEmpty>
+        <isNotEmpty property="equipmentvalue" prepend="and">equipmentvalue=$equipmentvalue$</isNotEmpty>
+        <isNotEmpty property="operationmodename" prepend="and">operationmodename=#operationmodename#</isNotEmpty>
+        <isNotEmpty property="updateuser" prepend="and">updateuser=#updateuser#</isNotEmpty>
+      </dynamic>
+      order by equipmentvalue asc
+    </select>
+
+
+    <!--<select id="Viewbc_robot_model" resultMap="bc_robot_modelResult"  parameterClass="Hashtable">
+      select * from bc_robot_model<dynamic prepend="where">
+        <isNotEmpty property="eqpid" prepend="and">eqpid=#eqpid#</isNotEmpty>
+        <isNotEmpty property="unitid" prepend="and">unitid=#unitid#</isNotEmpty>
+        <isNotEmpty property="modelid" prepend="and">modelid=$modelid$</isNotEmpty>
+        <isNotEmpty property="modelposition" prepend="and">modelposition=$modelposition$</isNotEmpty>
+        <isNotEmpty property="uplinkname" prepend="and">uplinkname=#uplinkname#</isNotEmpty>
+        <isNotEmpty property="downlinkname" prepend="and">downlinkname=#downlinkname#</isNotEmpty>
+        <isNotEmpty property="portid" prepend="and">portid=#portid#</isNotEmpty>
+        <isNotEmpty property="sentoutname" prepend="and">sentoutname=#sentoutname#</isNotEmpty>
+        <isNotEmpty property="unitno" prepend="and">unitno=#unitno#</isNotEmpty>
+      </dynamic>
+    </select>-->
+
+
+    <select id="ViewUserGroupList" resultMap="GetBcUserGroupResult" parameterClass="Hashtable">
+      select * from bc_group
+      <dynamic prepend="where">
+        <isNotEmpty property="object_id" prepend="and">
+          object_id=$object_id$
+        </isNotEmpty>
+        <isNotEmpty property="group_id" prepend="and">
+          group_id=#group_id#
+        </isNotEmpty>
+        <isNotEmpty property="description" prepend="and">
+          description=#description#
+        </isNotEmpty>
+        <isNotEmpty property="create_time" prepend="and">
+          create_time=#create_time#
+        </isNotEmpty>
+        <isNotEmpty property="create_user" prepend="and">
+          create_user=#create_user#
+        </isNotEmpty>
+        <isNotEmpty property="update_user" prepend="and">
+          update_user=#update_user#
+        </isNotEmpty>
+        <isNotEmpty property="update_time" prepend="and">
+          update_time=#update_time#
+        </isNotEmpty>
+      </dynamic>
+    </select>
+
+    <insert id="InsertUserGroup" parameterClass="BC_Group">
+      INSERT INTO bc_group(object_id,group_id, description, create_time, create_user)
+      VALUES ((select max(object_id)+1 from bc_group),#group_id#, #description#, localtimestamp(0), #create_user#);
+    </insert>
+
+    <insert id="InsertGroupAuthority" parameterClass="Group_Authority">
+      INSERT INTO bc_group_authority(group_id,menu_name, page_name, action)
+      VALUES (#groupId#,#menuName#, #pageName#, #action#);
+    </insert>
+
+    <select id="ViewUserGroupAuthority" resultMap="GetGroup_AuthorityResult" parameterClass="string">
+      select * from bc_group_authority where group_id=(select groupid from his_user where userid=#value# LIMIT 1)
+    </select>
+
+    <select id="ViewGetGroupIdAuthority" resultMap="GetGroup_AuthorityResult" parameterClass="string">
+      select * from bc_group_authority where group_id=#value#
+    </select>
+
+    <delete id="DeleteUserGroup" parameterClass="string">
+      DELETE FROM bc_group WHERE group_id=#value#;
+      DELETE FROM bc_group_authority WHERE group_id=#value#;
+      DELETE FROM his_user WHERE groupid=#value#;
+    </delete>
+
+    <delete id="DeleteGroupAuthority" parameterClass="string">
+      DELETE FROM bc_group WHERE group_id=#value#;
+      DELETE FROM bc_group_authority WHERE group_id=#value#;
+    </delete>
+
+    <select id="ViewAllTableName" resultMap="AllTableNameResult">
+      SELECT tablename FROM pg_tables where schemaname='public';
+    </select>
+
+    <select id="ViewTableStructure" resultMap="TableStructureResult" parameterClass="string">
+      SELECT a.attnum AS majorKey,
+      a.attname AS propertyName,
+      t.typname AS pType,
+      a.attlen AS pLength,
+      a.atttypmod AS pPoint,
+      a.attnotnull AS isNull,
+      b.description AS description
+      FROM pg_class c,
+      pg_attribute a
+      LEFT OUTER JOIN pg_description b ON a.attrelid=b.objoid AND a.attnum = b.objsubid,
+      pg_type t
+      WHERE c.relname = #value#
+      and a.attnum > 0
+      and a.attrelid = c.oid
+      and a.atttypid = t.oid
+      ORDER BY a.attnum;
+    </select>
+
+    <select id="ViewBcGroupAuthority" resultMap="BcGroupAuthorityResult" parameterClass="Hashtable">
+      select * from bc_group_authority
+      <dynamic prepend="where">
+        <isNotEmpty property="group_id" prepend="and">
+          group_id=#group_id#
+        </isNotEmpty>
+        <isNotEmpty property="menu_name" prepend="and">
+          menu_name=#menu_name#
+        </isNotEmpty>
+        <isNotEmpty property="page_name" prepend="and">
+          page_name=#page_name#
+        </isNotEmpty>
+        <isNotEmpty property="action" prepend="and">
+          action=#action#
+        </isNotEmpty>
+      </dynamic>
+    </select>
+
+    <select id="ViewBcRobotConfigure" resultMap="BcRobotConfigureResult" parameterClass="Hashtable">
+      select * from bc_robot_configure
+      <dynamic prepend="where">
+        <isNotEmpty property="idx_name" prepend="and">
+          idx_name=#idx_name#
+        </isNotEmpty>
+        <isNotEmpty property="robot_name" prepend="and">
+          robot_name=#robot_name#
+        </isNotEmpty>
+        <isNotEmpty property="log_name" prepend="and">
+          log_name=#log_name#
+        </isNotEmpty>
+        <isNotEmpty property="log_path" prepend="and">
+          log_path=#log_path#
+        </isNotEmpty>
+        <isNotEmpty property="line_name" prepend="and">
+          line_name=#line_name#
+        </isNotEmpty>
+      </dynamic>
+    </select>
+
+    <select id="ViewBcRobotGroupCconfigure" resultMap="BcRobotGroupCconfigureResult"  parameterClass="Hashtable">
+      select * from bc_robot_group_configure
+      <dynamic prepend="where">
+        <isNotEmpty property="idx_name" prepend="and">
+          idx_name=#idx_name#
+        </isNotEmpty>
+        <isNotEmpty property="group_name" prepend="and">
+          group_name=#group_name#
+        </isNotEmpty>
+        <isNotEmpty property="group_list" prepend="and">
+          group_list=#group_list#
+        </isNotEmpty>
+        <isNotEmpty property="group_method" prepend="and">
+          group_method=$group_method$
+        </isNotEmpty>
+        <isNotEmpty property="line_name" prepend="and">
+          line_name=#line_name#
+        </isNotEmpty>
+      </dynamic>
+    </select>
+
+    <select id="ViewDisCol" resultMap="DisColResult" parameterClass="Hashtable" >
+      select DISTINCT $returnstr$ as returnstr from $value$
+    </select>
+
+    <select id="Viewbc_robot_linksignal_configure" resultMap="bc_robot_linksignal_configureResult"  parameterClass="Hashtable">
+      select * from bc_robot_linksignal_configure
+      <dynamic prepend="where">
+        <isNotEmpty property="line_name" prepend="and">
+          line_name=#line_name#
+        </isNotEmpty>
+        <isNotEmpty property="eqp_name" prepend="and">
+          eqp_name=#eqp_name#
+        </isNotEmpty>
+        <isNotEmpty property="unit_name" prepend="and">
+          unit_name=#unit_name#
+        </isNotEmpty>
+        <isNotEmpty property="inout_type" prepend="and">
+          inout_type=$inout_type$
+        </isNotEmpty>
+        <isNotEmpty property="is_put_first" prepend="and">
+          is_put_first=$is_put_first$
+        </isNotEmpty>
+        <isNotEmpty property="is_get_delay" prepend="and">
+          is_get_delay=$is_get_delay$
+        </isNotEmpty>
+        <isNotEmpty property="get_delay_time" prepend="and">
+          get_delay_time=$get_delay_time$
+        </isNotEmpty>
+      </dynamic>
+    </select>
+
+    <select id="Viewbc_robot_path_configure_user" resultMap="bc_robot_path_configureResult"  parameterClass="Hashtable">
+      select * from bc_robot_path_configure
+      <dynamic prepend="where">
+        <isNotEmpty property="idx_name" prepend="and">
+          idx_name=#idx_name#
+        </isNotEmpty>
+        <isNotEmpty property="path_name" prepend="and">
+          path_name=#path_name#
+        </isNotEmpty>
+        <isNotEmpty property="source_path_name" prepend="and">
+          source_path_name=#source_path_name#
+        </isNotEmpty>
+        <isNotEmpty property="target_path_name" prepend="and">
+          target_path_name=#target_path_name#
+        </isNotEmpty>
+        <isNotEmpty property="robot_fixed" prepend="and">
+          robot_fixed=$robot_fixed$
+        </isNotEmpty>
+        <isNotEmpty property="robot_arm" prepend="and">
+          robot_arm=$robot_arm$
+        </isNotEmpty>
+        <isNotEmpty property="rule_id" prepend="and">
+          rule_id=#rule_id#
+        </isNotEmpty>
+        <isNotEmpty property="out_source_priority" prepend="and">
+          out_source_priority=$out_source_priority$
+        </isNotEmpty>
+        <isNotEmpty property="in_target_priority" prepend="and">
+          in_target_priority=$in_target_priority$
+        </isNotEmpty>
+        <isNotEmpty property="line_name" prepend="and">
+          line_name=#line_name#
+        </isNotEmpty>
+        <isNotEmpty property="port_get_check_receive" prepend="and">
+          port_get_check_receive=$port_get_check_receive$
+        </isNotEmpty>
+      </dynamic>
+    </select>
+
+
+    <select id="Viewcfg_alarm" resultMap="cfg_alarmResult"  parameterClass="Hashtable">
+      select * from cfg_alarm<dynamic prepend="where">
+        <isNotEmpty property="eqpid" prepend="and">eqpid=#eqpid#</isNotEmpty>
+        <isNotEmpty property="alarmtext" prepend="and">alarmtext=#alarmtext#</isNotEmpty>
+        <isNotEmpty property="alarmenable" prepend="and">alarmenable=$alarmenable$</isNotEmpty>
+        <isNotEmpty property="unitid" prepend="and">unitid=#unitid#</isNotEmpty>
+        <isNotEmpty property="sunitid" prepend="and">sunitid=#sunitid#</isNotEmpty>
+        <isNotEmpty property="alarmcode" prepend="and">alarmcode=#alarmcode#</isNotEmpty>
+        <isNotEmpty property="alarmlevel" prepend="and">alarmlevel=#alarmlevel#</isNotEmpty>
+        <isNotEmpty property="alarmtype" prepend="and">alarmtype=#alarmtype#</isNotEmpty>
+        <isNotEmpty property="alarmid" prepend="and">alarmid=#alarmid#</isNotEmpty>
+      </dynamic>
+    </select>
+    <select id="Viewcfg_ceid" resultMap="cfg_ceidResult"  parameterClass="Hashtable">
+      select * from cfg_ceid<dynamic prepend="where">
+        <isNotEmpty property="ceid" prepend="and">ceid=#ceid#</isNotEmpty>
+        <isNotEmpty property="ceed" prepend="and">ceed=#ceed#</isNotEmpty>
+        <isNotEmpty property="description" prepend="and">description=#description#</isNotEmpty>
+        <isNotEmpty property="isused" prepend="and">isused=$isused$</isNotEmpty>
+        <isNotEmpty property="startupdatetime" prepend="and">updatetime <![CDATA[ >= ]]> #startupdatetime#::timestamp</isNotEmpty>
+        <isNotEmpty property = "endupdatetime" prepend = "and" > updatetime <![CDATA[ <= ]]> #endupdatetime#::timestamp</isNotEmpty>
+      </dynamic>
+    </select>
+    <select id="Viewcfg_ecid" resultMap="cfg_ecidResult"  parameterClass="Hashtable">
+      select * from cfg_ecid<dynamic prepend="where">
+        <isNotEmpty property="ecid" prepend="and">ecid=$ecid$</isNotEmpty>
+        <isNotEmpty property="ecname" prepend="and">ecname=#ecname#</isNotEmpty>
+        <isNotEmpty property="ecmax" prepend="and">ecmax=#ecmax#::float8</isNotEmpty>
+        <isNotEmpty property="ecmin" prepend="and">ecmin=#ecmin#::float8</isNotEmpty>
+        <isNotEmpty property="ecdef" prepend="and">ecdef=#ecdef#::float8</isNotEmpty>
+        <isNotEmpty property="ecv" prepend="and">ecv=#ecv#::float8</isNotEmpty>
+        <isNotEmpty property="startupdatetime" prepend="and">updatetime <![CDATA[ >= ]]> #startupdatetime#::timestamp</isNotEmpty>
+        <isNotEmpty property = "endupdatetime" prepend = "and" > updatetime <![CDATA[ <= ]]> #endupdatetime#::timestamp</isNotEmpty>
+      </dynamic>
+    </select>
+
+    <select id="Viewcfg_eqp" resultMap="cfg_eqpResult"  parameterClass="Hashtable">
+      select * from cfg_eqp<dynamic prepend="where">
+        <isNotEmpty property="eqpid" prepend="and">eqpid=#eqpid#</isNotEmpty>
+        <isNotEmpty property = "updatetime" prepend = "and" > updatetime <![CDATA[ = ]]> #endupdatetime#::timestamp</isNotEmpty>
+        <isNotEmpty property="reasoncode" prepend="and">reasoncode=#reasoncode#</isNotEmpty>
+        <isNotEmpty property="portqtime" prepend="and">portqtime=$portqtime$</isNotEmpty>
+        <isNotEmpty property="indexeroperationmode" prepend="and">indexeroperationmode=#indexeroperationmode#</isNotEmpty>
+        <isNotEmpty property="linetype" prepend="and">linetype=$linetype$</isNotEmpty>
+        <isNotEmpty property="eqpstatus" prepend="and">eqpstatus=#eqpstatus#</isNotEmpty>
+        <isNotEmpty property="linemode" prepend="and">linemode=$linemode$</isNotEmpty>
+        <isNotEmpty property="robotdispatchmode" prepend="and">robotdispatchmode=$robotdispatchmode$</isNotEmpty>
+        <isNotEmpty property="coldruntotalquantity" prepend="and">coldruntotalquantity=$coldruntotalquantity$</isNotEmpty>
+        <isNotEmpty property="coldruncurrentquantity" prepend="and">coldruncurrentquantity=$coldruncurrentquantity$</isNotEmpty>
+      </dynamic>
+    </select>
+
+    <select id="Viewcfg_port" resultMap="cfg_portResult"  parameterClass="Hashtable">
+      select * from cfg_port<dynamic prepend="where">
+        <isNotEmpty property="eqpid" prepend="and">eqpid=#eqpid#</isNotEmpty>
+        <isNotEmpty property="unitid" prepend="and">unitid=#unitid#</isNotEmpty>
+        <isNotEmpty property="unitname" prepend="and">unitname=#unitname#</isNotEmpty>
+        <isNotEmpty property="portno" prepend="and">portno=$portno$</isNotEmpty>
+        <isNotEmpty property="portid" prepend="and">portid=#portid#</isNotEmpty>
+        <isNotEmpty property="portstatus" prepend="and">portstatus=$portstatus$</isNotEmpty>
+        <isNotEmpty property="portmode" prepend="and">portmode=$portmode$</isNotEmpty>
+        <isNotEmpty property="portcsttype" prepend="and">portcsttype=$portcsttype$</isNotEmpty>
+        <isNotEmpty property="portoperationmode" prepend="and">portoperationmode=$portoperationmode$</isNotEmpty>
+        <isNotEmpty property="porttypeautochangemode" prepend="and">porttypeautochangemode=$porttypeautochangemode$</isNotEmpty>
+        <isNotEmpty property="capacity" prepend="and">capacity=$capacity$</isNotEmpty>
+        <isNotEmpty property="portqtime" prepend="and">portqtime=$portqtime$</isNotEmpty>
+        <isNotEmpty property="glasstype" prepend="and">glasstype=$glasstype$</isNotEmpty>
+        <isNotEmpty property="portgrade" prepend="and">portgrade=#portgrade#</isNotEmpty>
+        <isNotEmpty property="portenablemode" prepend="and">portenablemode=$portenablemode$</isNotEmpty>
+        <isNotEmpty property="userms" prepend="and">userms=$userms$</isNotEmpty>
+        <isNotEmpty property="updatedate" prepend="and">updatedate=#updatedate#</isNotEmpty>
+        <isNotEmpty property="isingetput" prepend="and">isingetput=$isingetput$</isNotEmpty>
+        <isNotEmpty property="productiontype" prepend="and">productiontype=#productiontype#</isNotEmpty>
+        <isNotEmpty property="cassettesequenceno" prepend="and">cassettesequenceno=$cassettesequenceno$</isNotEmpty>
+        <isNotEmpty property="cassetteid" prepend="and">cassetteid=#cassetteid#</isNotEmpty>
+        <isNotEmpty property="porttype" prepend="and">porttype=#porttype#</isNotEmpty>
+        <isNotEmpty property="transfermode" prepend="and">transfermode=#transfermode#</isNotEmpty>
+		<isNotEmpty property="portpausemode" prepend="and">portpausemode=#portpausemode#</isNotEmpty>
+        <isNotEmpty property="portusetype" prepend="and">portusetype=#portusetype#</isNotEmpty>
+		 order by portno asc
+      </dynamic>
+    </select>
+
+    <select id="Viewcfg_ssunit" resultMap="cfg_ssunitResult"  parameterClass="Hashtable">
+      select * from cfg_ssunit<dynamic prepend="where">
+        <isNotEmpty property="eqpid" prepend="and">eqpid=#eqpid#</isNotEmpty>
+        <isNotEmpty property="unitid" prepend="and">unitid=#unitid#</isNotEmpty>
+        <isNotEmpty property="unitname" prepend="and">unitname=#unitname#</isNotEmpty>
+        <isNotEmpty property="sunitid" prepend="and">sunitid=#sunitid#</isNotEmpty>
+        <isNotEmpty property="sunitname" prepend="and">sunitname=#sunitname#</isNotEmpty>
+        <isNotEmpty property="ssunitid" prepend="and">ssunitid=#ssunitid#</isNotEmpty>
+        <isNotEmpty property="ssunitname" prepend="and">ssunitname=#ssunitname#</isNotEmpty>
+        <isNotEmpty property="ssunitstatus" prepend="and">ssunitstatus=#ssunitstatus#</isNotEmpty>
+        <isNotEmpty property="ssunitstcode" prepend="and">ssunitstcode=#ssunitstcode#</isNotEmpty>
+        <isNotEmpty property="ssunitno" prepend="and">ssunitno=$ssunitno$</isNotEmpty>
+        <isNotEmpty property="ssunittype" prepend="and">ssunittype=#ssunittype#</isNotEmpty>
+      </dynamic>
+    </select>
+    <select id="Viewcfg_sunit" resultMap="cfg_sunitResult"  parameterClass="Hashtable">
+      select * from cfg_sunit<dynamic prepend="where">
+        <isNotEmpty property="eqpid" prepend="and">eqpid=#eqpid#</isNotEmpty>
+        <isNotEmpty property="subunitno" prepend="and">subunitno=#subunitno#</isNotEmpty>
+        <isNotEmpty property="unitid" prepend="and">unitid=#unitid#</isNotEmpty>
+        <isNotEmpty property="unitname" prepend="and">unitname=#unitname#</isNotEmpty>
+        <isNotEmpty property="sunitpathno" prepend="and">sunitpathno=#sunitpathno#</isNotEmpty>
+        <isNotEmpty property="sunittype" prepend="and">sunittype=#sunittype#</isNotEmpty>
+        <isNotEmpty property="sunitid" prepend="and">sunitid=#sunitid#</isNotEmpty>
+        <isNotEmpty property="sunitname" prepend="and">sunitname=#sunitname#</isNotEmpty>
+        <isNotEmpty property="sunitstatus" prepend="and">sunitstatus=#sunitstatus#</isNotEmpty>
+        <isNotEmpty property="sunitstcode" prepend="and">sunitstcode=#sunitstcode#</isNotEmpty>
+        <isNotEmpty property="linkpathno" prepend="and">linkpathno=#linkpathno#</isNotEmpty>
+        <isNotEmpty property="hasssunit" prepend="and">hasssunit=$hasssunit$</isNotEmpty>
+      </dynamic>
+    </select>
+
+    <select id="Viewcfg_unit" resultMap="cfg_unitResult"  parameterClass="Hashtable">
+      select * from cfg_unit
+      <dynamic prepend="where">
+        <isNotEmpty property="eqpid" prepend="and">eqpid=#eqpid#</isNotEmpty>
+        <isNotEmpty property="unitid" prepend="and">unitid=#unitid#</isNotEmpty>
+        <isNotEmpty property="unitname" prepend="and">unitname=#unitname#</isNotEmpty>
+        <isNotEmpty property="unittype" prepend="and">unittype=$unittype$</isNotEmpty>
+        <isNotEmpty property="unitcapacity" prepend="and">unitcapacity=$unitcapacity$</isNotEmpty>
+        <isNotEmpty property="reasoncode" prepend="and">reasoncode=#reasoncode#</isNotEmpty>
+        <isNotEmpty property="crst" prepend="and">crst=#crst#</isNotEmpty>
+        <isNotEmpty property="unitstcode" prepend="and">unitstcode=#unitstcode#</isNotEmpty>
+        <isNotEmpty property="hassunit" prepend="and">hassunit=$hassunit$</isNotEmpty>
+        <isNotEmpty property="unitmode" prepend="and">unitmode=$unitmode$</isNotEmpty>
+        <isNotEmpty property="cassetteoperationmode" prepend="and">cassetteoperationmode=$cassetteoperationmode$</isNotEmpty>
+		<isNotEmpty property="iseqpend" prepend="and">iseqpend=$iseqpend$</isNotEmpty>
+		<isNotEmpty property="iseqpstart" prepend="and">iseqpstart=$iseqpstart$</isNotEmpty>
+        <isNotEmpty property="portqtime" prepend="and">portqtime=$portqtime$</isNotEmpty>
+        <isNotEmpty property="commandtype" prepend="and">commandtype=$commandtype$</isNotEmpty>
+        <isNotEmpty property="currentrecipeid" prepend="and">currentrecipeid=$currentrecipeid$</isNotEmpty>
+        <isNotEmpty property="downstreaminlinemode" prepend="and">downstreaminlinemode=$downstreaminlinemode$</isNotEmpty>
+        <isNotEmpty property="upstreaminlinemode" prepend="and">upstreaminlinemode=$upstreaminlinemode$</isNotEmpty>
+        <isNotEmpty property="unitno" prepend="and">unitno=#unitno#</isNotEmpty>
+        <isNotEmpty property="loadingstop" prepend="and">loadingstop=$loadingstop$</isNotEmpty>
+        <isNotEmpty property="unitstatus" prepend="and">unitstatus=$unitstatus$</isNotEmpty>
+		<isNotEmpty property="cimmode" prepend="and">cimmode=$cimmode$</isNotEmpty>
+      </dynamic>
+      ORDER BY localno
+    </select>
+
+    <select id="Viewhis_alarm" resultMap="his_alarmResult"  parameterClass="Hashtable">
+      select * from his_alarm<dynamic prepend="where">
+        <isNotEmpty property="eqpid" prepend="and">eqpid=#eqpid#</isNotEmpty>
+        <isNotEmpty property="alarmstatus" prepend="and">alarmstatus=$alarmstatus$</isNotEmpty>
+        <isNotEmpty property="alarmtext" prepend="and">alarmtext=#alarmtext#</isNotEmpty>
+        <isNotEmpty property="startcreatedate" prepend="and">createdate <![CDATA[ >= ]]> #startcreatedate#::timestamp</isNotEmpty>
+        <isNotEmpty property = "endcreatedate" prepend = "and" > createdate <![CDATA[ <= ]]> #endcreatedate#::timestamp</isNotEmpty>
+        <isNotEmpty property="unitid" prepend="and">unitid=#unitid#</isNotEmpty>
+        <isNotEmpty property="alarmtype" prepend="and">alarmtype=#alarmtype#</isNotEmpty>
+        <isNotEmpty property="alarmid" prepend="and">alarmid=#alarmid#</isNotEmpty>
+		<isNotEmpty property="alarmunitnumber" prepend="and">alarmunitnumber=#alarmunitnumber#</isNotEmpty>
+		<isNotEmpty property="alarmcode" prepend="and">alarmcode=#alarmcode#</isNotEmpty>
+      </dynamic>
+		order by createdate desc
+		<isParameterPresent>
+			<isNotNull property="limitpage">
+				limit $limitcount$ offset $limitpage$*$limitcount$
+			</isNotNull>
+		</isParameterPresent>
+	</select>
+
+	  <select id="Viewhis_alarmCount" resultMap="his_alarmResultCount"  parameterClass="Hashtable">
+		  select alarmid from his_alarm<dynamic prepend="where">
+			  <isNotEmpty property="eqpid" prepend="and">eqpid=#eqpid#</isNotEmpty>
+			  <isNotEmpty property="alarmstatus" prepend="and">alarmstatus=$alarmstatus$</isNotEmpty>
+			  <isNotEmpty property="alarmtext" prepend="and">alarmtext=#alarmtext#</isNotEmpty>
+			  <isNotEmpty property="startcreatedate" prepend="and">createdate <![CDATA[ >= ]]> #startcreatedate#::timestamp</isNotEmpty>
+			  <isNotEmpty property = "endcreatedate" prepend = "and" > createdate <![CDATA[ <= ]]> #endcreatedate#::timestamp</isNotEmpty>
+			  <isNotEmpty property="unitid" prepend="and">unitid=#unitid#</isNotEmpty>
+			  <isNotEmpty property="alarmtype" prepend="and">alarmtype=#alarmtype#</isNotEmpty>
+			  <isNotEmpty property="alarmid" prepend="and">alarmid=#alarmid#</isNotEmpty>
+			  <isNotEmpty property="alarmunitnumber" prepend="and">alarmunitnumber=#alarmunitnumber#</isNotEmpty>
+			  <isNotEmpty property="alarmcode" prepend="and">alarmcode=#alarmcode#</isNotEmpty>
+		  </dynamic>
+		  order by createdate desc
+	  </select>
+	  
+    <select id="Viewhis_carrier" resultMap="his_carrierResult"  parameterClass="Hashtable">
+      select * from his_carrier<dynamic prepend="where">
+        <isNotEmpty property="lineid" prepend="and">lineid=#lineid#</isNotEmpty>
+        <isNotEmpty property="eqpid" prepend="and">eqpid=#eqpid#</isNotEmpty>
+        <isNotEmpty property="portid" prepend="and">portid=#portid#</isNotEmpty>
+        <isNotEmpty property="carrierid" prepend="and">carrierid=#carrierid#</isNotEmpty>
+        <isNotEmpty property="carriertype" prepend="and">carriertype=$carriertype$</isNotEmpty>
+        <isNotEmpty property="mescarriertype" prepend="and">mescarriertype=#mescarriertype#</isNotEmpty>
+        <isNotEmpty property="slotmap" prepend="and">slotmap=#slotmap#</isNotEmpty>
+        <isNotEmpty property="inputproductmap" prepend="and">inputproductmap=#inputproductmap#</isNotEmpty>
+        <isNotEmpty property="lotid" prepend="and">lotid=#lotid#</isNotEmpty>
+        <isNotEmpty property="lotgrade" prepend="and">lotgrade=#lotgrade#</isNotEmpty>
+        <isNotEmpty property="productspecid" prepend="and">productspecid=#productspecid#</isNotEmpty>
+        <isNotEmpty property="productiontype" prepend="and">productiontype=#productiontype#</isNotEmpty>
+        <isNotEmpty property="operationid" prepend="and">operationid=#operationid#</isNotEmpty>
+        <isNotEmpty property="startcreatedate" prepend="and">createdate <![CDATA[ >= ]]> #startcreatedate#::timestamp</isNotEmpty>
+        <isNotEmpty property = "endcreatedate" prepend = "and" > createdate <![CDATA[ <= ]]> #endcreatedate#::timestamp</isNotEmpty>
+      </dynamic>
+    </select>
+    <select id="Viewhis_maskinfo" resultMap="his_maskinfoResult"  parameterClass="Hashtable">
+      select * from his_maskinfo<dynamic prepend="where">
+        <isNotEmpty property="outunitname" prepend="and">outunitname=#outunitname#</isNotEmpty>
+        <isNotEmpty property="outsunitname" prepend="and">outsunitname=#outsunitname#</isNotEmpty>
+        <isNotEmpty property="startcreatedate" prepend="and">createdate <![CDATA[ >= ]]> #startcreatedate#::timestamp</isNotEmpty>
+        <isNotEmpty property = "endcreatedate" prepend = "and" > createdate <![CDATA[ <= ]]> #endcreatedate#::timestamp</isNotEmpty>
+        <isNotEmpty property="fportid" prepend="and">fportid=#fportid#</isNotEmpty>
+        <isNotEmpty property="tportid" prepend="and">tportid=#tportid#</isNotEmpty>
+        <isNotEmpty property="fcstid" prepend="and">fcstid=#fcstid#</isNotEmpty>
+        <isNotEmpty property="tcstid" prepend="and">tcstid=#tcstid#</isNotEmpty>
+        <isNotEmpty property="isoutport" prepend="and">isoutport=$isoutport$</isNotEmpty>
+        <isNotEmpty property="isexist" prepend="and">isexist=$isexist$</isNotEmpty>
+        <isNotEmpty property="slotsatus" prepend="and">slotsatus=$slotsatus$</isNotEmpty>
+        <isNotEmpty property="startfetchdatetime" prepend="and">fetchdatetime <![CDATA[ >= ]]> #startfetchdatetime#::timestamp</isNotEmpty>
+        <isNotEmpty property = "endfetchdatetime" prepend = "and" > fetchdatetime <![CDATA[ <= ]]> #endfetchdatetime#::timestamp</isNotEmpty>
+        <isNotEmpty property="maskid" prepend="and">maskid=#maskid#</isNotEmpty>
+        <isNotEmpty property="maskgroupname" prepend="and">maskgroupname=#maskgroupname#</isNotEmpty>
+        <isNotEmpty property="masktype" prepend="and">masktype=#masktype#</isNotEmpty>
+        <isNotEmpty property="position" prepend="and">position=#position#</isNotEmpty>
+        <isNotEmpty property="maskrecipename" prepend="and">maskrecipename=#maskrecipename#</isNotEmpty>
+        <isNotEmpty property="maskclnstate" prepend="and">maskclnstate=#maskclnstate#</isNotEmpty>
+        <isNotEmpty property="maskaoistate" prepend="and">maskaoistate=#maskaoistate#</isNotEmpty>
+        <isNotEmpty property="maskrepaircnt" prepend="and">maskrepaircnt=#maskrepaircnt#</isNotEmpty>
+        <isNotEmpty property="maskinspstate" prepend="and">maskinspstate=#maskinspstate#</isNotEmpty>
+        <isNotEmpty property="maskngcode" prepend="and">maskngcode=#maskngcode#</isNotEmpty>
+        <isNotEmpty property="maskamhszone" prepend="and">maskamhszone=#maskamhszone#</isNotEmpty>
+        <isNotEmpty property="shelfno" prepend="and">shelfno=#shelfno#</isNotEmpty>
+        <isNotEmpty property="ppid" prepend="and">ppid=#ppid#</isNotEmpty>
+        <isNotEmpty property="fslotno" prepend="and">fslotno=#fslotno#</isNotEmpty>
+        <isNotEmpty property="tslotno" prepend="and">tslotno=#tslotno#</isNotEmpty>
+        <isNotEmpty property="maskinsunitid" prepend="and">maskinsunitid=#maskinsunitid#</isNotEmpty>
+        <isNotEmpty property="sslotno" prepend="and">sslotno=#sslotno#</isNotEmpty>
+        <isNotEmpty property="maskmaxcnt" prepend="and">maskmaxcnt=#maskmaxcnt#</isNotEmpty>
+        <isNotEmpty property="maskusecnt" prepend="and">maskusecnt=#maskusecnt#</isNotEmpty>
+        <isNotEmpty property="offsetx" prepend="and">offsetx=#offsetx#</isNotEmpty>
+        <isNotEmpty property="offsety" prepend="and">offsety=#offsety#</isNotEmpty>
+        <isNotEmpty property="offsett" prepend="and">offsett=#offsett#</isNotEmpty>
+        <isNotEmpty property="maskmagnet" prepend="and">maskmagnet=#maskmagnet#</isNotEmpty>
+        <isNotEmpty property="maskthickness" prepend="and">maskthickness=#maskthickness#</isNotEmpty>
+        <isNotEmpty property="prodid" prepend="and">prodid=#prodid#</isNotEmpty>
+        <isNotEmpty property="maskspec" prepend="and">maskspec=#maskspec#</isNotEmpty>
+        <isNotEmpty property="maskjudge" prepend="and">maskjudge=#maskjudge#</isNotEmpty>
+        <isNotEmpty property="maskmodelno" prepend="and">maskmodelno=#maskmodelno#</isNotEmpty>
+        <isNotEmpty property="processingflag" prepend="and">processingflag=#processingflag#</isNotEmpty>
+        <isNotEmpty property="processflow" prepend="and">processflow=#processflow#</isNotEmpty>
+        <isNotEmpty property="processflowversion" prepend="and">processflowversion=#processflowversion#</isNotEmpty>
+        <isNotEmpty property="operid" prepend="and">operid=#operid#</isNotEmpty>
+        <isNotEmpty property="operversion" prepend="and">operversion=#operversion#</isNotEmpty>
+        <isNotEmpty property="maskstatus" prepend="and">maskstatus=#maskstatus#</isNotEmpty>
+        <isNotEmpty property="processoperationname" prepend="and">processoperationname=#processoperationname#</isNotEmpty>
+        <isNotEmpty property="processoperationversion" prepend="and">processoperationversion=#processoperationversion#</isNotEmpty>
+        <isNotEmpty property="maskusedlimit" prepend="and">maskusedlimit=#maskusedlimit#</isNotEmpty>
+        <isNotEmpty property="chambername" prepend="and">chambername=#chambername#</isNotEmpty>
+        <isNotEmpty property="stagename" prepend="and">stagename=#stagename#</isNotEmpty>
+        <isNotEmpty property="fcassettesequence" prepend="and">fcassettesequence=$fcassettesequence$</isNotEmpty>
+        <isNotEmpty property="tcassettesequence" prepend="and">tcassettesequence=$tcassettesequence$</isNotEmpty>
+        <isNotEmpty property="unitid" prepend="and">unitid=#unitid#</isNotEmpty>
+        <isNotEmpty property="sunitid" prepend="and">sunitid=#sunitid#</isNotEmpty>
+        <isNotEmpty property="fslotposition" prepend="and">fslotposition=#fslotposition#</isNotEmpty>
+        <isNotEmpty property="tslotposition" prepend="and">tslotposition=#tslotposition#</isNotEmpty>
+      </dynamic>
+    </select>
+
+    <select id="Viewhis_packingbox" resultMap="his_packingboxResult"  parameterClass="Hashtable">
+      select * from his_packingbox<dynamic prepend="where">
+        <isNotEmpty property="boxid" prepend="and">boxid=#boxid#</isNotEmpty>
+        <isNotEmpty property="boxspecid" prepend="and">boxspecid=#boxspecid#</isNotEmpty>
+        <isNotEmpty property="boxoperationid" prepend="and">boxoperationid=#boxoperationid#</isNotEmpty>
+        <isNotEmpty property="boxproductiontype" prepend="and">boxproductiontype=#boxproductiontype#</isNotEmpty>
+        <isNotEmpty property="boxworkorder" prepend="and">boxworkorder=#boxworkorder#</isNotEmpty>
+        <isNotEmpty property="boxgroupid" prepend="and">boxgroupid=#boxgroupid#</isNotEmpty>
+        <isNotEmpty property="boxcheckincode" prepend="and">boxcheckincode=#boxcheckincode#</isNotEmpty>
+        <isNotEmpty property="boxweight" prepend="and">boxweight=#boxweight#</isNotEmpty>
+        <isNotEmpty property="boxrivisioncode" prepend="and">boxrivisioncode=#boxrivisioncode#</isNotEmpty>
+        <isNotEmpty property="boxfgcode" prepend="and">boxfgcode=#boxfgcode#</isNotEmpty>
+        <isNotEmpty property="boxgrade" prepend="and">boxgrade=#boxgrade#</isNotEmpty>
+        <isNotEmpty property="panelqty" prepend="and">panelqty=$panelqty$</isNotEmpty>
+        <isNotEmpty property="boxserial" prepend="and">boxserial=#boxserial#</isNotEmpty>
+        <isNotEmpty property="palletid" prepend="and">palletid=#palletid#</isNotEmpty>
+        <isNotEmpty property="startcreatedate" prepend="and">createdate <![CDATA[ >= ]]> #startcreatedate#::timestamp</isNotEmpty>
+        <isNotEmpty property = "endcreatedate" prepend = "and" > createdate <![CDATA[ <= ]]> #endcreatedate#::timestamp</isNotEmpty>
+        <isNotEmpty property="tranid" prepend="and">tranid=#tranid#</isNotEmpty>
+      </dynamic>
+    </select>
+    <select id="Viewhis_recipe" resultMap="his_recipeResult"  parameterClass="Hashtable">
+      select * from his_recipe<dynamic prepend="where">
+        <isNotEmpty property="eqpid" prepend="and">eqpid=#eqpid#</isNotEmpty>
+        <isNotEmpty property="startcreatedate" prepend="and">createdate <![CDATA[ >= ]]> #startcreatedate#::timestamp</isNotEmpty>
+        <isNotEmpty property = "endcreatedate" prepend = "and" > createdate <![CDATA[ <= ]]> #endcreatedate#::timestamp</isNotEmpty>
+        <isNotEmpty property="unitid" prepend="and">unitid=#unitid#</isNotEmpty>
+        <isNotEmpty property="sunitid" prepend="and">sunitid=#sunitid#</isNotEmpty>
+        <isNotEmpty property="recipeno" prepend="and">recipeno=#recipeno#</isNotEmpty>
+        <isNotEmpty property="recipeversion" prepend="and">recipeversion=#recipeversion#</isNotEmpty>
+        <isNotEmpty property="parametercount" prepend="and">parametercount=#parametercount#</isNotEmpty>
+        <isNotEmpty property="eventid" prepend="and">eventid=#eventid#</isNotEmpty>
+        <isNotEmpty property="previousrecipeno" prepend="and">previousrecipeno=#previousrecipeno#</isNotEmpty>
+        <isNotEmpty property="startrecipechangetime" prepend="and">recipechangetime <![CDATA[ >= ]]> #startrecipechangetime#::timestamp</isNotEmpty>
+        <isNotEmpty property = "endrecipechangetime" prepend = "and" > recipechangetime <![CDATA[ <= ]]> #endrecipechangetime#::timestamp</isNotEmpty>
+        <isNotEmpty property="recipeparameteritems" prepend="and">recipeparameteritems=#recipeparameteritems#</isNotEmpty>
+        <isNotEmpty property="recipetype" prepend="and">recipetype=#recipetype#</isNotEmpty>
+        <isNotEmpty property="messagesequenceno" prepend="and">messagesequenceno=#messagesequenceno#</isNotEmpty>
+      </dynamic>
+    </select>
+    <select id="Viewhis_recipeppidmap" resultMap="his_recipeppidmapResult"  parameterClass="Hashtable">
+      select * from his_recipeppidmap<dynamic prepend="where">
+        <isNotEmpty property="lineid" prepend="and">lineid=#lineid#</isNotEmpty>
+        <isNotEmpty property="eqpid" prepend="and">eqpid=#eqpid#</isNotEmpty>
+        <isNotEmpty property="recipeid" prepend="and">recipeid=#recipeid#</isNotEmpty>
+        <isNotEmpty property="ppid" prepend="and">ppid=#ppid#</isNotEmpty>
+        <isNotEmpty property="targetplace" prepend="and">targetplace=$targetplace$</isNotEmpty>
+        <isNotEmpty property="createuser" prepend="and">createuser=#createuser#</isNotEmpty>
+        <isNotEmpty property="startcreatedate" prepend="and">createdate <![CDATA[ >= ]]> #startcreatedate#::timestamp</isNotEmpty>
+        <isNotEmpty property = "endcreatedate" prepend = "and" > createdate <![CDATA[ <= ]]> #endcreatedate#::timestamp</isNotEmpty>
+        <isNotEmpty property="eqpname" prepend="and">eqpname=#eqpname#</isNotEmpty>
+      </dynamic>
+    </select>
+    <select id="Viewhis_spanel" resultMap="his_spanelResult"  parameterClass="Hashtable">
+      select * from his_spanel<dynamic prepend="where">
+        <isNotEmpty property="hpanelid" prepend="and">hpanelid=#hpanelid#</isNotEmpty>
+        <isNotEmpty property="panelgrade" prepend="and">panelgrade=#panelgrade#</isNotEmpty>
+        <isNotEmpty property="fptid" prepend="and">fptid=#fptid#</isNotEmpty>
+        <isNotEmpty property="tptid" prepend="and">tptid=#tptid#</isNotEmpty>
+        <isNotEmpty property="fslotno" prepend="and">fslotno=$fslotno$</isNotEmpty>
+        <isNotEmpty property="tslotno" prepend="and">tslotno=$tslotno$</isNotEmpty>
+        <isNotEmpty property="lotid" prepend="and">lotid=#lotid#</isNotEmpty>
+        <isNotEmpty property="fcstid" prepend="and">fcstid=#fcstid#</isNotEmpty>
+        <isNotEmpty property="tcstid" prepend="and">tcstid=#tcstid#</isNotEmpty>
+        <isNotEmpty property="startcreatedate" prepend="and">createdate <![CDATA[ >= ]]> #startcreatedate#::timestamp</isNotEmpty>
+        <isNotEmpty property = "endcreatedate" prepend = "and" > createdate <![CDATA[ <= ]]> #endcreatedate#::timestamp</isNotEmpty>
+        <isNotEmpty property="qty" prepend="and">qty=#qty#</isNotEmpty>
+        <isNotEmpty property="slotsel" prepend="and">slotsel=#slotsel#</isNotEmpty>
+        <isNotEmpty property="fjobsequencenumber" prepend="and">fjobsequencenumber=#fjobsequencenumber#</isNotEmpty>
+        <isNotEmpty property="ppid" prepend="and">ppid=#ppid#</isNotEmpty>
+        <isNotEmpty property="lotjudge" prepend="and">lotjudge=#lotjudge#</isNotEmpty>
+        <isNotEmpty property="lotsorttype" prepend="and">lotsorttype=#lotsorttype#</isNotEmpty>
+        <isNotEmpty property="unitpathno" prepend="and">unitpathno=#unitpathno#</isNotEmpty>
+        <isNotEmpty property="operid" prepend="and">operid=#operid#</isNotEmpty>
+        <isNotEmpty property="prodid" prepend="and">prodid=#prodid#</isNotEmpty>
+        <isNotEmpty property="smplflag" prepend="and">smplflag=#smplflag#</isNotEmpty>
+        <isNotEmpty property="rwkcnt" prepend="and">rwkcnt=#rwkcnt#</isNotEmpty>
+        <isNotEmpty property="cfglsid" prepend="and">cfglsid=#cfglsid#</isNotEmpty>
+        <isNotEmpty property="lottype" prepend="and">lottype=#lottype#</isNotEmpty>
+        <isNotEmpty property="spnlid" prepend="and">spnlid=#spnlid#</isNotEmpty>
+        <isNotEmpty property="pnljudge" prepend="and">pnljudge=#pnljudge#</isNotEmpty>
+        <isNotEmpty property="pnlsorttype" prepend="and">pnlsorttype=#pnlsorttype#</isNotEmpty>
+        <isNotEmpty property="atpnlgrade" prepend="and">atpnlgrade=#atpnlgrade#</isNotEmpty>
+        <isNotEmpty property="assypnlgrade" prepend="and">assypnlgrade=#assypnlgrade#</isNotEmpty>
+        <isNotEmpty property="osrepair" prepend="and">osrepair=#osrepair#</isNotEmpty>
+        <isNotEmpty property="atrepair" prepend="and">atrepair=#atrepair#</isNotEmpty>
+        <isNotEmpty property="pnlgrade" prepend="and">pnlgrade=#pnlgrade#</isNotEmpty>
+        <isNotEmpty property="readpanelid" prepend="and">readpanelid=#readpanelid#</isNotEmpty>
+        <isNotEmpty property="fcassettesequence" prepend="and">fcassettesequence=#fcassettesequence#</isNotEmpty>
+        <isNotEmpty property="tcassettesequence" prepend="and">tcassettesequence=#tcassettesequence#</isNotEmpty>
+        <isNotEmpty property="tjobsequencenumber" prepend="and">tjobsequencenumber=#tjobsequencenumber#</isNotEmpty>
+      </dynamic>
+    </select>
+    <select id="Viewhis_trayinfo" resultMap="his_trayinfoResult"  parameterClass="Hashtable">
+      select * from his_trayinfo<dynamic prepend="where">
+        <isNotEmpty property="trayid" prepend="and">trayid=#trayid#</isNotEmpty>
+        <isNotEmpty property="processflowname" prepend="and">processflowname=#processflowname#</isNotEmpty>
+        <isNotEmpty property="processflowversion" prepend="and">processflowversion=#processflowversion#</isNotEmpty>
+        <isNotEmpty property="processoperationname" prepend="and">processoperationname=#processoperationname#</isNotEmpty>
+        <isNotEmpty property="processoperationversion" prepend="and">processoperationversion=#processoperationversion#</isNotEmpty>
+        <isNotEmpty property="productspecname" prepend="and">productspecname=#productspecname#</isNotEmpty>
+        <isNotEmpty property="productspecversion" prepend="and">productspecversion=#productspecversion#</isNotEmpty>
+        <isNotEmpty property="productiontype" prepend="and">productiontype=#productiontype#</isNotEmpty>
+        <isNotEmpty property="productquantity" prepend="and">productquantity=#productquantity#</isNotEmpty>
+        <isNotEmpty property="machinerecipename" prepend="and">machinerecipename=#machinerecipename#</isNotEmpty>
+        <isNotEmpty property="productrequestname" prepend="and">productrequestname=#productrequestname#</isNotEmpty>
+        <isNotEmpty property="lotid" prepend="and">lotid=#lotid#</isNotEmpty>
+        <isNotEmpty property="operid" prepend="and">operid=#operid#</isNotEmpty>
+        <isNotEmpty property="prodid" prepend="and">prodid=#prodid#</isNotEmpty>
+        <isNotEmpty property="lotjudge" prepend="and">lotjudge=#lotjudge#</isNotEmpty>
+        <isNotEmpty property="position" prepend="and">position=#position#</isNotEmpty>
+        <isNotEmpty property="ppid" prepend="and">ppid=#ppid#</isNotEmpty>
+        <isNotEmpty property="cellcount" prepend="and">cellcount=#cellcount#</isNotEmpty>
+        <isNotEmpty property="slotno" prepend="and">slotno=#slotno#</isNotEmpty>
+        <isNotEmpty property="startcreatedate" prepend="and">createdate <![CDATA[ >= ]]> #startcreatedate#::timestamp</isNotEmpty>
+        <isNotEmpty property = "endcreatedate" prepend = "and" > createdate <![CDATA[ <= ]]> #endcreatedate#::timestamp</isNotEmpty>
+        <isNotEmpty property="portid" prepend="and">portid=#portid#</isNotEmpty>
+        <isNotEmpty property="porttype" prepend="and">porttype=#porttype#</isNotEmpty>
+        <isNotEmpty property="portusetype" prepend="and">portusetype=#portusetype#</isNotEmpty>
+      </dynamic>
+    </select>
+
+    <select id="Viewwip_cstbox" resultMap="wip_cstboxResult"  parameterClass="Hashtable">
+      select * from wip_cstbox<dynamic prepend="where">
+        <isNotEmpty property="lineid" prepend="and">lineid=#lineid#</isNotEmpty>
+        <isNotEmpty property="eqpid" prepend="and">eqpid=#eqpid#</isNotEmpty>
+        <isNotEmpty property="carrierid" prepend="and">carrierid=#carrierid#</isNotEmpty>
+        <isNotEmpty property="cstboxid" prepend="and">cstboxid=#cstboxid#</isNotEmpty>
+        <isNotEmpty property="panelid" prepend="and">panelid=#panelid#</isNotEmpty>
+        <isNotEmpty property="slotid" prepend="and">slotid=$slotid$</isNotEmpty>
+        <isNotEmpty property="startcreatedate" prepend="and">createdate <![CDATA[ >= ]]> #startcreatedate#::timestamp</isNotEmpty>
+        <isNotEmpty property = "endcreatedate" prepend = "and" > createdate <![CDATA[ <= ]]> #endcreatedate#::timestamp</isNotEmpty>
+      </dynamic>
+    </select>
+    <select id="Viewcfg_systemconfig" resultMap="cfg_systemconfigResult"  parameterClass="Hashtable">
+      select * from cfg_systemconfig<dynamic prepend="where">
+        <isNotEmpty property="eqpid" prepend="and">eqpid=#eqpid#</isNotEmpty>
+        <isNotEmpty property="recipecheckenable" prepend="and">recipecheckenable=$recipecheckenable$</isNotEmpty>
+        <isNotEmpty property="robotdispathmode" prepend="and">robotdispathmode=#robotdispathmode#</isNotEmpty>
+      </dynamic>
+    </select>
+    <select id="Viewwip_glassinfo" resultMap="wip_glassinfoResult"  parameterClass="Hashtable">
+      select * from wip_glassinfo<dynamic prepend="where">
+        <isNotEmpty property="productid" prepend="and">productid=#productid#</isNotEmpty>
+        <isNotEmpty property="operationid" prepend="and">operationid=#operationid#</isNotEmpty>
+        <isNotEmpty property="lotid" prepend="and">lotid=#lotid#</isNotEmpty>
+        <isNotEmpty property="ppid1" prepend="and">ppid1=#ppid1#</isNotEmpty>
+        <isNotEmpty property="ppid2" prepend="and">ppid2=#ppid2#</isNotEmpty>
+        <isNotEmpty property="ppid3" prepend="and">ppid3=#ppid3#</isNotEmpty>
+        <isNotEmpty property="ppid4" prepend="and">ppid4=#ppid4#</isNotEmpty>
+        <isNotEmpty property="ppid5" prepend="and">ppid5=#ppid5#</isNotEmpty>
+        <isNotEmpty property="ppid6" prepend="and">ppid6=#ppid6#</isNotEmpty>
+        <isNotEmpty property="ppid7" prepend="and">ppid7=#ppid7#</isNotEmpty>
+        <isNotEmpty property="ppid8" prepend="and">ppid8=#ppid8#</isNotEmpty>
+        <isNotEmpty property="ppid9" prepend="and">ppid9=#ppid9#</isNotEmpty>
+        <isNotEmpty property="ppid10" prepend="and">ppid10=#ppid10#</isNotEmpty>
+        <isNotEmpty property="glassid" prepend="and">glassid=#glassid#</isNotEmpty>
+        <isNotEmpty property="cassettesequenceno" prepend="and">cassettesequenceno=$cassettesequenceno$</isNotEmpty>
+        <isNotEmpty property="slotsequenceno" prepend="and">slotsequenceno=$slotsequenceno$</isNotEmpty>
+        <isNotEmpty property="slotposition" prepend="and">slotposition=$slotposition$</isNotEmpty>
+        <isNotEmpty property="cuttingsequenceno" prepend="and">cuttingsequenceno=$cuttingsequenceno$</isNotEmpty>
+        <isNotEmpty property="glassjudgecode" prepend="and">glassjudgecode=#glassjudgecode#</isNotEmpty>
+        <isNotEmpty property="glassgradecode" prepend="and">glassgradecode=#glassgradecode#</isNotEmpty>
+        <isNotEmpty property="processingflag" prepend="and">processingflag=#processingflag#</isNotEmpty>
+        <isNotEmpty property="glasssizecode" prepend="and">glasssizecode=#glasssizecode#</isNotEmpty>
+        <isNotEmpty property="glassthicknesscode" prepend="and">glassthicknesscode=#glassthicknesscode#</isNotEmpty>
+        <isNotEmpty property="glasstype" prepend="and">glasstype=#glasstype#</isNotEmpty>
+        <isNotEmpty property="lotcode" prepend="and">lotcode=#lotcode#</isNotEmpty>
+        <isNotEmpty property="processingcount" prepend="and">processingcount=#processingcount#</isNotEmpty>
+        <isNotEmpty property="inspectionflag" prepend="and">inspectionflag=#inspectionflag#</isNotEmpty>
+        <isNotEmpty property="skipflag" prepend="and">skipflag=#skipflag#</isNotEmpty>
+        <isNotEmpty property="inlineeqdata" prepend="and">inlineeqdata=#inlineeqdata#</isNotEmpty>
+        <isNotEmpty property="workorder" prepend="and">workorder=#workorder#</isNotEmpty>
+        <isNotEmpty property="processflowname" prepend="and">processflowname=#processflowname#</isNotEmpty>
+        <isNotEmpty property="processflowversion" prepend="and">processflowversion=#processflowversion#</isNotEmpty>
+        <isNotEmpty property="processoperationversion" prepend="and">processoperationversion=#processoperationversion#</isNotEmpty>
+        <isNotEmpty property="productspecversion" prepend="and">productspecversion=#productspecversion#</isNotEmpty>
+        <isNotEmpty property="productiontype" prepend="and">productiontype=#productiontype#</isNotEmpty>
+        <isNotEmpty property="halfproductjudge" prepend="and">halfproductjudge=#halfproductjudge#</isNotEmpty>
+        <isNotEmpty property="glassmaker" prepend="and">glassmaker=#glassmaker#</isNotEmpty>
+        <isNotEmpty property="productrecipe" prepend="and">productrecipe=#productrecipe#</isNotEmpty>
+        <isNotEmpty property="reworktype" prepend="and">reworktype=#reworktype#</isNotEmpty>
+        <isNotEmpty property="reworkcount" prepend="and">reworkcount=#reworkcount#</isNotEmpty>
+        <isNotEmpty property="samplingflag" prepend="and">samplingflag=#samplingflag#</isNotEmpty>
+        <isNotEmpty property="exposurerecipename" prepend="and">exposurerecipename=#exposurerecipename#</isNotEmpty>
+        <isNotEmpty property="turndegree" prepend="and">turndegree=#turndegree#</isNotEmpty>
+        <isNotEmpty property="flowmodevalue" prepend="and">flowmodevalue=#flowmodevalue#</isNotEmpty>
+        <isNotEmpty property="evaskipflag" prepend="and">evaskipflag=#evaskipflag#</isNotEmpty>
+        <isNotEmpty property="beforeprocessmachine" prepend="and">beforeprocessmachine=#beforeprocessmachine#</isNotEmpty>
+        <isNotEmpty property="producttype" prepend="and">producttype=#producttype#</isNotEmpty>
+        <isNotEmpty property="maskspecname" prepend="and">maskspecname=#maskspecname#</isNotEmpty>
+        <isNotEmpty property="processflowrunstate" prepend="and">processflowrunstate=#processflowrunstate#</isNotEmpty>
+        <isNotEmpty property="position" prepend="and">position=$position$</isNotEmpty>
+        <isNotEmpty property="processinginfo" prepend="and">processinginfo=#processinginfo#</isNotEmpty>
+        <isNotEmpty property="vcrproductname" prepend="and">vcrproductname=#vcrproductname#</isNotEmpty>
+        <isNotEmpty property="nginputcomment" prepend="and">nginputcomment=#nginputcomment#</isNotEmpty>
+        <isNotEmpty property="panelgrade" prepend="and">panelgrade=#panelgrade#</isNotEmpty>
+        <isNotEmpty property="paneljudge" prepend="and">paneljudge=#paneljudge#</isNotEmpty>
+        <isNotEmpty property="updatedate" prepend="and">updatedate <![CDATA[ >= ]]> #updatedate#::timestamp</isNotEmpty>
+        <isNotEmpty property="modelposition" prepend="and">modelposition=$modelposition$</isNotEmpty>
+        <isNotEmpty property="currentunit" prepend="and">currentunit=#currentunit#</isNotEmpty>
+        <isNotEmpty property="productalarm" prepend="and">productalarm=$productalarm$</isNotEmpty>
+        <isNotEmpty property="rglassid" prepend="and">rglassid=#rglassid#</isNotEmpty>
+        <isNotEmpty property="slotsatus" prepend="and">slotsatus=$slotsatus$</isNotEmpty>
+        <isNotEmpty property="fetchdatetime" prepend="and">fetchdatetime <![CDATA[ >= ]]> #fetchdatetime#::timestamp</isNotEmpty>
+        <isNotEmpty property="portid" prepend="and">portid=#portid#</isNotEmpty>
+        <isNotEmpty property="cassetteid" prepend="and">cassetteid=#cassetteid#</isNotEmpty>
+        <isNotEmpty property="currentsunit" prepend="and">currentsunit=#currentsunit#</isNotEmpty>
+        <isNotEmpty property="currentssunit" prepend="and">currentssunit=#currentssunit#</isNotEmpty>
+        <isNotEmpty property="currentslotno" prepend="and">currentslotno=$currentslotno$</isNotEmpty>
+        <isNotEmpty property="createdate" prepend="and">createdate <![CDATA[ >= ]]> #createdate#::timestamp</isNotEmpty>
+        <isNotEmpty property="enddate" prepend="and">enddate <![CDATA[ >= ]]> #enddate#::timestamp</isNotEmpty>
+        <isNotEmpty property="begindate" prepend="and">begindate <![CDATA[ >= ]]> #begindate#::timestamp</isNotEmpty>
+        <isNotEmpty property="modepath" prepend="and">modepath=#modepath#</isNotEmpty>
+      </dynamic>
+		order by id desc
+    </select>
+
+
+    <select id="Viewhis_user" resultMap="his_userResult"  parameterClass="Hashtable">
+      select * from his_user<dynamic prepend="where">
+        <isNotEmpty property="username" prepend="and">username=#username#</isNotEmpty>
+        <isNotEmpty property="userid" prepend="and">userid=#userid#</isNotEmpty>
+        <isNotEmpty property="password" prepend="and">password=#password#</isNotEmpty>
+        <isNotEmpty property="level" prepend="and">level=#level#</isNotEmpty>
+        <isNotEmpty property="creator" prepend="and">creator=#creator#</isNotEmpty>
+        <isNotEmpty property="startcreatedate" prepend="and">createdate <![CDATA[ >= ]]> #startcreatedate#::timestamp</isNotEmpty>
+        <isNotEmpty property = "endcreatedate" prepend = "and" > createdate <![CDATA[ <= ]]> #endcreatedate#::timestamp</isNotEmpty>
+        <isNotEmpty property="groupid" prepend="and">groupid=#groupid#</isNotEmpty>
+      </dynamic>
+    </select>
+    <select id="Viewbc_user_group" resultMap="bc_user_groupResult"  parameterClass="Hashtable">
+      select * from bc_user_group<dynamic prepend="where">
+        <isNotEmpty property="group_id" prepend="and">group_id=#group_id#</isNotEmpty>
+        <isNotEmpty property="group_name" prepend="and">group_name=#group_name#</isNotEmpty>
+        <isNotEmpty property="user_count" prepend="and">user_count=#user_count#</isNotEmpty>
+        <isNotEmpty property="depart" prepend="and">depart=#depart#</isNotEmpty>
+        <isNotEmpty property="comments" prepend="and">comments=#comments#</isNotEmpty>
+        <isNotEmpty property="user_id" prepend="and">user_id=#user_id#</isNotEmpty>
+      </dynamic>
+    </select>
+    <select id="Viewwip_alarm" resultMap="wip_alarmResult"  parameterClass="Hashtable">
+      select * from wip_alarm<dynamic prepend="where">
+        <isNotEmpty property="eqpid" prepend="and">eqpid=#eqpid#</isNotEmpty>
+        <isNotEmpty property="alarmstatus" prepend="and">alarmstatus=#alarmstatus#</isNotEmpty>
+        <isNotEmpty property="alarmtext" prepend="and">alarmtext=#alarmtext#</isNotEmpty>
+        <isNotEmpty property="startcreatedate" prepend="and">createdate <![CDATA[ >= ]]> #startcreatedate#::timestamp</isNotEmpty>
+        <isNotEmpty property = "endcreatedate" prepend = "and" > createdate <![CDATA[ <= ]]> #endcreatedate#::timestamp</isNotEmpty>
+        <isNotEmpty property="unitid" prepend="and">unitid=#unitid#</isNotEmpty>
+        <isNotEmpty property="alarmtype" prepend="and">alarmtype=#alarmtype#</isNotEmpty>
+        <isNotEmpty property="alarmid" prepend="and">alarmid=#alarmid#</isNotEmpty>
+		<isNotEmpty property="alarmunitnumber" prepend="and">alarmunitnumber=#alarmunitnumber#</isNotEmpty>
+		<isNotEmpty property="alarmcode" prepend="and">alarmcode=#alarmcode#</isNotEmpty>
+      </dynamic>
+    </select>
+    <select id="Viewbc_eqp_command_conf" resultMap="bc_eqp_command_confResult"  parameterClass="Hashtable">
+      select * from bc_eqp_command_conf<dynamic prepend="where">
+        <isNotEmpty property="object_id" prepend="and">object_id=$object_id$</isNotEmpty>
+        <isNotEmpty property="line_id" prepend="and">line_id=#line_id#</isNotEmpty>
+        <isNotEmpty property="equipment_no" prepend="and">equipment_no=#equipment_no#</isNotEmpty>
+        <isNotEmpty property="equipment_id" prepend="and">equipment_id=#equipment_id#</isNotEmpty>
+        <isNotEmpty property="subequipment_no" prepend="and">subequipment_no=#subequipment_no#</isNotEmpty>
+        <isNotEmpty property="machine" prepend="and">machine=#machine#</isNotEmpty>
+        <isNotEmpty property="command_type" prepend="and">command_type=#command_type#</isNotEmpty>
+        <isNotEmpty property="protocol" prepend="and">protocol=#protocol#</isNotEmpty>
+        <isNotEmpty property="command_secsname" prepend="and">command_secsname=#command_secsname#</isNotEmpty>
+        <isNotEmpty property="command_to_map" prepend="and">command_to_map=#command_to_map#</isNotEmpty>
+      </dynamic>
+    </select>
+    <select id="Viewbc_eqp_command_para" resultMap="bc_eqp_command_paraResult"  parameterClass="Hashtable">
+      select * from bc_eqp_command_para<dynamic prepend="where">
+        <isNotEmpty property="object_id" prepend="and">object_id=$object_id$</isNotEmpty>
+        <isNotEmpty property="command_type" prepend="and">command_type=#command_type#</isNotEmpty>
+        <isNotEmpty property="parameter_id" prepend="and">parameter_id=#parameter_id#</isNotEmpty>
+        <isNotEmpty property="parameter_type" prepend="and">parameter_type=#parameter_type#</isNotEmpty>
+        <isNotEmpty property="required" prepend="and">required=$required$</isNotEmpty>
+        <isNotEmpty property="reference_value" prepend="and">reference_value=#reference_value#</isNotEmpty>
+        <isNotEmpty property="max_value" prepend="and">max_value=#max_value#::float4</isNotEmpty>
+        <isNotEmpty property="min_value" prepend="and">min_value=#min_value#::float4</isNotEmpty>
+        <isNotEmpty property="line_id" prepend="and">line_id=#line_id#</isNotEmpty>
+        <isNotEmpty property="parameter_name" prepend="and">parameter_name=#parameter_name#</isNotEmpty>
+        <isNotEmpty property="item_number" prepend="and">item_number=#item_number#</isNotEmpty>
+        <isNotEmpty property="equipment_no" prepend="and">equipment_no=#equipment_no#</isNotEmpty>
+      </dynamic>
+    </select>
+    <select id="Viewhis_material" resultMap="his_materialResult"  parameterClass="Hashtable">
+      select * from his_material<dynamic prepend="where">
+        <isNotEmpty property="eqpid" prepend="and">eqpid=#eqpid#</isNotEmpty>
+        <isNotEmpty property="startcreatedate" prepend="and">createdate <![CDATA[ >= ]]> #startcreatedate#::timestamp</isNotEmpty>
+        <isNotEmpty property = "endcreatedate" prepend = "and" > createdate <![CDATA[ <= ]]> #endcreatedate#::timestamp</isNotEmpty>
+        <isNotEmpty property="unitid" prepend="and">unitid=#unitid#</isNotEmpty>
+        <isNotEmpty property="materialtype" prepend="and">materialtype=#materialtype#</isNotEmpty>
+        <isNotEmpty property="materialid" prepend="and">materialid like '%' || #materialid# || '%'</isNotEmpty>
+        <isNotEmpty property="materialstate" prepend="and">materialstate=#materialstate#</isNotEmpty>
+        <isNotEmpty property="materialusedcnt" prepend="and">materialusedcnt=#materialusedcnt#</isNotEmpty>
+        <isNotEmpty property="materialposition" prepend="and">materialposition=#materialposition#</isNotEmpty>
+      </dynamic>
+		order by createdate desc
+		<isParameterPresent>
+			<isNotNull property="limitpage">
+				limit $limitcount$ offset $limitpage$*$limitcount$
+			</isNotNull>
+		</isParameterPresent>
+	</select>
+
+	  <select id="Viewhis_materialCount" resultMap="his_materialResultCount"  parameterClass="Hashtable">
+      select materialid from his_material<dynamic prepend="where">
+        <isNotEmpty property="eqpid" prepend="and">eqpid=#eqpid#</isNotEmpty>
+        <isNotEmpty property="startcreatedate" prepend="and">createdate <![CDATA[ >= ]]> #startcreatedate#::timestamp</isNotEmpty>
+        <isNotEmpty property = "endcreatedate" prepend = "and" > createdate <![CDATA[ <= ]]> #endcreatedate#::timestamp</isNotEmpty>
+        <isNotEmpty property="unitid" prepend="and">unitid=#unitid#</isNotEmpty>
+        <isNotEmpty property="materialtype" prepend="and">materialtype=#materialtype#</isNotEmpty>
+        <isNotEmpty property="materialid" prepend="and">materialid like '%' || #materialid# || '%'</isNotEmpty>
+        <isNotEmpty property="materialstate" prepend="and">materialstate=#materialstate#</isNotEmpty>
+        <isNotEmpty property="materialusedcnt" prepend="and">materialusedcnt=#materialusedcnt#</isNotEmpty>
+        <isNotEmpty property="materialposition" prepend="and">materialposition=#materialposition#</isNotEmpty>
+      </dynamic>
+		order by createdate desc
+	</select>
+
+
+    <delete id="Deletecfg_eqp" parameterClass="string">
+      DELETE FROM cfg_eqp WHERE eqpid=#value#
+    </delete>
+
+    <delete id="Deletecfg_port" parameterClass="Hashtable">
+      DELETE FROM cfg_port WHERE eqpid=#eqpid# and unitid=#unitid# and portid=#portid#
+    </delete>
+
+    <delete id="Deletecfg_unit" parameterClass="string">
+      DELETE FROM cfg_unit WHERE unitid=#value#
+    </delete>
+
+    <delete id="Deletewip_glassinfo" parameterClass="string">
+      DELETE FROM wip_glassinfo WHERE glassid=#value#
+    </delete>
+
+    <delete id="Deletecfg_recipeppidmap" parameterClass="Hashtable">
+      DELETE FROM cfg_recipeppidmap WHERE eqpid=#eqpid# and ppid=#ppid#
+    </delete>
+    <delete id="Deletecfg_processmodemap" parameterClass="Hashtable">
+      DELETE FROM cfg_processmodemap WHERE eqpid=#eqpid# and machinerecipename=#machinerecipename#
+    </delete>
+
+    <delete id="Deletewip_alarm" parameterClass="Hashtable">
+      DELETE FROM wip_alarm WHERE eqpid=#eqpid# and unitid=#unitid# and alarmid=#alarmid# and id=$id$
+    </delete>
+
+    <select id="Viewwip_glassinfoSel" resultMap="wip_glassinfoResult"  parameterClass="Hashtable">
+      select * from wip_glassinfo <dynamic prepend="where">
+        <isNotEmpty property="currentsunit" prepend="and">
+			currentsunit like '%' || #currentsunit# || '%'
+		</isNotEmpty>
+		<isNotEmpty property="portid" prepend="and">
+			portid=#portid#
+		</isNotEmpty>
+		<isNotEmpty property="cassetteid" prepend="and">
+			cassetteid=#cassetteid#
+		</isNotEmpty>
+      </dynamic>
+    </select>
+    <select id="Viewcfg_eqpstatusrule" resultMap="cfg_eqpstatusruleResult"  parameterClass="Hashtable">
+      select * from cfg_eqpstatusrule<dynamic prepend="where">
+        <isNotEmpty property="eqpid" prepend="and">eqpid=#eqpid#</isNotEmpty>
+        <isNotEmpty property="unitidlist" prepend="and">unitidlist like '%' || #unitidlist# || '%'</isNotEmpty>
+        <isNotEmpty property="checkenable" prepend="and">checkenable=$checkenable$</isNotEmpty>
+        <isNotEmpty property="eqpstatus" prepend="and">eqpstatus=#eqpstatus#</isNotEmpty>
+      </dynamic>
+    </select>
+    <delete id="Deletecfg_eqpstatusrule" parameterClass="Hashtable">
+      DELETE FROM cfg_eqpstatusrule WHERE eqpid=#eqpid# and eqpstatus=#eqpstatus# and unitidlist=#unitidlist#
+    </delete>
+
+    <delete id="Deletecfg_operationmode" parameterClass="Hashtable">
+      DELETE FROM cfg_operationmode WHERE eqpid=#eqpid# and equipmentvalue=#equipmentvalue#
+    </delete>
+
+    <insert id="Insertcfg_operationmode" parameterClass="Hashtable">
+      INSERT INTO cfg_operationmode(
+      eqpid, equipmentvalue,operationmodename,updatetime,updateuser)
+      VALUES (#eqpid#,$equipmentvalue$, #operationmodename#,localtimestamp(0),#updateuser#)
+    </insert>
+
+    <insert id="Insertcfg_eqpstatusrule" parameterClass="Hashtable">
+      INSERT INTO cfg_eqpstatusrule(
+      eqpid, unitidlist,checkenable,eqpstatus)
+      VALUES (#eqpid#,#unitidlist#, true,#eqpstatus#)
+    </insert>
+
+    <insert id="Insertcfg_recipeppidmap" parameterClass="Hashtable">
+      INSERT INTO cfg_recipeppidmap(
+      eqpid, ppid,recipeid,createuser,unitid,localid,createdate)
+      VALUES (#eqpid#,#ppid#, #recipeid#,#createuser#,#unitid#,$localid$,localtimestamp(0))
+    </insert>s
+
+    <insert id="Insertcfg_processmodemap" parameterClass="Hashtable">
+      INSERT INTO cfg_processmodemap(
+      modepath,machinerecipename,eqpid,createdate,hascvd,remark)
+      VALUES (#modepath#,#machinerecipename#,#eqpid#,localtimestamp(0),#hascvd#,#remark#)
+    </insert>
+
+    <update id="Updatecfg_recipeppidmap" patameterClass="Hashtable">
+      update cfg_recipeppidmap set recipeid = $recipeid$ where eqpid=#eqpid# and unitid=#unitid# and ppid=#ppid#
+    </update>
+    <update id="Updatecfg_processmodemap" patameterClass="Hashtable">
+      update cfg_processmodemap set modepath = #modepath# ,hascvd = #hascvd#  ,remark = #remark#  where eqpid=#eqpid# and machinerecipename=#machinerecipename#
+    </update>
+    <update id="UpdateDispatchMode" patameterClass="Hashtable">
+      update cfg_eqp set robotdispatchmode = $robotdispatchmode$
+      <dynamic prepend="where">
+        eqpid=#eqpid#
+      </dynamic>
+    </update>
+    <update id="UpdateIsColdRun" patameterClass="Hashtable">
+      update cfg_eqp set iscoldrun = $iscoldrun$
+      <dynamic prepend="where">
+        eqpid=#eqpid#
+      </dynamic>
+    </update>
+    
+    <delete id="Deletewip_cassette"   parameterClass="Hashtable">
+      delete from wip_cassette
+      <dynamic prepend="where">
+        <isNotEmpty property="portid" prepend="and">
+          portid =#portid#
+        </isNotEmpty>
+        <isNotEmpty property="CassetteSequenceNo" prepend="and">
+          cassettesequenceno =#cassettesequenceno#
+        </isNotEmpty>
+      </dynamic>
+    </delete>
+
+    <!--<delete id="Deletebc_robot_model"   parameterClass="Hashtable">
+      delete from bc_robot_model
+      <dynamic prepend="where">
+        <isNotEmpty property="eqpid" prepend="and">
+          eqpid =#eqpid#
+        </isNotEmpty>
+        <isNotEmpty property="unitid" prepend="and">
+          unitid =#unitid#
+        </isNotEmpty>
+        <isNotEmpty property="modelid" prepend="and">
+          modelid =$modelid$
+        </isNotEmpty>
+      </dynamic>
+    </delete>-->
+
+    <!--<insert id="Insertbc_robot_model" parameterClass="Hashtable">
+      INSERT INTO bc_robot_model(
+      eqpid,unitid,modelid,modelposition,uplinkname,downlinkname,portid,sentoutname,unitno)
+      VALUES (#eqpid#,#unitid#,#modelid#,$modelposition$,#uplinkname#,#downlinkname#,#portid#,#sentoutname#,#unitno#)
+    </insert>
+
+    <update id="Updatebc_robot_model" parameterClass="Hashtable">
+		UPDATE bc_robot_model
+		SET  modelposition=$modelposition$, uplinkname=#uplinkname#,downlinkname=#downlinkname#,sentoutname=#sentoutname#,robotmotion=$robotmotion$,portgettype=$portgettype$,dualarm=#dualarm#
+		WHERE eqpid=#eqpid# and unitid=#unitid# and modelid=$modelid$
+	</update>-->
+
+    <update id="Updatecfg_dvdata" parameterClass="Hashtable">
+      UPDATE public.cfg_dvdata
+      SET  dvname=#dvName#, operationenable=#operationEnable#,
+      operationsymbol=#operationSymbol#, operationproportion=$operationProportion$
+      <dynamic prepend="where">
+        <isNotEmpty property="eqpid" prepend="and">
+          eqpid=#eqpid#
+        </isNotEmpty>
+        <isNotEmpty property="unitid" prepend="and">
+          unitid=#unitid#
+        </isNotEmpty>
+        <isNotEmpty property="index" prepend="and">
+          index=#index#
+        </isNotEmpty>
+		  <isNotEmpty property="id" prepend="and">
+			  id=#id#
+		  </isNotEmpty>
+      </dynamic>
+    </update>
+
+    <update id="Updatecfg_svdata" parameterClass="Hashtable">
+      UPDATE public.cfg_svdata
+      SET  svname=#svName#, operationenable=#operationEnable#,
+      operationsymbol=#operationSymbol#, operationproportion=$operationProportion$
+      <dynamic prepend="where">
+        <isNotEmpty property="eqpid" prepend="and">
+          eqpid=#eqpid#
+        </isNotEmpty>
+        <isNotEmpty property="unitid" prepend="and">
+          unitid=#unitid#
+        </isNotEmpty>
+        <isNotEmpty property="index" prepend="and">
+          index=#index#
+        </isNotEmpty>
+		  <isNotEmpty property="id" prepend="and">
+			  id=#id#
+		  </isNotEmpty>
+      </dynamic>
+    </update>
+
+    <update id="Updatecfg_recipeparameter" parameterClass="Hashtable">
+		UPDATE public.cfg_recipeparameter
+		SET  recipeparametername=#recipeParameterName#, operationenable=#operationEnable#,
+		operationsymbol=#operationSymbol#, operationproportion=$operationProportion$
+		<dynamic prepend="where">
+        <isNotEmpty property="eqpid" prepend="and">
+          eqpid=#eqpid#
+        </isNotEmpty>
+        <isNotEmpty property="eqpid" prepend="and">
+          unitid=#unitid#
+        </isNotEmpty>
+        <isNotEmpty property="eqpid" prepend="and">
+          index=#index#
+        </isNotEmpty>
+      </dynamic>
+    </update>
+
+    <select id="Viewcfg_eqpstatusgroup" resultMap="cfg_eqpstatusgroupResult"  parameterClass="Hashtable">
+      select * from cfg_eqpstatusgroup<dynamic prepend="where">
+        <isNotEmpty property="eqpid" prepend="and">eqpid=#eqpid#</isNotEmpty>
+        <isNotEmpty property="index" prepend="and">index=$index$</isNotEmpty>
+        <isNotEmpty property="eqpstatus" prepend="and">eqpstatus=#eqpstatus#</isNotEmpty>
+      </dynamic>
+      order by index asc
+    </select>
+    <update id="Updatecfg_eqpstatusgroup" parameterClass="Hashtable">
+      UPDATE public.cfg_eqpstatusgroup
+      SET index=$index$
+      <dynamic prepend="where">
+        eqpid=#eqpid# and eqpstatus=#eqpstatus#
+      </dynamic>
+    </update>
+    <select id="Viewcfg_mixrunconfig" resultMap="cfg_mixrunconfigResult"  parameterClass="Hashtable">
+      select * from cfg_mixrunconfig<dynamic prepend="where">
+        <isNotEmpty property="machinerecipename" prepend="and">machinerecipename=#machinerecipename#</isNotEmpty>
+        <isNotEmpty property="exist" prepend="and">exist=$exist$</isNotEmpty>
+        <isNotEmpty property="inputcount" prepend="and">inputcount=$inputcount$</isNotEmpty>
+        <isNotEmpty property="currentratioid" prepend="and">currentratioid=$currentratioid$</isNotEmpty>
+        <isNotEmpty property="eqpid" prepend="and">eqpid=#eqpid#</isNotEmpty>
+        <isNotEmpty property="id" prepend="and">id=$id$</isNotEmpty>
+        <isNotEmpty property="type" prepend="and">type=#type#</isNotEmpty>
+      </dynamic>
+    </select>
+    <update id="Updatecfg_mixrunconfig" parameterClass="Hashtable">
+      UPDATE public.cfg_mixrunconfig
+      SET machinerecipename=#machinerecipename#
+      <dynamic prepend="where">
+        id=$id$
+      </dynamic>
+    </update>
+    <insert id="Insertcfg_mixrunconfig" parameterClass="Hashtable">
+      INSERT INTO cfg_mixrunconfig(
+      machinerecipename,exist,inputcount,currentratioid,eqpid)
+      VALUES (#machinerecipename#,false,0,1,#eqpid#)
+    </insert>
+    <delete id="Deletecfg_mixrunconfig"   parameterClass="string">
+      delete from cfg_mixrunconfig where id=$Value$
+    </delete>
+
+    <select id="Viewbc_robot_path_configureDis" resultMap="bc_robot_path_configureDisResult">
+      SELECT DISTINCT modepath FROM bc_robot_path_configure
+    </select>
+    <delete id="Deletehis_opilog"   parameterClass="string">
+      delete from his_opilog where id=$Value$
+    </delete>
+
+    <delete id="DeleteAllhis_opilog">
+      delete from his_opilog
+    </delete>
+    <delete id="DeleteAllhis_robotcommand">
+      delete from his_robotcommand
+    </delete>
+
+	<select id="Viewbc_sys_setting" resultMap="bc_sys_settingResult"  parameterClass="Hashtable">
+		select * from bc_sys_setting 
+		<dynamic prepend="where">
+			<isNotEmpty property="bckey" prepend="and">bckey=#bckey#</isNotEmpty>
+			<isNotEmpty property="bcvalue" prepend="and">bcvalue=#bcvalue#</isNotEmpty>
+			<isNotEmpty property="describe" prepend="and">describe=#describe#</isNotEmpty>
+			<isNotEmpty property="eqpid" prepend="and">eqpid=#eqpid#</isNotEmpty>
+			<isNotEmpty property="unitid" prepend="and">unitid=#unitid#</isNotEmpty>
+			<isNotEmpty property="id" prepend="and">id=#id#</isNotEmpty>
+		  </dynamic>
+	</select>
+
+	  <update id="Updatebc_sys_setting" parameterClass="Hashtable">
+		  UPDATE public.bc_sys_setting
+		  SET  bcvalue=#bcvalue#,describe=#describe#,eqpid=#eqpid#,unitid=#unitid#,bckey=#bckey#
+		  <dynamic prepend="where">
+			  <isNotEmpty property="id" prepend="and">
+				  id=#id#
+			  </isNotEmpty>
+		  </dynamic>
+	  </update>
+	  
+  </statements>
+</sqlMap>

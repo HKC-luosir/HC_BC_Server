@@ -1,0 +1,13 @@
+D:\20230419\02.SourceCode\CommonDll\Glorysoft.BC.Entity.dll
+D:\20230419\02.SourceCode\CommonDll\Glorysoft.BC.Entity.pdb
+D:\20230419\02.SourceCode\BCCommon\Glorysoft.BC.Entity\obj\Debug\Glorysoft.BC.Entity.csproj.CoreCompileInputs.cache
+D:\20230419\02.SourceCode\BCCommon\Glorysoft.BC.Entity\obj\Debug\Glorysoft.BC.Entity.csproj.CopyComplete
+D:\20230419\02.SourceCode\BCCommon\Glorysoft.BC.Entity\obj\Debug\Glorysoft.BC.Entity.dll
+D:\20230419\02.SourceCode\BCCommon\Glorysoft.BC.Entity\obj\Debug\Glorysoft.BC.Entity.pdb
+D:\WXWork\1688854991299446\Cache\File\2023-04\02.SourceCode\02.SourceCode\CommonDll\Glorysoft.BC.Entity.dll
+D:\WXWork\1688854991299446\Cache\File\2023-04\02.SourceCode\02.SourceCode\CommonDll\Glorysoft.BC.Entity.pdb
+D:\WXWork\1688854991299446\Cache\File\2023-04\02.SourceCode\02.SourceCode\BCCommon\Glorysoft.BC.Entity\obj\Debug\Glorysoft.BC.Entity.csproj.CoreCompileInputs.cache
+D:\WXWork\1688854991299446\Cache\File\2023-04\02.SourceCode\02.SourceCode\BCCommon\Glorysoft.BC.Entity\obj\Debug\Glorysoft.BC.Entity.csproj.CopyComplete
+D:\WXWork\1688854991299446\Cache\File\2023-04\02.SourceCode\02.SourceCode\BCCommon\Glorysoft.BC.Entity\obj\Debug\Glorysoft.BC.Entity.dll
+D:\WXWork\1688854991299446\Cache\File\2023-04\02.SourceCode\02.SourceCode\BCCommon\Glorysoft.BC.Entity\obj\Debug\Glorysoft.BC.Entity.pdb
+D:\WXWork\1688854991299446\Cache\File\2023-04\02.SourceCode\02.SourceCode\BCCommon\Glorysoft.BC.Entity\obj\Debug\Glorysoft.BC.Entity.csproj.AssemblyReference.cache

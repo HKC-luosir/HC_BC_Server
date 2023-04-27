@@ -1,0 +1,226 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<sqlMap namespace="Alarm"
+	xmlns="http://ibatis.apache.org/mapping"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+  <alias>
+    <typeAlias alias="AlarmInfo"  type="Glorysoft.BC.Entity.AlarmInfo"/>
+  </alias>
+
+  <resultMaps>
+    <resultMap id="AlarmInfoResult" class="AlarmInfo">
+      <result property="AlarmID" column="alarmid"/>
+      <result property="EQPID" column="eqpid"/>
+      <result property="UNITID" column="unitid"/>        
+      <result property="AlarmText" column="alarmtext"/>      
+      <result property="AlarmStatus" column="alarmstatus"/>     
+      <result property="AlarmType" column="alarmtype"/>      
+      <result property="CreateDate" column="createdate"/>
+      <result property="ID" column="id"/>
+	  <result property="AlarmUnitNumber" column="alarmunitnumber"/>
+	  <result property="AlarmCode" column="alarmcode"/>
+	</resultMap>
+    <resultMap id="AlarmSpecResult" class="AlarmInfo">    
+      <result property="EQPID" column="eqpid"/>
+      <result property="UNITID" column="unitid"/>
+      <result property="UNITNO" column="unitno"/>
+      <result property="AlarmID" column="alarmid"/>
+      <result property="AlarmText" column="alarmtext"/>
+      <result property="AlarmType" column="alarmtype"/>
+      <result property="CreateDate" column="createdate"/>
+    </resultMap>
+  </resultMaps>
+
+  <statements>
+
+    <select id="ViewAlarmList" resultMap="AlarmSpecResult" parameterClass="Hashtable">
+      select * from cfg_alarmspec
+      <dynamic prepend="where">
+        <isNotEmpty property="EQPID" prepend="and">
+          eqpid=#EQPID#
+        </isNotEmpty>
+        <isNotEmpty property="UNITID" prepend="and">
+          unitid=#UNITID#
+        </isNotEmpty>
+        <isNotEmpty property="UNITNO" prepend="and">
+          unitno=#UNITNO#
+        </isNotEmpty>
+		<isNotEmpty property="ALARMID" prepend="and">
+		  alarmid=#ALARMID#
+		</isNotEmpty>
+      </dynamic> order by alarmid
+    </select>
+
+	  <select id="FindOneAlarm" resultMap="AlarmSpecResult" parameterClass="Hashtable">
+      select * from cfg_alarmspec
+      <dynamic prepend="where">
+        <isNotEmpty property="EQPID" prepend="and">
+          eqpid=#EQPID#
+        </isNotEmpty>
+        <isNotEmpty property="UNITID" prepend="and">
+          unitid=#UNITID#
+        </isNotEmpty>
+        <isNotEmpty property="UNITNO" prepend="and">
+          unitno=#UNITNO#
+        </isNotEmpty>
+        <isNotEmpty property="AlarmID" prepend="and">
+          alarmid=#AlarmID#
+        </isNotEmpty>
+      </dynamic>
+    </select>
+
+    <insert id="InsertAlarmInfo" parameterClass="AlarmInfo">
+      INSERT INTO cfg_alarmspec(
+      eqpid,unitid,unitno,alarmid,alarmtext,alarmtype,createdate)
+      VALUES (#EQPID#,  #UNITID#,#UNITNO#, #AlarmID#,#AlarmText#,#AlarmType#,localtimestamp(0));
+    </insert>
+
+	  <delete id="DeleteAlarmInfo" parameterClass="Hashtable">
+		  DELETE FROM cfg_alarmspec
+		  <dynamic prepend="where">
+        <isNotEmpty property="eqpid" prepend="and">
+			eqpid=#eqpid#
+		</isNotEmpty>
+        <isNotEmpty property="unitid" prepend="and">
+			unitid=#unitid#
+		</isNotEmpty>       
+        <isNotEmpty property="alarmid" prepend="and">
+			alarmid=#alarmid#
+		</isNotEmpty>
+      </dynamic>      
+    </delete>
+
+    <!--<update id="UpdateAlarmInfo" parameterClass="Hashtable">
+      UPDATE cfg_alarm SET  alarmtext=#AlarmText# 
+      <dynamic prepend="where">
+      <isNotEmpty property="EQPID" prepend="and">
+        eqpid=#EQPID#
+      </isNotEmpty>
+      <isNotEmpty property="UNITID" prepend="and">
+        unitid=#UNITID#
+      </isNotEmpty>
+      
+        <isNotEmpty property="AlarmID" prepend="and">
+          alarmid=#AlarmID#
+        </isNotEmpty>
+    </dynamic>
+    </update>
+
+    <update id="UpdateAlarmEnable" parameterClass="AlarmInfo">
+      UPDATE cfg_alarm SET alarmenable=#AlarmEnable#
+     <dynamic prepend="where">
+      <isNotEmpty property="EQPID" prepend="and">
+        eqpid=#EQPID#
+      </isNotEmpty>
+      <isNotEmpty property="UNITID" prepend="and">
+        unitid=#UNITID#
+      </isNotEmpty>
+    
+       <isNotEmpty property="AlarmID" prepend="and">
+         alarmid=#AlarmID#
+       </isNotEmpty>
+    </dynamic>
+    </update>-->
+
+    <!--<delete id="DeleteAlarmInfo" parameterClass="Hashtable">
+      DELETE FROM cfg_alarm
+      <dynamic prepend="where">
+        <isNotEmpty property="EQPID" prepend="and">
+          eqpid=#EQPID#
+        </isNotEmpty>
+        <isNotEmpty property="UNITID" prepend="and">
+          unitid=#UNITID#
+        </isNotEmpty>
+       
+        <isNotEmpty property="AlarmID" prepend="and">
+          alarmid=#AlarmID#
+        </isNotEmpty>
+      </dynamic>      
+    </delete>-->
+
+    <!--<delete id="ClearAlarmList" parameterClass="string">
+      DELETE FROM cfg_alarm 
+      where eqpid = #value#
+    </delete>-->
+
+    
+    
+    <select id ="ViewAlarmHistory" resultMap="AlarmInfoResult" parameterClass="Hashtable">
+      select * from his_alarm
+      <dynamic prepend="where">
+        <isNotEmpty property="EQPID" prepend="and">
+          eqpid=#EQPID#
+        </isNotEmpty>
+        <isNotEmpty property="UNITID" prepend="and">
+          unitid=#UNITID#
+        </isNotEmpty>
+       
+        <isNotEmpty property="AlarmID" prepend="and">
+          alarmid=#AlarmID#
+        </isNotEmpty>
+        <isNotEmpty property="FromDate" prepend="and">
+          <![CDATA[ createdate >= to_timestamp(#FromDate#,'YYYY-MM-DD HH24:MI:SS')  ]]>
+        </isNotEmpty>
+        <isNotEmpty property="Todate" prepend="and">
+          <![CDATA[ createdate <= to_timestamp(#ToDate#,'YYYY-MM-DD HH24:MI:SS')]]>
+        </isNotEmpty>
+      </dynamic>
+    </select>
+
+    <insert id="InsertAlarmHistory" parameterClass="AlarmInfo">
+      INSERT INTO his_alarm(eqpid, alarmstatus, alarmtext, createdate, unitid,  alarmtype,alarmid,alarmunitnumber,alarmcode)
+      VALUES (#EQPID#, #AlarmStatus#, #AlarmText#, localtimestamp(0), #UNITID#,  #AlarmType#,#AlarmID#,#AlarmUnitNumber#,#AlarmCode#);
+    </insert>
+
+
+
+
+
+
+	  <insert id="InsertWipAlarmInfo" parameterClass="AlarmInfo">
+		  INSERT INTO wip_alarm(
+		  eqpid, alarmstatus, alarmtext, createdate, unitid, alarmtype,
+		  alarmid,alarmunitnumber,alarmcode)
+		  VALUES (#EQPID#, #AlarmStatus#, #AlarmText#, localtimestamp(0), #UNITID#, #AlarmType#,
+		  #AlarmID#, #AlarmUnitNumber#,#AlarmCode#);		 
+	  </insert>
+	  <delete id="DeleteWipAlarmInfo" parameterClass="Hashtable">      
+      DELETE FROM wip_alarm
+      <dynamic prepend="where">
+			  <isNotEmpty property="EQPID" prepend="and">
+				  eqpid=#EQPID#
+			  </isNotEmpty>
+			  <isNotEmpty property="UNITID" prepend="and">
+				  unitid=#UNITID#
+			  </isNotEmpty>
+        <isNotEmpty property="AlarmType" prepend="and">
+          alarmtype=#AlarmType#
+        </isNotEmpty>
+        <isNotEmpty property="ID" prepend="and">
+          id=#ID#
+        </isNotEmpty>
+		  <isNotEmpty property="AlarmID" prepend="and">
+			  alarmid=#AlarmID#
+		  </isNotEmpty>
+		  </dynamic>
+	  </delete>
+    <delete id="DeleteWipAlarmMinInfo" parameterClass="Hashtable">
+      delete  from wip_alarm   where id=
+      (select min(id) id from wip_alarm where eqpid=#EQPID# and unitid=#UNITID# and alarmid =#AlarmID# )
+    </delete>
+    
+    <select id="ViewWipAlarmList" resultMap="AlarmInfoResult" parameterClass="Hashtable">
+		  select * from wip_alarm
+		  <dynamic prepend="where">
+			  <isNotEmpty property="EQPID" prepend="and">
+				  eqpid=#EQPID#
+			  </isNotEmpty>
+			  <isNotEmpty property="UNITID" prepend="and">
+				  unitid=#UNITID#
+			  </isNotEmpty>
+		  </dynamic> order by createdate
+	  </select>
+	  
+	  
+  </statements>
+</sqlMap>

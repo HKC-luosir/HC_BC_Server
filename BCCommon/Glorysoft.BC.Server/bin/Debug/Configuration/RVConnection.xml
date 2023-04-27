@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<RVConnections>
+	<ConnectionInfo>
+		<Name>MES</Name>
+		<Service>7050</Service>
+		<Network>10.18.152.29</Network>
+		<DaemonList>
+			<Daemon>tcp:10.18.152.29:10200</Daemon>
+		</DaemonList>
+		<TargetSubject>MES.TST.OPI.MOD.NM</TargetSubject>
+		<ListenSubjectList>
+			<ListenSubject>MES.TST.OPI.MOD.CM</ListenSubject>
+			<ListenSubject>_RV.INFO.SYSTEM.RVD.CONNECTED</ListenSubject>
+			<ListenSubject>_RV.WARN.SYSTEM.RVD.DISCONNECTED</ListenSubject>
+		</ListenSubjectList>
+		<OwnSubject>MES.TST.OPI.MOD.CM</OwnSubject>
+		<TimeOut>5000</TimeOut>
+		<FieldName>DATA</FieldName>
+		<MessageRequestRoot>Request</MessageRequestRoot>
+		<MessageReplyRoot>Response</MessageReplyRoot>
+		<TimeOut>60</TimeOut>
+		<LOG_DIR></LOG_DIR>
+		<LOG_BACKUP>7</LOG_BACKUP>
+		<EnvName>DEV</EnvName>
+	</ConnectionInfo>
+</RVConnections>

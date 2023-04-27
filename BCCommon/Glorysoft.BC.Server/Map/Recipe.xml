@@ -1,0 +1,384 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<sqlMap namespace="Recipe"
+	xmlns="http://ibatis.apache.org/mapping"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+  <alias>
+    <typeAlias alias="PPIDAndRecipe"  type="Glorysoft.BC.Entity.PPIDAndRecipe"/>
+    <typeAlias alias="RecipeParameter"  type="Glorysoft.BC.Entity.RecipeParameter"/>
+    <typeAlias alias="ProcessModeMap"  type="Glorysoft.BC.Entity.ProcessModeMap"/>
+    <typeAlias alias="MIXRunConfig"  type="Glorysoft.BC.Entity.MIXRunConfig"/>
+    <typeAlias alias="MIXRunInputRatio"  type="Glorysoft.BC.Entity.MIXRunInputRatio"/>
+    <typeAlias alias="OperationMode"  type="Glorysoft.BC.Entity.OperationMode"/>
+    <typeAlias alias="UseRecipeList"  type="Glorysoft.BC.Entity.UseRecipeList"/>
+  </alias>
+
+  <resultMaps>
+
+    <resultMap id="RecipeParameterResult" class="RecipeParameter">
+      <result property = "EQPID" column="eqpid"/>
+      <result property = "CreateDate" column="createdate"/>
+      <result property = "UnitID" column="unitid"/>    
+      <result property = "RecipeChangeTime" column="recipechangetime"/>
+      <result property = "RecipeParameterName" column="recipeparametername"/>
+      <result property = "Index" column="index"/>
+      <result property = "OperationEnable" column="operationenable"/>
+      <result property = "OperationSymbol" column="operationsymbol"/>
+      <result property = "OperationProportion" column="operationproportion"/>
+	  <result property = "ItemName" column="itemname"/>
+	</resultMap>
+
+    <resultMap id="PPIDAndRecipeResult" class="PPIDAndRecipe">  
+      <result property="EQPID" column ="eqpid"/>
+      <result property="PPID" column ="ppid"/>
+      <result property="RecipeID" column ="recipeid"/>
+      <result property="CreateUser" column="CreateUser"/>
+      <result property="CreateDate" column ="createdate"/>
+      <result property = "UnitID" column="unitid"/>
+        <result property = "LocalID" column="localid"/>
+    </resultMap>
+
+	  <resultMap id="ProcessModeMapResult" class="ProcessModeMap">
+		  <result property="ModePath" column ="modepath"/>
+		  <result property="MachineRecipeName" column ="machinerecipename"/>
+		  <result property="CreateDate" column ="createdate"/>
+		  <result property="EQPID" column ="eqpid"/>
+      <result property="HasCVD" column ="hascvd"/>
+      <result property="Remark" column ="remark"/>
+	  </resultMap>
+    <resultMap id="MIXRunConfigResult" class="MIXRunConfig">      
+      <result property="MachineRecipeName" column ="machinerecipename"/>
+      <result property="Exist" column ="exist"/>
+      <result property="InputCount" column ="inputcount"/>
+      <result property="CurrenRatioID" column ="currentratioid"/>
+      <result property="EQPID" column ="eqpid"/>
+      <result property="ID" column ="id"/>
+      <result property="Type" column ="type"/>
+    </resultMap>
+    <resultMap id="MIXRunInputRatioResult" class="MIXRunInputRatio">
+      <result property="EQPID" column ="eqpid"/>
+      <result property="InputRatio" column ="inputratio"/>
+      <result property="MachineRecipeName" column ="machinerecipename"/>
+      <result property="InputRatioID" column ="inputratioid"/>
+    </resultMap>
+    
+    <resultMap id="OperationModeResult" class="OperationMode">
+      <result property="EQPID" column ="eqpid"/>
+      <result property="Equipmentvalue" column ="equipmentvalue"/>
+      <result property="OperationModeName" column ="operationmodename"/>
+      <result property="UpdateTime" column ="updatetime"/>
+      <result property="UpdateUser" column ="updateuser"/>
+      <result property="HostName" column ="hostname"/>
+      <result property="SendHost" column ="sendhost"/>
+    </resultMap>
+    <resultMap id="UseRecipeListResult" class="UseRecipeList">
+      <result property="RecipeNo" column ="recipeno"/>
+      <result property="PPID" column ="ppid"/>
+      <result property="UnitID" column ="unitid"/>
+      <result property="Parameter" column ="parameter"/>
+      <result property="EQPID" column ="eqpid"/>
+    </resultMap>
+  </resultMaps>
+
+  <statements>
+    <select id ="GetUseRecipeList" resultMap="UseRecipeListResult" parameterClass="UseRecipeList">
+      select * from cfg_userecipelist
+      <dynamic prepend="where">
+        <isNotEmpty property="RecipeNo" prepend="and">
+          recipeno=#RecipeNo#
+        </isNotEmpty>
+        <isNotEmpty property="UnitID" prepend="and">
+          unitid=#UnitID#
+        </isNotEmpty>
+        <isNotEmpty property="EQPID" prepend="and">
+          eqpid=#EQPID#
+        </isNotEmpty>
+        <isNotEmpty property="PPID" prepend="and">
+          ppid=#PPID#
+        </isNotEmpty>
+      </dynamic>
+      order by RecipeNo desc
+    </select>
+
+    <delete id="DeleteUseRecipeList" parameterClass="UseRecipeList">
+      delete from cfg_userecipelist
+      <dynamic prepend="where">
+        <isNotEmpty property="RecipeNo" prepend="and">
+          recipeno=#RecipeNo#
+        </isNotEmpty>
+        <isNotEmpty property="UnitID" prepend="and">
+          unitid=#UnitID#
+        </isNotEmpty>
+        <isNotEmpty property="EQPID" prepend="and">
+          eqpid=#EQPID#
+        </isNotEmpty>
+        <isNotEmpty property="PPID" prepend="and">
+          ppid=#PPID#
+        </isNotEmpty>
+      </dynamic>
+    </delete>
+
+    <insert id="InsertUseRecipeList" parameterClass="UseRecipeList">
+      INSERT INTO cfg_userecipelist(
+      recipeno, parameter, unitid,eqpid,ppid)
+      VALUES (#RecipeNo#, #Parameter#, #UnitID#,#EQPID#,#PPID#);
+    </insert>
+    <select id="GetRecipeParameterList" resultMap="RecipeParameterResult" parameterClass="RecipeParameter">
+      select * from cfg_recipeparameter
+      <dynamic prepend="where">
+        <isNotEmpty property="EQPID" prepend="and">
+          eqpid=#EQPID#
+        </isNotEmpty>
+        <isNotEmpty property="UnitID" prepend="and">
+          unitid=#UnitID#
+        </isNotEmpty>           
+      </dynamic>
+    order by index
+    </select>
+    <insert id="InsertRecipeParameter" parameterClass="RecipeParameter">
+		INSERT INTO cfg_recipeparameter(
+		eqpid, createdate, unitid, recipechangetime, recipeparametername,
+		index, operationenable, operationsymbol, operationproportion, itemname)
+		VALUES (#EQPID#, localtimestamp(0), #UnitID#,localtimestamp(0), #RecipeParameterName#,
+		#Index#, #OperationEnable#, #OperationSymbol#, #OperationProportion#, #ItemName#);
+	</insert>
+
+    <update id="UpdateRecipeParameter" parameterClass="RecipeParameter">
+		UPDATE cfg_recipeparameter
+		SET recipechangetime=localtimestamp(0), recipeparametername=#RecipeParameterName#,
+		index=#Index#, operationenable=#OperationEnable#, operationsymbol=#OperationSymbol#, operationproportion=#OperationProportion#, itemname=#ItemName#
+		<dynamic prepend="where">
+        <isNotEmpty property="EQPID" prepend="and">
+          eqpid=#EQPID#
+        </isNotEmpty>
+        <isNotEmpty property="UnitID" prepend="and">
+          unitid=#UnitID#
+        </isNotEmpty>        
+      </dynamic>
+    </update>
+
+    <delete id="DeleteRecipeParameter" parameterClass="RecipeParameter">
+      delete from cfg_recipeparameter
+      <dynamic prepend="where">
+        <isNotEmpty property="EQPID" prepend="and">
+          eqpid=#EQPID#
+        </isNotEmpty>
+        <isNotEmpty property="UnitID" prepend="and">
+          unitid=#UnitID#
+        </isNotEmpty>        
+      </dynamic>
+    </delete>
+
+
+
+
+    
+    
+    <select id="GetPPIDAndRecipeList" resultMap="PPIDAndRecipeResult" parameterClass="PPIDAndRecipe">
+      select * from cfg_recipeppidmap
+      <dynamic prepend="where">
+        <isNotEmpty property="EQPID" prepend="and">
+          eqpid=#EQPID#
+        </isNotEmpty>
+        <isNotEmpty property="PPID" prepend="and">
+          ppid=#PPID#
+        </isNotEmpty>
+        <isNotEmpty property="RecipeID" prepend="and">
+          recipeid=#RecipeID#
+        </isNotEmpty>
+        <isNotEmpty property="UnitID" prepend="and">
+          unitid=#UnitID#
+        </isNotEmpty>
+      </dynamic>
+		order by createdate 
+	</select>
+    <insert id="InsertPPIDAndRecipe" parameterClass="PPIDAndRecipe">
+		INSERT INTO cfg_recipeppidmap(
+		eqpid, recipeid, ppid, createuser, createdate,localid,unitid)
+		VALUES (#EQPID#,#RecipeID#, #PPID#, #CreateUser#, localtimestamp(0),#LocalID#,#UnitID#)
+	</insert>    
+    <delete id="DeletePPIDAndRecipe" parameterClass="PPIDAndRecipe">
+      delete from cfg_recipeppidmap
+      <dynamic prepend="where">
+        <isNotEmpty property="EQPID" prepend="and">
+          eqpid=#EQPID#
+        </isNotEmpty>
+		  <isNotEmpty property="UnitID" prepend="and">
+			  unitid=#UnitID#
+		  </isNotEmpty>  
+        <isNotEmpty property="PPID" prepend="and">
+          ppid=#PPID#
+        </isNotEmpty>
+        <isNotEmpty property="RecipeID" prepend="and">
+          recipeid=#RecipeID#
+        </isNotEmpty>
+      </dynamic>
+    </delete>
+
+
+
+
+
+	  <select id="GetProcessModeMapList" resultMap="ProcessModeMapResult" parameterClass="Hashtable">
+		  select * from cfg_processmodemap
+		  <dynamic prepend="where">
+			  <isNotEmpty property="EQPID" prepend="and">
+				  eqpid=#EQPID#
+			  </isNotEmpty>
+			  <isNotEmpty property="ModePath" prepend="and">
+          modepath=#ModePath#
+        </isNotEmpty>
+			  <isNotEmpty property="MachineRecipeName" prepend="and">
+				  machinerecipename=#MachineRecipeName#
+			  </isNotEmpty>
+		  </dynamic>
+		  order by CreateDate
+	  </select>
+	  <insert id="InsertProcessModeMap" parameterClass="ProcessModeMap">
+      INSERT INTO cfg_processmodemap(
+      modepath, machinerecipename, createdate, eqpid,hascvd,remark)
+      VALUES (#ModePath#,#MachineRecipeName#, localtimestamp(0), #EQPID#,#HasCVD#,#Remark#)
+    </insert>
+	  <delete id="DeleteProcessModeMap" parameterClass="ProcessModeMap">
+		  delete from cfg_processmodemap
+		  <dynamic prepend="where">
+			  <isNotEmpty property="EQPID" prepend="and">
+				  eqpid=#EQPID#
+			  </isNotEmpty>
+			  <isNotEmpty property="ModePath" prepend="and">
+          modepath=#ModePath#
+        </isNotEmpty>
+			  <isNotEmpty property="MachineRecipeName" prepend="and">
+				  machinerecipename=#MachineRecipeName#
+			  </isNotEmpty>
+		  </dynamic>
+	  </delete>
+
+
+    <insert id="InsertMIXRunConfig" parameterClass="MIXRunConfig">
+      INSERT INTO cfg_mixrunconfig(
+      machinerecipename, exist, inputcount, currentratioid, eqpid, type,id)
+      VALUES (#MachineRecipeName#, #Exist#, #InputCount#, #CurrenRatioID#, #EQPID#, #Type#,0);
+    </insert>
+    <delete id="DeleteMIXRunConfig" parameterClass="Hashtable">
+      delete from cfg_mixrunconfig
+      <dynamic prepend="where">
+        <isNotEmpty property="EQPID" prepend="and">
+          eqpid=#EQPID#
+        </isNotEmpty>
+        <isNotEmpty property="MachineRecipeName" prepend="and">
+          machinerecipename=#MachineRecipeName#
+        </isNotEmpty>
+      </dynamic>
+    </delete>
+    <select id="GetMIXRunConfigList" resultMap="MIXRunConfigResult" parameterClass="Hashtable">
+      select * from cfg_mixrunconfig
+      <dynamic prepend="where">
+        <isNotEmpty property="EQPID" prepend="and">
+          eqpid=#EQPID#
+        </isNotEmpty>
+        <isNotEmpty property="MachineRecipeName" prepend="and">
+          machinerecipename=#MachineRecipeName#
+        </isNotEmpty>
+      </dynamic>
+      order by id
+    </select>
+    <update id="UpdateMIXRunConfig" parameterClass="MIXRunConfig">
+      UPDATE cfg_mixrunconfig
+      SET id=#ID#, exist=#Exist#, inputcount=#InputCount#, currentratioid=#CurrenRatioID#, type=#Type#
+      <dynamic prepend="where">
+        <isNotEmpty property="EQPID" prepend="and">
+          eqpid=#EQPID#
+        </isNotEmpty>
+        <isNotEmpty property="MachineRecipeName" prepend="and">
+          machinerecipename=#MachineRecipeName#
+        </isNotEmpty>
+      </dynamic>
+    </update>
+
+
+
+
+    <insert id="InsertMIXRunInputRatio" parameterClass="MIXRunInputRatio">
+      INSERT INTO cfg_mixruninputratio(
+      eqpid, inputratio, machinerecipename, inputratioid)
+      VALUES (#EQPID#, #InputRatio#, #MachineRecipeName#, #InputRatioID#);
+    </insert>
+    <delete id="DeleteMIXRunInputRatio" parameterClass="Hashtable">
+      delete from cfg_mixruninputratio
+      <dynamic prepend="where">
+        <isNotEmpty property="EQPID" prepend="and">
+          eqpid=#EQPID#
+        </isNotEmpty>
+        <isNotEmpty property="MachineRecipeName" prepend="and">
+          machinerecipename=#MachineRecipeName#
+        </isNotEmpty>
+      <isNotEmpty property="InputRatioID" prepend="and">
+          inputratioid=#InputRatioID#
+        </isNotEmpty>
+      </dynamic>
+    </delete>
+    <select id="GetMIXRunInputRatioList" resultMap="MIXRunInputRatioResult" parameterClass="Hashtable">
+      select * from cfg_mixruninputratio
+      <dynamic prepend="where">
+        <isNotEmpty property="EQPID" prepend="and">
+          eqpid=#EQPID#
+        </isNotEmpty>
+        <isNotEmpty property="MachineRecipeName" prepend="and">
+          machinerecipename=#MachineRecipeName#
+        </isNotEmpty>
+        <isNotEmpty property="InputRatioID" prepend="and">
+          inputratioid=#InputRatioID#
+        </isNotEmpty>
+      </dynamic>
+      order by inputratioid
+    </select>
+    <update id="UpdateMIXRunInputRatio" parameterClass="MIXRunInputRatio">
+      UPDATE cfg_mixruninputratio
+      SET   inputratio=#InputRatio#
+      <dynamic prepend="where">
+        <isNotEmpty property="EQPID" prepend="and">
+          eqpid=#EQPID#
+        </isNotEmpty>
+        <isNotEmpty property="MachineRecipeName" prepend="and">
+          machinerecipename=#MachineRecipeName#
+        </isNotEmpty>
+        <isNotEmpty property="InputRatioID" prepend="and">
+          inputratioid=#InputRatioID#
+        </isNotEmpty>
+      </dynamic>
+    </update>
+    
+    
+    <!--<delete id="DeletePPIDAndRecipeIDByPPID" parameterClass="string">
+      delete from  cfg_recipeppidmap where ppid=#PPID#
+    </delete>-->
+    <!--<select id="ViewPPIDAndRecipeListByEQP" resultMap="PPIDAndRecipeResult" parameterClass="string">
+      select * from cfg_recipeppidmap where eqpid=#value#
+    </select>
+
+    <select id="ViewPPIDAndRecipeListByPPID" resultMap="PPIDAndRecipeResult" parameterClass="string">
+      select * from cfg_recipeppidmap where ppid=#value#
+    </select>
+
+    <select id="FindRecipeIDByEQPIDAndPPID" resultMap="PPIDAndRecipeResult" parameterClass="PPIDAndRecipe">
+      select * from cfg_recipeppidmap where eqpid=#EQPID# and ppid=#PPID# and eqpname=#EQPName#
+    </select>-->
+
+
+    <select id="GetOperationModeList" resultMap="OperationModeResult" parameterClass="Hashtable"> 
+      select * from cfg_operationmode
+      <dynamic prepend="where">
+        <isNotEmpty property="EQPID" prepend="and">
+          eqpid=#EQPID#
+        </isNotEmpty>
+        <isNotEmpty property="Equipmentvalue" prepend="and">
+          equipmentvalue=#Equipmentvalue#
+        </isNotEmpty>
+      </dynamic>
+      order by equipmentvalue 
+    </select>
+    
+    
+  </statements>
+</sqlMap>

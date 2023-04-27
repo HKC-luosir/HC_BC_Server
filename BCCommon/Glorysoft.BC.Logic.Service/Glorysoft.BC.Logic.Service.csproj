@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{604DE815-F4BC-4298-B143-0C63BD55A379}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Glorysoft.BC.Logic.Service</RootNamespace>
+    <AssemblyName>Glorysoft.BC.Logic.Service</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Glorysoft.Auto.Contract">
+      <HintPath>..\..\CommonDll\Glorysoft.Auto.Contract.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>..\..\CommonDll\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL" />
+    <Reference Include="SECSwell">
+      <HintPath>..\..\CommonDll\SECSwell.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Net.Http.WebRequest" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Http">
+      <HintPath>..\..\CommonDll\webapi\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc">
+      <HintPath>..\..\CommonDll\webapi\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AbstractEventHandler.cs" />
+    <Compile Include="AliveService.cs" />
+    <Compile Include="DBService.cs" />
+    <Compile Include="EQPService.cs" />
+    <Compile Include="LogicService.cs" />
+    <Compile Include="PortService.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RobotService.cs" />
+    <Compile Include="TibcoRVService.cs" />
+    <Compile Include="WebSocketService.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Glorysoft.BC.Db.Contract\Glorysoft.BC.Db.Contract.csproj">
+      <Project>{07007414-f814-414c-a437-a49b47cde4b3}</Project>
+      <Name>Glorysoft.BC.Db.Contract</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Glorysoft.BC.EIP\Glorysoft.BC.EIP.csproj">
+      <Project>{93707E3F-85F0-46C4-9E7A-056CFD7C20DE}</Project>
+      <Name>Glorysoft.BC.EIP</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Glorysoft.BC.Entity\Glorysoft.BC.Entity.csproj">
+      <Project>{c95ba850-8855-41c9-8ad6-afc464a9236f}</Project>
+      <Name>Glorysoft.BC.Entity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Glorysoft.BC.EQP.Contract\Glorysoft.BC.EQP.Contract.csproj">
+      <Project>{0ef3879d-32ab-49bb-9f77-c8023a2a683d}</Project>
+      <Name>Glorysoft.BC.EQP.Contract</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Glorysoft.BC.GlassDispatch\Glorysoft.BC.GlassDispath.csproj">
+      <Project>{0942eb9c-8e79-42fe-a0a0-265712ed2bf2}</Project>
+      <Name>Glorysoft.BC.GlassDispath</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Glorysoft.BC.Logic.Contract\Glorysoft.BC.Logic.Contract.csproj">
+      <Project>{80f38fd2-0d2a-4422-9911-e93fd197e0a5}</Project>
+      <Name>Glorysoft.BC.Logic.Contract</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Glorysoft.BC.RV\Glorysoft.BC.RV.csproj">
+      <Project>{46a010aa-5af3-4899-9e5a-ffc7f9652496}</Project>
+      <Name>Glorysoft.BC.RV</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GlorySoft.BC.WebSocket\GlorySoft.BC.WebSocket.csproj">
+      <Project>{fbd2e2e2-cb8f-46c3-8a6a-83dd6b0b34a4}</Project>
+      <Name>GlorySoft.BC.WebSocket</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

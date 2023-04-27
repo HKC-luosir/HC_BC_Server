@@ -1,0 +1,361 @@
+﻿2023-04-26 09:11:33,318 [Load Config Error]
+System.IO.FileNotFoundException: 未能找到文件“D:\WXWork\1688854991299446\Cache\File\2023-04\02.SourceCode\02.SourceCode\BCCommon\Glorysoft.BC.Server\bin\Debug\Configuration\EIP\OLB\LabelAddressMap.xml”。
+文件名:“D:\WXWork\1688854991299446\Cache\File\2023-04\02.SourceCode\02.SourceCode\BCCommon\Glorysoft.BC.Server\bin\Debug\Configuration\EIP\OLB\LabelAddressMap.xml”
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   在 System.Xml.XmlDownloadManager.GetStream(Uri uri, ICredentials credentials, IWebProxy proxy, RequestCachePolicy cachePolicy)
+   在 System.Xml.XmlUrlResolver.GetEntity(Uri absoluteUri, String role, Type ofObjectToReturn)
+   在 System.Xml.XmlTextReaderImpl.OpenUrlDelegate(Object xmlResolver)
+   在 System.Threading.CompressedStack.runTryCode(Object userData)
+   在 System.Runtime.CompilerServices.RuntimeHelpers.ExecuteCodeWithGuaranteedCleanup(TryCode code, CleanupCode backoutCode, Object userData)
+   在 System.Threading.CompressedStack.Run(CompressedStack compressedStack, ContextCallback callback, Object state)
+   在 System.Xml.XmlTextReaderImpl.OpenUrl()
+   在 System.Xml.XmlTextReaderImpl.Read()
+   在 System.Xml.XmlLoader.Load(XmlDocument doc, XmlReader reader, Boolean preserveWhitespace)
+   在 System.Xml.XmlDocument.Load(XmlReader reader)
+   在 System.Xml.XmlDocument.Load(String filename)
+   在 Glorysoft.PLCDriver.PLCConfig.AddMapWorkflowConfig(String conn, IConnectionInfo sk) 位置 D:\Work\Glory\GlorySoftSVN\MY-HKCM2-BC01\SourceCode\BC\PLCDriver\PLCConfig.cs:行号 39
+   在 Glorysoft.PLCDriver.PLCProxy.Connect(IConnectionInfo connString) 位置 D:\Work\Glory\GlorySoftSVN\MY-HKCM2-BC01\SourceCode\BC\PLCDriver\PLCProxy.cs:行号 85
+2023-04-26 09:30:07,961 [Load Config Error]
+System.IO.FileNotFoundException: 未能找到文件“D:\WXWork\1688854991299446\Cache\File\2023-04\02.SourceCode\02.SourceCode\BCCommon\Glorysoft.BC.Server\bin\Debug\Configuration\EIP\OLB\LabelAddressMap.xml”。
+文件名:“D:\WXWork\1688854991299446\Cache\File\2023-04\02.SourceCode\02.SourceCode\BCCommon\Glorysoft.BC.Server\bin\Debug\Configuration\EIP\OLB\LabelAddressMap.xml”
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   在 System.Xml.XmlDownloadManager.GetStream(Uri uri, ICredentials credentials, IWebProxy proxy, RequestCachePolicy cachePolicy)
+   在 System.Xml.XmlUrlResolver.GetEntity(Uri absoluteUri, String role, Type ofObjectToReturn)
+   在 System.Xml.XmlTextReaderImpl.OpenUrlDelegate(Object xmlResolver)
+   在 System.Threading.CompressedStack.runTryCode(Object userData)
+   在 System.Runtime.CompilerServices.RuntimeHelpers.ExecuteCodeWithGuaranteedCleanup(TryCode code, CleanupCode backoutCode, Object userData)
+   在 System.Threading.CompressedStack.Run(CompressedStack compressedStack, ContextCallback callback, Object state)
+   在 System.Xml.XmlTextReaderImpl.OpenUrl()
+   在 System.Xml.XmlTextReaderImpl.Read()
+   在 System.Xml.XmlLoader.Load(XmlDocument doc, XmlReader reader, Boolean preserveWhitespace)
+   在 System.Xml.XmlDocument.Load(XmlReader reader)
+   在 System.Xml.XmlDocument.Load(String filename)
+   在 Glorysoft.PLCDriver.PLCConfig.AddMapWorkflowConfig(String conn, IConnectionInfo sk) 位置 D:\Work\Glory\GlorySoftSVN\MY-HKCM2-BC01\SourceCode\BC\PLCDriver\PLCConfig.cs:行号 39
+   在 Glorysoft.PLCDriver.PLCProxy.Connect(IConnectionInfo connString) 位置 D:\Work\Glory\GlorySoftSVN\MY-HKCM2-BC01\SourceCode\BC\PLCDriver\PLCProxy.cs:行号 85
+2023-04-26 09:42:44,228 [Load Config Error]
+System.IO.FileNotFoundException: 未能找到文件“D:\WXWork\1688854991299446\Cache\File\2023-04\02.SourceCode\02.SourceCode\BCCommon\Glorysoft.BC.Server\bin\Debug\Configuration\EIP\OLB\LabelAddressMap.xml”。
+文件名:“D:\WXWork\1688854991299446\Cache\File\2023-04\02.SourceCode\02.SourceCode\BCCommon\Glorysoft.BC.Server\bin\Debug\Configuration\EIP\OLB\LabelAddressMap.xml”
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   在 System.Xml.XmlDownloadManager.GetStream(Uri uri, ICredentials credentials, IWebProxy proxy, RequestCachePolicy cachePolicy)
+   在 System.Xml.XmlUrlResolver.GetEntity(Uri absoluteUri, String role, Type ofObjectToReturn)
+   在 System.Xml.XmlTextReaderImpl.OpenUrlDelegate(Object xmlResolver)
+   在 System.Threading.CompressedStack.runTryCode(Object userData)
+   在 System.Runtime.CompilerServices.RuntimeHelpers.ExecuteCodeWithGuaranteedCleanup(TryCode code, CleanupCode backoutCode, Object userData)
+   在 System.Threading.CompressedStack.Run(CompressedStack compressedStack, ContextCallback callback, Object state)
+   在 System.Xml.XmlTextReaderImpl.OpenUrl()
+   在 System.Xml.XmlTextReaderImpl.Read()
+   在 System.Xml.XmlLoader.Load(XmlDocument doc, XmlReader reader, Boolean preserveWhitespace)
+   在 System.Xml.XmlDocument.Load(XmlReader reader)
+   在 System.Xml.XmlDocument.Load(String filename)
+   在 Glorysoft.PLCDriver.PLCConfig.AddMapWorkflowConfig(String conn, IConnectionInfo sk) 位置 D:\Work\Glory\GlorySoftSVN\MY-HKCM2-BC01\SourceCode\BC\PLCDriver\PLCConfig.cs:行号 39
+   在 Glorysoft.PLCDriver.PLCProxy.Connect(IConnectionInfo connString) 位置 D:\Work\Glory\GlorySoftSVN\MY-HKCM2-BC01\SourceCode\BC\PLCDriver\PLCProxy.cs:行号 85
+2023-04-26 09:46:51,277 [Load Config Error]
+System.IO.FileNotFoundException: 未能找到文件“D:\WXWork\1688854991299446\Cache\File\2023-04\02.SourceCode\02.SourceCode\BCCommon\Glorysoft.BC.Server\bin\Debug\Configuration\EIP\OLB\LabelAddressMap.xml”。
+文件名:“D:\WXWork\1688854991299446\Cache\File\2023-04\02.SourceCode\02.SourceCode\BCCommon\Glorysoft.BC.Server\bin\Debug\Configuration\EIP\OLB\LabelAddressMap.xml”
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   在 System.Xml.XmlDownloadManager.GetStream(Uri uri, ICredentials credentials, IWebProxy proxy, RequestCachePolicy cachePolicy)
+   在 System.Xml.XmlUrlResolver.GetEntity(Uri absoluteUri, String role, Type ofObjectToReturn)
+   在 System.Xml.XmlTextReaderImpl.OpenUrlDelegate(Object xmlResolver)
+   在 System.Threading.CompressedStack.runTryCode(Object userData)
+   在 System.Runtime.CompilerServices.RuntimeHelpers.ExecuteCodeWithGuaranteedCleanup(TryCode code, CleanupCode backoutCode, Object userData)
+   在 System.Threading.CompressedStack.Run(CompressedStack compressedStack, ContextCallback callback, Object state)
+   在 System.Xml.XmlTextReaderImpl.OpenUrl()
+   在 System.Xml.XmlTextReaderImpl.Read()
+   在 System.Xml.XmlLoader.Load(XmlDocument doc, XmlReader reader, Boolean preserveWhitespace)
+   在 System.Xml.XmlDocument.Load(XmlReader reader)
+   在 System.Xml.XmlDocument.Load(String filename)
+   在 Glorysoft.PLCDriver.PLCConfig.AddMapWorkflowConfig(String conn, IConnectionInfo sk) 位置 D:\Work\Glory\GlorySoftSVN\MY-HKCM2-BC01\SourceCode\BC\PLCDriver\PLCConfig.cs:行号 39
+   在 Glorysoft.PLCDriver.PLCProxy.Connect(IConnectionInfo connString) 位置 D:\Work\Glory\GlorySoftSVN\MY-HKCM2-BC01\SourceCode\BC\PLCDriver\PLCProxy.cs:行号 85
+2023-04-26 10:00:14,769 [Load Config Error]
+System.IO.FileNotFoundException: 未能找到文件“D:\WXWork\1688854991299446\Cache\File\2023-04\02.SourceCode\02.SourceCode\BCCommon\Glorysoft.BC.Server\bin\Debug\Configuration\EIP\OLB\LabelAddressMap.xml”。
+文件名:“D:\WXWork\1688854991299446\Cache\File\2023-04\02.SourceCode\02.SourceCode\BCCommon\Glorysoft.BC.Server\bin\Debug\Configuration\EIP\OLB\LabelAddressMap.xml”
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   在 System.Xml.XmlDownloadManager.GetStream(Uri uri, ICredentials credentials, IWebProxy proxy, RequestCachePolicy cachePolicy)
+   在 System.Xml.XmlUrlResolver.GetEntity(Uri absoluteUri, String role, Type ofObjectToReturn)
+   在 System.Xml.XmlTextReaderImpl.OpenUrlDelegate(Object xmlResolver)
+   在 System.Threading.CompressedStack.runTryCode(Object userData)
+   在 System.Runtime.CompilerServices.RuntimeHelpers.ExecuteCodeWithGuaranteedCleanup(TryCode code, CleanupCode backoutCode, Object userData)
+   在 System.Threading.CompressedStack.Run(CompressedStack compressedStack, ContextCallback callback, Object state)
+   在 System.Xml.XmlTextReaderImpl.OpenUrl()
+   在 System.Xml.XmlTextReaderImpl.Read()
+   在 System.Xml.XmlLoader.Load(XmlDocument doc, XmlReader reader, Boolean preserveWhitespace)
+   在 System.Xml.XmlDocument.Load(XmlReader reader)
+   在 System.Xml.XmlDocument.Load(String filename)
+   在 Glorysoft.PLCDriver.PLCConfig.AddMapWorkflowConfig(String conn, IConnectionInfo sk) 位置 D:\Work\Glory\GlorySoftSVN\MY-HKCM2-BC01\SourceCode\BC\PLCDriver\PLCConfig.cs:行号 39
+   在 Glorysoft.PLCDriver.PLCProxy.Connect(IConnectionInfo connString) 位置 D:\Work\Glory\GlorySoftSVN\MY-HKCM2-BC01\SourceCode\BC\PLCDriver\PLCProxy.cs:行号 85
+2023-04-26 10:11:26,264 [Load Config Error]
+System.IO.FileNotFoundException: 未能找到文件“D:\WXWork\1688854991299446\Cache\File\2023-04\02.SourceCode\02.SourceCode\BCCommon\Glorysoft.BC.Server\bin\Debug\Configuration\EIP\OLB\LabelAddressMap.xml”。
+文件名:“D:\WXWork\1688854991299446\Cache\File\2023-04\02.SourceCode\02.SourceCode\BCCommon\Glorysoft.BC.Server\bin\Debug\Configuration\EIP\OLB\LabelAddressMap.xml”
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   在 System.Xml.XmlDownloadManager.GetStream(Uri uri, ICredentials credentials, IWebProxy proxy, RequestCachePolicy cachePolicy)
+   在 System.Xml.XmlUrlResolver.GetEntity(Uri absoluteUri, String role, Type ofObjectToReturn)
+   在 System.Xml.XmlTextReaderImpl.OpenUrlDelegate(Object xmlResolver)
+   在 System.Threading.CompressedStack.runTryCode(Object userData)
+   在 System.Runtime.CompilerServices.RuntimeHelpers.ExecuteCodeWithGuaranteedCleanup(TryCode code, CleanupCode backoutCode, Object userData)
+   在 System.Threading.CompressedStack.Run(CompressedStack compressedStack, ContextCallback callback, Object state)
+   在 System.Xml.XmlTextReaderImpl.OpenUrl()
+   在 System.Xml.XmlTextReaderImpl.Read()
+   在 System.Xml.XmlLoader.Load(XmlDocument doc, XmlReader reader, Boolean preserveWhitespace)
+   在 System.Xml.XmlDocument.Load(XmlReader reader)
+   在 System.Xml.XmlDocument.Load(String filename)
+   在 Glorysoft.PLCDriver.PLCConfig.AddMapWorkflowConfig(String conn, IConnectionInfo sk) 位置 D:\Work\Glory\GlorySoftSVN\MY-HKCM2-BC01\SourceCode\BC\PLCDriver\PLCConfig.cs:行号 39
+   在 Glorysoft.PLCDriver.PLCProxy.Connect(IConnectionInfo connString) 位置 D:\Work\Glory\GlorySoftSVN\MY-HKCM2-BC01\SourceCode\BC\PLCDriver\PLCProxy.cs:行号 85
+2023-04-26 10:48:54,878 [Load Config Error]
+System.IO.FileNotFoundException: 未能找到文件“D:\WXWork\1688854991299446\Cache\File\2023-04\02.SourceCode\02.SourceCode\BCCommon\Glorysoft.BC.Server\bin\Debug\Configuration\EIP\OLB\LabelAddressMap.xml”。
+文件名:“D:\WXWork\1688854991299446\Cache\File\2023-04\02.SourceCode\02.SourceCode\BCCommon\Glorysoft.BC.Server\bin\Debug\Configuration\EIP\OLB\LabelAddressMap.xml”
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   在 System.Xml.XmlDownloadManager.GetStream(Uri uri, ICredentials credentials, IWebProxy proxy, RequestCachePolicy cachePolicy)
+   在 System.Xml.XmlUrlResolver.GetEntity(Uri absoluteUri, String role, Type ofObjectToReturn)
+   在 System.Xml.XmlTextReaderImpl.OpenUrlDelegate(Object xmlResolver)
+   在 System.Threading.CompressedStack.runTryCode(Object userData)
+   在 System.Runtime.CompilerServices.RuntimeHelpers.ExecuteCodeWithGuaranteedCleanup(TryCode code, CleanupCode backoutCode, Object userData)
+   在 System.Threading.CompressedStack.Run(CompressedStack compressedStack, ContextCallback callback, Object state)
+   在 System.Xml.XmlTextReaderImpl.OpenUrl()
+   在 System.Xml.XmlTextReaderImpl.Read()
+   在 System.Xml.XmlLoader.Load(XmlDocument doc, XmlReader reader, Boolean preserveWhitespace)
+   在 System.Xml.XmlDocument.Load(XmlReader reader)
+   在 System.Xml.XmlDocument.Load(String filename)
+   在 Glorysoft.PLCDriver.PLCConfig.AddMapWorkflowConfig(String conn, IConnectionInfo sk) 位置 D:\Work\Glory\GlorySoftSVN\MY-HKCM2-BC01\SourceCode\BC\PLCDriver\PLCConfig.cs:行号 39
+   在 Glorysoft.PLCDriver.PLCProxy.Connect(IConnectionInfo connString) 位置 D:\Work\Glory\GlorySoftSVN\MY-HKCM2-BC01\SourceCode\BC\PLCDriver\PLCProxy.cs:行号 85
+2023-04-26 10:52:55,164 [Load Config Error]
+System.IO.FileNotFoundException: 未能找到文件“D:\WXWork\1688854991299446\Cache\File\2023-04\02.SourceCode\02.SourceCode\BCCommon\Glorysoft.BC.Server\bin\Debug\Configuration\EIP\OLB\LabelAddressMap.xml”。
+文件名:“D:\WXWork\1688854991299446\Cache\File\2023-04\02.SourceCode\02.SourceCode\BCCommon\Glorysoft.BC.Server\bin\Debug\Configuration\EIP\OLB\LabelAddressMap.xml”
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   在 System.Xml.XmlDownloadManager.GetStream(Uri uri, ICredentials credentials, IWebProxy proxy, RequestCachePolicy cachePolicy)
+   在 System.Xml.XmlUrlResolver.GetEntity(Uri absoluteUri, String role, Type ofObjectToReturn)
+   在 System.Xml.XmlTextReaderImpl.OpenUrlDelegate(Object xmlResolver)
+   在 System.Threading.CompressedStack.runTryCode(Object userData)
+   在 System.Runtime.CompilerServices.RuntimeHelpers.ExecuteCodeWithGuaranteedCleanup(TryCode code, CleanupCode backoutCode, Object userData)
+   在 System.Threading.CompressedStack.Run(CompressedStack compressedStack, ContextCallback callback, Object state)
+   在 System.Xml.XmlTextReaderImpl.OpenUrl()
+   在 System.Xml.XmlTextReaderImpl.Read()
+   在 System.Xml.XmlLoader.Load(XmlDocument doc, XmlReader reader, Boolean preserveWhitespace)
+   在 System.Xml.XmlDocument.Load(XmlReader reader)
+   在 System.Xml.XmlDocument.Load(String filename)
+   在 Glorysoft.PLCDriver.PLCConfig.AddMapWorkflowConfig(String conn, IConnectionInfo sk) 位置 D:\Work\Glory\GlorySoftSVN\MY-HKCM2-BC01\SourceCode\BC\PLCDriver\PLCConfig.cs:行号 39
+   在 Glorysoft.PLCDriver.PLCProxy.Connect(IConnectionInfo connString) 位置 D:\Work\Glory\GlorySoftSVN\MY-HKCM2-BC01\SourceCode\BC\PLCDriver\PLCProxy.cs:行号 85
+2023-04-26 14:07:46,655 [Load Config Error]
+System.IO.FileNotFoundException: 未能找到文件“D:\WXWork\1688854991299446\Cache\File\2023-04\02.SourceCode\02.SourceCode\BCCommon\Glorysoft.BC.Server\bin\Debug\Configuration\EIP\OLB\LabelAddressMap.xml”。
+文件名:“D:\WXWork\1688854991299446\Cache\File\2023-04\02.SourceCode\02.SourceCode\BCCommon\Glorysoft.BC.Server\bin\Debug\Configuration\EIP\OLB\LabelAddressMap.xml”
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   在 System.Xml.XmlDownloadManager.GetStream(Uri uri, ICredentials credentials, IWebProxy proxy, RequestCachePolicy cachePolicy)
+   在 System.Xml.XmlUrlResolver.GetEntity(Uri absoluteUri, String role, Type ofObjectToReturn)
+   在 System.Xml.XmlTextReaderImpl.OpenUrlDelegate(Object xmlResolver)
+   在 System.Threading.CompressedStack.runTryCode(Object userData)
+   在 System.Runtime.CompilerServices.RuntimeHelpers.ExecuteCodeWithGuaranteedCleanup(TryCode code, CleanupCode backoutCode, Object userData)
+   在 System.Threading.CompressedStack.Run(CompressedStack compressedStack, ContextCallback callback, Object state)
+   在 System.Xml.XmlTextReaderImpl.OpenUrl()
+   在 System.Xml.XmlTextReaderImpl.Read()
+   在 System.Xml.XmlLoader.Load(XmlDocument doc, XmlReader reader, Boolean preserveWhitespace)
+   在 System.Xml.XmlDocument.Load(XmlReader reader)
+   在 System.Xml.XmlDocument.Load(String filename)
+   在 Glorysoft.PLCDriver.PLCConfig.AddMapWorkflowConfig(String conn, IConnectionInfo sk) 位置 D:\Work\Glory\GlorySoftSVN\MY-HKCM2-BC01\SourceCode\BC\PLCDriver\PLCConfig.cs:行号 39
+   在 Glorysoft.PLCDriver.PLCProxy.Connect(IConnectionInfo connString) 位置 D:\Work\Glory\GlorySoftSVN\MY-HKCM2-BC01\SourceCode\BC\PLCDriver\PLCProxy.cs:行号 85
+2023-04-26 14:22:18,240 [Load Config Error]
+System.IO.FileNotFoundException: 未能找到文件“D:\WXWork\1688854991299446\Cache\File\2023-04\02.SourceCode\02.SourceCode\BCCommon\Glorysoft.BC.Server\bin\Debug\Configuration\EIP\OLB\LabelAddressMap.xml”。
+文件名:“D:\WXWork\1688854991299446\Cache\File\2023-04\02.SourceCode\02.SourceCode\BCCommon\Glorysoft.BC.Server\bin\Debug\Configuration\EIP\OLB\LabelAddressMap.xml”
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   在 System.Xml.XmlDownloadManager.GetStream(Uri uri, ICredentials credentials, IWebProxy proxy, RequestCachePolicy cachePolicy)
+   在 System.Xml.XmlUrlResolver.GetEntity(Uri absoluteUri, String role, Type ofObjectToReturn)
+   在 System.Xml.XmlTextReaderImpl.OpenUrlDelegate(Object xmlResolver)
+   在 System.Threading.CompressedStack.runTryCode(Object userData)
+   在 System.Runtime.CompilerServices.RuntimeHelpers.ExecuteCodeWithGuaranteedCleanup(TryCode code, CleanupCode backoutCode, Object userData)
+   在 System.Threading.CompressedStack.Run(CompressedStack compressedStack, ContextCallback callback, Object state)
+   在 System.Xml.XmlTextReaderImpl.OpenUrl()
+   在 System.Xml.XmlTextReaderImpl.Read()
+   在 System.Xml.XmlLoader.Load(XmlDocument doc, XmlReader reader, Boolean preserveWhitespace)
+   在 System.Xml.XmlDocument.Load(XmlReader reader)
+   在 System.Xml.XmlDocument.Load(String filename)
+   在 Glorysoft.PLCDriver.PLCConfig.AddMapWorkflowConfig(String conn, IConnectionInfo sk) 位置 D:\Work\Glory\GlorySoftSVN\MY-HKCM2-BC01\SourceCode\BC\PLCDriver\PLCConfig.cs:行号 39
+   在 Glorysoft.PLCDriver.PLCProxy.Connect(IConnectionInfo connString) 位置 D:\Work\Glory\GlorySoftSVN\MY-HKCM2-BC01\SourceCode\BC\PLCDriver\PLCProxy.cs:行号 85
+2023-04-26 15:07:10,978 [Load Config Error]
+System.IO.FileNotFoundException: 未能找到文件“D:\WXWork\1688854991299446\Cache\File\2023-04\02.SourceCode\02.SourceCode\BCCommon\Glorysoft.BC.Server\bin\Debug\Configuration\EIP\OLB\LabelAddressMap.xml”。
+文件名:“D:\WXWork\1688854991299446\Cache\File\2023-04\02.SourceCode\02.SourceCode\BCCommon\Glorysoft.BC.Server\bin\Debug\Configuration\EIP\OLB\LabelAddressMap.xml”
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   在 System.Xml.XmlDownloadManager.GetStream(Uri uri, ICredentials credentials, IWebProxy proxy, RequestCachePolicy cachePolicy)
+   在 System.Xml.XmlUrlResolver.GetEntity(Uri absoluteUri, String role, Type ofObjectToReturn)
+   在 System.Xml.XmlTextReaderImpl.OpenUrlDelegate(Object xmlResolver)
+   在 System.Threading.CompressedStack.runTryCode(Object userData)
+   在 System.Runtime.CompilerServices.RuntimeHelpers.ExecuteCodeWithGuaranteedCleanup(TryCode code, CleanupCode backoutCode, Object userData)
+   在 System.Threading.CompressedStack.Run(CompressedStack compressedStack, ContextCallback callback, Object state)
+   在 System.Xml.XmlTextReaderImpl.OpenUrl()
+   在 System.Xml.XmlTextReaderImpl.Read()
+   在 System.Xml.XmlLoader.Load(XmlDocument doc, XmlReader reader, Boolean preserveWhitespace)
+   在 System.Xml.XmlDocument.Load(XmlReader reader)
+   在 System.Xml.XmlDocument.Load(String filename)
+   在 Glorysoft.PLCDriver.PLCConfig.AddMapWorkflowConfig(String conn, IConnectionInfo sk) 位置 D:\Work\Glory\GlorySoftSVN\MY-HKCM2-BC01\SourceCode\BC\PLCDriver\PLCConfig.cs:行号 39
+   在 Glorysoft.PLCDriver.PLCProxy.Connect(IConnectionInfo connString) 位置 D:\Work\Glory\GlorySoftSVN\MY-HKCM2-BC01\SourceCode\BC\PLCDriver\PLCProxy.cs:行号 85
+2023-04-26 15:16:20,099 [Load Config Error]
+System.IO.FileNotFoundException: 未能找到文件“D:\WXWork\1688854991299446\Cache\File\2023-04\02.SourceCode\02.SourceCode\BCCommon\Glorysoft.BC.Server\bin\Debug\Configuration\EIP\OLB\LabelAddressMap.xml”。
+文件名:“D:\WXWork\1688854991299446\Cache\File\2023-04\02.SourceCode\02.SourceCode\BCCommon\Glorysoft.BC.Server\bin\Debug\Configuration\EIP\OLB\LabelAddressMap.xml”
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   在 System.Xml.XmlDownloadManager.GetStream(Uri uri, ICredentials credentials, IWebProxy proxy, RequestCachePolicy cachePolicy)
+   在 System.Xml.XmlUrlResolver.GetEntity(Uri absoluteUri, String role, Type ofObjectToReturn)
+   在 System.Xml.XmlTextReaderImpl.OpenUrlDelegate(Object xmlResolver)
+   在 System.Threading.CompressedStack.runTryCode(Object userData)
+   在 System.Runtime.CompilerServices.RuntimeHelpers.ExecuteCodeWithGuaranteedCleanup(TryCode code, CleanupCode backoutCode, Object userData)
+   在 System.Threading.CompressedStack.Run(CompressedStack compressedStack, ContextCallback callback, Object state)
+   在 System.Xml.XmlTextReaderImpl.OpenUrl()
+   在 System.Xml.XmlTextReaderImpl.Read()
+   在 System.Xml.XmlLoader.Load(XmlDocument doc, XmlReader reader, Boolean preserveWhitespace)
+   在 System.Xml.XmlDocument.Load(XmlReader reader)
+   在 System.Xml.XmlDocument.Load(String filename)
+   在 Glorysoft.PLCDriver.PLCConfig.AddMapWorkflowConfig(String conn, IConnectionInfo sk) 位置 D:\Work\Glory\GlorySoftSVN\MY-HKCM2-BC01\SourceCode\BC\PLCDriver\PLCConfig.cs:行号 39
+   在 Glorysoft.PLCDriver.PLCProxy.Connect(IConnectionInfo connString) 位置 D:\Work\Glory\GlorySoftSVN\MY-HKCM2-BC01\SourceCode\BC\PLCDriver\PLCProxy.cs:行号 85
+2023-04-26 15:18:59,021 [Load Config Error]
+System.IO.FileNotFoundException: 未能找到文件“D:\WXWork\1688854991299446\Cache\File\2023-04\02.SourceCode\02.SourceCode\BCCommon\Glorysoft.BC.Server\bin\Debug\Configuration\EIP\OLB\LabelAddressMap.xml”。
+文件名:“D:\WXWork\1688854991299446\Cache\File\2023-04\02.SourceCode\02.SourceCode\BCCommon\Glorysoft.BC.Server\bin\Debug\Configuration\EIP\OLB\LabelAddressMap.xml”
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   在 System.Xml.XmlDownloadManager.GetStream(Uri uri, ICredentials credentials, IWebProxy proxy, RequestCachePolicy cachePolicy)
+   在 System.Xml.XmlUrlResolver.GetEntity(Uri absoluteUri, String role, Type ofObjectToReturn)
+   在 System.Xml.XmlTextReaderImpl.OpenUrlDelegate(Object xmlResolver)
+   在 System.Threading.CompressedStack.runTryCode(Object userData)
+   在 System.Runtime.CompilerServices.RuntimeHelpers.ExecuteCodeWithGuaranteedCleanup(TryCode code, CleanupCode backoutCode, Object userData)
+   在 System.Threading.CompressedStack.Run(CompressedStack compressedStack, ContextCallback callback, Object state)
+   在 System.Xml.XmlTextReaderImpl.OpenUrl()
+   在 System.Xml.XmlTextReaderImpl.Read()
+   在 System.Xml.XmlLoader.Load(XmlDocument doc, XmlReader reader, Boolean preserveWhitespace)
+   在 System.Xml.XmlDocument.Load(XmlReader reader)
+   在 System.Xml.XmlDocument.Load(String filename)
+   在 Glorysoft.PLCDriver.PLCConfig.AddMapWorkflowConfig(String conn, IConnectionInfo sk) 位置 D:\Work\Glory\GlorySoftSVN\MY-HKCM2-BC01\SourceCode\BC\PLCDriver\PLCConfig.cs:行号 39
+   在 Glorysoft.PLCDriver.PLCProxy.Connect(IConnectionInfo connString) 位置 D:\Work\Glory\GlorySoftSVN\MY-HKCM2-BC01\SourceCode\BC\PLCDriver\PLCProxy.cs:行号 85
+2023-04-26 15:25:38,884 [Load Config Error]
+System.IO.FileNotFoundException: 未能找到文件“D:\WXWork\1688854991299446\Cache\File\2023-04\02.SourceCode\02.SourceCode\BCCommon\Glorysoft.BC.Server\bin\Debug\Configuration\EIP\OLB\LabelAddressMap.xml”。
+文件名:“D:\WXWork\1688854991299446\Cache\File\2023-04\02.SourceCode\02.SourceCode\BCCommon\Glorysoft.BC.Server\bin\Debug\Configuration\EIP\OLB\LabelAddressMap.xml”
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   在 System.Xml.XmlDownloadManager.GetStream(Uri uri, ICredentials credentials, IWebProxy proxy, RequestCachePolicy cachePolicy)
+   在 System.Xml.XmlUrlResolver.GetEntity(Uri absoluteUri, String role, Type ofObjectToReturn)
+   在 System.Xml.XmlTextReaderImpl.OpenUrlDelegate(Object xmlResolver)
+   在 System.Threading.CompressedStack.runTryCode(Object userData)
+   在 System.Runtime.CompilerServices.RuntimeHelpers.ExecuteCodeWithGuaranteedCleanup(TryCode code, CleanupCode backoutCode, Object userData)
+   在 System.Threading.CompressedStack.Run(CompressedStack compressedStack, ContextCallback callback, Object state)
+   在 System.Xml.XmlTextReaderImpl.OpenUrl()
+   在 System.Xml.XmlTextReaderImpl.Read()
+   在 System.Xml.XmlLoader.Load(XmlDocument doc, XmlReader reader, Boolean preserveWhitespace)
+   在 System.Xml.XmlDocument.Load(XmlReader reader)
+   在 System.Xml.XmlDocument.Load(String filename)
+   在 Glorysoft.PLCDriver.PLCConfig.AddMapWorkflowConfig(String conn, IConnectionInfo sk) 位置 D:\Work\Glory\GlorySoftSVN\MY-HKCM2-BC01\SourceCode\BC\PLCDriver\PLCConfig.cs:行号 39
+   在 Glorysoft.PLCDriver.PLCProxy.Connect(IConnectionInfo connString) 位置 D:\Work\Glory\GlorySoftSVN\MY-HKCM2-BC01\SourceCode\BC\PLCDriver\PLCProxy.cs:行号 85
+2023-04-26 15:28:10,061 [Load Config Error]
+System.IO.FileNotFoundException: 未能找到文件“D:\WXWork\1688854991299446\Cache\File\2023-04\02.SourceCode\02.SourceCode\BCCommon\Glorysoft.BC.Server\bin\Debug\Configuration\EIP\OLB\LabelAddressMap.xml”。
+文件名:“D:\WXWork\1688854991299446\Cache\File\2023-04\02.SourceCode\02.SourceCode\BCCommon\Glorysoft.BC.Server\bin\Debug\Configuration\EIP\OLB\LabelAddressMap.xml”
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   在 System.Xml.XmlDownloadManager.GetStream(Uri uri, ICredentials credentials, IWebProxy proxy, RequestCachePolicy cachePolicy)
+   在 System.Xml.XmlUrlResolver.GetEntity(Uri absoluteUri, String role, Type ofObjectToReturn)
+   在 System.Xml.XmlTextReaderImpl.OpenUrlDelegate(Object xmlResolver)
+   在 System.Threading.CompressedStack.runTryCode(Object userData)
+   在 System.Runtime.CompilerServices.RuntimeHelpers.ExecuteCodeWithGuaranteedCleanup(TryCode code, CleanupCode backoutCode, Object userData)
+   在 System.Threading.CompressedStack.Run(CompressedStack compressedStack, ContextCallback callback, Object state)
+   在 System.Xml.XmlTextReaderImpl.OpenUrl()
+   在 System.Xml.XmlTextReaderImpl.Read()
+   在 System.Xml.XmlLoader.Load(XmlDocument doc, XmlReader reader, Boolean preserveWhitespace)
+   在 System.Xml.XmlDocument.Load(XmlReader reader)
+   在 System.Xml.XmlDocument.Load(String filename)
+   在 Glorysoft.PLCDriver.PLCConfig.AddMapWorkflowConfig(String conn, IConnectionInfo sk) 位置 D:\Work\Glory\GlorySoftSVN\MY-HKCM2-BC01\SourceCode\BC\PLCDriver\PLCConfig.cs:行号 39
+   在 Glorysoft.PLCDriver.PLCProxy.Connect(IConnectionInfo connString) 位置 D:\Work\Glory\GlorySoftSVN\MY-HKCM2-BC01\SourceCode\BC\PLCDriver\PLCProxy.cs:行号 85
+2023-04-26 15:31:52,267 [Load Config Error]
+System.IO.FileNotFoundException: 未能找到文件“D:\WXWork\1688854991299446\Cache\File\2023-04\02.SourceCode\02.SourceCode\BCCommon\Glorysoft.BC.Server\bin\Debug\Configuration\EIP\OLB\LabelAddressMap.xml”。
+文件名:“D:\WXWork\1688854991299446\Cache\File\2023-04\02.SourceCode\02.SourceCode\BCCommon\Glorysoft.BC.Server\bin\Debug\Configuration\EIP\OLB\LabelAddressMap.xml”
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   在 System.Xml.XmlDownloadManager.GetStream(Uri uri, ICredentials credentials, IWebProxy proxy, RequestCachePolicy cachePolicy)
+   在 System.Xml.XmlUrlResolver.GetEntity(Uri absoluteUri, String role, Type ofObjectToReturn)
+   在 System.Xml.XmlTextReaderImpl.OpenUrlDelegate(Object xmlResolver)
+   在 System.Threading.CompressedStack.runTryCode(Object userData)
+   在 System.Runtime.CompilerServices.RuntimeHelpers.ExecuteCodeWithGuaranteedCleanup(TryCode code, CleanupCode backoutCode, Object userData)
+   在 System.Threading.CompressedStack.Run(CompressedStack compressedStack, ContextCallback callback, Object state)
+   在 System.Xml.XmlTextReaderImpl.OpenUrl()
+   在 System.Xml.XmlTextReaderImpl.Read()
+   在 System.Xml.XmlLoader.Load(XmlDocument doc, XmlReader reader, Boolean preserveWhitespace)
+   在 System.Xml.XmlDocument.Load(XmlReader reader)
+   在 System.Xml.XmlDocument.Load(String filename)
+   在 Glorysoft.PLCDriver.PLCConfig.AddMapWorkflowConfig(String conn, IConnectionInfo sk) 位置 D:\Work\Glory\GlorySoftSVN\MY-HKCM2-BC01\SourceCode\BC\PLCDriver\PLCConfig.cs:行号 39
+   在 Glorysoft.PLCDriver.PLCProxy.Connect(IConnectionInfo connString) 位置 D:\Work\Glory\GlorySoftSVN\MY-HKCM2-BC01\SourceCode\BC\PLCDriver\PLCProxy.cs:行号 85
+2023-04-26 15:52:47,812 [Load Config Error]
+System.IO.FileNotFoundException: 未能找到文件“D:\WXWork\1688854991299446\Cache\File\2023-04\02.SourceCode\02.SourceCode\BCCommon\Glorysoft.BC.Server\bin\Debug\Configuration\EIP\OLB\LabelAddressMap.xml”。
+文件名:“D:\WXWork\1688854991299446\Cache\File\2023-04\02.SourceCode\02.SourceCode\BCCommon\Glorysoft.BC.Server\bin\Debug\Configuration\EIP\OLB\LabelAddressMap.xml”
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   在 System.Xml.XmlDownloadManager.GetStream(Uri uri, ICredentials credentials, IWebProxy proxy, RequestCachePolicy cachePolicy)
+   在 System.Xml.XmlUrlResolver.GetEntity(Uri absoluteUri, String role, Type ofObjectToReturn)
+   在 System.Xml.XmlTextReaderImpl.OpenUrlDelegate(Object xmlResolver)
+   在 System.Threading.CompressedStack.runTryCode(Object userData)
+   在 System.Runtime.CompilerServices.RuntimeHelpers.ExecuteCodeWithGuaranteedCleanup(TryCode code, CleanupCode backoutCode, Object userData)
+   在 System.Threading.CompressedStack.Run(CompressedStack compressedStack, ContextCallback callback, Object state)
+   在 System.Xml.XmlTextReaderImpl.OpenUrl()
+   在 System.Xml.XmlTextReaderImpl.Read()
+   在 System.Xml.XmlLoader.Load(XmlDocument doc, XmlReader reader, Boolean preserveWhitespace)
+   在 System.Xml.XmlDocument.Load(XmlReader reader)
+   在 System.Xml.XmlDocument.Load(String filename)
+   在 Glorysoft.PLCDriver.PLCConfig.AddMapWorkflowConfig(String conn, IConnectionInfo sk) 位置 D:\Work\Glory\GlorySoftSVN\MY-HKCM2-BC01\SourceCode\BC\PLCDriver\PLCConfig.cs:行号 39
+   在 Glorysoft.PLCDriver.PLCProxy.Connect(IConnectionInfo connString) 位置 D:\Work\Glory\GlorySoftSVN\MY-HKCM2-BC01\SourceCode\BC\PLCDriver\PLCProxy.cs:行号 85
+2023-04-26 16:24:03,580 [Load Config Error]
+System.IO.FileNotFoundException: 未能找到文件“D:\WXWork\1688854991299446\Cache\File\2023-04\02.SourceCode\02.SourceCode\BCCommon\Glorysoft.BC.Server\bin\Debug\Configuration\EIP\OLB\LabelAddressMap.xml”。
+文件名:“D:\WXWork\1688854991299446\Cache\File\2023-04\02.SourceCode\02.SourceCode\BCCommon\Glorysoft.BC.Server\bin\Debug\Configuration\EIP\OLB\LabelAddressMap.xml”
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   在 System.Xml.XmlDownloadManager.GetStream(Uri uri, ICredentials credentials, IWebProxy proxy, RequestCachePolicy cachePolicy)
+   在 System.Xml.XmlUrlResolver.GetEntity(Uri absoluteUri, String role, Type ofObjectToReturn)
+   在 System.Xml.XmlTextReaderImpl.OpenUrlDelegate(Object xmlResolver)
+   在 System.Threading.CompressedStack.runTryCode(Object userData)
+   在 System.Runtime.CompilerServices.RuntimeHelpers.ExecuteCodeWithGuaranteedCleanup(TryCode code, CleanupCode backoutCode, Object userData)
+   在 System.Threading.CompressedStack.Run(CompressedStack compressedStack, ContextCallback callback, Object state)
+   在 System.Xml.XmlTextReaderImpl.OpenUrl()
+   在 System.Xml.XmlTextReaderImpl.Read()
+   在 System.Xml.XmlLoader.Load(XmlDocument doc, XmlReader reader, Boolean preserveWhitespace)
+   在 System.Xml.XmlDocument.Load(XmlReader reader)
+   在 System.Xml.XmlDocument.Load(String filename)
+   在 Glorysoft.PLCDriver.PLCConfig.AddMapWorkflowConfig(String conn, IConnectionInfo sk) 位置 D:\Work\Glory\GlorySoftSVN\MY-HKCM2-BC01\SourceCode\BC\PLCDriver\PLCConfig.cs:行号 39
+   在 Glorysoft.PLCDriver.PLCProxy.Connect(IConnectionInfo connString) 位置 D:\Work\Glory\GlorySoftSVN\MY-HKCM2-BC01\SourceCode\BC\PLCDriver\PLCProxy.cs:行号 85
+2023-04-26 21:48:41,358 [Load Config Error]
+System.IO.FileNotFoundException: 未能找到文件“D:\WXWork\1688854991299446\Cache\File\2023-04\02.SourceCode\02.SourceCode\BCCommon\Glorysoft.BC.Server\bin\Debug\Configuration\EIP\OLB\LabelAddressMap.xml”。
+文件名:“D:\WXWork\1688854991299446\Cache\File\2023-04\02.SourceCode\02.SourceCode\BCCommon\Glorysoft.BC.Server\bin\Debug\Configuration\EIP\OLB\LabelAddressMap.xml”
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   在 System.Xml.XmlDownloadManager.GetStream(Uri uri, ICredentials credentials, IWebProxy proxy, RequestCachePolicy cachePolicy)
+   在 System.Xml.XmlUrlResolver.GetEntity(Uri absoluteUri, String role, Type ofObjectToReturn)
+   在 System.Xml.XmlTextReaderImpl.OpenUrlDelegate(Object xmlResolver)
+   在 System.Threading.CompressedStack.runTryCode(Object userData)
+   在 System.Runtime.CompilerServices.RuntimeHelpers.ExecuteCodeWithGuaranteedCleanup(TryCode code, CleanupCode backoutCode, Object userData)
+   在 System.Threading.CompressedStack.Run(CompressedStack compressedStack, ContextCallback callback, Object state)
+   在 System.Xml.XmlTextReaderImpl.OpenUrl()
+   在 System.Xml.XmlTextReaderImpl.Read()
+   在 System.Xml.XmlLoader.Load(XmlDocument doc, XmlReader reader, Boolean preserveWhitespace)
+   在 System.Xml.XmlDocument.Load(XmlReader reader)
+   在 System.Xml.XmlDocument.Load(String filename)
+   在 Glorysoft.PLCDriver.PLCConfig.AddMapWorkflowConfig(String conn, IConnectionInfo sk) 位置 D:\Work\Glory\GlorySoftSVN\MY-HKCM2-BC01\SourceCode\BC\PLCDriver\PLCConfig.cs:行号 39
+   在 Glorysoft.PLCDriver.PLCProxy.Connect(IConnectionInfo connString) 位置 D:\Work\Glory\GlorySoftSVN\MY-HKCM2-BC01\SourceCode\BC\PLCDriver\PLCProxy.cs:行号 85

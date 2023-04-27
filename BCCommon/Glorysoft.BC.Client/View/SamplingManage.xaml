@@ -1,0 +1,62 @@
+﻿<Window x:Class="Glorysoft.BC.Client.View.SamplingManage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Height="400" Width="400"
+        FontSize="14"
+        ResizeMode="CanMinimize"
+        >
+    <Grid Margin="5">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="0"/>
+        </Grid.RowDefinitions>
+        <GroupBox 
+                  Style="{Binding}"
+                     Grid.Row="0"
+                      BorderThickness="1"
+                      Focusable="False"
+                      Header="OQA">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="40" />
+                    <RowDefinition />
+                    <RowDefinition MinHeight="50" MaxHeight="50" />
+                </Grid.RowDefinitions>
+                <Grid Grid.Row="0" Margin="0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Label Grid.Column="0" Content="NG Lot Count" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" />
+                    <TextBox Grid.Column="1" Text="{Binding CurrentNGLotCount}" Width="100" Height="30" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                    <Button 
+                            Grid.Column="2"
+                            Style="{Binding}"
+                            Height="30"
+                            Width="100"
+                            HorizontalAlignment="Center"
+                            VerticalAlignment="Center"
+                            Command="{Binding UpdateNGLotCountCommand}"
+                            Content="Update" />
+                </Grid>
+                <DataGrid Grid.Row="1" Grid.ColumnSpan="2" ItemsSource="{Binding OClient.OQASamplingRuleList}" AutoGenerateColumns="False" SelectedItem="{Binding SelectOQASamplingRule}">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Header="Revision Code" Binding="{Binding RevisionCode}" Width="120" IsReadOnly="True"/>
+                        <DataGridTextColumn Header="Sampling Rule" Binding="{Binding SamplingRule}" Width="120" IsReadOnly="False"/>
+                        <DataGridTextColumn Header="Current Count" Binding="{Binding CurrentCount}" Width="120" IsReadOnly="True"/>
+                    </DataGrid.Columns>
+                </DataGrid>
+                <Button Name="btnSend"
+                            Grid.Row="2"
+                            Style="{Binding}"
+                            Height="35"
+                            Width="120"
+                            Margin="242,10,10,5"
+                            VerticalAlignment="Stretch"
+                            Command="{Binding UpdateSampingRuleCommand}"
+                            Content="Modify" />
+            </Grid>
+        </GroupBox>
+    </Grid>
+</Window>

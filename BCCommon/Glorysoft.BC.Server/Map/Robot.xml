@@ -1,0 +1,349 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<sqlMap namespace="Robot"
+	xmlns="http://ibatis.apache.org/mapping"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+  <alias>
+    <!--<typeAlias alias="GroupConfigure"  type="Glorysoft.BC.GlassDispath.GroupConfigure,Glorysoft.BC.GlassDispath"/>-->
+    <typeAlias alias="RobotPathConfigure"  type="Glorysoft.BC.GlassDispath.RobotPathConfigure,Glorysoft.BC.GlassDispath"/>
+    <typeAlias alias="RobotConfigure"  type="Glorysoft.BC.GlassDispath.RobotConfigure,Glorysoft.BC.GlassDispath"/>
+    <!--<typeAlias alias="Linksignal"  type="Glorysoft.BC.Entity.Linksignal,Glorysoft.BC.Entity"/>-->
+    <!--<typeAlias alias="RobotLinksignal"  type="Glorysoft.BC.Entity.RobotLinksignal"/>-->
+    <typeAlias alias="RobotModel"  type="Glorysoft.BC.Entity.RobotModel"/>
+    <typeAlias alias="HisRobotCommand"  type="Glorysoft.BC.Entity.HisRobotCommand"/>
+    <typeAlias alias="bc_robot_configure"  type="Glorysoft.BC.Entity.WebSocketEntity.bc_robot_configure"/>  
+    <typeAlias alias="bc_robot_path_configure"  type="Glorysoft.BC.Entity.WebSocketEntity.bc_robot_path_configure"/>
+	<typeAlias alias="bc_robot_model"  type="Glorysoft.BC.Entity.WebSocketEntity.bc_robot_model"/>
+  </alias>
+
+  <resultMaps>
+    <!--<resultMap id="GroupConfigureResult" class="GroupConfigure">
+      <result property="LineName" column ="line_name" />
+      <result property="IndexerName" column="idx_name"/>
+      <result property="Name" column="group_name"/>
+      <result property="GroupList" column="group_list"/>
+      <result property="Method" column="group_method"/>     
+    </resultMap>-->
+    <resultMap id="RobotPathConfigureResult" class="RobotPathConfigure">
+      <result property="LineName" column ="line_name" />
+      <result property="IndexerName" column="idx_name"/>
+
+      <result property="Name" column="path_name"/>
+      <result property="SourcePathName" column="source_path_name"/>
+      <result property="TargetPathName" column="target_path_name"/>
+      <result property="RobotFixed" column="robot_fixed"/>
+      <result property="RobotArm" column="robot_arm"/>
+      <result property="RuleID" column="rule_id"/>
+      <result property="OutPriority" column="out_source_priority"/>
+      <result property="InPriority" column="in_target_priority"/>
+      <result property="PortGetCheckReceive" column="port_get_check_receive"/>
+      <result property="ModePath" column="modepath"/>
+
+    </resultMap>
+    <resultMap id="RobotConfigureResult" class="RobotConfigure">
+      <result property="LineName" column ="line_name" />
+      <result property="IndexerName" column="idx_name"/>
+      <result property="Name" column="robot_name"/>
+      <result property="LogName" column="log_name"/>
+      <result property="LogPath" column="log_path"/>
+    </resultMap>
+    <!--<resultMap id="RobotLinksignalConfigureResult" class="Linksignal">
+      <result property="EQPName" column ="eqp_name" />
+      <result property="UnitName" column="unit_name"/>
+      <result property="InOutType" column="inout_type"/>
+      <result property="IsPutFirst" column="is_put_first"/>
+      <result property="IsGetDelay" column="is_get_delay"/>
+      <result property="GetDelayTime" column="get_delay_time"/>
+    </resultMap>-->
+    <!--<resultMap id="RobotLinksignalResult" class="RobotLinksignal">
+      <result property="EQPID" column ="eqpid" />
+      <result property="UnitID" column="unitid"/>
+      <result property="LinkNo" column="linkno"/>
+
+      <result property="UnitName" column="unitname"/>
+    </resultMap>-->
+    <resultMap id="RobotModelResult" class="RobotModel">
+      <result property="EQPID" column ="eqpid" />
+      <result property="UnitID" column="unitid"/>
+      <result property="ModelID" column="modelid"/>
+      <result property="ModelPosition" column="modelposition"/>
+      <result property="UPLinkName" column="uplinkname"/>
+      <result property="DownLinkName" column="downlinkname"/>
+      <result property="PortID" column="portid"/>
+      <result property="SentOutName" column="sentoutname"/>
+      <result property="UnitNo" column="unitno"/>
+      <result property="RobotMotion" column="robotmotion"/>
+      <result property="PortGetType" column="portgettype"/>
+      <result property="DualArm" column="DualArm"/>
+      <result property="ExchangeEnable" column="exchangeenable"/>
+      <result property="TransferEnable" column="transferenable"/>
+      <result property="GetWaitEnable" column="getwaitenable"/>
+      <result property="PutWaitEnable" column="putwaitenable"/>
+      <result property="ModelName" column="modelname"/>
+      <result property="GetEnable" column="getenable"/>
+      <result property="GroupName" column="groupname"/>
+      <result property="INPriority" column="inpriority"/>
+      <result property="OutPriority" column="outpriority"/>
+      <result property="TransferPriority" column="transferpriority"/>
+      <result property="ExchangePriority" column="exchangepriority"/>
+      <result property="GetArm" column="getarm"/>
+      <result property="PutArm" column="putarm"/>
+      <result property="TransInName" column="transinname"/>
+    </resultMap>
+
+    <resultMap id="HisRobotCommandResult" class="HisRobotCommand">
+      <result property = "SequenceNo" column ="sequenceno" />
+      <result property = "STRCMD1" column ="strcmd1" />
+      <result property = "STArmNo1" column ="starmno1" />
+      <result property = "STGetPosition1" column ="stgetposition1" />
+      <result property = "STPutPosition1" column ="stputposition1" />
+      <result property = "STGetSlotNo1" column ="stgetslotno1" />
+      <result property = "STPutSlotNo1" column ="stputslotno1" />
+      <result property = "STSubCommand1" column ="stsubcommand1" />
+      <result property = "STGetSlotPostion1" column ="stgetslotpostion1" />
+      <result property = "STPutSlotPostion1" column ="stputslotpostion1" />
+      <result property = "NDRCMD2" column ="ndrcmd2" />
+      <result property = "NDArmNo2" column ="ndarmno2" />
+      <result property = "NDGetPosition2" column ="ndgetposition2" />
+      <result property = "NDPutPosition2" column ="ndputposition2" />
+      <result property = "NDGetSlotNo2" column ="ndgetslotno2" />
+      <result property = "NDPutSlotNo2" column ="ndputslotno2" />
+      <result property = "NDSubCommand2" column ="ndsubcommand2" />
+      <result property = "NDGetSlotPostion2" column ="ndgetslotpostion2" />
+      <result property = "NDPutSlotPostion2" column ="ndputslotpostion2" />
+      <result property = "CommandResult1" column ="commandresult1" />
+      <result property = "CommandResult2" column ="commandresult2" />
+      <result property = "CommandResult3" column ="commandresult3" />
+      <result property = "CommandResult4" column ="commandresult4" />
+      <result property = "CurrentPosition" column ="currentposition" />
+      <result property = "FunctionName" column ="functionname" />
+      <result property = "CreateDate" column ="createdate" />
+    </resultMap>
+    <resultMap id="bc_robot_configureResult" class="bc_robot_configure">
+      <result property="idx_name" column ="idx_name" />
+      <result property="robot_name" column="robot_name"/>
+      <result property="log_name" column="log_name"/>
+      <result property="log_path" column="log_path"/>
+      <result property="line_name" column="line_name"/>
+    </resultMap>
+    <resultMap id="bc_robot_path_configureResult" class="bc_robot_path_configure">
+      <result property="idx_name" column ="idx_name" />
+      <result property="path_name" column="path_name"/>
+      <result property="source_path_name" column="source_path_name"/>
+      <result property="target_path_name" column="target_path_name"/>
+      <result property="robot_fixed" column="robot_fixed"/>
+      <result property="robot_arm" column="robot_arm"/>
+      <result property="rule_id" column="rule_id"/>
+      <result property="out_source_priority" column="out_source_priority"/>
+      <result property="in_target_priority" column="in_target_priority"/>
+      <result property="line_name" column="line_name"/>
+      <result property="port_get_check_receive" column="port_get_check_receive"/>
+      <result property="modepath" column="modepath"/>
+    </resultMap>
+	  <resultMap id="bc_robot_modelResult" class="bc_robot_model">
+		  <result property="eqpid" column ="eqpid" />
+		  <result property="unitid" column="unitid"/>
+		  <result property="modelposition" column="modelposition"/>
+		  <result property="uplinkname" column="uplinkname"/>
+		  <result property="downlinkname" column="downlinkname"/>
+		  <result property="portid" column="portid"/>
+		  <result property="sentoutname" column="sentoutname"/>
+		  <result property="unitno" column="unitno"/>
+		  <result property="robotmotion" column="robotmotion"/>
+		  <result property="portgettype" column="portgettype"/>
+		  <result property="exchangeenable" column="exchangeenable"/>
+		  <result property="transferenable" column="transferenable"/>
+		  <result property="getwaitenable" column="getwaitenable"/>
+		  <result property="putwaitenable" column="putwaitenable"/>
+		  <result property="modelname" column="modelname"/>
+		  <result property="dualarm" column="dualarm"/>
+		  <result property="modelid" column="modelid"/>
+		  <result property="getenable" column="getenable"/>
+		  <result property="groupname" column="groupname"/>
+		  <result property="inpriority" column="inpriority"/>
+		  <result property="outpriority" column="outpriority"/>
+		  <result property="transferpriority" column="transferpriority"/>
+		  <result property="exchangepriority" column="exchangepriority"/>
+		  <result property="putarm" column="putarm"/>
+		  <result property="getarm" column="getarm"/>
+		  <result property="transinname" column="transinname"/>
+	  </resultMap>
+  </resultMaps>
+
+  <statements>
+    <!--<![CDATA[ SQL  ]]>-->
+    <!--<select id="ViewGroupConfigure" resultMap="GroupConfigureResult" parameterClass="Hashtable">
+		select * from bc_robot_group_configure where line_name=#EQPID#
+	</select>-->
+    <select id="ViewRobotPathConfigure" resultMap="RobotPathConfigureResult" parameterClass="Hashtable">
+      select * from bc_robot_path_configure where line_name=#EQPID#
+    </select>
+	  
+    <select id="ViewRobotConfigure" resultMap="RobotConfigureResult" parameterClass="Hashtable">
+      select * from bc_robot_configure where line_name=#EQPID#
+    </select>
+
+    <!--<select id="ViewRobotLinkSignalConfigure" resultMap="RobotLinksignalConfigureResult" parameterClass="Hashtable">
+      select * from bc_robot_linksignal_configure where line_name = #LineType#
+    </select>
+    <update id="UpdateViewWaitingtimeConfig" parameterClass="Hashtable">
+      UPDATE bc_robot_linksignal_configure SET  get_delay_time=#GetDelayTime# where eqp_name = #EQPName#
+    </update>-->
+
+    <!--<select id="ViewRobotLinksignalList" resultMap="RobotLinksignalResult" parameterClass="Hashtable">
+      select * from bc_robot_linksignal 
+      <dynamic prepend="where">
+        <isNotEmpty property="EQPID" prepend="and">
+          eqpid=#EQPID#
+        </isNotEmpty>
+        <isNotEmpty property="UnitID" prepend="and">
+          unitid=#UnitID#
+        </isNotEmpty>       
+      </dynamic> 
+    </select>-->
+    <select id="ViewRobotModelList" resultMap="RobotModelResult" parameterClass="Hashtable">
+      select * from bc_robot_model
+      <dynamic prepend="where">
+        <isNotEmpty property="EQPID" prepend="and">
+          eqpid=#EQPID#
+        </isNotEmpty>
+        <isNotEmpty property="UnitID" prepend="and">
+          unitid=#UnitID#
+        </isNotEmpty>
+      </dynamic>
+    </select>
+
+
+    <insert id="InsertHisRobotCommand" parameterClass="HisRobotCommand">
+      INSERT INTO his_robotcommand(
+      sequenceno, strcmd1, starmno1, stgetposition1, stputposition1,
+      stgetslotno1, stputslotno1, stsubcommand1, stgetslotpostion1,
+      stputslotpostion1, ndrcmd2, ndarmno2, ndgetposition2, ndputposition2,
+      ndgetslotno2, ndputslotno2, ndsubcommand2, ndgetslotpostion2,
+      ndputslotpostion2, commandresult1, commandresult2, commandresult3,
+      commandresult4, currentposition, functionname, createdate)
+      VALUES (#SequenceNo#, #STRCMD1#, #STArmNo1#, #STGetPosition1#, #STPutPosition1#,
+      #STGetSlotNo1#, #STPutSlotNo1#, #STSubCommand1#, #STGetSlotPostion1#,
+      #STPutSlotPostion1#, #NDRCMD2#, #NDArmNo2#, #NDGetPosition2#, #NDPutPosition2#,
+      #NDGetSlotNo2#, #NDPutSlotNo2#, #NDSubCommand2#, #NDGetSlotPostion2#,
+      #NDPutSlotPostion2#, #CommandResult1#, #CommandResult2#, #CommandResult3#,
+      #CommandResult4#, #CurrentPosition#, #FunctionName#, localtimestamp(0));
+    </insert>
+  
+	  
+	<select id="Viewbc_robot_configure" resultMap="bc_robot_configureResult" parameterClass="Hashtable">
+		  select * from bc_robot_configure
+		  <dynamic prepend="where">
+			  <isNotEmpty property="line_name" prepend="and">
+				  line_name like '%' || #line_name# || '%'
+			  </isNotEmpty>
+			  <isNotEmpty property="idx_name" prepend="and">
+				  idx_name like '%' || #idx_name# || '%'
+			  </isNotEmpty>
+		  </dynamic>
+	</select>
+	<insert id="Insertbc_robot_configure" parameterClass="bc_robot_configure">
+		  INSERT INTO public.bc_robot_configure(
+		  idx_name, robot_name, log_name, log_path, line_name)
+		  VALUES (
+		  #idx_name#, #robot_name#, #log_name#, #log_path#, #line_name#);
+	</insert>
+	<update id="Updatebc_robot_configure" patameterClass="bc_robot_configure">
+		  UPDATE bc_robot_configure
+		  SET robot_name=#robot_name#, log_name=#log_name#, log_path=#log_path#
+		  where line_name = #line_name# and idx_name = #idx_name#
+	</update>
+	  <delete id="Deletebc_robot_configure" patameterClass="Hashtable">
+		  delete from bc_robot_configure
+		  <dynamic prepend="where">
+			  <isNotEmpty property="line_name" prepend="and">
+				  line_name = #line_name#
+			  </isNotEmpty>
+			  <isNotEmpty property="idx_name" prepend="and">
+				  idx_name = #idx_name#
+			  </isNotEmpty>
+		  </dynamic>
+	  </delete>
+	  
+  <select id="Viewbc_robot_path_configure" resultMap="bc_robot_path_configureResult" parameterClass="Hashtable">
+		  select * from bc_robot_path_configure
+		  <dynamic prepend="where">
+			  <isNotEmpty property="line_name" prepend="and">
+				  line_name like '%' || #line_name# || '%'
+			  </isNotEmpty>
+			  <isNotEmpty property="idx_name" prepend="and">
+				  idx_name like '%' || #idx_name# || '%'
+			  </isNotEmpty>
+		  </dynamic>
+	</select>
+	<insert id="Insertbc_robot_path_configure" parameterClass="bc_robot_path_configure">
+		  INSERT INTO public.bc_robot_path_configure(
+		  idx_name, path_name, source_path_name, target_path_name, robot_fixed,robot_arm,rule_id,out_source_priority,in_target_priority,line_name,port_get_check_receive,modepath)
+		  VALUES (
+		  #idx_name#, #path_name#, #source_path_name#, #target_path_name#, #robot_fixed#, #robot_arm#, #rule_id#, #out_source_priority#, #in_target_priority#, #line_name#, #port_get_check_receive#, #modepath#);
+	</insert>
+	<update id="Updatebc_robot_path_configure" patameterClass="bc_robot_path_configure">
+		  UPDATE bc_robot_path_configure
+		  SET path_name=#path_name#, source_path_name=#source_path_name#, target_path_name=#target_path_name#,robot_fixed=#robot_fixed#,robot_arm=#robot_arm#,rule_id=#rule_id#,out_source_priority=#out_source_priority#,in_target_priority=#in_target_priority#,port_get_check_receive=#port_get_check_receive#,modepath=#modepath#
+		  where line_name = #line_name# and idx_name = #idx_name#
+	</update>
+	  <delete id="Deletebc_robot_path_configure" patameterClass="Hashtable">
+		  delete from bc_robot_path_configure
+		  <dynamic prepend="where">
+			  <isNotEmpty property="line_name" prepend="and">
+				  line_name = #line_name#
+			  </isNotEmpty>
+			  <isNotEmpty property="idx_name" prepend="and">
+				  idx_name = #idx_name#
+			  </isNotEmpty>
+			  <isNotEmpty property="source_path_name" prepend="and">
+				  source_path_name = #source_path_name#
+			  </isNotEmpty>
+			  <isNotEmpty property="target_path_name" prepend="and">
+				  target_path_name = #target_path_name#
+			  </isNotEmpty>
+			  <isNotEmpty property="modepath" prepend="and">
+				  modepath = #modepath#
+			  </isNotEmpty>
+		  </dynamic>
+	  </delete>
+
+	  <select id="Viewbc_robot_model" resultMap="bc_robot_modelResult" parameterClass="Hashtable">
+		  select * from bc_robot_model
+		  <dynamic prepend="where">
+			  <isNotEmpty property="eqpid" prepend="and">
+				  eqpid like '%' || #eqpid# || '%'
+			  </isNotEmpty>
+			  <isNotEmpty property="unitid" prepend="and">
+				  unitid like '%' || #unitid# || '%'
+			  </isNotEmpty>
+		  </dynamic>
+	  </select>
+	  <insert id="Insertbc_robot_model" parameterClass="bc_robot_model">
+		  INSERT INTO public.bc_robot_model(
+		  eqpid, unitid, modelposition, uplinkname, downlinkname,portid,sentoutname,unitno,robotmotion,portgettype,exchangeenable,transferenable,getwaitenable,putwaitenable,modelname,dualarm,modelid,getenable,groupname,inpriority,outpriority,transferpriority,exchangepriority,putarm,getarm,transinname)
+		  VALUES (
+		  #eqpid#, #unitid#, #modelposition#, #uplinkname#, #downlinkname#, #portid#, #sentoutname#, #unitno#, #robotmotion#, #portgettype#, #exchangeenable#, #transferenable#, #getwaitenable#, #putwaitenable#, #modelname#, #dualarm#, #modelid#, #getenable#, #groupname#, #inpriority#, #outpriority#, #transferpriority#, #exchangepriority#, #putarm#, #getarm#, #transinname#);
+	  </insert>
+	  <update id="Updatebc_robot_model" patameterClass="bc_robot_model">
+		  UPDATE bc_robot_model
+		  SET uplinkname=#uplinkname#, downlinkname=#downlinkname#, portid=#portid#,sentoutname=#sentoutname#,unitno=#unitno#,robotmotion=#robotmotion#,portgettype=#portgettype#,exchangeenable=#exchangeenable#,transferenable=#transferenable#,getwaitenable=#getwaitenable#,putwaitenable=#putwaitenable#,modelname=#modelname#,dualarm=#dualarm#,modelid=#modelid#,getenable=#getenable#,groupname=#groupname#,inpriority=#inpriority#,outpriority=#outpriority#,transferpriority=#transferpriority#,exchangepriority=#exchangepriority#,putarm=#putarm#,getarm=#getarm#,transinname=#transinname#
+		  where eqpid = #eqpid# and unitid = #unitid# and modelposition = #modelposition#
+	  </update>
+	  <delete id="Deletebc_robot_model" patameterClass="Hashtable">
+		  delete from bc_robot_model
+		  <dynamic prepend="where">
+			  <isNotEmpty property="eqpid" prepend="and">
+				  eqpid = #eqpid#
+			  </isNotEmpty>
+			  <isNotEmpty property="unitid" prepend="and">
+				  unitid = #unitid#
+			  </isNotEmpty>
+			  <isNotEmpty property="modelposition" prepend="and">
+				  modelposition = #modelposition#
+			  </isNotEmpty>
+		  </dynamic>
+	  </delete>
+  
+  </statements>
+</sqlMap>

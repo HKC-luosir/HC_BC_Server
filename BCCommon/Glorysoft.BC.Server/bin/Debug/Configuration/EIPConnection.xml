@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+	<EIPConnection>
+		<Name>ASY1</Name>
+		<EIPType>0</EIPType>
+		<DeviceType>0</DeviceType>
+		<RemoteIPAddress>127.0.0.1</RemoteIPAddress>
+		<RemoteIPPort>2</RemoteIPPort>
+		<Protocol>TCP</Protocol>
+		<ConnectMode>Class3</ConnectMode>
+		<Timeout>5000</Timeout>
+		<ConnectInterval>5</ConnectInterval>
+		<LogPath>D:\Logs\EIP</LogPath>
+		<LogLevel>Debug</LogLevel>
+		<MapFile>Configuration\EIP\ASY\ASY1_AddressMap_Host.xml</MapFile>
+		<WorkflowFile>Configuration\EIP\ASY\ASY1_Workflow_Host.xml</WorkflowFile>
+	</EIPConnection>
+</configuration>

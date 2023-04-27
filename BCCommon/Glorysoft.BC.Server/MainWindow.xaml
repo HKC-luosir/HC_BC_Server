@@ -1,0 +1,269 @@
+﻿<Window x:Class="Glorysoft.BC.Server.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        
+        xmlns:Converter="clr-namespace:Glorysoft.BC.Server.ViewModel.ValueConverter"
+          Title="MainWindow" Height="200" Width="620" ResizeMode="CanMinimize" Closing="Window_Closing">
+    <Grid Margin="0,0,-6,-1">
+        <Grid.Background>
+            <ImageBrush ImageSource="/Glorysoft.BC.Server;component/Image/background.png"
+                        Stretch="UniformToFill"
+                        TileMode="None" />
+        </Grid.Background>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition/>
+            <RowDefinition Height="50"/>
+        </Grid.RowDefinitions>
+        <TextBox x:Name="txtLineName" BorderThickness="0" Grid.Row="0" Margin="5,5,5,5" FontSize="18" IsReadOnly="True" Background="{x:Null}" VerticalContentAlignment="Center"/>
+        <Grid Margin="0,20,0,30" Grid.RowSpan="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0*"/>
+                <ColumnDefinition Width="55*"/>
+                <ColumnDefinition Width="1143*"/>
+            </Grid.ColumnDefinitions>
+            <!--<Grid x:Name="LayoutRoot" Background="Transparent" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,264,428,-133" Height="140" Width="166">
+                <Grid.RenderTransform>
+                    <ScaleTransform x:Name="SpinnerScale" ScaleX="0.4" ScaleY="0.4" />
+                </Grid.RenderTransform>
+                <Canvas RenderTransformOrigin="0.5,0.5" 
+                    HorizontalAlignment="Center" 
+                    VerticalAlignment="Center" 
+                    Width="120" Height="120" Margin="10,5,15,11" >
+                    <Ellipse Width="21.835" Height="21.862" 
+                         Canvas.Left="20.1696" 
+                         Canvas.Top="9.76358" 
+                         Stretch="Fill" Fill="Orange" 
+                         Opacity="1.0"/>
+                    <Ellipse Width="21.835" Height="21.862" 
+                         Canvas.Left="2.86816" 
+                         Canvas.Top="29.9581" Stretch="Fill" 
+                         Fill="Black" Opacity="0.9"/>
+                    <Ellipse Width="21.835" Height="21.862" 
+                         Canvas.Left="5.03758e-006" 
+                         Canvas.Top="57.9341" Stretch="Fill" 
+                         Fill="Black" Opacity="0.8"/>
+                    <Ellipse Width="21.835" Height="21.862" 
+                         Canvas.Left="12.1203" 
+                         Canvas.Top="83.3163" Stretch="Fill" 
+                         Fill="Black" Opacity="0.7"/>
+                    <Ellipse Width="21.835" Height="21.862" 
+                         Canvas.Left="36.5459" 
+                         Canvas.Top="98.138" Stretch="Fill" 
+                         Fill="Black" Opacity="0.6"/>
+                    <Ellipse Width="21.835" Height="21.862" 
+                         Canvas.Left="64.6723" 
+                         Canvas.Top="96.8411" Stretch="Fill" 
+                         Fill="Black" Opacity="0.5"/>
+                    <Ellipse Width="21.835" Height="21.862" 
+                         Canvas.Left="87.6176" 
+                         Canvas.Top="81.2783" Stretch="Fill" 
+                         Fill="Black" Opacity="0.4"/>
+                    <Ellipse Width="21.835" Height="21.862" 
+                         Canvas.Left="98.165" 
+                         Canvas.Top="54.414" Stretch="Fill" 
+                         Fill="Black" Opacity="0.3"/>
+                    <Ellipse Width="21.835" Height="21.862" 
+                         Canvas.Left="92.9838" 
+                         Canvas.Top="26.9938" Stretch="Fill" 
+                         Fill="Black" Opacity="0.2"/>
+                    <Ellipse Width="21.835" Height="21.862" 
+                         Canvas.Left="47.2783" 
+                         Canvas.Top="0.5" Stretch="Fill" 
+                         Fill="Black" Opacity="0.1"/>
+                    <Canvas.RenderTransform>
+                        <RotateTransform x:Name="SpinnerRotate" 
+                                     Angle="0" />
+                    </Canvas.RenderTransform>
+                    <Canvas.Triggers>
+                        <EventTrigger RoutedEvent="ContentControl.Loaded">
+                            <BeginStoryboard>
+                                <Storyboard>
+                                    <DoubleAnimation 
+                                    Storyboard.TargetName
+                                        ="SpinnerRotate" 
+                                     Storyboard.TargetProperty
+                                        ="(RotateTransform.Angle)" 
+                                     From="0" To="360" 
+                                     Duration="0:0:01" 
+                                     RepeatBehavior="Forever" />
+                                </Storyboard>
+                            </BeginStoryboard>
+                        </EventTrigger>
+                    </Canvas.Triggers>
+                </Canvas>
+            </Grid>-->
+
+        </Grid>
+        <Button Name="btnSecs" Content="Print Port Cache" Grid.Row="2" HorizontalAlignment="Left" Margin="5,8,0,0" Width="104" Height="37" Click="Button_Click_30"/>
+        <Button Content="Exit" Grid.Row="2" Width="100" Height="35" Click="Exit_Click" Margin="0,0,5,5" HorizontalAlignment="Right" VerticalAlignment="Bottom"/>
+        <CheckBox Visibility="Hidden" Content="CheckBox" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Label Visibility="Hidden" Name="lblTrid" Content="TRID" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="72,55,0,0" Grid.Row="1"/>
+        <Label Visibility="Hidden" Name="lblDsper" Content="DSPER" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="72,85,0,0" Grid.Row="1"/>
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0*"/>
+                <ColumnDefinition Width="55*"/>
+                <ColumnDefinition Width="1143*"/>
+            </Grid.ColumnDefinitions>
+            <!--<Grid x:Name="LayoutRoot" Background="Transparent" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,264,428,-133" Height="140" Width="166">
+                <Grid.RenderTransform>
+                    <ScaleTransform x:Name="SpinnerScale" ScaleX="0.4" ScaleY="0.4" />
+                </Grid.RenderTransform>
+                <Canvas RenderTransformOrigin="0.5,0.5" 
+                    HorizontalAlignment="Center" 
+                    VerticalAlignment="Center" 
+                    Width="120" Height="120" Margin="10,5,15,11" >
+                    <Ellipse Width="21.835" Height="21.862" 
+                         Canvas.Left="20.1696" 
+                         Canvas.Top="9.76358" 
+                         Stretch="Fill" Fill="Orange" 
+                         Opacity="1.0"/>
+                    <Ellipse Width="21.835" Height="21.862" 
+                         Canvas.Left="2.86816" 
+                         Canvas.Top="29.9581" Stretch="Fill" 
+                         Fill="Black" Opacity="0.9"/>
+                    <Ellipse Width="21.835" Height="21.862" 
+                         Canvas.Left="5.03758e-006" 
+                         Canvas.Top="57.9341" Stretch="Fill" 
+                         Fill="Black" Opacity="0.8"/>
+                    <Ellipse Width="21.835" Height="21.862" 
+                         Canvas.Left="12.1203" 
+                         Canvas.Top="83.3163" Stretch="Fill" 
+                         Fill="Black" Opacity="0.7"/>
+                    <Ellipse Width="21.835" Height="21.862" 
+                         Canvas.Left="36.5459" 
+                         Canvas.Top="98.138" Stretch="Fill" 
+                         Fill="Black" Opacity="0.6"/>
+                    <Ellipse Width="21.835" Height="21.862" 
+                         Canvas.Left="64.6723" 
+                         Canvas.Top="96.8411" Stretch="Fill" 
+                         Fill="Black" Opacity="0.5"/>
+                    <Ellipse Width="21.835" Height="21.862" 
+                         Canvas.Left="87.6176" 
+                         Canvas.Top="81.2783" Stretch="Fill" 
+                         Fill="Black" Opacity="0.4"/>
+                    <Ellipse Width="21.835" Height="21.862" 
+                         Canvas.Left="98.165" 
+                         Canvas.Top="54.414" Stretch="Fill" 
+                         Fill="Black" Opacity="0.3"/>
+                    <Ellipse Width="21.835" Height="21.862" 
+                         Canvas.Left="92.9838" 
+                         Canvas.Top="26.9938" Stretch="Fill" 
+                         Fill="Black" Opacity="0.2"/>
+                    <Ellipse Width="21.835" Height="21.862" 
+                         Canvas.Left="47.2783" 
+                         Canvas.Top="0.5" Stretch="Fill" 
+                         Fill="Black" Opacity="0.1"/>
+                    <Canvas.RenderTransform>
+                        <RotateTransform x:Name="SpinnerRotate" 
+                                     Angle="0" />
+                    </Canvas.RenderTransform>
+                    <Canvas.Triggers>
+                        <EventTrigger RoutedEvent="ContentControl.Loaded">
+                            <BeginStoryboard>
+                                <Storyboard>
+                                    <DoubleAnimation 
+                                    Storyboard.TargetName
+                                        ="SpinnerRotate" 
+                                     Storyboard.TargetProperty
+                                        ="(RotateTransform.Angle)" 
+                                     From="0" To="360" 
+                                     Duration="0:0:01" 
+                                     RepeatBehavior="Forever" />
+                                </Storyboard>
+                            </BeginStoryboard>
+                        </EventTrigger>
+                    </Canvas.Triggers>
+                </Canvas>
+            </Grid>-->
+
+        </Grid>
+        <Label Visibility="Hidden" Name="lblTotsmp" Content="TOTSMP" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="72,115,0,0" Grid.Row="1"/>
+        <Grid Margin="0,25" Grid.RowSpan="2" Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0*"/>
+                <ColumnDefinition Width="55*"/>
+                <ColumnDefinition Width="1143*"/>
+            </Grid.ColumnDefinitions>
+            <TextBox Visibility="Hidden" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Grid.Column="2" Margin="101,28,0,0"  Name="txtTrid"/>
+            <TextBox Visibility="Hidden" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Grid.Column="2" Margin="101,56,0,0"  Name="txtDsper"/>
+            <TextBox Visibility="Hidden" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Grid.Column="2" Margin="101,84,0,0"  Name="txtTotsmp"/>
+            <TextBox Visibility="Hidden" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Grid.Column="2" Margin="101,112,0,0" Name="txtRepgsz"/>
+
+            <!--<Grid x:Name="LayoutRoot" Background="Transparent" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,264,428,-133" Height="140" Width="166">
+                <Grid.RenderTransform>
+                    <ScaleTransform x:Name="SpinnerScale" ScaleX="0.4" ScaleY="0.4" />
+                </Grid.RenderTransform>
+                <Canvas RenderTransformOrigin="0.5,0.5" 
+                    HorizontalAlignment="Center" 
+                    VerticalAlignment="Center" 
+                    Width="120" Height="120" Margin="10,5,15,11" >
+                    <Ellipse Width="21.835" Height="21.862" 
+                         Canvas.Left="20.1696" 
+                         Canvas.Top="9.76358" 
+                         Stretch="Fill" Fill="Orange" 
+                         Opacity="1.0"/>
+                    <Ellipse Width="21.835" Height="21.862" 
+                         Canvas.Left="2.86816" 
+                         Canvas.Top="29.9581" Stretch="Fill" 
+                         Fill="Black" Opacity="0.9"/>
+                    <Ellipse Width="21.835" Height="21.862" 
+                         Canvas.Left="5.03758e-006" 
+                         Canvas.Top="57.9341" Stretch="Fill" 
+                         Fill="Black" Opacity="0.8"/>
+                    <Ellipse Width="21.835" Height="21.862" 
+                         Canvas.Left="12.1203" 
+                         Canvas.Top="83.3163" Stretch="Fill" 
+                         Fill="Black" Opacity="0.7"/>
+                    <Ellipse Width="21.835" Height="21.862" 
+                         Canvas.Left="36.5459" 
+                         Canvas.Top="98.138" Stretch="Fill" 
+                         Fill="Black" Opacity="0.6"/>
+                    <Ellipse Width="21.835" Height="21.862" 
+                         Canvas.Left="64.6723" 
+                         Canvas.Top="96.8411" Stretch="Fill" 
+                         Fill="Black" Opacity="0.5"/>
+                    <Ellipse Width="21.835" Height="21.862" 
+                         Canvas.Left="87.6176" 
+                         Canvas.Top="81.2783" Stretch="Fill" 
+                         Fill="Black" Opacity="0.4"/>
+                    <Ellipse Width="21.835" Height="21.862" 
+                         Canvas.Left="98.165" 
+                         Canvas.Top="54.414" Stretch="Fill" 
+                         Fill="Black" Opacity="0.3"/>
+                    <Ellipse Width="21.835" Height="21.862" 
+                         Canvas.Left="92.9838" 
+                         Canvas.Top="26.9938" Stretch="Fill" 
+                         Fill="Black" Opacity="0.2"/>
+                    <Ellipse Width="21.835" Height="21.862" 
+                         Canvas.Left="47.2783" 
+                         Canvas.Top="0.5" Stretch="Fill" 
+                         Fill="Black" Opacity="0.1"/>
+                    <Canvas.RenderTransform>
+                        <RotateTransform x:Name="SpinnerRotate" 
+                                     Angle="0" />
+                    </Canvas.RenderTransform>
+                    <Canvas.Triggers>
+                        <EventTrigger RoutedEvent="ContentControl.Loaded">
+                            <BeginStoryboard>
+                                <Storyboard>
+                                    <DoubleAnimation 
+                                    Storyboard.TargetName
+                                        ="SpinnerRotate" 
+                                     Storyboard.TargetProperty
+                                        ="(RotateTransform.Angle)" 
+                                     From="0" To="360" 
+                                     Duration="0:0:01" 
+                                     RepeatBehavior="Forever" />
+                                </Storyboard>
+                            </BeginStoryboard>
+                        </EventTrigger>
+                    </Canvas.Triggers>
+                </Canvas>
+            </Grid>-->
+
+        </Grid>
+        <Label Visibility="Hidden" Name="lblRepgsz" Content="REPGSZ" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="72,140,0,0" Grid.Row="1"/>
+    </Grid>
+</Window>

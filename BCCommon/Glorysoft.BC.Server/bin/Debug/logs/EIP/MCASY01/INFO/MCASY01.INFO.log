@@ -1,0 +1,42 @@
+﻿2023-04-25 15:45:02,099 Start ASY1_Parse_ScanThread Thread.
+2023-04-25 15:45:02,100 ASY1_Parse_ScanThread Thread Status = True
+2023-04-25 15:45:02,590 Start ASY1_CommunicatorThread Thread.
+2023-04-25 15:45:02,590 Start ASY1_CommunicatorThread Thread Class3.
+2023-04-25 15:45:02,592 ASY1_CommunicatorThread Thread Status = True
+2023-04-25 15:45:02,594 ASY1_CommunicatorThread Thread Class3 Status = True
+2023-04-25 15:45:02,601 Start ASY1_BitScan_15_ScanThread Thread.
+2023-04-25 15:45:02,601 Start ASY1_MonitorScan_17_ScanThread Thread.
+2023-04-25 15:45:02,603 ASY1_BitScan_15_ScanThread Thread Status = True
+2023-04-25 15:45:02,604 ASY1_MonitorScan_17_ScanThread Thread Status = True
+2023-04-25 15:46:53,619 Terminate ASY1_BitScan_15_ScanThread Thread.
+2023-04-25 15:46:53,620 Terminate ASY1_MonitorScan_17_ScanThread Thread.
+2023-04-25 15:46:53,648 ASY1_BitScan_15_ScanThread Thread Status = False
+2023-04-25 15:46:53,876 ASY1_MonitorScan_17_ScanThread Thread Status = False
+2023-04-25 15:46:54,621 TCP - Terminating.
+2023-04-25 15:46:54,621 Terminate ASY1_CommunicatorThread Thread.
+2023-04-25 15:46:54,621 Terminate ASY1_CommunicatorThread Thread Class3.
+2023-04-25 15:46:54,626 ASY1_CommunicatorThread Thread Status = False
+2023-04-25 15:46:54,626 ASY1_CommunicatorThread Thread Class3 Status = False
+2023-04-25 15:46:55,627 Terminate ASY1_BitScan_15_ScanThread Thread.
+2023-04-25 15:46:55,627 Terminate ASY1_MonitorScan_17_ScanThread Thread.
+2023-04-25 16:11:54,858 Start ASY1_Parse_ScanThread Thread.
+2023-04-25 16:11:54,860 ASY1_Parse_ScanThread Thread Status = True
+2023-04-25 16:11:55,336 Start ASY1_CommunicatorThread Thread.
+2023-04-25 16:11:55,336 Start ASY1_CommunicatorThread Thread Class3.
+2023-04-25 16:11:55,338 ASY1_CommunicatorThread Thread Status = True
+2023-04-25 16:11:55,340 ASY1_CommunicatorThread Thread Class3 Status = True
+2023-04-25 16:11:55,345 Start ASY1_BitScan_15_ScanThread Thread.
+2023-04-25 16:11:55,346 Start ASY1_MonitorScan_17_ScanThread Thread.
+2023-04-25 16:11:55,347 ASY1_BitScan_15_ScanThread Thread Status = True
+2023-04-25 16:11:55,348 ASY1_MonitorScan_17_ScanThread Thread Status = True
+2023-04-25 16:12:29,929 Terminate ASY1_BitScan_15_ScanThread Thread.
+2023-04-25 16:12:29,929 Terminate ASY1_MonitorScan_17_ScanThread Thread.
+2023-04-25 16:12:29,953 ASY1_BitScan_15_ScanThread Thread Status = False
+2023-04-25 16:12:30,086 ASY1_MonitorScan_17_ScanThread Thread Status = False
+2023-04-25 16:12:30,931 TCP - Terminating.
+2023-04-25 16:12:30,932 Terminate ASY1_CommunicatorThread Thread.
+2023-04-25 16:12:30,932 Terminate ASY1_CommunicatorThread Thread Class3.
+2023-04-25 16:12:30,935 ASY1_CommunicatorThread Thread Class3 Status = False
+2023-04-25 16:12:30,937 ASY1_CommunicatorThread Thread Status = False
+2023-04-25 16:12:31,937 Terminate ASY1_BitScan_15_ScanThread Thread.
+2023-04-25 16:12:31,937 Terminate ASY1_MonitorScan_17_ScanThread Thread.

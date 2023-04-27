@@ -1,0 +1,147 @@
+﻿<Window x:Class="Glorysoft.BC.Client.View.AlarmConfig"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Glorysoft.BC.Client.View"
+      xmlns:vc="clr-namespace:Glorysoft.BC.Client.CommonClass"
+      mc:Ignorable="d" 
+      ResizeMode="NoResize"
+      Height="700" Width="1000">
+    <Window.Resources>
+        <vc:HostControlState2String x:Key="HostControlState2String" />
+        <vc:LightAlarm2Bool x:Key="LightAlarm2Bool" />
+        <vc:SeriousAlarm2Bool x:Key="SeriousAlarm2Bool" />
+        <vc:PLCConnect2String x:Key="PLCConnect2String" />
+    </Window.Resources>
+    <Grid Margin="0,0,0,0">
+        <Grid.Background>
+            <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
+                <GradientStop Offset="0" Color="#FFAED2F6" />
+                <GradientStop Offset="1" Color="#FFE7F1F2" />
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="75" />
+            <RowDefinition Height="155"/>
+            <RowDefinition  />
+        </Grid.RowDefinitions>
+        <ToolBar x:Name="toolBarLeft"  Grid.Row="0"  >
+            <Separator />
+            <Button x:Name="btAddAlarm"  Command="{Binding AddCommand}"   Width="80"  VerticalAlignment="Stretch">
+                <StackPanel Orientation="Horizontal">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+                        <Image Grid.Row="0"  Source="../Resource/Images/Layout/add.png" VerticalAlignment="Top" />
+                        <TextBlock Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Bottom" Text="新增"/>
+                    </Grid>
+                </StackPanel>
+            </Button>
+            <Button x:Name="btModifyAlarm"  Command="{Binding ModifyCommand}" Width="80" VerticalAlignment="Stretch"  >
+                <StackPanel Orientation="Horizontal">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+                        <Image Grid.Row="0"  Source="../Resource/Images/Layout/modify.png" VerticalAlignment="Top" />
+                        <TextBlock Grid.Row="1" VerticalAlignment="Bottom" Text="修改"/>
+                    </Grid>
+                </StackPanel>
+            </Button>
+            <Button x:Name="btDelAlarm" Command="{Binding Path=DeleteCommand}" CommandParameter="{Binding ElementName=grdAlarm, Path=SelectedItems}" Width="80" VerticalAlignment="Stretch" >
+                <StackPanel Orientation="Horizontal">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="31"/>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+                        <Image Grid.Row="0"  Source="../Resource/Images/Layout/del.png" VerticalAlignment="Top" />
+                        <TextBlock Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Bottom" Text="删除"/>
+                    </Grid>
+                </StackPanel>
+            </Button>
+            <Button x:Name="btClearAlarm"  Command="{Binding Path=ClearCommand}"   Width="80"  VerticalAlignment="Stretch">
+                <StackPanel Orientation="Horizontal">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+                        <Image Grid.Row="0"  Source="../Resource/Images/Layout/clear.png" VerticalAlignment="Top" />
+                        <TextBlock Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Bottom" Text="清空"/>
+                    </Grid>
+                </StackPanel>
+            </Button>
+
+            <Button Name="btnImportAlarm"  Command="{Binding Path=ImportExcelCommand}"   Width="80"  VerticalAlignment="Stretch">
+                <StackPanel Orientation="Horizontal">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+                        <Image Grid.Row="0"  Source="../Resource/Images/Layout/import.png" VerticalAlignment="Top" />
+                        <TextBlock Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Bottom" Text="导入"/>
+                    </Grid>
+                </StackPanel>
+            </Button>
+            <Button Name="btnExportAlarm"  Width="80"  VerticalAlignment="Stretch">
+                <StackPanel Orientation="Horizontal">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+                        <Image Grid.Row="0"  Source="../Resource/Images/Layout/export.png" VerticalAlignment="Top" />
+                        <TextBlock Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Bottom" Text="导出"/>
+                    </Grid>
+                </StackPanel>
+            </Button>
+            <Separator />
+        </ToolBar>
+        <GroupBox Grid.Row="1"  Header="Alarm 编辑"   >
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition MinHeight="40" MaxHeight="40" />
+                    <RowDefinition MinHeight="40" MaxHeight="40" />
+                    <RowDefinition MinHeight="40" MaxHeight="40" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="180"/>
+                    <ColumnDefinition Width="200"/>
+                    <ColumnDefinition Width="150"/>
+                    <ColumnDefinition Width="80"/>
+                    <ColumnDefinition Width="105"/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Label Name="label1" Content="EQP" Height="22" Width="52" Margin="64,10,64,9" />
+                <ComboBox Name="cboEQID" Grid.Column="1" VerticalContentAlignment="Center" ItemsSource="{Binding EQPList}" Text="{Binding UpdatingItem.EQPName, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Height="Auto" Margin="0,5,0,5"/>
+                <Label Name="label2" Content="AlarmID" Grid.Column="0" Grid.Row="1" Height="22" Margin="60,9,60,10" Width="60" />
+                <TextBox Name="txtAlarmID" Grid.Row="1" VerticalContentAlignment="Center" Grid.Column="1" Text="{Binding UpdatingItem.AlarmID, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Margin="0,5,0,6" />
+                <Label Name="label4" Grid.Column="2" ClipToBounds="False" Content="AlarmLevel"  VerticalAlignment="Center" HorizontalAlignment="Center" />
+                <RadioButton Name="rdLight" Grid.Column="3"  Content="Light" 
+                       IsChecked="{Binding UpdatingItem.AlarmLevel, Converter={StaticResource LightAlarm2Bool}, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Left" VerticalAlignment="Center"   />
+                <RadioButton Name="rdHeavy" Grid.Column="4" Content="Serious" 
+                       IsChecked="{Binding UpdatingItem.AlarmLevel,  Converter={StaticResource SeriousAlarm2Bool}, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Left" VerticalAlignment="Center" />
+                <Label  Grid.Column="2" ClipToBounds="False" Content="AlarmEnable" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="1" />
+                <CheckBox Grid.Column="3" Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Left" IsChecked="{Binding UpdatingItem.AlarmEnable, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+                <Button Name="btnView" Grid.Column="4" Command="{Binding Path=SearchCommand}" Content="查询"  Grid.Row="1" Margin="5,5,5,5"/>
+                <Label Name="label5" Content="Alarm Text" Grid.Row="2" Height="22" Margin="52,10,52,9" Width="76"/>
+                <TextBox Name="txtAlarmText" Grid.Row="2" Grid.ColumnSpan="4" Grid.Column="1" VerticalContentAlignment="Center"  Text="{Binding UpdatingItem.AlarmText, Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" Height="30"/>
+            </Grid>
+        </GroupBox>
+        <DataGrid Margin="2,10,-2,0" Grid.Row="2" Name="grdAlarm" Background="{x:Null}" AutoGenerateColumns="False" CanUserAddRows="False" ItemsSource="{Binding OAlarm}"  SelectedItem="{Binding SelectedItem}"  >
+            <DataGrid.Columns>
+                <DataGridTextColumn Binding="{Binding AlarmID, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Header="AlarmID" MinWidth="100" />
+                <DataGridTextColumn Binding="{Binding EQPName, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Header="EQP" MinWidth="100"/>
+                <DataGridTextColumn Binding="{Binding AlarmLevel, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Header="AlarmLevel" MinWidth="100" />
+                <DataGridTextColumn   Binding="{Binding AlarmText, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Header="AlarmText" MinWidth="300" />
+                <DataGridTextColumn   Binding="{Binding AlarmEnable, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Header="AlarmEnable" MinWidth="100" />
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</Window>

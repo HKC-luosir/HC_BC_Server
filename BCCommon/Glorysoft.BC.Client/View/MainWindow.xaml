@@ -1,0 +1,175 @@
+﻿<View:WindowBase 
+        x:Class="Glorysoft.BC.Client.View.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:i="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity"
+        xmlns:myControls="clr-namespace:Glorysoft.BC.Client"
+        xmlns:View="clr-namespace:Glorysoft.BC.Client.View" 
+        xmlns:VM="clr-namespace:Glorysoft.BC.Client.ViewModel" 
+        xmlns:vc="clr-namespace:Glorysoft.BC.Client.CommonClass"
+        xmlns:Controls="clr-namespace:GlorySoft.UI;assembly=GlorySoft.UI"
+        WindowStyle="None" AllowsTransparency="True"  
+        Title="LINE CONTROL-LINE" Height="1000" Width="1900"
+        WindowState="Maximized"        
+        DataContext="{Binding MainVM, Source={StaticResource DataSource}}"        
+        MenuSource="{Binding MenuList}" 	
+        Closed="WindowBase_Closed"
+        Closing="WindowBase_Closing"
+        >
+    <View:WindowBase.Resources>
+        <vc:PortStatus2String x:Key="PortStatus2String"/>
+        <vc:CarrierStatus2String x:Key="CarrierStatus2String"/>
+        <vc:HostControlState2String x:Key="HostControlState2String" />
+        <vc:AntiHostModel x:Key="AntiHostModel" />
+        <vc:PLCConnect2String x:Key="PLCConnect2String" />
+        <vc:EQPStatus2String x:Key="EQPStatus2String" />
+        <DataTemplate DataType="{x:Type VM:MainFormCutVM}">
+            <View:MainFormCut/>
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type VM:MainFormPOLVM}">
+            <View:MainFormPOL/>
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type VM:MainFormOLB_C6VM}">
+            <View:MainFormOLB_C6/>
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type VM:MainFormOLB_C7VM}">
+            <View:MainFormOLB_C7/>
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type VM:MainFormOCPackingVM}">
+            <View:MainFormOCPacking/>
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type VM:MainFormLGVM}">
+            <View:MainFormLG/>
+        </DataTemplate>
+    </View:WindowBase.Resources>
+
+    <Grid >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+        <GroupBox Header="EQP Status"  Style="{StaticResource LayoutGroupBox}" Grid.Row="0" Margin="0,0,0,0">
+            <ContentControl Content="{Binding CurrentMainContent}" Height="Auto" Width="Auto"/>
+        </GroupBox>
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="450"/>
+                <ColumnDefinition Width="250"/>
+                <ColumnDefinition Width="330"/>
+                <ColumnDefinition Width="330"/>
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+            <GroupBox  Grid.Column="0" Header="EQPList" Margin="5" >
+                <DataGrid Grid.Column="2" Grid.Row="1" ItemsSource="{Binding OClient.EQPList.Values}"  Background="#ffffff"   CanUserAddRows="False"  CanUserDeleteRows="False"  AutoGenerateColumns="False"  IsReadOnly="True"
+                          VerticalAlignment="Stretch" HorizontalAlignment="Stretch" ScrollViewer.HorizontalScrollBarVisibility="Auto" ScrollViewer.VerticalScrollBarVisibility="Auto" SelectedItem="{Binding SelectEQPInfo}">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Header="EQP" Width="100" Binding="{Binding EQPName}"></DataGridTextColumn>
+                        <DataGridTextColumn Header="Connect State" Width="120" Binding="{Binding IsConnect,Converter={StaticResource PLCConnect2String}}"></DataGridTextColumn>
+                        <DataGridTextColumn Header="Status" Width="100" Binding="{Binding EQPStatus,Converter={StaticResource EQPStatus2String}}"></DataGridTextColumn>
+                        <DataGridTextColumn Header="Reason Code" Width="120" Binding="{Binding ReasonCode}"></DataGridTextColumn>
+                    </DataGrid.Columns>
+                </DataGrid>
+            </GroupBox>
+            <GroupBox  Grid.Column="1" Header="Line Info" Margin="5,5,5,5">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="90"/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="35"/>
+                        <RowDefinition Height="35"/>
+                        <RowDefinition Height="35"/>
+                        <RowDefinition Height="35"/>
+                        <RowDefinition Height="35"/>
+                        <RowDefinition Height="35"/>
+                        <RowDefinition Height="35"/>
+                        <RowDefinition Height="35"/>
+                    </Grid.RowDefinitions>
+                    <Label Grid.Column="0" Grid.Row="0" Content="Line ID" FontSize="10.5" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                    <TextBox Grid.Column="1" Grid.Row="0" FontSize="15" Text="{Binding OClient.LineID}" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" IsReadOnly="True" Margin="5,5,5,5"/>
+                    <Label Grid.Column="0" Grid.Row="1" Content="Host Connection" FontSize="10.5" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                    <TextBox Grid.Column="1" Grid.Row="1" FontSize="15" Margin="5,5,5,5" IsReadOnly="True" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"  Text="{Binding OClient.IsHostConnect , Converter={StaticResource PLCConnect2String}}"/>
+                    <Label Grid.Column="0" Grid.Row="2" Content="Control State" FontSize="10.5" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                    <Button Grid.Column="1" Grid.Row="2" FontSize="15"  VerticalContentAlignment="Center" HorizontalContentAlignment="Center"   Content="{Binding OClient.ControlState}" Command="{Binding SetControlStateCommand}" Margin="5,5,5,5" />
+                    <Label Grid.Column="0" Grid.Row="3" Content="FDC Connection" FontSize="10.5" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                    <TextBox Grid.Column="1" Grid.Row="3" FontSize="15" Margin="5,5,5,5" IsReadOnly="True" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"  Text="{Binding OClient.IsFDCConnect , Converter={StaticResource PLCConnect2String}}"/>
+                    <Label Grid.Column="0" Grid.Row="4" Content="FAC Connection" FontSize="10.5" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                    <TextBox Grid.Column="1" Grid.Row="4" FontSize="15" Margin="5,5,5,5" IsReadOnly="True" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"  Text="{Binding OClient.IsFACConnect , Converter={StaticResource PLCConnect2String}}"/>
+                    <Label Grid.Column="0" Grid.Row="5" Content="Work Order" FontSize="10.5" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                    <TextBox Grid.Column="1" Grid.Row="5" FontSize="15" Margin="5,5,5,5" IsReadOnly="True" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"  Text="{Binding OClient.CurrentWorkOrder}"/>
+                    <Label Grid.Column="0" Grid.Row="6" Content="FG Code" FontSize="10.5" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                    <TextBox Grid.Column="1" Grid.Row="6" FontSize="15" Margin="5,5,5,5" IsReadOnly="True" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"  Text="{Binding OClient.CurrentFGCode}"/>
+                </Grid>
+            </GroupBox>
+            <GroupBox  Grid.Column="2" Grid.ColumnSpan="2" Header="Port Info" Margin="5,5,5,5">
+                <DataGrid Grid.Column="2" Grid.Row="1" ItemsSource="{Binding OClient.CarrierList}"  Background="#ffffff"   CanUserAddRows="False"  CanUserDeleteRows="False"  AutoGenerateColumns="False"  IsReadOnly="True"
+                          VerticalAlignment="Stretch" HorizontalAlignment="Stretch" ScrollViewer.HorizontalScrollBarVisibility="Auto" ScrollViewer.VerticalScrollBarVisibility="Auto" SelectedItem="{Binding SelectCarrierInfo}">
+                    <DataGrid.Columns>
+                        <DataGridTemplateColumn  Header="EQP" Width="100">
+                            <DataGridTemplateColumn.CellTemplate>
+                                <DataTemplate>
+                                    <Button Content="{Binding EQPID}" FontSize="14" Command="{Binding DataContext.ViewLotInfoCommand, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=DataGrid}}"/>
+                                </DataTemplate>
+                            </DataGridTemplateColumn.CellTemplate>
+                        </DataGridTemplateColumn >
+                        <DataGridTextColumn Header="Port ID" Width="100" Binding="{Binding PortID}"></DataGridTextColumn>
+                        <DataGridTextColumn Header="Port Status" Width="100" Binding="{Binding PortStatus,Converter={StaticResource PortStatus2String}}"></DataGridTextColumn>
+                        <DataGridTextColumn Header="Carrier ID" Width="100" Binding="{Binding CarrierID}"></DataGridTextColumn>
+                        <DataGridTextColumn Header="Carrier Status" Width="100" Binding="{Binding CarrierStatus,Converter={StaticResource CarrierStatus2String}}"></DataGridTextColumn>
+                        <DataGridTextColumn Header="Lot ID" Width="100" Binding="{Binding LotID}"></DataGridTextColumn>
+                    </DataGrid.Columns>
+                </DataGrid>
+            </GroupBox>
+            <GroupBox  Grid.Column="4" Header="Terminal Message" Margin="5,5,5,5" >
+                <Grid Grid.Row="1" Grid.Column="3">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition Width="120"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="3*"></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                    </Grid.RowDefinitions>
+
+                    <ListBox x:Name="Terminal_Host"                               
+								Grid.ColumnSpan="2"                               
+								Background="#ffffff"
+								BorderBrush="Gray" BorderThickness="0"
+								FontSize="16"
+                                FontFamily="arail"
+								FontWeight="Normal"                           
+								ItemsSource="{Binding OClient.MsgList}"
+								SelectionMode="Extended" Margin="18,2,2,2"/>
+                    <Border Grid.Row="1" Grid.Column="0" Background="#FF888DB8" Margin="0,0,0,0" Grid.ColumnSpan="2"></Border>
+                    <TextBox x:Name="txtSendMessage" Margin="26,0,0,0"  VerticalContentAlignment="Center"
+								Grid.Row="1"
+								FontSize="12" Foreground="#666666"
+                                  FontFamily="arail"
+                                     BorderBrush="Gray" BorderThickness="2"
+                                     Height="35"
+								FontWeight="Normal"
+								MaxLength="80"
+								Text="{Binding Message}"
+								UndoLimit="0"  >
+                        <TextBox.Background>
+                            <ImageBrush ImageSource="../Resource/Images/Layout/Input box.png"  />
+                        </TextBox.Background>
+                    </TextBox>
+
+                    <Button x:Name="btnSend" Width="100" Height="35"
+                                Content="Send"
+								Grid.Row="1"
+								Grid.Column="1" 
+								Command="{Binding SendCommand}"
+								Margin="2" >
+                        <Button.Background>
+                            <ImageBrush ImageSource="../Resource/Images/Layout/button_send_1.png"  />
+                        </Button.Background>
+                    </Button>
+                </Grid>
+            </GroupBox>
+
+        </Grid>
+    </Grid>
+</View:WindowBase>
